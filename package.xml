@@ -1,0 +1,2290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>imp</name>
+ <channel>pear.horde.org</channel>
+ <summary>A web based webmail system</summary>
+ <description>IMP, the Internet Mail Program, is one of the most popular and widely deployed open source webmail applications in the world. It allows universal, web-based access to IMAP and POP3 mail servers and provides Ajax, mobile and traditional interfaces with a rich range of features normally found only in desktop email clients.</description>
+ <lead>
+  <name>Michael Slusarz</name>
+  <user>slusarz</user>
+  <email>slusarz@horde.org</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Jan Schneider</name>
+  <user>jan</user>
+  <email>jan@horde.org</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Chuck Hagenbuch</name>
+  <user>chuck</user>
+  <email>chuck@horde.org</email>
+  <active>yes</active>
+ </lead>
+ <date>2012-01-17</date>
+ <time>13:01:59</time>
+ <version>
+  <release>5.0.18</release>
+  <api>5.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+ <notes>
+* [mms] SECURITY: Fix XSS vulnerabilities on the compose page (traditional view), the contacts popup window, and with certain IMAP mailbox names.
+* [mms] Fix updating context menu when a mailbox is converted into a container element after being deleted.
+* [mms] Fix expand/collapse of folder tree in mobile view.
+* [mms] Fix regression preventing sending of MDNs.
+* [mms] Fix reporting as innocent in mobile view.
+* [mms] Fix updating log information when replying/forwarding in dynamic view.
+* [mms] Fix deleting virtual folders in dynamic view.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="2c3b827cb6cc98c4f8c93975f6fe7e9f" name="bin/imp-bounce-spam" role="script" />
+   <file baseinstalldir="/" md5sum="23a1f180e240eb019efc0a19457307b0" name="bin/imp-mailbox-decode" role="script" />
+   <file baseinstalldir="/" md5sum="2a5f5da7f072913ad1f0de434a127872" name="bin/imp-query-imap-cache" role="script" />
+   <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="config/.htaccess" role="horde" />
+   <file baseinstalldir="/" md5sum="9d9f165bd8505be72da4854699f27aec" name="config/backends.php" role="horde" />
+   <file baseinstalldir="/" md5sum="d0f0ef3387508696d4f6b2812c9a68f3" name="config/conf.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="9ac05dd08e3a38775ff37c31c48427fc" name="config/filter.txt.dist" role="horde" />
+   <file baseinstalldir="/" md5sum="eef02660943437cac322490a5dcab877" name="config/hooks.php.dist" role="horde" />
+   <file baseinstalldir="/" md5sum="545d6c8e43c966f1e8c7efafb04958d9" name="config/menu.php.dist" role="horde" />
+   <file baseinstalldir="/" md5sum="e89c9b37a3e6c5311f84d738de94d553" name="config/mime_drivers.php" role="horde" />
+   <file baseinstalldir="/" md5sum="71a0ee50c4cf4a469c99e0f3b98ada22" name="config/prefs.php" role="horde" />
+   <file baseinstalldir="/" md5sum="75dcabe142121889c3a3ea78a02d2c48" name="docs/CHANGES" role="doc" />
+   <file baseinstalldir="/" md5sum="749e114a7ad14aa76743e308e7fa8e21" name="docs/CREDITS" role="doc" />
+   <file baseinstalldir="/" md5sum="a96a14b5b2b21fac7a7d709becbb12a7" name="docs/INSTALL" role="doc" />
+   <file baseinstalldir="/" md5sum="a339dbe0c69c45687fa8784d416d363b" name="docs/PERFORMANCE" role="doc" />
+   <file baseinstalldir="/" md5sum="098295fd8a42b14ef12e4a2e68658a3d" name="docs/RELEASE_NOTES" role="doc" />
+   <file baseinstalldir="/" md5sum="8156ea9a6bf98ebccd4f0a54cc87b030" name="docs/RFCS" role="doc" />
+   <file baseinstalldir="/" md5sum="a2ced74d894896fbb65d9529d3961f9a" name="docs/UPGRADING" role="doc" />
+   <file baseinstalldir="/" md5sum="51f6a69dc72c02dd93003411bcd43aa3" name="js/acl.js" role="horde" />
+   <file baseinstalldir="/" md5sum="826a73bc96b49e1c8d68d290fe3c7d8a" name="js/compose-base.js" role="horde" />
+   <file baseinstalldir="/" md5sum="a05b8f16c4b29570707dd4231e764312" name="js/compose-dimp.js" role="horde" />
+   <file baseinstalldir="/" md5sum="0330ecc816ff24e0810311cc519559d9" name="js/compose.js" role="horde" />
+   <file baseinstalldir="/" md5sum="53a5f5c1b4a2c8ab584dc0e3b746cbb4" name="js/contacts.js" role="horde" />
+   <file baseinstalldir="/" md5sum="946cb816bd108f6f3361d5760501f97e" name="js/dialog.js" role="horde" />
+   <file baseinstalldir="/" md5sum="312d0182e093dff08cac6a3a52ec16e1" name="js/dimpbase.js" role="horde" />
+   <file baseinstalldir="/" md5sum="a0184558f11f067247a952044c0bd00e" name="js/dimpcore.js" role="horde" />
+   <file baseinstalldir="/" md5sum="5a7c10bd672cba508a38c9dcb26bab30" name="js/flagprefs.js" role="horde" />
+   <file baseinstalldir="/" md5sum="508424b3c7de03f4ab17e0c85ab56f54" name="js/folderprefs.js" role="horde" />
+   <file baseinstalldir="/" md5sum="6d16d41be97b2ebe096c907262b7bcd0" name="js/folders.js" role="horde" />
+   <file baseinstalldir="/" md5sum="f91be61105a1ea322f826770016c863b" name="js/imp.js" role="horde" />
+   <file baseinstalldir="/" md5sum="a60a1a62026fcbcfd6bc69b0b09c5f54" name="js/indices.js" role="horde" />
+   <file baseinstalldir="/" md5sum="d57e27b1820f054f4fa929315885204e" name="js/login.js" role="horde" />
+   <file baseinstalldir="/" md5sum="67b73b035005cc711da25501209d8bfa" name="js/mailbox-dimp.js" role="horde" />
+   <file baseinstalldir="/" md5sum="2a3fd4a09ba31e6d1f60e6b3aa565da3" name="js/mailbox.js" role="horde" />
+   <file baseinstalldir="/" md5sum="582aeae55104ff25f15ec1e534b0935e" name="js/message-dimp.js" role="horde" />
+   <file baseinstalldir="/" md5sum="0d59755862abfce503043b22434794c4" name="js/message.js" role="horde" />
+   <file baseinstalldir="/" md5sum="605a5ca291dcc085b286cb44b3d14a7e" name="js/mobile.js" role="horde" />
+   <file baseinstalldir="/" md5sum="a76dcd98322ae1bdbe874f1d53403cbd" name="js/search.js" role="horde" />
+   <file baseinstalldir="/" md5sum="71f8cb63c1a0734d62e4b59af680e655" name="js/searchesprefs.js" role="horde" />
+   <file baseinstalldir="/" md5sum="8898c39a3d7b22a09554a914f05306e1" name="js/signaturehtml.js" role="horde" />
+   <file baseinstalldir="/" md5sum="607edb1240b82a935133ec32faecca53" name="js/viewport.js" role="horde" />
+   <file baseinstalldir="/" md5sum="96d79adef81cb7557d066fd294f6bc85" name="lib/Ajax/Imple/ContactAutoCompleter.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b8a79b48d023e867f05761fc22ff55ef" name="lib/Ajax/Imple/PassphraseDialog.php" role="horde" />
+   <file baseinstalldir="/" md5sum="ff4cde7f60d3ac6cfd284b23202def95" name="lib/Ajax/Application.php" role="horde" />
+   <file baseinstalldir="/" md5sum="434cd174b456379a14f22f7335257a0e" name="lib/Ajax/Queue.php" role="horde" />
+   <file baseinstalldir="/" md5sum="ea4a9cf46c96ed85430df9ddff2e115b" name="lib/Block/Newmail.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e696489f8a7e7bf92cfa395bb4b1bb08" name="lib/Block/Summary.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a950265f30aaf06aa5fa0ff0180c02ed" name="lib/Compose/Exception.php" role="horde" />
+   <file baseinstalldir="/" md5sum="281e57f35dd97bb73e7eef4dbac99865" name="lib/Compose/Stationery.php" role="horde" />
+   <file baseinstalldir="/" md5sum="d1ebb22bb7ad7bb0090f8e41a5c9cff5" name="lib/Crypt/Pgp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="3a1526687341daf636c936bec50f2802" name="lib/Crypt/Smime.php" role="horde" />
+   <file baseinstalldir="/" md5sum="96f7570d33da5f03bb0549b4063fd222" name="lib/Factory/AuthImap.php" role="horde" />
+   <file baseinstalldir="/" md5sum="736edd151cfed9e6f39cd1598589bd47" name="lib/Factory/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1ac2e7084cdecd9a3a771370adeaeee7" name="lib/Factory/Contents.php" role="horde" />
+   <file baseinstalldir="/" md5sum="25307772e6e053048cb716d7733e0b1a" name="lib/Factory/Flags.php" role="horde" />
+   <file baseinstalldir="/" md5sum="70ab2a97c90e3af8a17c3dce38fa89e6" name="lib/Factory/Identity.php" role="horde" />
+   <file baseinstalldir="/" md5sum="05c8dcf2b13bbf5ddb0a54c5d798c6f1" name="lib/Factory/Imap.php" role="horde" />
+   <file baseinstalldir="/" md5sum="cd21b8b2c3cbec757a931ac06e62b7aa" name="lib/Factory/Imaptree.php" role="horde" />
+   <file baseinstalldir="/" md5sum="8af9e3a7f9a2bab81ca3333ff3052803" name="lib/Factory/Mail.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f5ee8bada5db0d8610a2f1fa173ffe21" name="lib/Factory/Mailbox.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a7f361c2e180ece744f284641a97d728" name="lib/Factory/MailboxList.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a5fa10bc77e7b7a0f2787441ba145a7a" name="lib/Factory/MimeViewer.php" role="horde" />
+   <file baseinstalldir="/" md5sum="8caa5a574908b4d249302a9ff8c0b525" name="lib/Factory/Pgp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="daa3dcc74a95f58897f7b6c4f821382f" name="lib/Factory/Quota.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e2915bdbb44ca5912a1cd5c22c4695b1" name="lib/Factory/Search.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e222552201a1ea7fd618b5e2e7df3e00" name="lib/Factory/Sentmail.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a1258374c0eafac93a2e6545b967d79d" name="lib/Factory/Smime.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1fb8401a6d135e711a14d5dacc78685a" name="lib/Flag/Imap/Answered.php" role="horde" />
+   <file baseinstalldir="/" md5sum="3cf67f2355bdfee77c06366b5e1c88cf" name="lib/Flag/Imap/Deleted.php" role="horde" />
+   <file baseinstalldir="/" md5sum="90820a5837eccad9d9f50295861eafa0" name="lib/Flag/Imap/Draft.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b75b3de373973cca526c4ecd76640b63" name="lib/Flag/Imap/Flagged.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e34029c98b3d48c9692a05d7b9b605f4" name="lib/Flag/Imap/Forwarded.php" role="horde" />
+   <file baseinstalldir="/" md5sum="202014c498dd437a7951f2fb5a59e9e7" name="lib/Flag/Imap/Junk.php" role="horde" />
+   <file baseinstalldir="/" md5sum="8f1099ddd3c14847f9a73e55d20ea938" name="lib/Flag/Imap/NotJunk.php" role="horde" />
+   <file baseinstalldir="/" md5sum="dfba5a47e379f4d641e332d107ac7ca3" name="lib/Flag/Imap/Seen.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b5dd72726f789452fce13d0ef0658f0e" name="lib/Flag/System/Match/Address.php" role="horde" />
+   <file baseinstalldir="/" md5sum="ee8027f87c32d5d594e021dc31fdcf59" name="lib/Flag/System/Match/Flag.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b6f6362bfa900f4b7a4e1a6272e0e067" name="lib/Flag/System/Match/Header.php" role="horde" />
+   <file baseinstalldir="/" md5sum="352844a97062cbf496b244a115ec693c" name="lib/Flag/System/Attachment.php" role="horde" />
+   <file baseinstalldir="/" md5sum="91fe58889bf2b0620dab33bc2a4d18f3" name="lib/Flag/System/Encrypted.php" role="horde" />
+   <file baseinstalldir="/" md5sum="ab3f6c26d8bea5f4572512ad537f5513" name="lib/Flag/System/HighPriority.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e78b44c3e6564dc5e72a2ee2aebe3aa5" name="lib/Flag/System/List.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e95c23aad9fd94d1e082f77f555c9419" name="lib/Flag/System/LowPriority.php" role="horde" />
+   <file baseinstalldir="/" md5sum="7d195a84244cb5a8e3015d4037e3321e" name="lib/Flag/System/Personal.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0afc19e8c53781923fbae46af19852bb" name="lib/Flag/System/Signed.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9957985ab6967aa5ee3af50325323420" name="lib/Flag/System/Unseen.php" role="horde" />
+   <file baseinstalldir="/" md5sum="3847fb808ff8a7bff6d6c4ec43964853" name="lib/Flag/Base.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c43532bdf7b94f9662f6eaa9e46820b4" name="lib/Flag/Imap.php" role="horde" />
+   <file baseinstalldir="/" md5sum="8a7d1b85f537bd824dc9e17050ab5c93" name="lib/Flag/User.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e50ee8c494c9dcf9873db7b0f21846d6" name="lib/Imap/Acl.php" role="horde" />
+   <file baseinstalldir="/" md5sum="50f7fd39d62733ab29c9dd7b607b9615" name="lib/Imap/Exception.php" role="horde" />
+   <file baseinstalldir="/" md5sum="bc82865e2dadace4ed9205a9a3fd47a9" name="lib/Imap/PermanentFlags.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c2503e39e6b79778169aeb34d00b17de" name="lib/Imap/Thread.php" role="horde" />
+   <file baseinstalldir="/" md5sum="653f8eedc44d720e8a26b61e644dbcb9" name="lib/Imap/Tree.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f1f82c06be0cb1e99601e19f98452aa2" name="lib/Indices/Form.php" role="horde" />
+   <file baseinstalldir="/" md5sum="898bb7c9cc3d076a82b1deb1128c01a4" name="lib/LoginTasks/SystemTask/GarbageCollection.php" role="horde" />
+   <file baseinstalldir="/" md5sum="30f1656f78a3c3b6be3b716de8620144" name="lib/LoginTasks/SystemTask/Upgrade.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b40c55b503ff0fcf8d56947f68e3a23b" name="lib/LoginTasks/SystemTask/UpgradeAuth.php" role="horde" />
+   <file baseinstalldir="/" md5sum="84ce280932a3286ca16c7af8ae427397" name="lib/LoginTasks/Task/Autocreate.php" role="horde" />
+   <file baseinstalldir="/" md5sum="530e7a69fac35a5b6b6f1408969bb9a5" name="lib/LoginTasks/Task/DeleteAttachmentsMonthly.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0ee0b28f48b8993cc3f72b7280f299b8" name="lib/LoginTasks/Task/DeleteSentmailMonthly.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a724e3835e5298fb93e9717d6e795016" name="lib/LoginTasks/Task/FilterOnLogin.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b18c83a453ca2209aefdd02c1f65af85" name="lib/LoginTasks/Task/PurgeSentmail.php" role="horde" />
+   <file baseinstalldir="/" md5sum="484be69f7efb5ccf78f776a9fe3909a4" name="lib/LoginTasks/Task/PurgeSpam.php" role="horde" />
+   <file baseinstalldir="/" md5sum="d9b6a4767fadb416e1c7e85e0f7e4816" name="lib/LoginTasks/Task/PurgeTrash.php" role="horde" />
+   <file baseinstalldir="/" md5sum="afead507c9b4750e0c1d5fbbaa0cc60b" name="lib/LoginTasks/Task/RecoverDraft.php" role="horde" />
+   <file baseinstalldir="/" md5sum="6620c665094aaf6417dd81fe9a379d77" name="lib/LoginTasks/Task/RenameSentmailMonthly.php" role="horde" />
+   <file baseinstalldir="/" md5sum="8404e73c664dc0eac9d3a47f939ff5d6" name="lib/Mailbox/List/Track.php" role="horde" />
+   <file baseinstalldir="/" md5sum="55b842ff5193b98181e89c94664ad5a1" name="lib/Mailbox/List.php" role="horde" />
+   <file baseinstalldir="/" md5sum="ac1061cdf19ed86739eaf34d9dc58090" name="lib/Menu/Dimp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="7e570f1d1f66315ae816cdfbc8ce2a70" name="lib/Mime/Viewer/Alternative.php" role="horde" />
+   <file baseinstalldir="/" md5sum="45a33d07965d9a6db293ae091fc8726b" name="lib/Mime/Viewer/Appledouble.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9ae711f3ed5fd21d819ad31196665560" name="lib/Mime/Viewer/Audio.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c7244345147834edc91496902d838938" name="lib/Mime/Viewer/Enriched.php" role="horde" />
+   <file baseinstalldir="/" md5sum="7bbdbb9ef9b2a29568b127ee9d57c354" name="lib/Mime/Viewer/Externalbody.php" role="horde" />
+   <file baseinstalldir="/" md5sum="3547eabd37018084c3e0e4a7f762743d" name="lib/Mime/Viewer/Html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="8daa4ff67d81c932323f5a915b588cb0" name="lib/Mime/Viewer/Images.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a50c9e02ea04a9d98225157b71619d21" name="lib/Mime/Viewer/Itip.php" role="horde" />
+   <file baseinstalldir="/" md5sum="825523715c474a26a44be68ea49b04b6" name="lib/Mime/Viewer/Mdn.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9f9ef0887d6f31577a7eeb1b10b54f63" name="lib/Mime/Viewer/Partial.php" role="horde" />
+   <file baseinstalldir="/" md5sum="90f8b4116ffaa36aea9e05b0534b2b56" name="lib/Mime/Viewer/Pdf.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4625767cd581a34432fcea866b88bc16" name="lib/Mime/Viewer/Pgp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9194a86c81edae60a42c4feeeee84e64" name="lib/Mime/Viewer/Plain.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1b42c8b59dbf0ae60f94c71283ead3e2" name="lib/Mime/Viewer/Related.php" role="horde" />
+   <file baseinstalldir="/" md5sum="144ad625a6ecbb5bbd55ef5429750b68" name="lib/Mime/Viewer/Rfc822.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e8ae80f2c49337eb1f0874449b1d628b" name="lib/Mime/Viewer/Smil.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0c3e4bc1e68bb0d97f9303da7d7d91da" name="lib/Mime/Viewer/Smime.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e1f769710728f698b5148d50359d725a" name="lib/Mime/Viewer/Status.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1a1c1be915a15263e5d15e6de48f1d4f" name="lib/Mime/Viewer/Vcard.php" role="horde" />
+   <file baseinstalldir="/" md5sum="2c08279b537a32af1b6c9e58e55c6d1a" name="lib/Mime/Viewer/Video.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a23966bb6c9df5a322ec8a41413558cf" name="lib/Mime/Viewer/Zip.php" role="horde" />
+   <file baseinstalldir="/" md5sum="56a7f9b38c6e22d512f6ad4872c38e76" name="lib/Mime/Status.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b78419075c06c18375311f587315eff9" name="lib/Notification/Event/Status.php" role="horde" />
+   <file baseinstalldir="/" md5sum="dc17c0ab0c6540ea86335ca51e1fc82d" name="lib/Notification/Handler/Decorator/ImapAlerts.php" role="horde" />
+   <file baseinstalldir="/" md5sum="95cfbe74ef63bde9efb89969fde1fbe3" name="lib/Notification/Handler/Decorator/NewmailNotify.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1a68f05136947668939519fa5061802e" name="lib/Notification/Listener/AjaxStatus.php" role="horde" />
+   <file baseinstalldir="/" md5sum="3198b908b9b10b55437b9ef1d7eef13a" name="lib/Prefs/Identity.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a61fc43ef741bf1eff4e6c9b3d0c567d" name="lib/Prefs/Ui.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1247771f9ec1800afd272ee85b549669" name="lib/Quota/Base.php" role="horde" />
+   <file baseinstalldir="/" md5sum="2e99218bc589a2fb1a4d4df3b55f6883" name="lib/Quota/Command.php" role="horde" />
+   <file baseinstalldir="/" md5sum="59fc86b5b59379a3e4da00d49f032f23" name="lib/Quota/Hook.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f13cc060b6d41d86968556cd17e32af3" name="lib/Quota/Imap.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c60ec2a302182bc95030f0439c46a30a" name="lib/Quota/Maildir.php" role="horde" />
+   <file baseinstalldir="/" md5sum="3bd53b0026329ce1499da11e4fc50298" name="lib/Quota/Mdaemon.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4813a642e9d42d4b6c12171139ba3b73" name="lib/Quota/Mercury32.php" role="horde" />
+   <file baseinstalldir="/" md5sum="60bf833eabe53fc8f2c6b9fa3d51c4fb" name="lib/Quota/Null.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a2994b1b8c170532f24640b682e63dca" name="lib/Quota/Sql.php" role="horde" />
+   <file baseinstalldir="/" md5sum="559a6be6acba71f4943f8b48f0ab7b96" name="lib/Search/Element/Attachment.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f5211b0c010c1b47b2922fe538ed6bdc" name="lib/Search/Element/Autogenerated.php" role="horde" />
+   <file baseinstalldir="/" md5sum="dee12dd1b38ea5727bb0ee86c5bb5a7d" name="lib/Search/Element/Bulk.php" role="horde" />
+   <file baseinstalldir="/" md5sum="d224cd8e20bd2987a71eb0127ac4ae4d" name="lib/Search/Element/Contacts.php" role="horde" />
+   <file baseinstalldir="/" md5sum="12dc1552dff24f7e8ad29c487d5b760b" name="lib/Search/Element/Date.php" role="horde" />
+   <file baseinstalldir="/" md5sum="5579b702c132a84d42fba5edaf4ab149" name="lib/Search/Element/Flag.php" role="horde" />
+   <file baseinstalldir="/" md5sum="91dc3f5427ecb9d2dca028069ab00453" name="lib/Search/Element/Header.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c8d216c4cc5b9b5a494c8c0442680ff0" name="lib/Search/Element/Mailinglist.php" role="horde" />
+   <file baseinstalldir="/" md5sum="ed74b079b13bcf54424e5ad190e032d1" name="lib/Search/Element/Or.php" role="horde" />
+   <file baseinstalldir="/" md5sum="923f58901f51b8caa010be5a9e0f7fd9" name="lib/Search/Element/Personal.php" role="horde" />
+   <file baseinstalldir="/" md5sum="3858ae9895dafd3b074960807fda9ef5" name="lib/Search/Element/Recipient.php" role="horde" />
+   <file baseinstalldir="/" md5sum="5782138066fcf050d12762bbc059e2cf" name="lib/Search/Element/Size.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c8b04837718a2b8fab8e9355d4f99860" name="lib/Search/Element/Text.php" role="horde" />
+   <file baseinstalldir="/" md5sum="cf49c1dcabc1b648b488bddd8f60a179" name="lib/Search/Element/Within.php" role="horde" />
+   <file baseinstalldir="/" md5sum="63641e22e6e9b148b094acfb11176046" name="lib/Search/Filter/Attachment.php" role="horde" />
+   <file baseinstalldir="/" md5sum="d14a5232efe89e33584d1bc1424d6be2" name="lib/Search/Filter/Autogenerated.php" role="horde" />
+   <file baseinstalldir="/" md5sum="08e58667606116ea0760a66277770d41" name="lib/Search/Filter/Builtin.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c1ced495de55c849c33fee2afafe6668" name="lib/Search/Filter/Bulk.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c65e90bc6d90900a2c14aedf00f71fae" name="lib/Search/Filter/Contacts.php" role="horde" />
+   <file baseinstalldir="/" md5sum="5a0b8052c136fec2a0760f6e15e4f6f0" name="lib/Search/Filter/Mailinglist.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4b989521031e6f8abb71bd6da5734e7a" name="lib/Search/Filter/Personal.php" role="horde" />
+   <file baseinstalldir="/" md5sum="8e1c15ee0c17200db135f629f49484f3" name="lib/Search/Vfolder/Builtin.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a8e991dbffb2bb9add806151af926b32" name="lib/Search/Vfolder/Vinbox.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0f2e1effe7e6cc815253e1625ab81e2c" name="lib/Search/Vfolder/Vtrash.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a8e5a5029037db65257abfbc548695a6" name="lib/Search/Element.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4681fa159c3a9e58e496e5640f5bd083" name="lib/Search/Filter.php" role="horde" />
+   <file baseinstalldir="/" md5sum="80f438594e2c2f5a64cc550cdf9ded99" name="lib/Search/Query.php" role="horde" />
+   <file baseinstalldir="/" md5sum="ec714375d8d8b1a852119f38527d6b67" name="lib/Search/Vfolder.php" role="horde" />
+   <file baseinstalldir="/" md5sum="02aef10a19de16f447c2e101bf6232a0" name="lib/Sentmail/Base.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b626a9810528688025a34a0c501f3f38" name="lib/Sentmail/Null.php" role="horde" />
+   <file baseinstalldir="/" md5sum="623d7376696d6a3103d2b8e4bbe37221" name="lib/Sentmail/Sql.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b7a822fb2c9a84d4ec1ba02804d214fd" name="lib/Tree/Flist.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c9221517d79924b72bda4c8edfa48442" name="lib/Tree/Jquerymobile.php" role="horde" />
+   <file baseinstalldir="/" md5sum="6fbf42af8bf911a2115bc8cf1798d3b3" name="lib/Tree/Simplehtml.php" role="horde" />
+   <file baseinstalldir="/" md5sum="84c03af6f0e295fc1dc957c99ea27355" name="lib/Ui/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="d386b54d34129313b8028fb0c575b2ea" name="lib/Ui/Editor.php" role="horde" />
+   <file baseinstalldir="/" md5sum="62b7dbbdbafc5770a44022fbc36844e9" name="lib/Ui/Folder.php" role="horde" />
+   <file baseinstalldir="/" md5sum="6584e77777965131e25fe83ad9effead" name="lib/Ui/Headers.php" role="horde" />
+   <file baseinstalldir="/" md5sum="83f64fd44105bd50291e78e90eb76bb5" name="lib/Ui/Imageview.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a07fb1d66b45749510ba9414bcf34837" name="lib/Ui/Mailbox.php" role="horde" />
+   <file baseinstalldir="/" md5sum="aaaf56cc35cd7ad34a52b0d211727055" name="lib/Ui/Message.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9bf2d63d660da0bd7cb45af063cedb48" name="lib/Ui/Mimp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="65c1ae63439f9fb990f338e23bd8fa0e" name="lib/Ui/Search.php" role="horde" />
+   <file baseinstalldir="/" md5sum="8abfd3b0864eca0e25ad105f4c044dea" name="lib/Views/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="efb40b3c8cbef7cae8edf55c886bc723" name="lib/Views/ListMessages.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b586b38931a77400565a86584f93b73d" name="lib/Views/ShowMessage.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="lib/.htaccess" role="horde" />
+   <file baseinstalldir="/" md5sum="9c8c748d109d142efd5d692534621728" name="lib/Api.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0b322e3b7b2e9a19f8a923d9fba9489d" name="lib/Application.php" role="horde" />
+   <file baseinstalldir="/" md5sum="de30161b3619e5287c21ce954a4ba4cd" name="lib/Auth.php" role="horde" />
+   <file baseinstalldir="/" md5sum="7a818c61d4d994bbdbb9a78ce31c5408" name="lib/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="22290300eb30f4c34f42df022658fd2c" name="lib/Contents.php" role="horde" />
+   <file baseinstalldir="/" md5sum="5c54f5b966482788e83ee8455028820b" name="lib/Dimp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9de046d018bcb209042f8838cdf9b8a3" name="lib/Exception.php" role="horde" />
+   <file baseinstalldir="/" md5sum="cfa6692f74a9d978f85bec308e882619" name="lib/Filter.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1674c4a08206990abe5958c1e6077eeb" name="lib/Flags.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1716ca12a9be0720de5d875a42b061c2" name="lib/Imap.php" role="horde" />
+   <file baseinstalldir="/" md5sum="717f56cba75701a27ebb940f6f5607a4" name="lib/IMP.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1df25fd8ad8ded1ebc86f277606d9709" name="lib/Indices.php" role="horde" />
+   <file baseinstalldir="/" md5sum="262f56f9682c3792b222ddc8ce5ad1c3" name="lib/Mailbox.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b37de3ec6888d9c29cdb080c23c3be4a" name="lib/Maillog.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b82a3f9e2886dec7fdd7145498c8534d" name="lib/Message.php" role="horde" />
+   <file baseinstalldir="/" md5sum="7e7d9e5db10cb0e7535e5fe82996f5c2" name="lib/Quota.php" role="horde" />
+   <file baseinstalldir="/" md5sum="15c462109ccc4c4adf7c4c6ff08842cc" name="lib/Search.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f3dd039f56d9c38bc7259b356e341346" name="lib/Sentmail.php" role="horde" />
+   <file baseinstalldir="/" md5sum="2a1043d4e270732fa9a1fb9975551687" name="lib/Spam.php" role="horde" />
+   <file baseinstalldir="/" md5sum="13ed72b1970fae3df79f3cd3718445d9" name="lib/Test.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9c6f6cdbbcd78fa4166bc06839e87283" name="locale/ar/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="d72659052fc2b2276677c478460f2c49" name="locale/ar/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="f2d5d9c85764aa66f4e46c6f9e2ff530" name="locale/ar_OM/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="c05595b9648c69bdfad2a27a7884d3ab" name="locale/ar_OM/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="7c092b8e529c9338547df87d97ba553d" name="locale/bg/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="e0efd53bde67fbfbb7bcf3e7cd946ffc" name="locale/bg/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="9c7c62e9c23aecaba0d437919f5a096e" name="locale/bs/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="3b0d0f3ba5ecdd8bcf162c412fd32f51" name="locale/bs/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="1ecb8bdeb73d4d0aa521f2489aa9bf1d" name="locale/ca/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="0e11578dcd72796ad6dccc9da7cabb39" name="locale/ca/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="d9997445cc993cda89f92e1846d0c953" name="locale/ca/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="1b6a01b06b83f0747ee4d6a6da197289" name="locale/cs/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="36ba8926d69db9acf72b6bd10c66e641" name="locale/cs/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="5aa38f07f787a785b180efa95194879f" name="locale/cs/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="641a89f1264d0fd3db714de29374fc30" name="locale/da/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="3e7eab03eed1c5e6078d9a3f4069a27c" name="locale/da/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="b80defef79ca98875040c030d8e5f24a" name="locale/da/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="719bd6dee1ab73476f37f2e128aaf978" name="locale/de/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="fba5f7240cfc17427be2c4fafb990f9d" name="locale/de/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="541f763af5ed413bf1aee7565b00d13e" name="locale/de/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="2d9f4aa555bbe13a90124b217664a3b2" name="locale/el/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="98d330cd5de0871527a8b5f9a4f11319" name="locale/el/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="a7f1acbe25d06c6caad3cde3e62a722f" name="locale/el/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="c93a4a009ae70afbca3c704e938ab831" name="locale/en/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="11bfdf9c906f360b5e86f7b9302f2e86" name="locale/es/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="56e9acb6abd7d4761d91fb3402b8b5fc" name="locale/es/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="ca739f44ea182692abce99e345b54e6c" name="locale/es/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="7d322296fdbff1eb4bf727ff598031e0" name="locale/et/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="0b709ebb8bd9260e9203ed2e8e256232" name="locale/et/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="ac7747070082861c4bf7ffc8e947b3a7" name="locale/et/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="0ff3ec12b8cd1f259716d4ddf5a28ce2" name="locale/eu/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="5537e0e2747407f5ae8b1e8d259731b7" name="locale/eu/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="89dc65d37851dbb7d949015a01af5730" name="locale/eu/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="0b6a9149757132d17c5b8b4c76c44ce7" name="locale/fa/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="a4ca564f2e4497977f64cf72be1c2a90" name="locale/fa/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="3db4105dc897de7ec8e6a5361fa0232b" name="locale/fa/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="fdb3d0a7dd0dac383fd93be1d0987488" name="locale/fi/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="f67a81e9646786e099a42a10d42fc88f" name="locale/fi/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="18810e25998ab24f0f14e5dac2d3ce29" name="locale/fi/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="08600ed40ec888b47aac92c089f6b847" name="locale/fr/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="b4c25dfab8bb272b41d63da565b7fed1" name="locale/fr/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="facba4d767b0e508447a3f863b371276" name="locale/fr/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="5002a320f992a32b559be40277a3f745" name="locale/gl/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="c86350edac307e6db42876b2a67baad4" name="locale/gl/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="8381a2ca23ed66c966004488d8970674" name="locale/he/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="281a16e3b934676f644e76140176aef3" name="locale/he/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="f3709945a55a8a2dc3841846d63895c6" name="locale/hr/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="42a36231c7d7dca886c1bb9f51b5cfad" name="locale/hr/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="c76880a546d372230550438b079df03c" name="locale/hr/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="a04439edc9bfb423f35ff241651695cc" name="locale/hu/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="679235babbaef4ec10c50e73dd27253b" name="locale/hu/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="31ecf71734a4a6569273093bc7cea843" name="locale/hu/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="65b8ef86bfdce9a5ec8cac182b904650" name="locale/id/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="ef046626c595c45b1d5c7b16bdda6c19" name="locale/id/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="8051f7b57ab504d346e0bfb1ea1e3c17" name="locale/is/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="c092c56505d1ecdb9a95ac52f6d4be6a" name="locale/is/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="f97048d34344117bf3493876e6d3eb5d" name="locale/it/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="db49406afa7ec6b808699ed9a2dc7cf4" name="locale/it/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="657acb0e7e57bc05582766a832e86657" name="locale/it/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="721798abab8a1cb0e3ac91be48395ed8" name="locale/ja/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="83deb95d60005f5c79c83b89866f4b43" name="locale/ja/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="f430967474b16c01c64b811f71150cd8" name="locale/km/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="f2daf23e3150e3518cd80808f50bf6b3" name="locale/km/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="ea885889a3d78bcd28034a3621a3503a" name="locale/ko/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="755dadbc05be9f8d6c4dc30d815ac6af" name="locale/ko/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="aeab5b8a1d387efab4f16df238155ac4" name="locale/ko/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="791a46757e5b996dae371b7d1f699ab8" name="locale/lt/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="fd17ff280b002eb281078f23898223ec" name="locale/lt/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="1093b7d861d085b7826186db8127a2e6" name="locale/lv/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="db57e5ad88533cf28b3644095cc853a6" name="locale/lv/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="bc1a793c538197557c20b6494609965f" name="locale/lv/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="23ab26036f572088ad8da9ac281cd824" name="locale/mk/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="d9765390a201a08d0defcf765cb4b12c" name="locale/mk/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="de90c17f06e965e9e5194d321dd2cd02" name="locale/nb/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="b62db744a9c2abc6ee183b7a14510e9c" name="locale/nb/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="aeab5b8a1d387efab4f16df238155ac4" name="locale/nb/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="43793cd29980531783ddca7dd623a466" name="locale/nl/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="bdb76b9c9eb20bcf2a13616473d93f42" name="locale/nl/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="5d43fafdebf5779e16528e99bdb5550e" name="locale/nl/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="edb18c0e5a9321262ccadfe8a3d50625" name="locale/nn/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="f09446fd675c47ec6dcec07945a7e7d1" name="locale/nn/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="001491350b2d99c23eae9bd3824eeddf" name="locale/pl/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="c9113d25148803bda5798b748564a875" name="locale/pl/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="aeab5b8a1d387efab4f16df238155ac4" name="locale/pl/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="332cc2be74ea47c072d48ed9852ad9c2" name="locale/pt/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="9aa96e924472ad303e0515d9ded10ae7" name="locale/pt/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="ac7747070082861c4bf7ffc8e947b3a7" name="locale/pt/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="06b4db2f1fd8f7d301d48a3115d6d306" name="locale/pt_BR/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="a676d6a0caa2ee1cf7bdc6a7dd370220" name="locale/pt_BR/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="da55dcdf034d55f4a86b3acfb53b8b4b" name="locale/pt_BR/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="485fe558d2f0a39ce5c18453347a0997" name="locale/ro/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="75fe10d5445325eb980305feabc6e2c6" name="locale/ro/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="5ede5ba69082050edfebbe23272fd609" name="locale/ru/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="ae0f9fdf3014f043062085a39e10e3f4" name="locale/ru/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="a9ac3fd73fc9132bb3d0f0c2fb1ea0b2" name="locale/ru/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="55b802a8b0cdfbb7136b75f96cd1c3d5" name="locale/sk/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="6ce7c18c0144186f27990e09e6f1b5ef" name="locale/sk/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="b972d6921ca6e8665849d7a4151a5f01" name="locale/sk/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="660ee95f72a2166d5fb0a9662ffea69e" name="locale/sl/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="835811f0d9fd1c0c4684fd72932fe2ff" name="locale/sl/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="9b6590cd80952a873d1ddcbd1cb1f02d" name="locale/sv/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="1a75211655bde587fb417d99104ab134" name="locale/sv/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="aeab5b8a1d387efab4f16df238155ac4" name="locale/sv/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="8edc4d30a9cdcc145ab013d56915e7f8" name="locale/th/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="9ccdf4dc4044db3d3b4b033c59b40972" name="locale/th/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="5038acb90fb6d9324d475c09f5e50e2a" name="locale/tr/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="820d7415a20b8b39f663fea0ec2aed31" name="locale/tr/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="0b1e0dda7ea1159902d31823794b8897" name="locale/tr/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="5070d69fac7f3158c3c803f41365d794" name="locale/uk/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="d74f53c4379020e899fcb2b85f22c755" name="locale/uk/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="aeab5b8a1d387efab4f16df238155ac4" name="locale/uk/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="b9e94c658d2e73e8ecbd78a144c89867" name="locale/zh_CN/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="b36cdbdabd036842a499eef53c8af9c5" name="locale/zh_CN/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="bf889cbea8dc1a696845672a813198cd" name="locale/zh_CN/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="65a74c319c98195ed07aa22329b3052b" name="locale/zh_TW/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="e5a2b7c584c5c3ea2394aaf91ee48e5e" name="locale/zh_TW/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="b010b591859bafff555dcbaca9164dff" name="locale/zh_TW/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="locale/.htaccess" role="horde" />
+   <file baseinstalldir="/" md5sum="dac2d443a4c294cc6970070695ace554" name="locale/imp.pot" role="horde" />
+   <file baseinstalldir="/" md5sum="07e544eb6ba675253387458c8b4165ae" name="migration/1_imp_base_tables.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f71ff79e8629eb92711ded33c57c9edd" name="migration/2_imp_autoincrement_sentmail.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b96b4a21db9865bfbed78a0e5045378a" name="templates/dimp/compose/compose-base.html" role="horde" />
+   <file baseinstalldir="/" md5sum="252e7f167f0c4863d54af063777bbd10" name="templates/dimp/compose/compose.html" role="horde" />
+   <file baseinstalldir="/" md5sum="7e1b7f2719b7c36ac5b96446a280ac81" name="templates/dimp/message/message.html" role="horde" />
+   <file baseinstalldir="/" md5sum="8a5d33a1b9d4da11b631fb440b9c887c" name="templates/dimp/index.inc" role="horde" />
+   <file baseinstalldir="/" md5sum="18f361ee1d3c8da738c7ef0ec94932cc" name="templates/dimp/javascript_defs.php" role="horde" />
+   <file baseinstalldir="/" md5sum="5581b06287314a4e608fbb9f99bed21d" name="templates/imp/compose/compose.html" role="horde" />
+   <file baseinstalldir="/" md5sum="f0f2701fa5b829d91b29a75623d4e86e" name="templates/imp/compose/redirect.html" role="horde" />
+   <file baseinstalldir="/" md5sum="9a1bf18b64d0cfdbef969dd17a983a03" name="templates/imp/compose/success.html" role="horde" />
+   <file baseinstalldir="/" md5sum="ba258f08ac2ccd7a149fc2c8caaa1423" name="templates/imp/contacts/contacts.html" role="horde" />
+   <file baseinstalldir="/" md5sum="65d424fb17af5d1d1ea2990ef168ac1d" name="templates/imp/flist/flist.html" role="horde" />
+   <file baseinstalldir="/" md5sum="303d3e5d5a386f00e42dbb80ee3794bd" name="templates/imp/folders/actions.html" role="horde" />
+   <file baseinstalldir="/" md5sum="b92fea84640ebd4d7e7430c5160f4d05" name="templates/imp/folders/folders_confirm.html" role="horde" />
+   <file baseinstalldir="/" md5sum="9e68a84c0a80ca9950f2e15493afa0b0" name="templates/imp/folders/folders_size.html" role="horde" />
+   <file baseinstalldir="/" md5sum="952fcebbe6130d12a6fe47363c374471" name="templates/imp/folders/head.html" role="horde" />
+   <file baseinstalldir="/" md5sum="ba666ed577a16f2f1e802768aa5b6c6d" name="templates/imp/folders/import.html" role="horde" />
+   <file baseinstalldir="/" md5sum="1b8f7b05e27361149238ad5d19cb421a" name="templates/imp/mailbox/actions.html" role="horde" />
+   <file baseinstalldir="/" md5sum="848e24846a35252eb5ccf62c30d274dc" name="templates/imp/mailbox/actions_deleted.html" role="horde" />
+   <file baseinstalldir="/" md5sum="eafb848e5ccfd8d99737a5551cfa9518" name="templates/imp/mailbox/empty_mailbox.html" role="horde" />
+   <file baseinstalldir="/" md5sum="dac8b9dd9568b229b8ab9222995c1329" name="templates/imp/mailbox/form_start.html" role="horde" />
+   <file baseinstalldir="/" md5sum="827fbd149e34921a8e87c9d278f0d12a" name="templates/imp/mailbox/header.html" role="horde" />
+   <file baseinstalldir="/" md5sum="d21497ff458098b60388acbd06754233" name="templates/imp/mailbox/mailbox.html" role="horde" />
+   <file baseinstalldir="/" md5sum="c38bb5642812fe3a08ad8b014c6a131e" name="templates/imp/mailbox/message_headers.html" role="horde" />
+   <file baseinstalldir="/" md5sum="be375bebccb25fb81d246a4e8a366464" name="templates/imp/mailbox/navbar.html" role="horde" />
+   <file baseinstalldir="/" md5sum="663e53fec2d36debe5c790ad30db8e4b" name="templates/imp/mailbox/searchfolder.html" role="horde" />
+   <file baseinstalldir="/" md5sum="e53422f506197d5a8899e08baef716ba" name="templates/imp/menu/menu.html" role="horde" />
+   <file baseinstalldir="/" md5sum="2e710e6ce055a66f4ee7b0510313b95d" name="templates/imp/message/message.html" role="horde" />
+   <file baseinstalldir="/" md5sum="0ec9a0f33fbe0139673145688fef0f92" name="templates/imp/message/navbar_actions.html" role="horde" />
+   <file baseinstalldir="/" md5sum="deecb7e37f605cc9092c1653455e1140" name="templates/imp/message/navbar_navigate.html" role="horde" />
+   <file baseinstalldir="/" md5sum="cc040a1d8c04dfcadfc6b3a60a4bc118" name="templates/imp/message/navbar_top.html" role="horde" />
+   <file baseinstalldir="/" md5sum="d7372631d45a8d136518afcd6ec2a3ff" name="templates/imp/search/search-all.html" role="horde" />
+   <file baseinstalldir="/" md5sum="955c1e896726bcf61098afe5c09fbea8" name="templates/imp/search/search-basic.html" role="horde" />
+   <file baseinstalldir="/" md5sum="d2b7502051692dc29f5fd0ab7411c036" name="templates/imp/search/search.html" role="horde" />
+   <file baseinstalldir="/" md5sum="be1c104a740cc9bbc32122bdb99a6fce" name="templates/imp/thread/thread.html" role="horde" />
+   <file baseinstalldir="/" md5sum="6befbfae3c5f57f60f19064f652f7ca0" name="templates/imp/javascript_defs.php" role="horde" />
+   <file baseinstalldir="/" md5sum="69af5bfceadf181895d2fa8c2c8cbfd3" name="templates/mimp/compose/compose.html" role="horde" />
+   <file baseinstalldir="/" md5sum="a136b07031cf72b7444cd1123f0ba625" name="templates/mimp/folders/folders.html" role="horde" />
+   <file baseinstalldir="/" md5sum="ef24d1792e31b13b60866df63a953ed0" name="templates/mimp/mailbox/mailbox.html" role="horde" />
+   <file baseinstalldir="/" md5sum="8a7b8b28a619397ccc6ebe418afdb707" name="templates/mimp/mailbox/search.html" role="horde" />
+   <file baseinstalldir="/" md5sum="2a8b53b931a0996ca414e10d0c0a17f6" name="templates/mimp/message/message.html" role="horde" />
+   <file baseinstalldir="/" md5sum="59b80b1b89012e40ba35a93ccb107d84" name="templates/mimp/message/part.html" role="horde" />
+   <file baseinstalldir="/" md5sum="170a07e2652f8833dfdaaa9360c2e98a" name="templates/mobile/folders.html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="3e6c8ad9bdad15e4261b4a504c95d6af" name="templates/mobile/head.html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1b7e90863eb9a6397cd2a4805db77ebc" name="templates/mobile/javascript_defs.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4994d8584f1309dbfbe916e50d5dd8a8" name="templates/mobile/mailbox.html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="74ad7cea1156df470071eba4e3e26598" name="templates/mobile/message.html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="af1254eb579b8e2c23f69c764d97f963" name="templates/mobile/notice.html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="d99d26c315837fd8acc7d75671504744" name="templates/pgp/import_key.html" role="horde" />
+   <file baseinstalldir="/" md5sum="4d032c82b6c9252366b4f7155a0d5b8a" name="templates/prefs/acl.html" role="horde" />
+   <file baseinstalldir="/" md5sum="3521d97645218786e4cf6ebd789938f7" name="templates/prefs/drafts.html" role="horde" />
+   <file baseinstalldir="/" md5sum="a4b934eaebdc696443b04dcf348a6a3b" name="templates/prefs/encrypt.html" role="horde" />
+   <file baseinstalldir="/" md5sum="363a60282c460f9fb081bdabc46e041e" name="templates/prefs/flags.html" role="horde" />
+   <file baseinstalldir="/" md5sum="2629bf8deaf2a51e65d9080f73199322" name="templates/prefs/initialpage.html" role="horde" />
+   <file baseinstalldir="/" md5sum="f476ba85d0c5d1e9ceb21d81dbbdc715" name="templates/prefs/mailto.html" role="horde" />
+   <file baseinstalldir="/" md5sum="6516025ed6e841bf45691c939861e8fb" name="templates/prefs/newmailaudio.html" role="horde" />
+   <file baseinstalldir="/" md5sum="eabd3aa6a1e639ec8c96409baae65f55" name="templates/prefs/pgpprivatekey.html" role="horde" />
+   <file baseinstalldir="/" md5sum="ae53f85c9d677f39bf9380585be0324f" name="templates/prefs/pgppublickey.html" role="horde" />
+   <file baseinstalldir="/" md5sum="10ac3ff0888ad07fe8a125928d2e93cb" name="templates/prefs/searches.html" role="horde" />
+   <file baseinstalldir="/" md5sum="11102cc41d1b95ef66c2ead15674289f" name="templates/prefs/sentmail.html" role="horde" />
+   <file baseinstalldir="/" md5sum="44b18581854354dc6d4b0e1dfe53348c" name="templates/prefs/signaturehtml.html" role="horde" />
+   <file baseinstalldir="/" md5sum="3970e53f94f293a536c6f23121e108cb" name="templates/prefs/smimeprivatekey.html" role="horde" />
+   <file baseinstalldir="/" md5sum="c2975f97c28941bcc8a98b2ed125aa6e" name="templates/prefs/smimepublickey.html" role="horde" />
+   <file baseinstalldir="/" md5sum="fefa139b13519adfa97a21c01dc357f8" name="templates/prefs/spam.html" role="horde" />
+   <file baseinstalldir="/" md5sum="4fef816fb030f79d63f2dca319c08315" name="templates/prefs/specialuse.html" role="horde" />
+   <file baseinstalldir="/" md5sum="0a93ba6a52c4c7836c178fce8e6904f3" name="templates/prefs/stationery.html" role="horde" />
+   <file baseinstalldir="/" md5sum="ef6d38c49a7c921095b44c3be5f04eaa" name="templates/prefs/trash.html" role="horde" />
+   <file baseinstalldir="/" md5sum="e3c0908087b7cb50293c49e675d1da0f" name="templates/print/headers.html" role="horde" />
+   <file baseinstalldir="/" md5sum="4396c6d5cd52399509dc477fab54a450" name="templates/quota/quota.html" role="horde" />
+   <file baseinstalldir="/" md5sum="b550d37a912e1e2b79279ddf2dc77676" name="templates/rss/mailbox.rss" role="horde" />
+   <file baseinstalldir="/" md5sum="f19d223bbee89d4da19e4d52a44b680a" name="templates/saveimage/saveimage.html" role="horde" />
+   <file baseinstalldir="/" md5sum="ebb9d5b0ca433aac40eaf3121d2d448d" name="templates/smime/import_key.html" role="horde" />
+   <file baseinstalldir="/" md5sum="bd16a5c905c6d6f669a3e0fbbb51d3d7" name="templates/test/mailserver.inc" role="horde" />
+   <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="templates/.htaccess" role="horde" />
+   <file baseinstalldir="/" md5sum="adf0aceec9ec841cc26fe41ddce1fa6e" name="templates/common-header.inc" role="horde" />
+   <file baseinstalldir="/" md5sum="0ef1dc793dd41d2f63ef70ff2e2452c5" name="test/Imp/fixtures/maildirsize" role="test" />
+   <file baseinstalldir="/" md5sum="ab87b95cc175c9d9a12977ed914c84f4" name="test/Imp/Stub/HtmlViewer.php" role="test" />
+   <file baseinstalldir="/" md5sum="00af613bf64df099a4aa54149688273a" name="test/Imp/Unit/Mime/Viewer/HtmlTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="3fb944fe1dea9cd0dd04ad50e758b5cd" name="test/Imp/Unit/Mime/Viewer/ItipTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="b710cf7554e29df5f2a7eb9e5c3187ff" name="test/Imp/Unit/ComposeTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="f6cbc3008fcf0d05287a26287b7e2385" name="test/Imp/Unit/QuotaTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="fbd6e61dde4ab49de8b09ac0f8717d5b" name="test/Imp/AllTests.php" role="test" />
+   <file baseinstalldir="/" md5sum="e015df80da22d842442f4a9531479fb0" name="test/Imp/Autoload.php" role="test" />
+   <file baseinstalldir="/" md5sum="9632897bd02176a432214d7b07ad9747" name="test/Imp/phpunit.xml" role="test" />
+   <file baseinstalldir="/" md5sum="e7444809e9e2144f29675c8255abe316" name="themes/azur/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="dd1bc73f24316709e0f0a184bf2e9d8d" name="themes/bluemoon/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="c31a18d0bdf25d9030072a1e97c1b34f" name="themes/bluewhite/dimp/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="3e790e73ad834834f2e92ef52f59338c" name="themes/bluewhite/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="c65c0b2b497db0c3b37c87502a5c2fe4" name="themes/brown/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="5c7334eba73083ed13ba4ccf4dd48dbe" name="themes/burntorange/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="4463e585462cda88414877476ac38268" name="themes/cornflower/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="18f424c2ef607281a7dd5eca61d368e4" name="themes/default/dimp/ie7.css" role="horde" />
+   <file baseinstalldir="/" md5sum="a6c691328e0510d42cb75e8caec52305" name="themes/default/dimp/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="a0eee47c1bd745ca6ff81d120cf1e167" name="themes/default/graphics/folders/create.png" role="horde" />
+   <file baseinstalldir="/" md5sum="3fa0aaa78fa33648f81e3353ac9d45f3" name="themes/default/graphics/folders/delete.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e062b2b4ea44510a85ce4bdf62df427d" name="themes/default/graphics/folders/drafts.png" role="horde" />
+   <file baseinstalldir="/" md5sum="0f92e6bd6a2fb8a8c196ccafa55c7e69" name="themes/default/graphics/folders/edit.png" role="horde" />
+   <file baseinstalldir="/" md5sum="a60651c6fbed56d1648d7ff700c54709" name="themes/default/graphics/folders/folder.png" role="horde" />
+   <file baseinstalldir="/" md5sum="17213fa451635675f651dd075904ea9f" name="themes/default/graphics/folders/inbox.png" role="horde" />
+   <file baseinstalldir="/" md5sum="45ab5d288f6c2af596a43aa2db71cc8d" name="themes/default/graphics/folders/minus.png" role="horde" />
+   <file baseinstalldir="/" md5sum="a970fad5605cb9c7a0337122db4b35c0" name="themes/default/graphics/folders/open.png" role="horde" />
+   <file baseinstalldir="/" md5sum="32e27573e8027c6838bd8de71b025a68" name="themes/default/graphics/folders/plus.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b8fe85ebc51459aecd0523e1f91b5a1d" name="themes/default/graphics/folders/sent.png" role="horde" />
+   <file baseinstalldir="/" md5sum="ad19dd9454ea538a87ad321a1c19088f" name="themes/default/graphics/folders/spam.png" role="horde" />
+   <file baseinstalldir="/" md5sum="5eecff48f390f525013dd0dd441576ac" name="themes/default/graphics/folders/trash.png" role="horde" />
+   <file baseinstalldir="/" md5sum="4489177cae35a78baeecaffe5763d128" name="themes/default/graphics/mime/apple.png" role="horde" />
+   <file baseinstalldir="/" md5sum="7a02f7298fe6260493dedc67d417fb51" name="themes/default/graphics/mime/compressed.png" role="horde" />
+   <file baseinstalldir="/" md5sum="df239fc60a5e2c78b2256fd78d4bf67a" name="themes/default/graphics/mime/itip.png" role="horde" />
+   <file baseinstalldir="/" md5sum="2eed2e77668a1cf5e7a7af2ca3e87b7b" name="themes/default/graphics/nav/first-grey.png" role="horde" />
+   <file baseinstalldir="/" md5sum="c79a11426a25058bec3648aecf363881" name="themes/default/graphics/nav/first.png" role="horde" />
+   <file baseinstalldir="/" md5sum="d73ff336785c1697c76cf0ee3d6f702a" name="themes/default/graphics/nav/last-grey.png" role="horde" />
+   <file baseinstalldir="/" md5sum="df32f89c616ea6bc19f9307cd6a8b7e1" name="themes/default/graphics/nav/last.png" role="horde" />
+   <file baseinstalldir="/" md5sum="c4553d3974cff2bb80128a7d6636e3c3" name="themes/default/graphics/nav/left-grey.png" role="horde" />
+   <file baseinstalldir="/" md5sum="1fa42dc0937ebfcbbb4598c32d08e4f7" name="themes/default/graphics/nav/left.png" role="horde" />
+   <file baseinstalldir="/" md5sum="94991b58ba99121ee397bf5136e2719c" name="themes/default/graphics/nav/right-grey.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e7f71e6b181e3f49d4cac8b0b3696c06" name="themes/default/graphics/nav/right.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e3d2654138d9f7bf7a07b05382168b34" name="themes/default/graphics/addressbook_add.png" role="horde" />
+   <file baseinstalldir="/" md5sum="52b2d9575fc99a812e5d2ef5f4ec9e54" name="themes/default/graphics/addressbook_browse.png" role="horde" />
+   <file baseinstalldir="/" md5sum="0ca53de18913e2def5460b0e18c3b296" name="themes/default/graphics/add_contact.png" role="horde" />
+   <file baseinstalldir="/" md5sum="25b939c597a98aa5aba30a09837c7065" name="themes/default/graphics/application_tile_horizontal.png" role="horde" />
+   <file baseinstalldir="/" md5sum="7ba946e87454b0ac0ea55053ab8490eb" name="themes/default/graphics/application_tile_vertical.png" role="horde" />
+   <file baseinstalldir="/" md5sum="8a1d150d71c9f1a84787e5bc7952d1aa" name="themes/default/graphics/arrow_collapsed.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e99ff1e4b812890c8aa6f83906b729c1" name="themes/default/graphics/arrow_down.png" role="horde" />
+   <file baseinstalldir="/" md5sum="817a2194bd7cf425d3133777eec7e4f9" name="themes/default/graphics/arrow_expanded.png" role="horde" />
+   <file baseinstalldir="/" md5sum="3053e88ee8d03705e4f5beb3ad8ca444" name="themes/default/graphics/arrow_up.png" role="horde" />
+   <file baseinstalldir="/" md5sum="dc5d192fbc07db59c0d1dc6ff529595f" name="themes/default/graphics/attachment.png" role="horde" />
+   <file baseinstalldir="/" md5sum="9bb5ed164d5c74bbfd3011c4e2798553" name="themes/default/graphics/backhead_orderby.png" role="horde" />
+   <file baseinstalldir="/" md5sum="f29c025a68354a3687f496409285ad42" name="themes/default/graphics/backhead_r.png" role="horde" />
+   <file baseinstalldir="/" md5sum="09f37e656205f6bb1df5bd3b93e84af6" name="themes/default/graphics/backhead_s2.png" role="horde" />
+   <file baseinstalldir="/" md5sum="c5f2556991cb5179876b76697db4ba4d" name="themes/default/graphics/backhead_shadow.png" role="horde" />
+   <file baseinstalldir="/" md5sum="c5f2abbe98ced032acec01889e576cae" name="themes/default/graphics/blacklist.png" role="horde" />
+   <file baseinstalldir="/" md5sum="dddf09dc4d5a43ce9fdb00add9126fc7" name="themes/default/graphics/calendar.png" role="horde" />
+   <file baseinstalldir="/" md5sum="bb6604b03001c856c143b06ee0d40f38" name="themes/default/graphics/checkbox_off.png" role="horde" />
+   <file baseinstalldir="/" md5sum="f61ab7827ab18de6c26feed96604127a" name="themes/default/graphics/checkbox_on.png" role="horde" />
+   <file baseinstalldir="/" md5sum="4ed7d83bab082e2e8c9d5d205968369a" name="themes/default/graphics/checkbox_over.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e6563422d255f45ad3053a3bfd508113" name="themes/default/graphics/checkmail.png" role="horde" />
+   <file baseinstalldir="/" md5sum="baa226ff6e9d67eae8f1ab31adb0a75c" name="themes/default/graphics/close.png" role="horde" />
+   <file baseinstalldir="/" md5sum="80a9fc4858acb057fb3552a22198b76f" name="themes/default/graphics/compose.png" role="horde" />
+   <file baseinstalldir="/" md5sum="840093d521f20d5c9f5f3e334cd532f3" name="themes/default/graphics/delete.png" role="horde" />
+   <file baseinstalldir="/" md5sum="1c32076ff613bcb98f98bf86c55f1582" name="themes/default/graphics/download.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e062b2b4ea44510a85ce4bdf62df427d" name="themes/default/graphics/drafts.png" role="horde" />
+   <file baseinstalldir="/" md5sum="c5c02f585520d6306b4ca82cc23446cb" name="themes/default/graphics/dragHandle.png" role="horde" />
+   <file baseinstalldir="/" md5sum="bade0706194e27ab7cca951a998b792b" name="themes/default/graphics/dragHandleVert.png" role="horde" />
+   <file baseinstalldir="/" md5sum="8932d7e30454f32ca3f6b448107b06ef" name="themes/default/graphics/edit.png" role="horde" />
+   <file baseinstalldir="/" md5sum="6b4f159c7fe31757ae76847c5b9de4a7" name="themes/default/graphics/empty_spam.png" role="horde" />
+   <file baseinstalldir="/" md5sum="6b4f159c7fe31757ae76847c5b9de4a7" name="themes/default/graphics/empty_trash.png" role="horde" />
+   <file baseinstalldir="/" md5sum="7857c5f0db13bd54afc830f44f8fa9d6" name="themes/default/graphics/encrypted.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b10db21f7eca1b6783ab8a0e782e0565" name="themes/default/graphics/favicon.ico" role="horde" />
+   <file baseinstalldir="/" md5sum="72fd9767a3855258438d16e8eeba4183" name="themes/default/graphics/fetchmail.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e6730c34dc831c75188f676fd675f703" name="themes/default/graphics/filters.png" role="horde" />
+   <file baseinstalldir="/" md5sum="2fdf5c380bbcc30eff7c0e3a410860b6" name="themes/default/graphics/forward.png" role="horde" />
+   <file baseinstalldir="/" md5sum="be305cf2c623808fa5934aed9722db65" name="themes/default/graphics/gallery.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e7c3c9ba6e4b886a3d0d3c55ce36d9b3" name="themes/default/graphics/group.png" role="horde" />
+   <file baseinstalldir="/" md5sum="0e4f04e8ab996b1158e2ee79b803f0ea" name="themes/default/graphics/ham.png" role="horde" />
+   <file baseinstalldir="/" md5sum="3e822b3509314c80cebef9d8eaedebd8" name="themes/default/graphics/help.png" role="horde" />
+   <file baseinstalldir="/" md5sum="c325c7489f8268c8602adb0f710438b3" name="themes/default/graphics/ico_message_off.png" role="horde" />
+   <file baseinstalldir="/" md5sum="17213fa451635675f651dd075904ea9f" name="themes/default/graphics/imp.png" role="horde" />
+   <file baseinstalldir="/" md5sum="8b7a2f3eeb29a81c6d4b881c3c338b2d" name="themes/default/graphics/info_icon.png" role="horde" />
+   <file baseinstalldir="/" md5sum="24ecdb43c0923c3df37831bc873ce83e" name="themes/default/graphics/key_down.png" role="horde" />
+   <file baseinstalldir="/" md5sum="4fa97bb40a6c65622120bd25db0124b2" name="themes/default/graphics/key_up.png" role="horde" />
+   <file baseinstalldir="/" md5sum="dd6b7b0bf5c3af22499abc0a9ee1e1b2" name="themes/default/graphics/loading.gif" role="horde" />
+   <file baseinstalldir="/" md5sum="71b3734fd5f7dc0b27f39da2c9078e88" name="themes/default/graphics/locked.png" role="horde" />
+   <file baseinstalldir="/" md5sum="bb8f98cf4dae85a5e250c0d5133a4ef6" name="themes/default/graphics/logo.png" role="horde" />
+   <file baseinstalldir="/" md5sum="6d1fbd36dd03d57b86dd9d772b3710b7" name="themes/default/graphics/logout.png" role="horde" />
+   <file baseinstalldir="/" md5sum="3d971b875be2b5049ab8707e08a18c63" name="themes/default/graphics/mail_answered.png" role="horde" />
+   <file baseinstalldir="/" md5sum="ace01c4dd22d3648b4b963ffd68fcb80" name="themes/default/graphics/mail_clearflag.png" role="horde" />
+   <file baseinstalldir="/" md5sum="840093d521f20d5c9f5f3e334cd532f3" name="themes/default/graphics/mail_deleted.png" role="horde" />
+   <file baseinstalldir="/" md5sum="cf7fcf6c5b10d84e874f47840cd7cfb0" name="themes/default/graphics/mail_draft.png" role="horde" />
+   <file baseinstalldir="/" md5sum="d31b17d4bcbb7680d6ac80849905e5d3" name="themes/default/graphics/mail_flagged.png" role="horde" />
+   <file baseinstalldir="/" md5sum="2fdf5c380bbcc30eff7c0e3a410860b6" name="themes/default/graphics/mail_forwarded.png" role="horde" />
+   <file baseinstalldir="/" md5sum="d2da4da3724d48fd5a94cd3c4cd4d3f8" name="themes/default/graphics/mail_personal.png" role="horde" />
+   <file baseinstalldir="/" md5sum="1b5515dda6e9458e76653248bcd66243" name="themes/default/graphics/mail_priority_high.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b2b9c35f4195cc21906829911d422ba7" name="themes/default/graphics/mail_priority_low.png" role="horde" />
+   <file baseinstalldir="/" md5sum="3dac38b6280c319bec87428eb0c1de63" name="themes/default/graphics/mail_seen.png" role="horde" />
+   <file baseinstalldir="/" md5sum="fb6fe9caf08f63cd79f89cfbce5af33b" name="themes/default/graphics/mail_unseen.png" role="horde" />
+   <file baseinstalldir="/" md5sum="adf6f9178698db5903ef1d014d772432" name="themes/default/graphics/message_source.png" role="horde" />
+   <file baseinstalldir="/" md5sum="6afc9869e7691017af088e27881b8227" name="themes/default/graphics/mini-error.png" role="horde" />
+   <file baseinstalldir="/" md5sum="912f4786ada8b078c358a665f521c951" name="themes/default/graphics/newmail.png" role="horde" />
+   <file baseinstalldir="/" md5sum="63371855a94298b9f1a4050bfcec96a6" name="themes/default/graphics/newwin.png" role="horde" />
+   <file baseinstalldir="/" md5sum="23f920453babda462ab5ab84130b1932" name="themes/default/graphics/plus.png" role="horde" />
+   <file baseinstalldir="/" md5sum="0da58eb459b492842ea9842969bd27f8" name="themes/default/graphics/popdown.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b190dab29da29423a686ce92b94e3f76" name="themes/default/graphics/prefs.png" role="horde" />
+   <file baseinstalldir="/" md5sum="809d6bd87ccc15013fe6e94d711b957f" name="themes/default/graphics/preview.png" role="horde" />
+   <file baseinstalldir="/" md5sum="bfd5d81f549c7a51cd0c04acf345eda1" name="themes/default/graphics/print.png" role="horde" />
+   <file baseinstalldir="/" md5sum="56b712271d5e759429aa5bfc66e8a73b" name="themes/default/graphics/quotaback.jpg" role="horde" />
+   <file baseinstalldir="/" md5sum="436d9909ce8ef733864673b7f70bd9a6" name="themes/default/graphics/quotauncover.gif" role="horde" />
+   <file baseinstalldir="/" md5sum="94f8e632fcf2191c8ad5d76acdaad255" name="themes/default/graphics/reload.png" role="horde" />
+   <file baseinstalldir="/" md5sum="86f645596dbae0badc3e6ab9458b30a6" name="themes/default/graphics/reply.png" role="horde" />
+   <file baseinstalldir="/" md5sum="86f645596dbae0badc3e6ab9458b30a6" name="themes/default/graphics/replyall.png" role="horde" />
+   <file baseinstalldir="/" md5sum="13e27403753c5d771be0171357354bf6" name="themes/default/graphics/sbcursor_bottom.png" role="horde" />
+   <file baseinstalldir="/" md5sum="20f5af5be5cecf93263997273974d5bb" name="themes/default/graphics/sbcursor_top.png" role="horde" />
+   <file baseinstalldir="/" md5sum="8de2985ea0e97621c12fafe5ca9fdbea" name="themes/default/graphics/scroller.png" role="horde" />
+   <file baseinstalldir="/" md5sum="d07c0bfb7d79138f1fdc92a43d77b7cf" name="themes/default/graphics/scroller_back.png" role="horde" />
+   <file baseinstalldir="/" md5sum="cc1534f53f9e36c0168ebd98e95c4cd6" name="themes/default/graphics/search.png" role="horde" />
+   <file baseinstalldir="/" md5sum="18b06a5af5b8aade99c6daf85b72deb0" name="themes/default/graphics/select.png" role="horde" />
+   <file baseinstalldir="/" md5sum="71b264771750d44ae60017606c2fb2d9" name="themes/default/graphics/shared.png" role="horde" />
+   <file baseinstalldir="/" md5sum="7857c5f0db13bd54afc830f44f8fa9d6" name="themes/default/graphics/signed.png" role="horde" />
+   <file baseinstalldir="/" md5sum="f008ca055b833e73da6f644532cd88f9" name="themes/default/graphics/sortdown.png" role="horde" />
+   <file baseinstalldir="/" md5sum="92e42e96d4574921c61eb2c2996f2104" name="themes/default/graphics/sortup.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e0f9f07ef8a1ea2a2b813298834af936" name="themes/default/graphics/spacer_red.png" role="horde" />
+   <file baseinstalldir="/" md5sum="00dfa6b20626ede9831c09df615c4936" name="themes/default/graphics/spam.png" role="horde" />
+   <file baseinstalldir="/" md5sum="de18660a7a6e5eb7109cf819d2d7d727" name="themes/default/graphics/spellcheck.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e12cf623da6d51c77cab18416aa9ba00" name="themes/default/graphics/undelete.png" role="horde" />
+   <file baseinstalldir="/" md5sum="248c1dedf4cc2bdefd354a6d8b1f6bd7" name="themes/default/graphics/warning.png" role="horde" />
+   <file baseinstalldir="/" md5sum="7556861d3386d9f56c987a65d6ee2137" name="themes/default/graphics/whitelist.png" role="horde" />
+   <file baseinstalldir="/" md5sum="d6c06038f37ef5dc618f6d0067d77bd9" name="themes/default/mimp/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="268a98ce0b447ff38f09a38a2d4197a6" name="themes/default/ie6_or_less.css" role="horde" />
+   <file baseinstalldir="/" md5sum="0794180793928d0fa16b90bc12a52188" name="themes/default/ie7.css" role="horde" />
+   <file baseinstalldir="/" md5sum="d418413c499be2482c817eaa9ac37b30" name="themes/default/mobile.css" role="horde" />
+   <file baseinstalldir="/" md5sum="51e9f1715a025dfd828ed4191017a123" name="themes/default/rtl.css" role="horde" />
+   <file baseinstalldir="/" md5sum="02414dc471add67dcb451262542c0e95" name="themes/default/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="998ee8fbff37d76c27604f286b027efb" name="themes/fadetogreen/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="922796098b3597af9e23052c26356b42" name="themes/gennevilliers/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="3f9707f9bfcd4ddfdc936e5dc74caaac" name="themes/green/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="e3d9d1d8a32442ae58f4eb18e7bad83f" name="themes/grey/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="edd7bb49e3f4b015d11e64beca6e996e" name="themes/ideas/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="f78ab7112354d3e996235bea74a96322" name="themes/lavander/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="7d0c97b6412ee924c357ec1ced94eea5" name="themes/luc/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="4463e585462cda88414877476ac38268" name="themes/lucblue/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="69116b38fbe5db3b56e4217495e89bd6" name="themes/mozilla/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="141d19651f2224431ac6e43899bdf29c" name="themes/postnuke/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="2f43b1580a94d26a7d6b80aecea3be50" name="themes/purple/dimp/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="03160358e53e980fa09234d32aca7fc3" name="themes/purple/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="74f9e0dcdc118c88d18df799d0a6369b" name="themes/silver/dimp/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="cc125481765eb50c79d702b00324e949" name="themes/silver/graphics/folders/create.png" role="horde" />
+   <file baseinstalldir="/" md5sum="528cf67effd4ab23b380870141b09e27" name="themes/silver/graphics/folders/delete.png" role="horde" />
+   <file baseinstalldir="/" md5sum="1b9df328059a0e305e7a26178cbcb7e1" name="themes/silver/graphics/folders/drafts.png" role="horde" />
+   <file baseinstalldir="/" md5sum="2102481eed394d214bde97c155963237" name="themes/silver/graphics/folders/edit.png" role="horde" />
+   <file baseinstalldir="/" md5sum="93f8268d1e6526396ee4b28d3389406a" name="themes/silver/graphics/folders/explore.png" role="horde" />
+   <file baseinstalldir="/" md5sum="fbd3929a893b147ae0940d48d533e023" name="themes/silver/graphics/folders/folder.png" role="horde" />
+   <file baseinstalldir="/" md5sum="54aa7692417fdf6b5f52af93aca2d856" name="themes/silver/graphics/folders/inbox.png" role="horde" />
+   <file baseinstalldir="/" md5sum="54b651af47fb88aeb305be636e83192b" name="themes/silver/graphics/folders/minus.png" role="horde" />
+   <file baseinstalldir="/" md5sum="fbd3929a893b147ae0940d48d533e023" name="themes/silver/graphics/folders/open.png" role="horde" />
+   <file baseinstalldir="/" md5sum="cd42f2ca57189bef8554853240773422" name="themes/silver/graphics/folders/options.png" role="horde" />
+   <file baseinstalldir="/" md5sum="9f31beb67ffc3e35e7c255a7d05d3100" name="themes/silver/graphics/folders/plus.png" role="horde" />
+   <file baseinstalldir="/" md5sum="fb299dd13df666516eabe16f59193383" name="themes/silver/graphics/folders/sent.png" role="horde" />
+   <file baseinstalldir="/" md5sum="44e0f408c78d8b6166acf93d08acd988" name="themes/silver/graphics/folders/spam.png" role="horde" />
+   <file baseinstalldir="/" md5sum="728ac54e7dba7cf9add1fb91b3b73b46" name="themes/silver/graphics/folders/trash.png" role="horde" />
+   <file baseinstalldir="/" md5sum="2c22798b6e4b808beb645f2a8543af07" name="themes/silver/graphics/mime/compressed.png" role="horde" />
+   <file baseinstalldir="/" md5sum="9637ce453914ea01cd009eb3a73e37b5" name="themes/silver/graphics/mime/itip.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c4b88699dfd21a629f298026e60bb2e7" name="themes/silver/graphics/nav/first-grey.png" role="horde" />
+   <file baseinstalldir="/" md5sum="1e182f113f09c3622041a9a1c5d19a5a" name="themes/silver/graphics/nav/first.png" role="horde" />
+   <file baseinstalldir="/" md5sum="ad651868db6d3dc0ad31546a3d0dea19" name="themes/silver/graphics/nav/last-grey.png" role="horde" />
+   <file baseinstalldir="/" md5sum="f989ff37ca8e6b4a0254c3a3259d2294" name="themes/silver/graphics/nav/last.png" role="horde" />
+   <file baseinstalldir="/" md5sum="d1158eebde0f62e2d986b394099fa92c" name="themes/silver/graphics/nav/left-grey.png" role="horde" />
+   <file baseinstalldir="/" md5sum="f116a9b4f18be0e9e59666799ac9bcd9" name="themes/silver/graphics/nav/left.png" role="horde" />
+   <file baseinstalldir="/" md5sum="1b853ba9b060967b896e098e6f64b40c" name="themes/silver/graphics/nav/right-grey.png" role="horde" />
+   <file baseinstalldir="/" md5sum="1538130f4e9fcc2c62a9a51ca4eaba1b" name="themes/silver/graphics/nav/right.png" role="horde" />
+   <file baseinstalldir="/" md5sum="ee982eb5319c27d7b85bfb148d99af67" name="themes/silver/graphics/addressbook_add.png" role="horde" />
+   <file baseinstalldir="/" md5sum="3ea3e4a17e91bcf6766e98f4717b161e" name="themes/silver/graphics/addressbook_browse.png" role="horde" />
+   <file baseinstalldir="/" md5sum="ee982eb5319c27d7b85bfb148d99af67" name="themes/silver/graphics/add_contact.png" role="horde" />
+   <file baseinstalldir="/" md5sum="25b939c597a98aa5aba30a09837c7065" name="themes/silver/graphics/application_tile_horizontal.png" role="horde" />
+   <file baseinstalldir="/" md5sum="7ba946e87454b0ac0ea55053ab8490eb" name="themes/silver/graphics/application_tile_vertical.png" role="horde" />
+   <file baseinstalldir="/" md5sum="82672a640296b7c9aa5d9bc73be05e36" name="themes/silver/graphics/arrow_collapsed.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e99ff1e4b812890c8aa6f83906b729c1" name="themes/silver/graphics/arrow_down.png" role="horde" />
+   <file baseinstalldir="/" md5sum="f483e9d22444dd5c246372e3aa97e1bc" name="themes/silver/graphics/arrow_expanded.png" role="horde" />
+   <file baseinstalldir="/" md5sum="3053e88ee8d03705e4f5beb3ad8ca444" name="themes/silver/graphics/arrow_up.png" role="horde" />
+   <file baseinstalldir="/" md5sum="0cb6ac9aed7870ceb807c612072d8762" name="themes/silver/graphics/attachment.png" role="horde" />
+   <file baseinstalldir="/" md5sum="6c2a8c10cb202feadc8116f686e07084" name="themes/silver/graphics/blacklist.png" role="horde" />
+   <file baseinstalldir="/" md5sum="126d878a2abd2f0578d90b008ef1be1d" name="themes/silver/graphics/calendar.png" role="horde" />
+   <file baseinstalldir="/" md5sum="75766b30103478743f7355f449e8f47d" name="themes/silver/graphics/checkmail.png" role="horde" />
+   <file baseinstalldir="/" md5sum="6c2a8c10cb202feadc8116f686e07084" name="themes/silver/graphics/close.png" role="horde" />
+   <file baseinstalldir="/" md5sum="4ad101dfa20e1e36c97f34d3eff0c67d" name="themes/silver/graphics/compose.png" role="horde" />
+   <file baseinstalldir="/" md5sum="8290693caf902a803d5da181603e3f99" name="themes/silver/graphics/delete.png" role="horde" />
+   <file baseinstalldir="/" md5sum="bb6d3c6dd2b1182ca4877d05f7e67a91" name="themes/silver/graphics/download.png" role="horde" />
+   <file baseinstalldir="/" md5sum="1b9df328059a0e305e7a26178cbcb7e1" name="themes/silver/graphics/drafts.png" role="horde" />
+   <file baseinstalldir="/" md5sum="47370a0500cb9048a5110bd04047bdab" name="themes/silver/graphics/edit.png" role="horde" />
+   <file baseinstalldir="/" md5sum="728ac54e7dba7cf9add1fb91b3b73b46" name="themes/silver/graphics/empty_spam.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b9380ce46aa2f04e6089f433db3a677b" name="themes/silver/graphics/empty_trash.png" role="horde" />
+   <file baseinstalldir="/" md5sum="0862c03724acc53e53fb4bf10ae38fd2" name="themes/silver/graphics/encrypted.png" role="horde" />
+   <file baseinstalldir="/" md5sum="2ad73162712cbf224bc23db66a20a300" name="themes/silver/graphics/fetchmail.png" role="horde" />
+   <file baseinstalldir="/" md5sum="a13de972b638ec78f2a83894515ff4e7" name="themes/silver/graphics/filters.png" role="horde" />
+   <file baseinstalldir="/" md5sum="18e364be43254d91dccbb04e6b40c8fb" name="themes/silver/graphics/forward.png" role="horde" />
+   <file baseinstalldir="/" md5sum="51940bc002d2e71f77fdf98aeb0b2034" name="themes/silver/graphics/group.png" role="horde" />
+   <file baseinstalldir="/" md5sum="c7bdef8d9ca6b1416090ae4e9268690d" name="themes/silver/graphics/ham.png" role="horde" />
+   <file baseinstalldir="/" md5sum="790470df9e73dba2d7b6c72a9513dab1" name="themes/silver/graphics/help.png" role="horde" />
+   <file baseinstalldir="/" md5sum="68541039b2b5c337ea4efdeb33a9cbf4" name="themes/silver/graphics/imp.png" role="horde" />
+   <file baseinstalldir="/" md5sum="f82e79eb59cb00595d5d9c79997cd66b" name="themes/silver/graphics/info_icon.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b508411bb915ecf32b1a995644f67fd1" name="themes/silver/graphics/locked.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e20ba15525185c16acfbf043e7b4a9cd" name="themes/silver/graphics/logout.png" role="horde" />
+   <file baseinstalldir="/" md5sum="38e8049922a2737a82f6907871aafd8b" name="themes/silver/graphics/mail_answered.png" role="horde" />
+   <file baseinstalldir="/" md5sum="76fb3c8819c8c99f3970972dc1781dee" name="themes/silver/graphics/mail_clearflag.png" role="horde" />
+   <file baseinstalldir="/" md5sum="092cde6e80eba5e5de29c626da0a3206" name="themes/silver/graphics/mail_deleted.png" role="horde" />
+   <file baseinstalldir="/" md5sum="4ad101dfa20e1e36c97f34d3eff0c67d" name="themes/silver/graphics/mail_draft.png" role="horde" />
+   <file baseinstalldir="/" md5sum="7a8cb3b65208fe849779bb4cdc00585d" name="themes/silver/graphics/mail_flagged.png" role="horde" />
+   <file baseinstalldir="/" md5sum="18e364be43254d91dccbb04e6b40c8fb" name="themes/silver/graphics/mail_forwarded.png" role="horde" />
+   <file baseinstalldir="/" md5sum="3d9b998033fa1e7d422088355f416c24" name="themes/silver/graphics/mail_personal.png" role="horde" />
+   <file baseinstalldir="/" md5sum="09a3240f6a9a25af62851f21b819a8be" name="themes/silver/graphics/mail_priority_high.png" role="horde" />
+   <file baseinstalldir="/" md5sum="4012b760c546c52292c69b59314e08b2" name="themes/silver/graphics/mail_priority_low.png" role="horde" />
+   <file baseinstalldir="/" md5sum="7685b6dc34140e80295a3ac732193a77" name="themes/silver/graphics/mail_seen.png" role="horde" />
+   <file baseinstalldir="/" md5sum="54aa7692417fdf6b5f52af93aca2d856" name="themes/silver/graphics/mail_unseen.png" role="horde" />
+   <file baseinstalldir="/" md5sum="044945027f0958941f419f33653d0044" name="themes/silver/graphics/message_source.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b0ed49c17b926488a85cf420f90b02b5" name="themes/silver/graphics/newmail.png" role="horde" />
+   <file baseinstalldir="/" md5sum="6605d71c24f8b68e02539d4d06f8dfe8" name="themes/silver/graphics/newwin.png" role="horde" />
+   <file baseinstalldir="/" md5sum="143d13e49915a1ae2c061e7d8b611b37" name="themes/silver/graphics/plus.png" role="horde" />
+   <file baseinstalldir="/" md5sum="6817b10435d889646ce9b3b22b9c16cb" name="themes/silver/graphics/popdown.png" role="horde" />
+   <file baseinstalldir="/" md5sum="ea25f6811a1166cdf13d33d69f5f4e0f" name="themes/silver/graphics/prefs.png" role="horde" />
+   <file baseinstalldir="/" md5sum="078231d801c3ed4e25c380b1e3facc2b" name="themes/silver/graphics/preview.png" role="horde" />
+   <file baseinstalldir="/" md5sum="65c8ba6985d76b6869da6861175ef212" name="themes/silver/graphics/print.png" role="horde" />
+   <file baseinstalldir="/" md5sum="d90f76b632fae4f6ac7ef89e090488a3" name="themes/silver/graphics/reload.png" role="horde" />
+   <file baseinstalldir="/" md5sum="38e8049922a2737a82f6907871aafd8b" name="themes/silver/graphics/reply.png" role="horde" />
+   <file baseinstalldir="/" md5sum="38e8049922a2737a82f6907871aafd8b" name="themes/silver/graphics/replyall.png" role="horde" />
+   <file baseinstalldir="/" md5sum="15163d5d604336b4363e27bfc0f7137a" name="themes/silver/graphics/search.png" role="horde" />
+   <file baseinstalldir="/" md5sum="3992363695180a16f9401670f960d016" name="themes/silver/graphics/shared.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b508411bb915ecf32b1a995644f67fd1" name="themes/silver/graphics/signed.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b86ca55277eeb255888162fb8c9bf42d" name="themes/silver/graphics/sortdown.png" role="horde" />
+   <file baseinstalldir="/" md5sum="d9cf645badd586fa4bb0ba3154d502c9" name="themes/silver/graphics/sortup.png" role="horde" />
+   <file baseinstalldir="/" md5sum="cda2cea3287219b95bbcdc8b5bb5f3f5" name="themes/silver/graphics/spam.png" role="horde" />
+   <file baseinstalldir="/" md5sum="46b4fdf109c69d7a12b966c68c44f98b" name="themes/silver/graphics/spellcheck.png" role="horde" />
+   <file baseinstalldir="/" md5sum="dcf5162f613b64836570617beeb54a1f" name="themes/silver/graphics/undelete.png" role="horde" />
+   <file baseinstalldir="/" md5sum="dada032541dd9985747dfa57eb32a279" name="themes/silver/graphics/warning.png" role="horde" />
+   <file baseinstalldir="/" md5sum="321496f256a7916a91ec71c23e059d90" name="themes/silver/graphics/whitelist.png" role="horde" />
+   <file baseinstalldir="/" md5sum="9b33cf47b89a70a7ee69863cb8778c8b" name="themes/silver/rtl.css" role="horde" />
+   <file baseinstalldir="/" md5sum="6dbcafbade8caa62c0917bb0791d86f3" name="themes/silver/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="dd4d520533024769f81ccce5f23b75b2" name="themes/simplex/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="9431247659160286d7789e9cb7a266b1" name="themes/tango-blue/dimp/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="bdc3c76766fa56ee3c7ff5f56f1f1111" name="themes/tango-blue/graphics/folders/drafts.png" role="horde" />
+   <file baseinstalldir="/" md5sum="87831634c040e2656b2dd37b650f572a" name="themes/tango-blue/graphics/folders/folder.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b89f23fdd326b0f62deccc49560f0715" name="themes/tango-blue/graphics/folders/inbox.png" role="horde" />
+   <file baseinstalldir="/" md5sum="d3befc2aaa24f58448383e00f70153b8" name="themes/tango-blue/graphics/folders/open.png" role="horde" />
+   <file baseinstalldir="/" md5sum="383da1fa10795532cf97fd0cfd2301e8" name="themes/tango-blue/graphics/folders/sent.png" role="horde" />
+   <file baseinstalldir="/" md5sum="447f0870f9be563bc151ff5f6ccbadbb" name="themes/tango-blue/graphics/folders/spam.png" role="horde" />
+   <file baseinstalldir="/" md5sum="eb57abf68138bd1d82232ac0ba1852db" name="themes/tango-blue/graphics/folders/trash.png" role="horde" />
+   <file baseinstalldir="/" md5sum="a805a6d7ed78e5eb4954553965507c54" name="themes/tango-blue/graphics/addressbook_browse.png" role="horde" />
+   <file baseinstalldir="/" md5sum="278c170f35760e7b6518f94c48bc4fde" name="themes/tango-blue/graphics/attachment.png" role="horde" />
+   <file baseinstalldir="/" md5sum="0e0d9744a895a47b1e9d293c4a365442" name="themes/tango-blue/graphics/calendar.png" role="horde" />
+   <file baseinstalldir="/" md5sum="a2b453d3a10f1cab77a32a13aad40b76" name="themes/tango-blue/graphics/close.png" role="horde" />
+   <file baseinstalldir="/" md5sum="192f7e6ad63a392fac2690babef757e9" name="themes/tango-blue/graphics/compose.png" role="horde" />
+   <file baseinstalldir="/" md5sum="ecf32f7405142b091c7bec5ebec912eb" name="themes/tango-blue/graphics/empty_trash.png" role="horde" />
+   <file baseinstalldir="/" md5sum="0fd2621a0e962dd4949a40a26f991de9" name="themes/tango-blue/graphics/encrypted.png" role="horde" />
+   <file baseinstalldir="/" md5sum="8d414094f545420f6f10dc5de5f8a255" name="themes/tango-blue/graphics/favicon.ico" role="horde" />
+   <file baseinstalldir="/" md5sum="3d8f7d2758be02e3a8347b47cdc3103c" name="themes/tango-blue/graphics/fetchmail.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e6730c34dc831c75188f676fd675f703" name="themes/tango-blue/graphics/filters.png" role="horde" />
+   <file baseinstalldir="/" md5sum="b89f23fdd326b0f62deccc49560f0715" name="themes/tango-blue/graphics/imp.png" role="horde" />
+   <file baseinstalldir="/" md5sum="4366684aeb4f578cce7611decf6a53d9" name="themes/tango-blue/graphics/mail_answered.png" role="horde" />
+   <file baseinstalldir="/" md5sum="bd0e285f752af84c11216ddb8712dc45" name="themes/tango-blue/graphics/mail_deleted.png" role="horde" />
+   <file baseinstalldir="/" md5sum="2f17d6c67d4806bf9120db01e083654f" name="themes/tango-blue/graphics/mail_draft.png" role="horde" />
+   <file baseinstalldir="/" md5sum="05ecf0d54c9097ee40c831c2a3c3be09" name="themes/tango-blue/graphics/mail_flagged.png" role="horde" />
+   <file baseinstalldir="/" md5sum="240cceac630dbdd5a76d9eec395550c8" name="themes/tango-blue/graphics/mail_personal.png" role="horde" />
+   <file baseinstalldir="/" md5sum="bff5a85cfca8e52368b7be02e89b7663" name="themes/tango-blue/graphics/mail_priority_high.png" role="horde" />
+   <file baseinstalldir="/" md5sum="92c1d24ff019cb774169edcf81073e48" name="themes/tango-blue/graphics/mail_priority_low.png" role="horde" />
+   <file baseinstalldir="/" md5sum="e6591e2cb6db9c19ffddc9f5f43e47e0" name="themes/tango-blue/graphics/mail_unseen.png" role="horde" />
+   <file baseinstalldir="/" md5sum="cc7de064d69247197d8ed06cd75ef888" name="themes/tango-blue/graphics/newmail.png" role="horde" />
+   <file baseinstalldir="/" md5sum="92b5947413ed54771daf08847a45c623" name="themes/tango-blue/graphics/reload.png" role="horde" />
+   <file baseinstalldir="/" md5sum="1c7d517b0e957872de4944037f3212f7" name="themes/tango-blue/graphics/shared.png" role="horde" />
+   <file baseinstalldir="/" md5sum="0fd2621a0e962dd4949a40a26f991de9" name="themes/tango-blue/graphics/signed.png" role="horde" />
+   <file baseinstalldir="/" md5sum="7053a2bd551a4bbe90d46e760b2ab96c" name="themes/tango-blue/graphics/spellcheck.png" role="horde" />
+   <file baseinstalldir="/" md5sum="f63028204373206f10cd794dfd63db71" name="themes/tango-blue/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="7fd8ae8a9ad49e17a64aee123a873e39" name="attachment.php" role="horde" />
+   <file baseinstalldir="/" md5sum="75e8f823ed7f2957a0ed42b61e7545fe" name="compose-dimp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="29face6f337ba4bf8e2aff9205da764f" name="compose-mimp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="bb0f3c98c37576a706c5b3c5cd68d437" name="compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4f183c767f73251b00ba91cdb68ff41c" name="contacts.php" role="horde" />
+   <file baseinstalldir="/" md5sum="83600a711e6dd70e3193eedf92653fe7" name="COPYING" role="doc" />
+   <file baseinstalldir="/" md5sum="50ba9ec395f502a62839555b696d8832" name="folders-mimp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9f9c5abbceb2eb5166d93a60e1b752e3" name="folders.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e60069f6daf261377e8d245873a2f8c2" name="index-dimp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a26522869cc9258ad0c45540b53b26ec" name="index.php" role="horde" />
+   <file baseinstalldir="/" md5sum="18f7d18e98157b23c131a65eb4478481" name="mailbox-mimp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="dafeac31dd61d11780c352bc0ce727b6" name="mailbox.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1619b5f3607b98af251393ba0ae986f9" name="message-dimp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4d2067be7e335ca9234e7c432de774ce" name="message-mimp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="088cf7b152bfc8586734aff5afbfb44e" name="message.php" role="horde" />
+   <file baseinstalldir="/" md5sum="661354e9450424c3accd93901e97ad46" name="mobile.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0b229e489cdbae1f3b8daf89c28792dc" name="pgp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0baf9d1a532208f239235ac2c432f887" name="README" role="doc" />
+   <file baseinstalldir="/" md5sum="d12f92dc126ace92262bf432b6c1461d" name="rss.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c4e0c70157115bb0396176b2d5422416" name="saveimage.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c6d6c8a0ee3fc8cd4c94f64803acafa2" name="search-basic.php" role="horde" />
+   <file baseinstalldir="/" md5sum="420f88dd8f534bf0171bf200da43c7f0" name="search.php" role="horde" />
+   <file baseinstalldir="/" md5sum="634f481148ff7bee450f052486dacc49" name="smime.php" role="horde" />
+   <file baseinstalldir="/" md5sum="962be7b065c93d924b02be7092df6f39" name="thread.php" role="horde" />
+   <file baseinstalldir="/" md5sum="ffd5255b148865a656bfa4a711584e35" name="view.php" role="horde" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.7.0</min>
+   </pearinstaller>
+   <package>
+    <name>horde</name>
+    <channel>pear.horde.org</channel>
+    <min>4.0.0</min>
+    <max>5.0.0</max>
+    <exclude>5.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Auth</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.4</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Browser</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Compress</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Core</name>
+    <channel>pear.horde.org</channel>
+    <min>1.4.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Crypt</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Date</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Editor</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Exception</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Form</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Icalendar</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Image</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Imap_Client</name>
+    <channel>pear.horde.org</channel>
+    <min>1.2.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Itip</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_LoginTasks</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Mail</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Mime</name>
+    <channel>pear.horde.org</channel>
+    <min>1.4.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Mime_Viewer</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.7</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Nls</name>
+    <channel>pear.horde.org</channel>
+    <min>1.1.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Notification</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Perms</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Serialize</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_SpellChecker</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Support</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Text_Filter</name>
+    <channel>pear.horde.org</channel>
+    <min>1.1.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Text_Flowed</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Token</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Tree</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Url</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Util</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_View</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <extension>
+    <name>dom</name>
+   </extension>
+   <extension>
+    <name>gettext</name>
+   </extension>
+   <extension>
+    <name>hash</name>
+   </extension>
+   <extension>
+    <name>json</name>
+   </extension>
+  </required>
+  <optional>
+   <package>
+    <name>Horde_Text_Filter_Csstidy</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <package>
+    <name>Horde_Vfs</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0</max>
+    <exclude>2.0.0</exclude>
+   </package>
+   <extension>
+    <name>openssl</name>
+   </extension>
+  </optional>
+ </dependencies>
+ <usesrole>
+  <role>horde</role>
+  <package>Role</package>
+  <channel>pear.horde.org</channel>
+ </usesrole>
+ <phprelease>
+  <filelist>
+   <install as="imp-bounce-spam" name="bin/imp-bounce-spam" />
+   <install as="imp-mailbox-decode" name="bin/imp-mailbox-decode" />
+   <install as="imp-query-imap-cache" name="bin/imp-query-imap-cache" />
+   <install as="imp/config/.htaccess" name="config/.htaccess" />
+   <install as="imp/config/backends.php" name="config/backends.php" />
+   <install as="imp/config/conf.xml" name="config/conf.xml" />
+   <install as="imp/config/filter.txt.dist" name="config/filter.txt.dist" />
+   <install as="imp/config/hooks.php.dist" name="config/hooks.php.dist" />
+   <install as="imp/config/menu.php.dist" name="config/menu.php.dist" />
+   <install as="imp/config/mime_drivers.php" name="config/mime_drivers.php" />
+   <install as="imp/config/prefs.php" name="config/prefs.php" />
+   <install as="CHANGES" name="docs/CHANGES" />
+   <install as="CREDITS" name="docs/CREDITS" />
+   <install as="INSTALL" name="docs/INSTALL" />
+   <install as="PERFORMANCE" name="docs/PERFORMANCE" />
+   <install as="RELEASE_NOTES" name="docs/RELEASE_NOTES" />
+   <install as="RFCS" name="docs/RFCS" />
+   <install as="UPGRADING" name="docs/UPGRADING" />
+   <install as="imp/js/acl.js" name="js/acl.js" />
+   <install as="imp/js/compose-base.js" name="js/compose-base.js" />
+   <install as="imp/js/compose-dimp.js" name="js/compose-dimp.js" />
+   <install as="imp/js/compose.js" name="js/compose.js" />
+   <install as="imp/js/contacts.js" name="js/contacts.js" />
+   <install as="imp/js/dialog.js" name="js/dialog.js" />
+   <install as="imp/js/dimpbase.js" name="js/dimpbase.js" />
+   <install as="imp/js/dimpcore.js" name="js/dimpcore.js" />
+   <install as="imp/js/flagprefs.js" name="js/flagprefs.js" />
+   <install as="imp/js/folderprefs.js" name="js/folderprefs.js" />
+   <install as="imp/js/folders.js" name="js/folders.js" />
+   <install as="imp/js/imp.js" name="js/imp.js" />
+   <install as="imp/js/indices.js" name="js/indices.js" />
+   <install as="imp/js/login.js" name="js/login.js" />
+   <install as="imp/js/mailbox-dimp.js" name="js/mailbox-dimp.js" />
+   <install as="imp/js/mailbox.js" name="js/mailbox.js" />
+   <install as="imp/js/message-dimp.js" name="js/message-dimp.js" />
+   <install as="imp/js/message.js" name="js/message.js" />
+   <install as="imp/js/mobile.js" name="js/mobile.js" />
+   <install as="imp/js/search.js" name="js/search.js" />
+   <install as="imp/js/searchesprefs.js" name="js/searchesprefs.js" />
+   <install as="imp/js/signaturehtml.js" name="js/signaturehtml.js" />
+   <install as="imp/js/viewport.js" name="js/viewport.js" />
+   <install as="imp/lib/.htaccess" name="lib/.htaccess" />
+   <install as="imp/lib/Api.php" name="lib/Api.php" />
+   <install as="imp/lib/Application.php" name="lib/Application.php" />
+   <install as="imp/lib/Auth.php" name="lib/Auth.php" />
+   <install as="imp/lib/Compose.php" name="lib/Compose.php" />
+   <install as="imp/lib/Contents.php" name="lib/Contents.php" />
+   <install as="imp/lib/Dimp.php" name="lib/Dimp.php" />
+   <install as="imp/lib/Exception.php" name="lib/Exception.php" />
+   <install as="imp/lib/Filter.php" name="lib/Filter.php" />
+   <install as="imp/lib/Flags.php" name="lib/Flags.php" />
+   <install as="imp/lib/Imap.php" name="lib/Imap.php" />
+   <install as="imp/lib/IMP.php" name="lib/IMP.php" />
+   <install as="imp/lib/Indices.php" name="lib/Indices.php" />
+   <install as="imp/lib/Mailbox.php" name="lib/Mailbox.php" />
+   <install as="imp/lib/Maillog.php" name="lib/Maillog.php" />
+   <install as="imp/lib/Message.php" name="lib/Message.php" />
+   <install as="imp/lib/Quota.php" name="lib/Quota.php" />
+   <install as="imp/lib/Search.php" name="lib/Search.php" />
+   <install as="imp/lib/Sentmail.php" name="lib/Sentmail.php" />
+   <install as="imp/lib/Spam.php" name="lib/Spam.php" />
+   <install as="imp/lib/Test.php" name="lib/Test.php" />
+   <install as="imp/lib/Ajax/Application.php" name="lib/Ajax/Application.php" />
+   <install as="imp/lib/Ajax/Queue.php" name="lib/Ajax/Queue.php" />
+   <install as="imp/lib/Ajax/Imple/ContactAutoCompleter.php" name="lib/Ajax/Imple/ContactAutoCompleter.php" />
+   <install as="imp/lib/Ajax/Imple/PassphraseDialog.php" name="lib/Ajax/Imple/PassphraseDialog.php" />
+   <install as="imp/lib/Block/Newmail.php" name="lib/Block/Newmail.php" />
+   <install as="imp/lib/Block/Summary.php" name="lib/Block/Summary.php" />
+   <install as="imp/lib/Compose/Exception.php" name="lib/Compose/Exception.php" />
+   <install as="imp/lib/Compose/Stationery.php" name="lib/Compose/Stationery.php" />
+   <install as="imp/lib/Crypt/Pgp.php" name="lib/Crypt/Pgp.php" />
+   <install as="imp/lib/Crypt/Smime.php" name="lib/Crypt/Smime.php" />
+   <install as="imp/lib/Factory/AuthImap.php" name="lib/Factory/AuthImap.php" />
+   <install as="imp/lib/Factory/Compose.php" name="lib/Factory/Compose.php" />
+   <install as="imp/lib/Factory/Contents.php" name="lib/Factory/Contents.php" />
+   <install as="imp/lib/Factory/Flags.php" name="lib/Factory/Flags.php" />
+   <install as="imp/lib/Factory/Identity.php" name="lib/Factory/Identity.php" />
+   <install as="imp/lib/Factory/Imap.php" name="lib/Factory/Imap.php" />
+   <install as="imp/lib/Factory/Imaptree.php" name="lib/Factory/Imaptree.php" />
+   <install as="imp/lib/Factory/Mail.php" name="lib/Factory/Mail.php" />
+   <install as="imp/lib/Factory/Mailbox.php" name="lib/Factory/Mailbox.php" />
+   <install as="imp/lib/Factory/MailboxList.php" name="lib/Factory/MailboxList.php" />
+   <install as="imp/lib/Factory/MimeViewer.php" name="lib/Factory/MimeViewer.php" />
+   <install as="imp/lib/Factory/Pgp.php" name="lib/Factory/Pgp.php" />
+   <install as="imp/lib/Factory/Quota.php" name="lib/Factory/Quota.php" />
+   <install as="imp/lib/Factory/Search.php" name="lib/Factory/Search.php" />
+   <install as="imp/lib/Factory/Sentmail.php" name="lib/Factory/Sentmail.php" />
+   <install as="imp/lib/Factory/Smime.php" name="lib/Factory/Smime.php" />
+   <install as="imp/lib/Flag/Base.php" name="lib/Flag/Base.php" />
+   <install as="imp/lib/Flag/Imap.php" name="lib/Flag/Imap.php" />
+   <install as="imp/lib/Flag/User.php" name="lib/Flag/User.php" />
+   <install as="imp/lib/Flag/Imap/Answered.php" name="lib/Flag/Imap/Answered.php" />
+   <install as="imp/lib/Flag/Imap/Deleted.php" name="lib/Flag/Imap/Deleted.php" />
+   <install as="imp/lib/Flag/Imap/Draft.php" name="lib/Flag/Imap/Draft.php" />
+   <install as="imp/lib/Flag/Imap/Flagged.php" name="lib/Flag/Imap/Flagged.php" />
+   <install as="imp/lib/Flag/Imap/Forwarded.php" name="lib/Flag/Imap/Forwarded.php" />
+   <install as="imp/lib/Flag/Imap/Junk.php" name="lib/Flag/Imap/Junk.php" />
+   <install as="imp/lib/Flag/Imap/NotJunk.php" name="lib/Flag/Imap/NotJunk.php" />
+   <install as="imp/lib/Flag/Imap/Seen.php" name="lib/Flag/Imap/Seen.php" />
+   <install as="imp/lib/Flag/System/Attachment.php" name="lib/Flag/System/Attachment.php" />
+   <install as="imp/lib/Flag/System/Encrypted.php" name="lib/Flag/System/Encrypted.php" />
+   <install as="imp/lib/Flag/System/HighPriority.php" name="lib/Flag/System/HighPriority.php" />
+   <install as="imp/lib/Flag/System/List.php" name="lib/Flag/System/List.php" />
+   <install as="imp/lib/Flag/System/LowPriority.php" name="lib/Flag/System/LowPriority.php" />
+   <install as="imp/lib/Flag/System/Personal.php" name="lib/Flag/System/Personal.php" />
+   <install as="imp/lib/Flag/System/Signed.php" name="lib/Flag/System/Signed.php" />
+   <install as="imp/lib/Flag/System/Unseen.php" name="lib/Flag/System/Unseen.php" />
+   <install as="imp/lib/Flag/System/Match/Address.php" name="lib/Flag/System/Match/Address.php" />
+   <install as="imp/lib/Flag/System/Match/Flag.php" name="lib/Flag/System/Match/Flag.php" />
+   <install as="imp/lib/Flag/System/Match/Header.php" name="lib/Flag/System/Match/Header.php" />
+   <install as="imp/lib/Imap/Acl.php" name="lib/Imap/Acl.php" />
+   <install as="imp/lib/Imap/Exception.php" name="lib/Imap/Exception.php" />
+   <install as="imp/lib/Imap/PermanentFlags.php" name="lib/Imap/PermanentFlags.php" />
+   <install as="imp/lib/Imap/Thread.php" name="lib/Imap/Thread.php" />
+   <install as="imp/lib/Imap/Tree.php" name="lib/Imap/Tree.php" />
+   <install as="imp/lib/Indices/Form.php" name="lib/Indices/Form.php" />
+   <install as="imp/lib/LoginTasks/SystemTask/GarbageCollection.php" name="lib/LoginTasks/SystemTask/GarbageCollection.php" />
+   <install as="imp/lib/LoginTasks/SystemTask/Upgrade.php" name="lib/LoginTasks/SystemTask/Upgrade.php" />
+   <install as="imp/lib/LoginTasks/SystemTask/UpgradeAuth.php" name="lib/LoginTasks/SystemTask/UpgradeAuth.php" />
+   <install as="imp/lib/LoginTasks/Task/Autocreate.php" name="lib/LoginTasks/Task/Autocreate.php" />
+   <install as="imp/lib/LoginTasks/Task/DeleteAttachmentsMonthly.php" name="lib/LoginTasks/Task/DeleteAttachmentsMonthly.php" />
+   <install as="imp/lib/LoginTasks/Task/DeleteSentmailMonthly.php" name="lib/LoginTasks/Task/DeleteSentmailMonthly.php" />
+   <install as="imp/lib/LoginTasks/Task/FilterOnLogin.php" name="lib/LoginTasks/Task/FilterOnLogin.php" />
+   <install as="imp/lib/LoginTasks/Task/PurgeSentmail.php" name="lib/LoginTasks/Task/PurgeSentmail.php" />
+   <install as="imp/lib/LoginTasks/Task/PurgeSpam.php" name="lib/LoginTasks/Task/PurgeSpam.php" />
+   <install as="imp/lib/LoginTasks/Task/PurgeTrash.php" name="lib/LoginTasks/Task/PurgeTrash.php" />
+   <install as="imp/lib/LoginTasks/Task/RecoverDraft.php" name="lib/LoginTasks/Task/RecoverDraft.php" />
+   <install as="imp/lib/LoginTasks/Task/RenameSentmailMonthly.php" name="lib/LoginTasks/Task/RenameSentmailMonthly.php" />
+   <install as="imp/lib/Mailbox/List.php" name="lib/Mailbox/List.php" />
+   <install as="imp/lib/Mailbox/List/Track.php" name="lib/Mailbox/List/Track.php" />
+   <install as="imp/lib/Menu/Dimp.php" name="lib/Menu/Dimp.php" />
+   <install as="imp/lib/Mime/Status.php" name="lib/Mime/Status.php" />
+   <install as="imp/lib/Mime/Viewer/Alternative.php" name="lib/Mime/Viewer/Alternative.php" />
+   <install as="imp/lib/Mime/Viewer/Appledouble.php" name="lib/Mime/Viewer/Appledouble.php" />
+   <install as="imp/lib/Mime/Viewer/Audio.php" name="lib/Mime/Viewer/Audio.php" />
+   <install as="imp/lib/Mime/Viewer/Enriched.php" name="lib/Mime/Viewer/Enriched.php" />
+   <install as="imp/lib/Mime/Viewer/Externalbody.php" name="lib/Mime/Viewer/Externalbody.php" />
+   <install as="imp/lib/Mime/Viewer/Html.php" name="lib/Mime/Viewer/Html.php" />
+   <install as="imp/lib/Mime/Viewer/Images.php" name="lib/Mime/Viewer/Images.php" />
+   <install as="imp/lib/Mime/Viewer/Itip.php" name="lib/Mime/Viewer/Itip.php" />
+   <install as="imp/lib/Mime/Viewer/Mdn.php" name="lib/Mime/Viewer/Mdn.php" />
+   <install as="imp/lib/Mime/Viewer/Partial.php" name="lib/Mime/Viewer/Partial.php" />
+   <install as="imp/lib/Mime/Viewer/Pdf.php" name="lib/Mime/Viewer/Pdf.php" />
+   <install as="imp/lib/Mime/Viewer/Pgp.php" name="lib/Mime/Viewer/Pgp.php" />
+   <install as="imp/lib/Mime/Viewer/Plain.php" name="lib/Mime/Viewer/Plain.php" />
+   <install as="imp/lib/Mime/Viewer/Related.php" name="lib/Mime/Viewer/Related.php" />
+   <install as="imp/lib/Mime/Viewer/Rfc822.php" name="lib/Mime/Viewer/Rfc822.php" />
+   <install as="imp/lib/Mime/Viewer/Smil.php" name="lib/Mime/Viewer/Smil.php" />
+   <install as="imp/lib/Mime/Viewer/Smime.php" name="lib/Mime/Viewer/Smime.php" />
+   <install as="imp/lib/Mime/Viewer/Status.php" name="lib/Mime/Viewer/Status.php" />
+   <install as="imp/lib/Mime/Viewer/Vcard.php" name="lib/Mime/Viewer/Vcard.php" />
+   <install as="imp/lib/Mime/Viewer/Video.php" name="lib/Mime/Viewer/Video.php" />
+   <install as="imp/lib/Mime/Viewer/Zip.php" name="lib/Mime/Viewer/Zip.php" />
+   <install as="imp/lib/Notification/Event/Status.php" name="lib/Notification/Event/Status.php" />
+   <install as="imp/lib/Notification/Handler/Decorator/ImapAlerts.php" name="lib/Notification/Handler/Decorator/ImapAlerts.php" />
+   <install as="imp/lib/Notification/Handler/Decorator/NewmailNotify.php" name="lib/Notification/Handler/Decorator/NewmailNotify.php" />
+   <install as="imp/lib/Notification/Listener/AjaxStatus.php" name="lib/Notification/Listener/AjaxStatus.php" />
+   <install as="imp/lib/Prefs/Identity.php" name="lib/Prefs/Identity.php" />
+   <install as="imp/lib/Prefs/Ui.php" name="lib/Prefs/Ui.php" />
+   <install as="imp/lib/Quota/Base.php" name="lib/Quota/Base.php" />
+   <install as="imp/lib/Quota/Command.php" name="lib/Quota/Command.php" />
+   <install as="imp/lib/Quota/Hook.php" name="lib/Quota/Hook.php" />
+   <install as="imp/lib/Quota/Imap.php" name="lib/Quota/Imap.php" />
+   <install as="imp/lib/Quota/Maildir.php" name="lib/Quota/Maildir.php" />
+   <install as="imp/lib/Quota/Mdaemon.php" name="lib/Quota/Mdaemon.php" />
+   <install as="imp/lib/Quota/Mercury32.php" name="lib/Quota/Mercury32.php" />
+   <install as="imp/lib/Quota/Null.php" name="lib/Quota/Null.php" />
+   <install as="imp/lib/Quota/Sql.php" name="lib/Quota/Sql.php" />
+   <install as="imp/lib/Search/Element.php" name="lib/Search/Element.php" />
+   <install as="imp/lib/Search/Filter.php" name="lib/Search/Filter.php" />
+   <install as="imp/lib/Search/Query.php" name="lib/Search/Query.php" />
+   <install as="imp/lib/Search/Vfolder.php" name="lib/Search/Vfolder.php" />
+   <install as="imp/lib/Search/Element/Attachment.php" name="lib/Search/Element/Attachment.php" />
+   <install as="imp/lib/Search/Element/Autogenerated.php" name="lib/Search/Element/Autogenerated.php" />
+   <install as="imp/lib/Search/Element/Bulk.php" name="lib/Search/Element/Bulk.php" />
+   <install as="imp/lib/Search/Element/Contacts.php" name="lib/Search/Element/Contacts.php" />
+   <install as="imp/lib/Search/Element/Date.php" name="lib/Search/Element/Date.php" />
+   <install as="imp/lib/Search/Element/Flag.php" name="lib/Search/Element/Flag.php" />
+   <install as="imp/lib/Search/Element/Header.php" name="lib/Search/Element/Header.php" />
+   <install as="imp/lib/Search/Element/Mailinglist.php" name="lib/Search/Element/Mailinglist.php" />
+   <install as="imp/lib/Search/Element/Or.php" name="lib/Search/Element/Or.php" />
+   <install as="imp/lib/Search/Element/Personal.php" name="lib/Search/Element/Personal.php" />
+   <install as="imp/lib/Search/Element/Recipient.php" name="lib/Search/Element/Recipient.php" />
+   <install as="imp/lib/Search/Element/Size.php" name="lib/Search/Element/Size.php" />
+   <install as="imp/lib/Search/Element/Text.php" name="lib/Search/Element/Text.php" />
+   <install as="imp/lib/Search/Element/Within.php" name="lib/Search/Element/Within.php" />
+   <install as="imp/lib/Search/Filter/Attachment.php" name="lib/Search/Filter/Attachment.php" />
+   <install as="imp/lib/Search/Filter/Autogenerated.php" name="lib/Search/Filter/Autogenerated.php" />
+   <install as="imp/lib/Search/Filter/Builtin.php" name="lib/Search/Filter/Builtin.php" />
+   <install as="imp/lib/Search/Filter/Bulk.php" name="lib/Search/Filter/Bulk.php" />
+   <install as="imp/lib/Search/Filter/Contacts.php" name="lib/Search/Filter/Contacts.php" />
+   <install as="imp/lib/Search/Filter/Mailinglist.php" name="lib/Search/Filter/Mailinglist.php" />
+   <install as="imp/lib/Search/Filter/Personal.php" name="lib/Search/Filter/Personal.php" />
+   <install as="imp/lib/Search/Vfolder/Builtin.php" name="lib/Search/Vfolder/Builtin.php" />
+   <install as="imp/lib/Search/Vfolder/Vinbox.php" name="lib/Search/Vfolder/Vinbox.php" />
+   <install as="imp/lib/Search/Vfolder/Vtrash.php" name="lib/Search/Vfolder/Vtrash.php" />
+   <install as="imp/lib/Sentmail/Base.php" name="lib/Sentmail/Base.php" />
+   <install as="imp/lib/Sentmail/Null.php" name="lib/Sentmail/Null.php" />
+   <install as="imp/lib/Sentmail/Sql.php" name="lib/Sentmail/Sql.php" />
+   <install as="imp/lib/Tree/Flist.php" name="lib/Tree/Flist.php" />
+   <install as="imp/lib/Tree/Jquerymobile.php" name="lib/Tree/Jquerymobile.php" />
+   <install as="imp/lib/Tree/Simplehtml.php" name="lib/Tree/Simplehtml.php" />
+   <install as="imp/lib/Ui/Compose.php" name="lib/Ui/Compose.php" />
+   <install as="imp/lib/Ui/Editor.php" name="lib/Ui/Editor.php" />
+   <install as="imp/lib/Ui/Folder.php" name="lib/Ui/Folder.php" />
+   <install as="imp/lib/Ui/Headers.php" name="lib/Ui/Headers.php" />
+   <install as="imp/lib/Ui/Imageview.php" name="lib/Ui/Imageview.php" />
+   <install as="imp/lib/Ui/Mailbox.php" name="lib/Ui/Mailbox.php" />
+   <install as="imp/lib/Ui/Message.php" name="lib/Ui/Message.php" />
+   <install as="imp/lib/Ui/Mimp.php" name="lib/Ui/Mimp.php" />
+   <install as="imp/lib/Ui/Search.php" name="lib/Ui/Search.php" />
+   <install as="imp/lib/Views/Compose.php" name="lib/Views/Compose.php" />
+   <install as="imp/lib/Views/ListMessages.php" name="lib/Views/ListMessages.php" />
+   <install as="imp/lib/Views/ShowMessage.php" name="lib/Views/ShowMessage.php" />
+   <install as="imp/locale/.htaccess" name="locale/.htaccess" />
+   <install as="imp/locale/imp.pot" name="locale/imp.pot" />
+   <install as="imp/locale/ar/LC_MESSAGES/imp.mo" name="locale/ar/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/ar/LC_MESSAGES/imp.po" name="locale/ar/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/ar_OM/LC_MESSAGES/imp.mo" name="locale/ar_OM/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/ar_OM/LC_MESSAGES/imp.po" name="locale/ar_OM/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/bg/LC_MESSAGES/imp.mo" name="locale/bg/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/bg/LC_MESSAGES/imp.po" name="locale/bg/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/bs/LC_MESSAGES/imp.mo" name="locale/bs/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/bs/LC_MESSAGES/imp.po" name="locale/bs/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/ca/help.xml" name="locale/ca/help.xml" />
+   <install as="imp/locale/ca/LC_MESSAGES/imp.mo" name="locale/ca/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/ca/LC_MESSAGES/imp.po" name="locale/ca/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/cs/help.xml" name="locale/cs/help.xml" />
+   <install as="imp/locale/cs/LC_MESSAGES/imp.mo" name="locale/cs/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/cs/LC_MESSAGES/imp.po" name="locale/cs/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/da/help.xml" name="locale/da/help.xml" />
+   <install as="imp/locale/da/LC_MESSAGES/imp.mo" name="locale/da/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/da/LC_MESSAGES/imp.po" name="locale/da/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/de/help.xml" name="locale/de/help.xml" />
+   <install as="imp/locale/de/LC_MESSAGES/imp.mo" name="locale/de/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/de/LC_MESSAGES/imp.po" name="locale/de/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/el/help.xml" name="locale/el/help.xml" />
+   <install as="imp/locale/el/LC_MESSAGES/imp.mo" name="locale/el/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/el/LC_MESSAGES/imp.po" name="locale/el/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/en/help.xml" name="locale/en/help.xml" />
+   <install as="imp/locale/es/help.xml" name="locale/es/help.xml" />
+   <install as="imp/locale/es/LC_MESSAGES/imp.mo" name="locale/es/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/es/LC_MESSAGES/imp.po" name="locale/es/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/et/help.xml" name="locale/et/help.xml" />
+   <install as="imp/locale/et/LC_MESSAGES/imp.mo" name="locale/et/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/et/LC_MESSAGES/imp.po" name="locale/et/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/eu/help.xml" name="locale/eu/help.xml" />
+   <install as="imp/locale/eu/LC_MESSAGES/imp.mo" name="locale/eu/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/eu/LC_MESSAGES/imp.po" name="locale/eu/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/fa/help.xml" name="locale/fa/help.xml" />
+   <install as="imp/locale/fa/LC_MESSAGES/imp.mo" name="locale/fa/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/fa/LC_MESSAGES/imp.po" name="locale/fa/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/fi/help.xml" name="locale/fi/help.xml" />
+   <install as="imp/locale/fi/LC_MESSAGES/imp.mo" name="locale/fi/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/fi/LC_MESSAGES/imp.po" name="locale/fi/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/fr/help.xml" name="locale/fr/help.xml" />
+   <install as="imp/locale/fr/LC_MESSAGES/imp.mo" name="locale/fr/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/fr/LC_MESSAGES/imp.po" name="locale/fr/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/gl/LC_MESSAGES/imp.mo" name="locale/gl/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/gl/LC_MESSAGES/imp.po" name="locale/gl/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/he/LC_MESSAGES/imp.mo" name="locale/he/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/he/LC_MESSAGES/imp.po" name="locale/he/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/hr/help.xml" name="locale/hr/help.xml" />
+   <install as="imp/locale/hr/LC_MESSAGES/imp.mo" name="locale/hr/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/hr/LC_MESSAGES/imp.po" name="locale/hr/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/hu/help.xml" name="locale/hu/help.xml" />
+   <install as="imp/locale/hu/LC_MESSAGES/imp.mo" name="locale/hu/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/hu/LC_MESSAGES/imp.po" name="locale/hu/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/id/LC_MESSAGES/imp.mo" name="locale/id/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/id/LC_MESSAGES/imp.po" name="locale/id/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/is/LC_MESSAGES/imp.mo" name="locale/is/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/is/LC_MESSAGES/imp.po" name="locale/is/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/it/help.xml" name="locale/it/help.xml" />
+   <install as="imp/locale/it/LC_MESSAGES/imp.mo" name="locale/it/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/it/LC_MESSAGES/imp.po" name="locale/it/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/ja/LC_MESSAGES/imp.mo" name="locale/ja/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/ja/LC_MESSAGES/imp.po" name="locale/ja/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/km/LC_MESSAGES/imp.mo" name="locale/km/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/km/LC_MESSAGES/imp.po" name="locale/km/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/ko/help.xml" name="locale/ko/help.xml" />
+   <install as="imp/locale/ko/LC_MESSAGES/imp.mo" name="locale/ko/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/ko/LC_MESSAGES/imp.po" name="locale/ko/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/lt/LC_MESSAGES/imp.mo" name="locale/lt/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/lt/LC_MESSAGES/imp.po" name="locale/lt/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/lv/help.xml" name="locale/lv/help.xml" />
+   <install as="imp/locale/lv/LC_MESSAGES/imp.mo" name="locale/lv/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/lv/LC_MESSAGES/imp.po" name="locale/lv/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/mk/LC_MESSAGES/imp.mo" name="locale/mk/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/mk/LC_MESSAGES/imp.po" name="locale/mk/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/nb/help.xml" name="locale/nb/help.xml" />
+   <install as="imp/locale/nb/LC_MESSAGES/imp.mo" name="locale/nb/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/nb/LC_MESSAGES/imp.po" name="locale/nb/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/nl/help.xml" name="locale/nl/help.xml" />
+   <install as="imp/locale/nl/LC_MESSAGES/imp.mo" name="locale/nl/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/nl/LC_MESSAGES/imp.po" name="locale/nl/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/nn/LC_MESSAGES/imp.mo" name="locale/nn/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/nn/LC_MESSAGES/imp.po" name="locale/nn/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/pl/help.xml" name="locale/pl/help.xml" />
+   <install as="imp/locale/pl/LC_MESSAGES/imp.mo" name="locale/pl/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/pl/LC_MESSAGES/imp.po" name="locale/pl/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/pt/help.xml" name="locale/pt/help.xml" />
+   <install as="imp/locale/pt/LC_MESSAGES/imp.mo" name="locale/pt/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/pt/LC_MESSAGES/imp.po" name="locale/pt/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/pt_BR/help.xml" name="locale/pt_BR/help.xml" />
+   <install as="imp/locale/pt_BR/LC_MESSAGES/imp.mo" name="locale/pt_BR/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/pt_BR/LC_MESSAGES/imp.po" name="locale/pt_BR/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/ro/LC_MESSAGES/imp.mo" name="locale/ro/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/ro/LC_MESSAGES/imp.po" name="locale/ro/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/ru/help.xml" name="locale/ru/help.xml" />
+   <install as="imp/locale/ru/LC_MESSAGES/imp.mo" name="locale/ru/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/ru/LC_MESSAGES/imp.po" name="locale/ru/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/sk/help.xml" name="locale/sk/help.xml" />
+   <install as="imp/locale/sk/LC_MESSAGES/imp.mo" name="locale/sk/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/sk/LC_MESSAGES/imp.po" name="locale/sk/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/sl/LC_MESSAGES/imp.mo" name="locale/sl/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/sl/LC_MESSAGES/imp.po" name="locale/sl/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/sv/help.xml" name="locale/sv/help.xml" />
+   <install as="imp/locale/sv/LC_MESSAGES/imp.mo" name="locale/sv/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/sv/LC_MESSAGES/imp.po" name="locale/sv/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/th/LC_MESSAGES/imp.mo" name="locale/th/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/th/LC_MESSAGES/imp.po" name="locale/th/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/tr/help.xml" name="locale/tr/help.xml" />
+   <install as="imp/locale/tr/LC_MESSAGES/imp.mo" name="locale/tr/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/tr/LC_MESSAGES/imp.po" name="locale/tr/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/uk/help.xml" name="locale/uk/help.xml" />
+   <install as="imp/locale/uk/LC_MESSAGES/imp.mo" name="locale/uk/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/uk/LC_MESSAGES/imp.po" name="locale/uk/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/zh_CN/help.xml" name="locale/zh_CN/help.xml" />
+   <install as="imp/locale/zh_CN/LC_MESSAGES/imp.mo" name="locale/zh_CN/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/zh_CN/LC_MESSAGES/imp.po" name="locale/zh_CN/LC_MESSAGES/imp.po" />
+   <install as="imp/locale/zh_TW/help.xml" name="locale/zh_TW/help.xml" />
+   <install as="imp/locale/zh_TW/LC_MESSAGES/imp.mo" name="locale/zh_TW/LC_MESSAGES/imp.mo" />
+   <install as="imp/locale/zh_TW/LC_MESSAGES/imp.po" name="locale/zh_TW/LC_MESSAGES/imp.po" />
+   <install as="imp/migration/1_imp_base_tables.php" name="migration/1_imp_base_tables.php" />
+   <install as="imp/migration/2_imp_autoincrement_sentmail.php" name="migration/2_imp_autoincrement_sentmail.php" />
+   <install as="imp/templates/.htaccess" name="templates/.htaccess" />
+   <install as="imp/templates/common-header.inc" name="templates/common-header.inc" />
+   <install as="imp/templates/dimp/index.inc" name="templates/dimp/index.inc" />
+   <install as="imp/templates/dimp/javascript_defs.php" name="templates/dimp/javascript_defs.php" />
+   <install as="imp/templates/dimp/compose/compose-base.html" name="templates/dimp/compose/compose-base.html" />
+   <install as="imp/templates/dimp/compose/compose.html" name="templates/dimp/compose/compose.html" />
+   <install as="imp/templates/dimp/message/message.html" name="templates/dimp/message/message.html" />
+   <install as="imp/templates/imp/javascript_defs.php" name="templates/imp/javascript_defs.php" />
+   <install as="imp/templates/imp/compose/compose.html" name="templates/imp/compose/compose.html" />
+   <install as="imp/templates/imp/compose/redirect.html" name="templates/imp/compose/redirect.html" />
+   <install as="imp/templates/imp/compose/success.html" name="templates/imp/compose/success.html" />
+   <install as="imp/templates/imp/contacts/contacts.html" name="templates/imp/contacts/contacts.html" />
+   <install as="imp/templates/imp/flist/flist.html" name="templates/imp/flist/flist.html" />
+   <install as="imp/templates/imp/folders/actions.html" name="templates/imp/folders/actions.html" />
+   <install as="imp/templates/imp/folders/folders_confirm.html" name="templates/imp/folders/folders_confirm.html" />
+   <install as="imp/templates/imp/folders/folders_size.html" name="templates/imp/folders/folders_size.html" />
+   <install as="imp/templates/imp/folders/head.html" name="templates/imp/folders/head.html" />
+   <install as="imp/templates/imp/folders/import.html" name="templates/imp/folders/import.html" />
+   <install as="imp/templates/imp/mailbox/actions.html" name="templates/imp/mailbox/actions.html" />
+   <install as="imp/templates/imp/mailbox/actions_deleted.html" name="templates/imp/mailbox/actions_deleted.html" />
+   <install as="imp/templates/imp/mailbox/empty_mailbox.html" name="templates/imp/mailbox/empty_mailbox.html" />
+   <install as="imp/templates/imp/mailbox/form_start.html" name="templates/imp/mailbox/form_start.html" />
+   <install as="imp/templates/imp/mailbox/header.html" name="templates/imp/mailbox/header.html" />
+   <install as="imp/templates/imp/mailbox/mailbox.html" name="templates/imp/mailbox/mailbox.html" />
+   <install as="imp/templates/imp/mailbox/message_headers.html" name="templates/imp/mailbox/message_headers.html" />
+   <install as="imp/templates/imp/mailbox/navbar.html" name="templates/imp/mailbox/navbar.html" />
+   <install as="imp/templates/imp/mailbox/searchfolder.html" name="templates/imp/mailbox/searchfolder.html" />
+   <install as="imp/templates/imp/menu/menu.html" name="templates/imp/menu/menu.html" />
+   <install as="imp/templates/imp/message/message.html" name="templates/imp/message/message.html" />
+   <install as="imp/templates/imp/message/navbar_actions.html" name="templates/imp/message/navbar_actions.html" />
+   <install as="imp/templates/imp/message/navbar_navigate.html" name="templates/imp/message/navbar_navigate.html" />
+   <install as="imp/templates/imp/message/navbar_top.html" name="templates/imp/message/navbar_top.html" />
+   <install as="imp/templates/imp/search/search-all.html" name="templates/imp/search/search-all.html" />
+   <install as="imp/templates/imp/search/search-basic.html" name="templates/imp/search/search-basic.html" />
+   <install as="imp/templates/imp/search/search.html" name="templates/imp/search/search.html" />
+   <install as="imp/templates/imp/thread/thread.html" name="templates/imp/thread/thread.html" />
+   <install as="imp/templates/mimp/compose/compose.html" name="templates/mimp/compose/compose.html" />
+   <install as="imp/templates/mimp/folders/folders.html" name="templates/mimp/folders/folders.html" />
+   <install as="imp/templates/mimp/mailbox/mailbox.html" name="templates/mimp/mailbox/mailbox.html" />
+   <install as="imp/templates/mimp/mailbox/search.html" name="templates/mimp/mailbox/search.html" />
+   <install as="imp/templates/mimp/message/message.html" name="templates/mimp/message/message.html" />
+   <install as="imp/templates/mimp/message/part.html" name="templates/mimp/message/part.html" />
+   <install as="imp/templates/mobile/folders.html.php" name="templates/mobile/folders.html.php" />
+   <install as="imp/templates/mobile/head.html.php" name="templates/mobile/head.html.php" />
+   <install as="imp/templates/mobile/javascript_defs.php" name="templates/mobile/javascript_defs.php" />
+   <install as="imp/templates/mobile/mailbox.html.php" name="templates/mobile/mailbox.html.php" />
+   <install as="imp/templates/mobile/message.html.php" name="templates/mobile/message.html.php" />
+   <install as="imp/templates/mobile/notice.html.php" name="templates/mobile/notice.html.php" />
+   <install as="imp/templates/pgp/import_key.html" name="templates/pgp/import_key.html" />
+   <install as="imp/templates/prefs/acl.html" name="templates/prefs/acl.html" />
+   <install as="imp/templates/prefs/drafts.html" name="templates/prefs/drafts.html" />
+   <install as="imp/templates/prefs/encrypt.html" name="templates/prefs/encrypt.html" />
+   <install as="imp/templates/prefs/flags.html" name="templates/prefs/flags.html" />
+   <install as="imp/templates/prefs/initialpage.html" name="templates/prefs/initialpage.html" />
+   <install as="imp/templates/prefs/mailto.html" name="templates/prefs/mailto.html" />
+   <install as="imp/templates/prefs/newmailaudio.html" name="templates/prefs/newmailaudio.html" />
+   <install as="imp/templates/prefs/pgpprivatekey.html" name="templates/prefs/pgpprivatekey.html" />
+   <install as="imp/templates/prefs/pgppublickey.html" name="templates/prefs/pgppublickey.html" />
+   <install as="imp/templates/prefs/searches.html" name="templates/prefs/searches.html" />
+   <install as="imp/templates/prefs/sentmail.html" name="templates/prefs/sentmail.html" />
+   <install as="imp/templates/prefs/signaturehtml.html" name="templates/prefs/signaturehtml.html" />
+   <install as="imp/templates/prefs/smimeprivatekey.html" name="templates/prefs/smimeprivatekey.html" />
+   <install as="imp/templates/prefs/smimepublickey.html" name="templates/prefs/smimepublickey.html" />
+   <install as="imp/templates/prefs/spam.html" name="templates/prefs/spam.html" />
+   <install as="imp/templates/prefs/specialuse.html" name="templates/prefs/specialuse.html" />
+   <install as="imp/templates/prefs/stationery.html" name="templates/prefs/stationery.html" />
+   <install as="imp/templates/prefs/trash.html" name="templates/prefs/trash.html" />
+   <install as="imp/templates/print/headers.html" name="templates/print/headers.html" />
+   <install as="imp/templates/quota/quota.html" name="templates/quota/quota.html" />
+   <install as="imp/templates/rss/mailbox.rss" name="templates/rss/mailbox.rss" />
+   <install as="imp/templates/saveimage/saveimage.html" name="templates/saveimage/saveimage.html" />
+   <install as="imp/templates/smime/import_key.html" name="templates/smime/import_key.html" />
+   <install as="imp/templates/test/mailserver.inc" name="templates/test/mailserver.inc" />
+   <install as="Imp/AllTests.php" name="test/Imp/AllTests.php" />
+   <install as="Imp/Autoload.php" name="test/Imp/Autoload.php" />
+   <install as="Imp/phpunit.xml" name="test/Imp/phpunit.xml" />
+   <install as="Imp/fixtures/maildirsize" name="test/Imp/fixtures/maildirsize" />
+   <install as="Imp/Stub/HtmlViewer.php" name="test/Imp/Stub/HtmlViewer.php" />
+   <install as="Imp/Unit/ComposeTest.php" name="test/Imp/Unit/ComposeTest.php" />
+   <install as="Imp/Unit/QuotaTest.php" name="test/Imp/Unit/QuotaTest.php" />
+   <install as="Imp/Unit/Mime/Viewer/HtmlTest.php" name="test/Imp/Unit/Mime/Viewer/HtmlTest.php" />
+   <install as="Imp/Unit/Mime/Viewer/ItipTest.php" name="test/Imp/Unit/Mime/Viewer/ItipTest.php" />
+   <install as="imp/themes/azur/screen.css" name="themes/azur/screen.css" />
+   <install as="imp/themes/bluemoon/screen.css" name="themes/bluemoon/screen.css" />
+   <install as="imp/themes/bluewhite/screen.css" name="themes/bluewhite/screen.css" />
+   <install as="imp/themes/bluewhite/dimp/screen.css" name="themes/bluewhite/dimp/screen.css" />
+   <install as="imp/themes/brown/screen.css" name="themes/brown/screen.css" />
+   <install as="imp/themes/burntorange/screen.css" name="themes/burntorange/screen.css" />
+   <install as="imp/themes/cornflower/screen.css" name="themes/cornflower/screen.css" />
+   <install as="imp/themes/default/ie6_or_less.css" name="themes/default/ie6_or_less.css" />
+   <install as="imp/themes/default/ie7.css" name="themes/default/ie7.css" />
+   <install as="imp/themes/default/mobile.css" name="themes/default/mobile.css" />
+   <install as="imp/themes/default/rtl.css" name="themes/default/rtl.css" />
+   <install as="imp/themes/default/screen.css" name="themes/default/screen.css" />
+   <install as="imp/themes/default/dimp/ie7.css" name="themes/default/dimp/ie7.css" />
+   <install as="imp/themes/default/dimp/screen.css" name="themes/default/dimp/screen.css" />
+   <install as="imp/themes/default/graphics/addressbook_add.png" name="themes/default/graphics/addressbook_add.png" />
+   <install as="imp/themes/default/graphics/addressbook_browse.png" name="themes/default/graphics/addressbook_browse.png" />
+   <install as="imp/themes/default/graphics/add_contact.png" name="themes/default/graphics/add_contact.png" />
+   <install as="imp/themes/default/graphics/application_tile_horizontal.png" name="themes/default/graphics/application_tile_horizontal.png" />
+   <install as="imp/themes/default/graphics/application_tile_vertical.png" name="themes/default/graphics/application_tile_vertical.png" />
+   <install as="imp/themes/default/graphics/arrow_collapsed.png" name="themes/default/graphics/arrow_collapsed.png" />
+   <install as="imp/themes/default/graphics/arrow_down.png" name="themes/default/graphics/arrow_down.png" />
+   <install as="imp/themes/default/graphics/arrow_expanded.png" name="themes/default/graphics/arrow_expanded.png" />
+   <install as="imp/themes/default/graphics/arrow_up.png" name="themes/default/graphics/arrow_up.png" />
+   <install as="imp/themes/default/graphics/attachment.png" name="themes/default/graphics/attachment.png" />
+   <install as="imp/themes/default/graphics/backhead_orderby.png" name="themes/default/graphics/backhead_orderby.png" />
+   <install as="imp/themes/default/graphics/backhead_r.png" name="themes/default/graphics/backhead_r.png" />
+   <install as="imp/themes/default/graphics/backhead_s2.png" name="themes/default/graphics/backhead_s2.png" />
+   <install as="imp/themes/default/graphics/backhead_shadow.png" name="themes/default/graphics/backhead_shadow.png" />
+   <install as="imp/themes/default/graphics/blacklist.png" name="themes/default/graphics/blacklist.png" />
+   <install as="imp/themes/default/graphics/calendar.png" name="themes/default/graphics/calendar.png" />
+   <install as="imp/themes/default/graphics/checkbox_off.png" name="themes/default/graphics/checkbox_off.png" />
+   <install as="imp/themes/default/graphics/checkbox_on.png" name="themes/default/graphics/checkbox_on.png" />
+   <install as="imp/themes/default/graphics/checkbox_over.png" name="themes/default/graphics/checkbox_over.png" />
+   <install as="imp/themes/default/graphics/checkmail.png" name="themes/default/graphics/checkmail.png" />
+   <install as="imp/themes/default/graphics/close.png" name="themes/default/graphics/close.png" />
+   <install as="imp/themes/default/graphics/compose.png" name="themes/default/graphics/compose.png" />
+   <install as="imp/themes/default/graphics/delete.png" name="themes/default/graphics/delete.png" />
+   <install as="imp/themes/default/graphics/download.png" name="themes/default/graphics/download.png" />
+   <install as="imp/themes/default/graphics/drafts.png" name="themes/default/graphics/drafts.png" />
+   <install as="imp/themes/default/graphics/dragHandle.png" name="themes/default/graphics/dragHandle.png" />
+   <install as="imp/themes/default/graphics/dragHandleVert.png" name="themes/default/graphics/dragHandleVert.png" />
+   <install as="imp/themes/default/graphics/edit.png" name="themes/default/graphics/edit.png" />
+   <install as="imp/themes/default/graphics/empty_spam.png" name="themes/default/graphics/empty_spam.png" />
+   <install as="imp/themes/default/graphics/empty_trash.png" name="themes/default/graphics/empty_trash.png" />
+   <install as="imp/themes/default/graphics/encrypted.png" name="themes/default/graphics/encrypted.png" />
+   <install as="imp/themes/default/graphics/favicon.ico" name="themes/default/graphics/favicon.ico" />
+   <install as="imp/themes/default/graphics/fetchmail.png" name="themes/default/graphics/fetchmail.png" />
+   <install as="imp/themes/default/graphics/filters.png" name="themes/default/graphics/filters.png" />
+   <install as="imp/themes/default/graphics/forward.png" name="themes/default/graphics/forward.png" />
+   <install as="imp/themes/default/graphics/gallery.png" name="themes/default/graphics/gallery.png" />
+   <install as="imp/themes/default/graphics/group.png" name="themes/default/graphics/group.png" />
+   <install as="imp/themes/default/graphics/ham.png" name="themes/default/graphics/ham.png" />
+   <install as="imp/themes/default/graphics/help.png" name="themes/default/graphics/help.png" />
+   <install as="imp/themes/default/graphics/ico_message_off.png" name="themes/default/graphics/ico_message_off.png" />
+   <install as="imp/themes/default/graphics/imp.png" name="themes/default/graphics/imp.png" />
+   <install as="imp/themes/default/graphics/info_icon.png" name="themes/default/graphics/info_icon.png" />
+   <install as="imp/themes/default/graphics/key_down.png" name="themes/default/graphics/key_down.png" />
+   <install as="imp/themes/default/graphics/key_up.png" name="themes/default/graphics/key_up.png" />
+   <install as="imp/themes/default/graphics/loading.gif" name="themes/default/graphics/loading.gif" />
+   <install as="imp/themes/default/graphics/locked.png" name="themes/default/graphics/locked.png" />
+   <install as="imp/themes/default/graphics/logo.png" name="themes/default/graphics/logo.png" />
+   <install as="imp/themes/default/graphics/logout.png" name="themes/default/graphics/logout.png" />
+   <install as="imp/themes/default/graphics/mail_answered.png" name="themes/default/graphics/mail_answered.png" />
+   <install as="imp/themes/default/graphics/mail_clearflag.png" name="themes/default/graphics/mail_clearflag.png" />
+   <install as="imp/themes/default/graphics/mail_deleted.png" name="themes/default/graphics/mail_deleted.png" />
+   <install as="imp/themes/default/graphics/mail_draft.png" name="themes/default/graphics/mail_draft.png" />
+   <install as="imp/themes/default/graphics/mail_flagged.png" name="themes/default/graphics/mail_flagged.png" />
+   <install as="imp/themes/default/graphics/mail_forwarded.png" name="themes/default/graphics/mail_forwarded.png" />
+   <install as="imp/themes/default/graphics/mail_personal.png" name="themes/default/graphics/mail_personal.png" />
+   <install as="imp/themes/default/graphics/mail_priority_high.png" name="themes/default/graphics/mail_priority_high.png" />
+   <install as="imp/themes/default/graphics/mail_priority_low.png" name="themes/default/graphics/mail_priority_low.png" />
+   <install as="imp/themes/default/graphics/mail_seen.png" name="themes/default/graphics/mail_seen.png" />
+   <install as="imp/themes/default/graphics/mail_unseen.png" name="themes/default/graphics/mail_unseen.png" />
+   <install as="imp/themes/default/graphics/message_source.png" name="themes/default/graphics/message_source.png" />
+   <install as="imp/themes/default/graphics/mini-error.png" name="themes/default/graphics/mini-error.png" />
+   <install as="imp/themes/default/graphics/newmail.png" name="themes/default/graphics/newmail.png" />
+   <install as="imp/themes/default/graphics/newwin.png" name="themes/default/graphics/newwin.png" />
+   <install as="imp/themes/default/graphics/plus.png" name="themes/default/graphics/plus.png" />
+   <install as="imp/themes/default/graphics/popdown.png" name="themes/default/graphics/popdown.png" />
+   <install as="imp/themes/default/graphics/prefs.png" name="themes/default/graphics/prefs.png" />
+   <install as="imp/themes/default/graphics/preview.png" name="themes/default/graphics/preview.png" />
+   <install as="imp/themes/default/graphics/print.png" name="themes/default/graphics/print.png" />
+   <install as="imp/themes/default/graphics/quotaback.jpg" name="themes/default/graphics/quotaback.jpg" />
+   <install as="imp/themes/default/graphics/quotauncover.gif" name="themes/default/graphics/quotauncover.gif" />
+   <install as="imp/themes/default/graphics/reload.png" name="themes/default/graphics/reload.png" />
+   <install as="imp/themes/default/graphics/reply.png" name="themes/default/graphics/reply.png" />
+   <install as="imp/themes/default/graphics/replyall.png" name="themes/default/graphics/replyall.png" />
+   <install as="imp/themes/default/graphics/sbcursor_bottom.png" name="themes/default/graphics/sbcursor_bottom.png" />
+   <install as="imp/themes/default/graphics/sbcursor_top.png" name="themes/default/graphics/sbcursor_top.png" />
+   <install as="imp/themes/default/graphics/scroller.png" name="themes/default/graphics/scroller.png" />
+   <install as="imp/themes/default/graphics/scroller_back.png" name="themes/default/graphics/scroller_back.png" />
+   <install as="imp/themes/default/graphics/search.png" name="themes/default/graphics/search.png" />
+   <install as="imp/themes/default/graphics/select.png" name="themes/default/graphics/select.png" />
+   <install as="imp/themes/default/graphics/shared.png" name="themes/default/graphics/shared.png" />
+   <install as="imp/themes/default/graphics/signed.png" name="themes/default/graphics/signed.png" />
+   <install as="imp/themes/default/graphics/sortdown.png" name="themes/default/graphics/sortdown.png" />
+   <install as="imp/themes/default/graphics/sortup.png" name="themes/default/graphics/sortup.png" />
+   <install as="imp/themes/default/graphics/spacer_red.png" name="themes/default/graphics/spacer_red.png" />
+   <install as="imp/themes/default/graphics/spam.png" name="themes/default/graphics/spam.png" />
+   <install as="imp/themes/default/graphics/spellcheck.png" name="themes/default/graphics/spellcheck.png" />
+   <install as="imp/themes/default/graphics/undelete.png" name="themes/default/graphics/undelete.png" />
+   <install as="imp/themes/default/graphics/warning.png" name="themes/default/graphics/warning.png" />
+   <install as="imp/themes/default/graphics/whitelist.png" name="themes/default/graphics/whitelist.png" />
+   <install as="imp/themes/default/graphics/folders/create.png" name="themes/default/graphics/folders/create.png" />
+   <install as="imp/themes/default/graphics/folders/delete.png" name="themes/default/graphics/folders/delete.png" />
+   <install as="imp/themes/default/graphics/folders/drafts.png" name="themes/default/graphics/folders/drafts.png" />
+   <install as="imp/themes/default/graphics/folders/edit.png" name="themes/default/graphics/folders/edit.png" />
+   <install as="imp/themes/default/graphics/folders/folder.png" name="themes/default/graphics/folders/folder.png" />
+   <install as="imp/themes/default/graphics/folders/inbox.png" name="themes/default/graphics/folders/inbox.png" />
+   <install as="imp/themes/default/graphics/folders/minus.png" name="themes/default/graphics/folders/minus.png" />
+   <install as="imp/themes/default/graphics/folders/open.png" name="themes/default/graphics/folders/open.png" />
+   <install as="imp/themes/default/graphics/folders/plus.png" name="themes/default/graphics/folders/plus.png" />
+   <install as="imp/themes/default/graphics/folders/sent.png" name="themes/default/graphics/folders/sent.png" />
+   <install as="imp/themes/default/graphics/folders/spam.png" name="themes/default/graphics/folders/spam.png" />
+   <install as="imp/themes/default/graphics/folders/trash.png" name="themes/default/graphics/folders/trash.png" />
+   <install as="imp/themes/default/graphics/mime/apple.png" name="themes/default/graphics/mime/apple.png" />
+   <install as="imp/themes/default/graphics/mime/compressed.png" name="themes/default/graphics/mime/compressed.png" />
+   <install as="imp/themes/default/graphics/mime/itip.png" name="themes/default/graphics/mime/itip.png" />
+   <install as="imp/themes/default/graphics/nav/first-grey.png" name="themes/default/graphics/nav/first-grey.png" />
+   <install as="imp/themes/default/graphics/nav/first.png" name="themes/default/graphics/nav/first.png" />
+   <install as="imp/themes/default/graphics/nav/last-grey.png" name="themes/default/graphics/nav/last-grey.png" />
+   <install as="imp/themes/default/graphics/nav/last.png" name="themes/default/graphics/nav/last.png" />
+   <install as="imp/themes/default/graphics/nav/left-grey.png" name="themes/default/graphics/nav/left-grey.png" />
+   <install as="imp/themes/default/graphics/nav/left.png" name="themes/default/graphics/nav/left.png" />
+   <install as="imp/themes/default/graphics/nav/right-grey.png" name="themes/default/graphics/nav/right-grey.png" />
+   <install as="imp/themes/default/graphics/nav/right.png" name="themes/default/graphics/nav/right.png" />
+   <install as="imp/themes/default/mimp/screen.css" name="themes/default/mimp/screen.css" />
+   <install as="imp/themes/fadetogreen/screen.css" name="themes/fadetogreen/screen.css" />
+   <install as="imp/themes/gennevilliers/screen.css" name="themes/gennevilliers/screen.css" />
+   <install as="imp/themes/green/screen.css" name="themes/green/screen.css" />
+   <install as="imp/themes/grey/screen.css" name="themes/grey/screen.css" />
+   <install as="imp/themes/ideas/screen.css" name="themes/ideas/screen.css" />
+   <install as="imp/themes/lavander/screen.css" name="themes/lavander/screen.css" />
+   <install as="imp/themes/luc/screen.css" name="themes/luc/screen.css" />
+   <install as="imp/themes/lucblue/screen.css" name="themes/lucblue/screen.css" />
+   <install as="imp/themes/mozilla/screen.css" name="themes/mozilla/screen.css" />
+   <install as="imp/themes/postnuke/screen.css" name="themes/postnuke/screen.css" />
+   <install as="imp/themes/purple/screen.css" name="themes/purple/screen.css" />
+   <install as="imp/themes/purple/dimp/screen.css" name="themes/purple/dimp/screen.css" />
+   <install as="imp/themes/silver/rtl.css" name="themes/silver/rtl.css" />
+   <install as="imp/themes/silver/screen.css" name="themes/silver/screen.css" />
+   <install as="imp/themes/silver/dimp/screen.css" name="themes/silver/dimp/screen.css" />
+   <install as="imp/themes/silver/graphics/addressbook_add.png" name="themes/silver/graphics/addressbook_add.png" />
+   <install as="imp/themes/silver/graphics/addressbook_browse.png" name="themes/silver/graphics/addressbook_browse.png" />
+   <install as="imp/themes/silver/graphics/add_contact.png" name="themes/silver/graphics/add_contact.png" />
+   <install as="imp/themes/silver/graphics/application_tile_horizontal.png" name="themes/silver/graphics/application_tile_horizontal.png" />
+   <install as="imp/themes/silver/graphics/application_tile_vertical.png" name="themes/silver/graphics/application_tile_vertical.png" />
+   <install as="imp/themes/silver/graphics/arrow_collapsed.png" name="themes/silver/graphics/arrow_collapsed.png" />
+   <install as="imp/themes/silver/graphics/arrow_down.png" name="themes/silver/graphics/arrow_down.png" />
+   <install as="imp/themes/silver/graphics/arrow_expanded.png" name="themes/silver/graphics/arrow_expanded.png" />
+   <install as="imp/themes/silver/graphics/arrow_up.png" name="themes/silver/graphics/arrow_up.png" />
+   <install as="imp/themes/silver/graphics/attachment.png" name="themes/silver/graphics/attachment.png" />
+   <install as="imp/themes/silver/graphics/blacklist.png" name="themes/silver/graphics/blacklist.png" />
+   <install as="imp/themes/silver/graphics/calendar.png" name="themes/silver/graphics/calendar.png" />
+   <install as="imp/themes/silver/graphics/checkmail.png" name="themes/silver/graphics/checkmail.png" />
+   <install as="imp/themes/silver/graphics/close.png" name="themes/silver/graphics/close.png" />
+   <install as="imp/themes/silver/graphics/compose.png" name="themes/silver/graphics/compose.png" />
+   <install as="imp/themes/silver/graphics/delete.png" name="themes/silver/graphics/delete.png" />
+   <install as="imp/themes/silver/graphics/download.png" name="themes/silver/graphics/download.png" />
+   <install as="imp/themes/silver/graphics/drafts.png" name="themes/silver/graphics/drafts.png" />
+   <install as="imp/themes/silver/graphics/edit.png" name="themes/silver/graphics/edit.png" />
+   <install as="imp/themes/silver/graphics/empty_spam.png" name="themes/silver/graphics/empty_spam.png" />
+   <install as="imp/themes/silver/graphics/empty_trash.png" name="themes/silver/graphics/empty_trash.png" />
+   <install as="imp/themes/silver/graphics/encrypted.png" name="themes/silver/graphics/encrypted.png" />
+   <install as="imp/themes/silver/graphics/fetchmail.png" name="themes/silver/graphics/fetchmail.png" />
+   <install as="imp/themes/silver/graphics/filters.png" name="themes/silver/graphics/filters.png" />
+   <install as="imp/themes/silver/graphics/forward.png" name="themes/silver/graphics/forward.png" />
+   <install as="imp/themes/silver/graphics/group.png" name="themes/silver/graphics/group.png" />
+   <install as="imp/themes/silver/graphics/ham.png" name="themes/silver/graphics/ham.png" />
+   <install as="imp/themes/silver/graphics/help.png" name="themes/silver/graphics/help.png" />
+   <install as="imp/themes/silver/graphics/imp.png" name="themes/silver/graphics/imp.png" />
+   <install as="imp/themes/silver/graphics/info_icon.png" name="themes/silver/graphics/info_icon.png" />
+   <install as="imp/themes/silver/graphics/locked.png" name="themes/silver/graphics/locked.png" />
+   <install as="imp/themes/silver/graphics/logout.png" name="themes/silver/graphics/logout.png" />
+   <install as="imp/themes/silver/graphics/mail_answered.png" name="themes/silver/graphics/mail_answered.png" />
+   <install as="imp/themes/silver/graphics/mail_clearflag.png" name="themes/silver/graphics/mail_clearflag.png" />
+   <install as="imp/themes/silver/graphics/mail_deleted.png" name="themes/silver/graphics/mail_deleted.png" />
+   <install as="imp/themes/silver/graphics/mail_draft.png" name="themes/silver/graphics/mail_draft.png" />
+   <install as="imp/themes/silver/graphics/mail_flagged.png" name="themes/silver/graphics/mail_flagged.png" />
+   <install as="imp/themes/silver/graphics/mail_forwarded.png" name="themes/silver/graphics/mail_forwarded.png" />
+   <install as="imp/themes/silver/graphics/mail_personal.png" name="themes/silver/graphics/mail_personal.png" />
+   <install as="imp/themes/silver/graphics/mail_priority_high.png" name="themes/silver/graphics/mail_priority_high.png" />
+   <install as="imp/themes/silver/graphics/mail_priority_low.png" name="themes/silver/graphics/mail_priority_low.png" />
+   <install as="imp/themes/silver/graphics/mail_seen.png" name="themes/silver/graphics/mail_seen.png" />
+   <install as="imp/themes/silver/graphics/mail_unseen.png" name="themes/silver/graphics/mail_unseen.png" />
+   <install as="imp/themes/silver/graphics/message_source.png" name="themes/silver/graphics/message_source.png" />
+   <install as="imp/themes/silver/graphics/newmail.png" name="themes/silver/graphics/newmail.png" />
+   <install as="imp/themes/silver/graphics/newwin.png" name="themes/silver/graphics/newwin.png" />
+   <install as="imp/themes/silver/graphics/plus.png" name="themes/silver/graphics/plus.png" />
+   <install as="imp/themes/silver/graphics/popdown.png" name="themes/silver/graphics/popdown.png" />
+   <install as="imp/themes/silver/graphics/prefs.png" name="themes/silver/graphics/prefs.png" />
+   <install as="imp/themes/silver/graphics/preview.png" name="themes/silver/graphics/preview.png" />
+   <install as="imp/themes/silver/graphics/print.png" name="themes/silver/graphics/print.png" />
+   <install as="imp/themes/silver/graphics/reload.png" name="themes/silver/graphics/reload.png" />
+   <install as="imp/themes/silver/graphics/reply.png" name="themes/silver/graphics/reply.png" />
+   <install as="imp/themes/silver/graphics/replyall.png" name="themes/silver/graphics/replyall.png" />
+   <install as="imp/themes/silver/graphics/search.png" name="themes/silver/graphics/search.png" />
+   <install as="imp/themes/silver/graphics/shared.png" name="themes/silver/graphics/shared.png" />
+   <install as="imp/themes/silver/graphics/signed.png" name="themes/silver/graphics/signed.png" />
+   <install as="imp/themes/silver/graphics/sortdown.png" name="themes/silver/graphics/sortdown.png" />
+   <install as="imp/themes/silver/graphics/sortup.png" name="themes/silver/graphics/sortup.png" />
+   <install as="imp/themes/silver/graphics/spam.png" name="themes/silver/graphics/spam.png" />
+   <install as="imp/themes/silver/graphics/spellcheck.png" name="themes/silver/graphics/spellcheck.png" />
+   <install as="imp/themes/silver/graphics/undelete.png" name="themes/silver/graphics/undelete.png" />
+   <install as="imp/themes/silver/graphics/warning.png" name="themes/silver/graphics/warning.png" />
+   <install as="imp/themes/silver/graphics/whitelist.png" name="themes/silver/graphics/whitelist.png" />
+   <install as="imp/themes/silver/graphics/folders/create.png" name="themes/silver/graphics/folders/create.png" />
+   <install as="imp/themes/silver/graphics/folders/delete.png" name="themes/silver/graphics/folders/delete.png" />
+   <install as="imp/themes/silver/graphics/folders/drafts.png" name="themes/silver/graphics/folders/drafts.png" />
+   <install as="imp/themes/silver/graphics/folders/edit.png" name="themes/silver/graphics/folders/edit.png" />
+   <install as="imp/themes/silver/graphics/folders/explore.png" name="themes/silver/graphics/folders/explore.png" />
+   <install as="imp/themes/silver/graphics/folders/folder.png" name="themes/silver/graphics/folders/folder.png" />
+   <install as="imp/themes/silver/graphics/folders/inbox.png" name="themes/silver/graphics/folders/inbox.png" />
+   <install as="imp/themes/silver/graphics/folders/minus.png" name="themes/silver/graphics/folders/minus.png" />
+   <install as="imp/themes/silver/graphics/folders/open.png" name="themes/silver/graphics/folders/open.png" />
+   <install as="imp/themes/silver/graphics/folders/options.png" name="themes/silver/graphics/folders/options.png" />
+   <install as="imp/themes/silver/graphics/folders/plus.png" name="themes/silver/graphics/folders/plus.png" />
+   <install as="imp/themes/silver/graphics/folders/sent.png" name="themes/silver/graphics/folders/sent.png" />
+   <install as="imp/themes/silver/graphics/folders/spam.png" name="themes/silver/graphics/folders/spam.png" />
+   <install as="imp/themes/silver/graphics/folders/trash.png" name="themes/silver/graphics/folders/trash.png" />
+   <install as="imp/themes/silver/graphics/mime/compressed.png" name="themes/silver/graphics/mime/compressed.png" />
+   <install as="imp/themes/silver/graphics/mime/itip.php" name="themes/silver/graphics/mime/itip.php" />
+   <install as="imp/themes/silver/graphics/nav/first-grey.png" name="themes/silver/graphics/nav/first-grey.png" />
+   <install as="imp/themes/silver/graphics/nav/first.png" name="themes/silver/graphics/nav/first.png" />
+   <install as="imp/themes/silver/graphics/nav/last-grey.png" name="themes/silver/graphics/nav/last-grey.png" />
+   <install as="imp/themes/silver/graphics/nav/last.png" name="themes/silver/graphics/nav/last.png" />
+   <install as="imp/themes/silver/graphics/nav/left-grey.png" name="themes/silver/graphics/nav/left-grey.png" />
+   <install as="imp/themes/silver/graphics/nav/left.png" name="themes/silver/graphics/nav/left.png" />
+   <install as="imp/themes/silver/graphics/nav/right-grey.png" name="themes/silver/graphics/nav/right-grey.png" />
+   <install as="imp/themes/silver/graphics/nav/right.png" name="themes/silver/graphics/nav/right.png" />
+   <install as="imp/themes/simplex/screen.css" name="themes/simplex/screen.css" />
+   <install as="imp/themes/tango-blue/screen.css" name="themes/tango-blue/screen.css" />
+   <install as="imp/themes/tango-blue/dimp/screen.css" name="themes/tango-blue/dimp/screen.css" />
+   <install as="imp/themes/tango-blue/graphics/addressbook_browse.png" name="themes/tango-blue/graphics/addressbook_browse.png" />
+   <install as="imp/themes/tango-blue/graphics/attachment.png" name="themes/tango-blue/graphics/attachment.png" />
+   <install as="imp/themes/tango-blue/graphics/calendar.png" name="themes/tango-blue/graphics/calendar.png" />
+   <install as="imp/themes/tango-blue/graphics/close.png" name="themes/tango-blue/graphics/close.png" />
+   <install as="imp/themes/tango-blue/graphics/compose.png" name="themes/tango-blue/graphics/compose.png" />
+   <install as="imp/themes/tango-blue/graphics/empty_trash.png" name="themes/tango-blue/graphics/empty_trash.png" />
+   <install as="imp/themes/tango-blue/graphics/encrypted.png" name="themes/tango-blue/graphics/encrypted.png" />
+   <install as="imp/themes/tango-blue/graphics/favicon.ico" name="themes/tango-blue/graphics/favicon.ico" />
+   <install as="imp/themes/tango-blue/graphics/fetchmail.png" name="themes/tango-blue/graphics/fetchmail.png" />
+   <install as="imp/themes/tango-blue/graphics/filters.png" name="themes/tango-blue/graphics/filters.png" />
+   <install as="imp/themes/tango-blue/graphics/imp.png" name="themes/tango-blue/graphics/imp.png" />
+   <install as="imp/themes/tango-blue/graphics/mail_answered.png" name="themes/tango-blue/graphics/mail_answered.png" />
+   <install as="imp/themes/tango-blue/graphics/mail_deleted.png" name="themes/tango-blue/graphics/mail_deleted.png" />
+   <install as="imp/themes/tango-blue/graphics/mail_draft.png" name="themes/tango-blue/graphics/mail_draft.png" />
+   <install as="imp/themes/tango-blue/graphics/mail_flagged.png" name="themes/tango-blue/graphics/mail_flagged.png" />
+   <install as="imp/themes/tango-blue/graphics/mail_personal.png" name="themes/tango-blue/graphics/mail_personal.png" />
+   <install as="imp/themes/tango-blue/graphics/mail_priority_high.png" name="themes/tango-blue/graphics/mail_priority_high.png" />
+   <install as="imp/themes/tango-blue/graphics/mail_priority_low.png" name="themes/tango-blue/graphics/mail_priority_low.png" />
+   <install as="imp/themes/tango-blue/graphics/mail_unseen.png" name="themes/tango-blue/graphics/mail_unseen.png" />
+   <install as="imp/themes/tango-blue/graphics/newmail.png" name="themes/tango-blue/graphics/newmail.png" />
+   <install as="imp/themes/tango-blue/graphics/reload.png" name="themes/tango-blue/graphics/reload.png" />
+   <install as="imp/themes/tango-blue/graphics/shared.png" name="themes/tango-blue/graphics/shared.png" />
+   <install as="imp/themes/tango-blue/graphics/signed.png" name="themes/tango-blue/graphics/signed.png" />
+   <install as="imp/themes/tango-blue/graphics/spellcheck.png" name="themes/tango-blue/graphics/spellcheck.png" />
+   <install as="imp/themes/tango-blue/graphics/folders/drafts.png" name="themes/tango-blue/graphics/folders/drafts.png" />
+   <install as="imp/themes/tango-blue/graphics/folders/folder.png" name="themes/tango-blue/graphics/folders/folder.png" />
+   <install as="imp/themes/tango-blue/graphics/folders/inbox.png" name="themes/tango-blue/graphics/folders/inbox.png" />
+   <install as="imp/themes/tango-blue/graphics/folders/open.png" name="themes/tango-blue/graphics/folders/open.png" />
+   <install as="imp/themes/tango-blue/graphics/folders/sent.png" name="themes/tango-blue/graphics/folders/sent.png" />
+   <install as="imp/themes/tango-blue/graphics/folders/spam.png" name="themes/tango-blue/graphics/folders/spam.png" />
+   <install as="imp/themes/tango-blue/graphics/folders/trash.png" name="themes/tango-blue/graphics/folders/trash.png" />
+   <install as="imp/attachment.php" name="attachment.php" />
+   <install as="imp/compose-dimp.php" name="compose-dimp.php" />
+   <install as="imp/compose-mimp.php" name="compose-mimp.php" />
+   <install as="imp/compose.php" name="compose.php" />
+   <install as="imp/contacts.php" name="contacts.php" />
+   <install as="COPYING" name="COPYING" />
+   <install as="imp/folders-mimp.php" name="folders-mimp.php" />
+   <install as="imp/folders.php" name="folders.php" />
+   <install as="imp/index-dimp.php" name="index-dimp.php" />
+   <install as="imp/index.php" name="index.php" />
+   <install as="imp/mailbox-mimp.php" name="mailbox-mimp.php" />
+   <install as="imp/mailbox.php" name="mailbox.php" />
+   <install as="imp/message-dimp.php" name="message-dimp.php" />
+   <install as="imp/message-mimp.php" name="message-mimp.php" />
+   <install as="imp/message.php" name="message.php" />
+   <install as="imp/mobile.php" name="mobile.php" />
+   <install as="imp/pgp.php" name="pgp.php" />
+   <install as="README" name="README" />
+   <install as="imp/rss.php" name="rss.php" />
+   <install as="imp/saveimage.php" name="saveimage.php" />
+   <install as="imp/search-basic.php" name="search-basic.php" />
+   <install as="imp/search.php" name="search.php" />
+   <install as="imp/smime.php" name="smime.php" />
+   <install as="imp/thread.php" name="thread.php" />
+   <install as="imp/view.php" name="view.php" />
+  </filelist>
+ </phprelease>
+ <changelog>
+  <release>
+   <version>
+    <release>5.0.0alpha1</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-03-09</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* First alpha release for Horde 4.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.0beta1</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-03-16</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* Fix purging deleted messages in dynamic view (Bug #9627).
+* Fix display of non-IMAP mailbox elements in folder lists (Bug #9650).
+* Fix print part display.
+* Fix listing users through IMP API.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.0RC1</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-03-23</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* First release candidate for Horde 4.
+* [mms] Fix loading virtual folder as initial page in standard view (Bug #9696).
+* [mms] Fix upgrading virtual folders from IMP 4 (Bug #9692).
+* [mms] Fix editing the size search criteria.
+* [mms] Optimize importing messages from mbox file.
+* [mms] Fix deletion from Virtual Inbox in standard view (Bug #9686).
+* [mms] Fix loading virtual folders from drop-down folder list (Bug #9687).
+* [mms] Fix thread sort by newest messages first (Bug #9685).
+* [mms] Add ability to import/download mailboxes in dynamic view.
+* [jan] Remove application tabs from AJAX interface (Bug #9679).
+* [mms] Move all portal rendering code to Horde.
+* [mms] Fix flag display in message list in traditional view (Bug #9673).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.0RC2</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-03-29</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* Second release candidate for Horde 4.
+* Fix max_folders permission (Bug #9741).
+* [jan] Rename all scripts in bin/ to be prefixed with imp- (Request #9647).
+* [jan] Correctly render notifications with embedded HTML in dynamic view (Bug #9729).
+* [mms] Fix moving to new mailbox, tasklist, and notepad in traditional view (Bug #9732).
+* [jan] Add left and right keys as aliases for up and down keys in dynamic view.
+* [mms] Add mailbox sorting and select all messages to vertical layout in the dynamic view (Request #9708).
+* [jan] Fix expansion of quoted sections in thread view.
+* [jan] Fix message previews in traditional view (Bug #9695).
+* [jan] Support importing of compressed mailbox files.
+* [jan] Fix upgrading of search_fields preference.
+* [jan] Fix key navigation in traditional mailbox view.
+* [mms] Don&apos;t cache FETCH data for the Spam and Trash mailboxes.
+* [mms] All views now honor &apos;initial_page&apos; preference.
+* [mms] Fix loading virtual folder as initial page in standard view (Bug #9696).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.0</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-04-06</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* First stable release for Horde 4.
+* [jan] Notify about new mails in any Horde application.
+* [mms] New mail notifications now handled by the Horde Notification system (Request #9751).
+* [mms] Fix resuming messages with attachments (Bug #9780).
+* [mms] Fix javascript actions in standard view in IE 7/8 (Bugs #9801, 9809).
+* [jan] Fix application-specific permission checks (Bug #9786).
+* [mms] Fix printing of message parts in IE, regardless of local user settings (Bug #9756).
+* [mms] Fix IMP_Maillog regression from RC2 (Bug #9763).
+* [mms] Fix honoring default encryption option in dynamic view.
+* [jan] Show full alarm notifications in dynamic view (Request #9748).
+* [jan] Fix saving S/MIME certs to address book.
+* [mms] Support importing of compressed mailbox files if the zip extension is not available.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.1</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-04-20</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Fix resuming reply drafts in HTML mode (Bug #9928).
+* [mms] Fix updating flags/logs on original messages after resuming from draft.
+* [mms] Fix flagging messages in search mailboxes in dynamic view.
+* [mms] Don&apos;t attempt to poll non-IMAP mailboxes (Bug #9896).
+* [mms] Fix deleting attachments from compose message in dynamic view (Bug #9899).
+* [mms] Newmail portal block can now be configured to auto-update.
+* [mms] Fix deleteMessages and flagMessages API calls (Bug #9888).
+* [mms] More intelligent polling in dynamic view (Request #9808).
+* [mms] Fix spurious viewport loading in rare situations (Bug #9768).
+* [mms] Show human readable message in multipart/report parts in the richest
+        format possible (Bug #9873).
+* [mms] Fix unneeded body part downloads in alternative parts (Bug #9862).
+* [mms] Fix importing PGP private keys.
+* [mms] More intelligent part naming if name is not specified in the message (Request #9853).
+* [jan] Avoid double escaping of folder names in sent-mail drop down list.
+* [jan] Fix translation of special folders on certain IMAP servers.
+* [jan] Fix display of status icons in traditional view (Bug #9844).
+* [mms] Fix displaying all message parts in standard view (Bug #9827).
+* [mms] Allow .eml files to be imported into a mailbox (Request #9827).
+* [mms] Fix vertical layout resize in dynamic view (Bug #9834).
+* [mms] Fix link for filters menu item (Bug #9831).
+* [mms] Fix composing messages in mobile view.
+* [mms] IMP will refuse to work with POP3 servers that don&apos;t support UIDL.
+* [mms] Many POP3 fixes.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.2</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-05-03</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Add quick flag filtering to traditional view.
+* [mms] Fix viewing linked attachments (Bug #9972).
+* [mms] Add support for the content-id access type of message/external-body.
+* [mms] Consolidate IMAP error handling code in IMP_Imap_Exception.
+* [mms] Use translated namespace name if available.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.3</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-05-03</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [jan] Add missing files to package.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.4</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-05-25</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Fix filter links in the preferences UI (Bug #10117).
+* [mms] Fix print icon for non text/html displayable attachments (Bug #10112).
+* [mms] Support $Junk/$NotJunk keywords when marking spam/ham.
+* [jan] Fix link to send PGP key to keyserver (Bug #10070).
+* [mms] Fix resizing compose window in dynamic view for IE 7/8 (Bug #10075).
+* [mms] Fix setting/unsetting passphrases in preferences (Bug #10096).
+* [mms] Base64url encode breacdrumb hash information in dynamic view.
+* [mms] Add login task to autocreate special mailboxes.
+* [mms] Workaround broken messages by allow viewing multipart/related parts that are not referenced in the base part.
+* [mms] Use ACLs to determine when to hide various UI options (Request #9537).
+* [mms] Cache various calculated mailbox information in the session.
+* [mms] Fix adding flags in advanced search (Bug #10049).
+* [mms] Fix display of subfolders in mobile view (Bug #10043).
+* [mms] Improved determination of available flags in a mailbox.
+* [mms] Fix adding to whitelist from dynamic view (rui.carneiro@portugalmail.net, Bug #10036).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.5</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-06-01</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [jan] Fix loading message previews from search results (Bug #10152).
+* [mms] Fix sending messages with linked attachments (Bug #10125).
+* [mms] Handle response codes/errors returned from POP3 servers.
+* [mms] Fix POP3 regressions.
+* [mms] Workaround broken suhosin extension to allow search mailboxes (Request #9842).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.6</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-06-08</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Fix regression in renaming mailboxes in dynamic view (Bug #10207).
+* [mms] Fix selecting sent-mail mailbox for not empty namespaces (Bug #10090).
+* [mms] Fix saving expand/collapse state in traditional folders view.
+* [mms] Update all flag changes in dynamic mode (Bug #10146).
+* [mms] Fix editing saved searches in dynamic mode (Bug #10189).
+* [mms] Fix regression in saving sent mail in traditional view (Bug #10193).
+* [mms] Fix regression in deleting mailboxes in traditional view (Bug #10170).
+* [mms] Fix currently selected mailbox in folder lists (Bug #10163).
+* [jan] Don&apos;t show button to strip attachments if turned off in the preferences (Bug #10154).
+* [jan] Fix printing from message popup (Bug #10188).
+* [jan] Fix viewing messages source from message popup (Bug #10190).
+* [jan] Fix editing saved searches in traditional view (Bug #10184).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.7</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-06-14</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Don&apos;t strip HTML part of compose message when stripping attachments from saved sent-mail message (Bug #10234).
+* [mms] Fix regression when copying/moving messages into a new mailbox in traditional view (Bug #10232).
+* [mms] Fix regression when flagging all messages in a mailbox (Bug #10224).
+* [jan] Fix folder links in virtual folders (Bug #10221).
+* [mms] Show translated name for special mailboxes in sent mail lists (Bug #10220).
+* [mms] Fix regression in filtering mailbox in traditional view (Bug #10213).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.8</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-07-05</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [jan] Don&apos;t attempt to delete linked attachments monthly if they have been disabled (Bug #10166).
+* [jan] Don&apos;t show basic headers twice when showing all headers (Bug #10276).
+* [jan] Add IMP_Contents#getTree() to return a tree representation of a message&apos;s MIME parts.
+* [mms] Fix regression in parsing list reply address (Bug #10258).
+* [jan] Tick sent-mail checkbox off when selecting sent-mail folder in dynamic view.
+* [jan] Keep key navigation active after clicking into a HTML message (Request #9720).
+* [mms] Fix additional regression when flagging all messages in a mailbox (Bug #10243).
+* [mms] Fix &quot;Don&apos;t Show&quot; filtering in traditional mailbox view (Bug #10244).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.9</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-08-02</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Fix to allow search filters to be saved.
+* [mjr] Fix mouse click handling on mobile view (Bug #10355).
+* [mms] Ensure correct message charset is use if forward/reply headers contain non US-ASCII characters (Bug #10148).
+* [mms] Select all checkbox in dynamic view can now be toggled (Request #10067).
+* [mms] Remember vertical splitbar size in dynamic view.
+* [mms] Workaround IE quirks for compose autocomplete box (Bug #10250).
+* [mms] Fix resuming HTML drafts for non-reply messages (Bug #10298).
+* [jan] Fix verifying of inline signed PGP messages (requires Horde_Crypt 1.0.4).
+* [mms] Fix Shift-N shortcut in dynamic view (Bug #10352).
+* [mms] Add save message link to dynamic view preview window.
+* [mms] Correctly quote e-mail names when composing from compose links in the dynamic view (Bug #10292).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.10</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-08-17</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Display flag to indicate a mailing list message.
+* [mms] Immediately update mailbox list when message is deleted and the mailbox does not support flags (e.g. POP3) (Bug #10424).
+* [mjr] Fix notifications not showing while accepting iTips
+* [mms] Correctly determine page with first/last unseen messages when using descending sequence sorting (Bug #9882).
+* [mms] Deletion works correctly from popup message view if base window is no longer available (Bug #9761).
+* [mms] Fix explicitly applying filters in INBOX in dynamic view (Bug #10291).
+* [mms] Add &apos;Edit as New&apos; action for messages (Request #10206).
+* [mms] Remove &apos;allow_resume_all&apos; configuration option (Request #10206).
+* [mms] Add personal contacts search filter.
+* [mms] Add ability to search all mailboxes (Request #10204).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.11</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-08-31</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Automatically track rownumber updates when selecting messages; fixes SHIFT-DEL behavior in the dynamic view.
+* [mms] Fix contents of sent message when directly sending from spellcheck in standard view (Bug #10464).
+* [mms] Fix namespace auto-detection for non-sane namespace configs (Bug #10447).
+* [mms] Fix POP3 regression (Bug #10450).
+* [mms] Forwarded messages no longer treated as an attachment in the UI (Request #9754).
+* [mms] Correctly display submailboxes in dynamic view when new submailbox is created before parent mailbox is expanded (Bug #10429).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.12</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-09-21</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Fix UI artifacts when renaming mailboxes in dynamic view (Bug #10533).
+* [jan] Don&apos;t open certain links in HTML messages in the message pane.
+* [mms] Add ability to toggle hide deleted messages in dynamic view (Request #10256).
+* [mms] Add auto-generated message filter (see RFC 3834).
+* [mms] Remove non-existent parent mailbox when removing last child mailbox in dynamic view (Bug #10495).
+* [mms] Provide content duration information for audio &amp; video data if that information is available (RFC 3803).
+* [jan] Fix setting sender when redirecting messages via SMTP (Bug #10488).
+* [mms] Add List-ID information, if available, to auto-reply notification.
+* [mms] Display information on reply method in standard view when automatically choosing the reply type.
+* [mms] Fix generation of Save All attachments link.
+* [mms] More intelligent quoting of flowed text messages sent in HTML format.
+* [mms] Browser mailto-handler respects current IMP view mode (Bug #10475).
+* [mms] More workarounds for broken suhosin extension (Bug #10462).
+* [mms] Always show image thumbnail previews, if an image conversion utility is present on the system.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.13</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-09-21</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [jan] Fix broken dependency on Text_Flowed.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.14</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-10-18</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Workaround broken number_format() for PHP &lt; 5.4.0 (Bug #10618).
+* [mms] Add preference to indicate preferred language for return replies on outgoing messages.
+* [mms] For reply, indicate original sender&apos;s language preference.
+* [mms] Fix/improve monthly sent-mail rename login task (Bug #10613).
+* [mms] Fix display of encoded subject text on print page (Bug #9755).
+* [mms] Fix setting MDN flag on sent message after compose (Bug #10579).
+* [mms] When expanding a submailbox in dynamic view, honor expanded children status.
+* [mms] Re-add &apos;msgs_shown&apos; parameter to Newmail block.
+* [mms] Allow multiple messages to be sent via quickreply in dynamic view.
+* [mms] Allow image attachments to be displayed without download in mobile view.
+* [mms] Fix reporting spam/innocent on mailbox page in mobile view.
+* [mms] Fix viewing next message after deleting message in mobile view.
+* [mms] Fix composing messages in mobile view.
+* [mms] Optimize deletion of messages in dynamic view.
+* [mms] Fix accessing search mailboxes in dynamic view on IE 9 (Bug #10462).
+* [mms] Fix altering background color of system message flags (Bug #10544).
+* [jan] Fix sending notifications after download of linked attachments (Bug #10539).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.15</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-11-22</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Honor sortpref locked status.
+* [mms] HTML drafts saved in IMP are resumed in that mode, regardless of the &apos;compose_html&apos; preference (Request #10787).
+* [mms] Improved tree display when displaying all message parts.
+* [mms] Fix DNS resolution when sending attachment viewed messages (Bug #10784).
+* [mms] Fix switching quicksearch criteria while a search is active in dynamic mode (Bug #10780).
+* [mms] Fix redirecting message from dynamic view popup message (Bug #10738).
+* [mms] Fix swapping signatures when composing in HTML mode (Bug #10768).
+* [mms] Remove transparency for PDF thumbnails generated by imagemagick.
+* [mms] Fix removing addresses on contacts page (Bug #10761).
+* [mms] Virtual Trash fixes.
+* [mms] Improve UI access to advanced sorting options in dynamic view.
+* [mms] Fix stripping attachments in traditional view (Bug #10722).
+* [mms] Fix creating new Drafts mailbox from Drafts preference page.
+* [mms] Fix verifying a PGP signed part within a PGP encrypted part.
+* [mms] HTML viewer passes Email Privacy Tester (http://grepular.com/email_privacy_tester/).
+* [mms] Fix intermittent attachment loss when composing messages.
+* [mms] Correctly reference CSS stylesheets contained within a multipart/related part.
+* [mms] Sanitize LINK tags contained in HTML messages.
+* [mjr] Only request the field values we actually need when searching the contacts API.
+* [mms] Fix expand all mailboxes in dynamic view (Bug #10682).
+* [mms] Re-add auto-detection of MIME types for message parts that lack this information.
+* [mms] Add &apos;delete_mark_seen&apos; preference.
+* [mms] Fix accessing POP3 servers that use commas in their UIDs.
+* [mms] Fix updating flags in non-selected mailbox if IMAP server does not support CONDSTORE/QRESYNC (Bug #10627).
+* [mms] Fix some dynamic view links on IE (Bug #10664).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.16</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-12-13</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [jan] Use locale based folder sorting.
+* [mms] Workaround broken PGP signed data contained within encrypted parts (Bug #10809).
+* [mms] Fix signature verification display for combined encrypted/signed PGP messages.
+* [mms] Add option to edit ACLs when right-clicking mailbox in dynamic view (Request #8060).
+* [mms] Allow multiple messages to be redirected from traditional view mailbox page (Request #2084).
+* [mms] Add ability to quickly add unsubscribed mailboxes to available search mailboxes in advanced search (Request #10832).
+* [mms] Don&apos;t list parent mailboxes after child mailboxes (Bug #10802).
+* [jan] Update Dutch translation (Pieterjan Heyse &lt;pieterjan.heyse@scheppers-wetteren.be&gt;).
+* [mms] Fix setting compose message body on IE 9 in dynamic view.
+* [mms] Redirect to login page if IMAP credentials are lost somehow during the session.
+* [mms] Fix &apos;server&apos; credential in preauthenticate hook.
+* [jan] Fix updating events from attendee responses (Bug #10772).
+* [jan] Update Japanese translation (Hiromi Kimura &lt;hiromi@tac.tsukuba.ac.jp&gt;).
+* [mms] Correctly apply default mail_domain value in all places it is needed.
+* [mms] Correctly save mail_domain value if changed in preferences UI.
+* [mms] Purge browser cache daily in dynamic view; updates time stamps to proper format (Request #9773).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.17</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-12-21</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Cache message headers during a page access.
+* [mms] Fix adding submailboxes to last mailbox in a level in dynamic view.
+* [mms] Fix display of numerically-named mailboxes on IMAP servers without the LIST-EXTENDED IMAP capability (Bug #10869).
+* [mms] Fix attachment detection search filter.
+* [mms] Fix editing date search elements.
+* [mms] Allow creation of the mailbox &apos;0&apos; (Bug #10866).
+* [mms] Correctly handle numeric mailbox names.
+* [mms] Fix display of mailbox names living under special mailboxes (Bug #10802).
+* [mms] Fix broken Hide/Purge Deleted links in traditional view (Bug #10860).
+* [mms] Fix issue in dynamic mailbox view with thread sorting and a reset of mailbox metadata (Bug #10835).
+* [mms] Fix message redirection regression in dynamic view (Bug #10859).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>5.0.18</release>
+    <api>5.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-01-17</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] SECURITY: Fix XSS vulnerabilities on the compose page (traditional view), the contacts popup window, and with certain IMAP mailbox names.
+* [mms] Fix updating context menu when a mailbox is converted into a container element after being deleted.
+* [mms] Fix expand/collapse of folder tree in mobile view.
+* [mms] Fix regression preventing sending of MDNs.
+* [mms] Fix reporting as innocent in mobile view.
+* [mms] Fix updating log information when replying/forwarding in dynamic view.
+* [mms] Fix deleting virtual folders in dynamic view.
+   </notes>
+  </release>
+ </changelog>
+</package>
