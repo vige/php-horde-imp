@@ -1,13 +1,7 @@
-php-horde-imp (5.0.18-2) UNRELEASED; urgency=low
-
-  * Fixed watchfile
-
- -- Mathieu Parent <sathieu@debian.org>  Wed, 29 Feb 2012 18:37:18 +0100
-
 php-horde-imp (5.0.18-1) unstable; urgency=low
 
   * imp package
-  * Initial packaging (Closes: #nnnnnn)
+  * Initial packaging (Closes: #657375)
   * Copyright file by Soren Stoutner and Jay Barksdale
 
- -- Mathieu Parent <sathieu@debian.org>  Sat, 11 Feb 2012 15:04:05 +0100
+ -- Mathieu Parent <sathieu@debian.org>  Wed, 29 Feb 2012 18:43:25 +0100
