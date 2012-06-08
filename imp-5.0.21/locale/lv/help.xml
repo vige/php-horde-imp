@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help>
+
+<entry id="keyboard-navigation" state="uptodate">
+    <title>Klaviatūra: Navigācija</title>
+    <para>Pastāv iespēja izmantot klaviatūru, lai pārvietotos sarakstā no vēstules uz vēstuli, uz iepriekšējo vai nākošo vēstuli, kamēr lasāt atvērto vēstuli vai pa pastkastes vēstuļu saraksta lappusēm.
+      </para>
+    <heading>Navigācija vēstuļu sarakstā</heading>
+    <para>Varat izmantot klaviatūru, lai atzīmētu vai atvērtu lasīšanai vēstules no saraksta. Lai pārvietotos no vēstules uz vēstuli, izmantojiet pogas Augšup un Lejup, vienlaikus turot nospiestu Ctrl pogu. Jūs sāksiet saraksta lejas daļā (ar pēdējo lasīto vēstuli), ja nospiedīsiet Augšup vai saraksta augšā (pirmā lasītā vēstule), ja nospiedīsiet Lejup.</para>
+    <para>Aktuālā vēstule tiek izcelta līdzīgi kā izmantojot peli. Pārvietojoties augšup vai lejup pa sarakstu, varat atzīmēt vēstules vai atcel atzīmēšanu, nospiežot Tukšuma pogu (Space) vai arī atvērt vēstuli lasīšanai, nospiežot pogu Enter.</para>
+    <para>Ja pārvietojoties pa vēstuļu sarakstu, turēsiet nospiestu Alt, nevis Ctrl pogu, vēstules tiks automātiski iezīmētas (vai atcelts iezīmējums).</para>
+    <heading>Vēstuļu saraksts: Iepriekšējā/Nākošā lapa</heading>
+    <para>Izmantojiet pogas Pa labi un Pa kreisi lai pārvietotos uz iepriekšējo vai nākošo vēstuļu saraksta lapu.</para>
+    <heading>Vēstules skats: Iepriekšējā/Nākošā vēstule</heading>
+    <para>Izmantojiet pogas Pa labi un Pa kreisi lai pārvietotos uz iepriekšējo vai nākošo vēstuli.</para>
+</entry>
+
+<!--
+<entry id="keyboard-shortcuts">
+    <title>Keyboard: Shortcuts</title>
+    <heading>Using Keyboard Shortcuts</heading>
+</entry>
+-->
+
+<entry id="compose-buttons" state="uptodate">
+    <title>Vēstules rakstīšana: Darbības</title>
+    <heading>Darbības</heading>
+    <para>
+    "Nosūtīt" nosūta sagatavoto vēstuli norādītajam (-iem) saņēmējam(-iem). Pirms nosūtīšanas pārliecinieties, vai tiešām vēlaties vēstuli nosūtīt, jo atsaukt to nebūs iespējams.
+    </para>
+    <para>
+    "Saglabāt Melnrakstu" saglabā vēstules melnrakstu mapē ar nosaukumu "Melnraksti", kurai var piekļūt no izkrītošās izvēlnes navigācijas joslas labajā pusē. Jūs varat pabeigt vēstuli vēlāk, pārslēdzoties uz mapi "Melnraksti", uzklikšķinot attiecīgajai vēstulei un "Atsākt". Pirms pierakstāt melnrakstu, pārliecinieties, vai esat norādījuši tematu - tas vēlāk palīdzēs vieglāk orientēties melnrakstu mapē.
+    </para>
+    <tip>
+    Atkarībā no sistēmas iestatījumiem, Jums var būt iespēja noteikt vai pēc melnraksta saglabāšanas atgriezties mapē, kurā bijāt pirms tam vai arī pie pēdējās atvērtās vēstules.
+    </tip>
+    <para>
+    "Pārtraukt" pārtrauc vēstules rakstīšanu, nesaglabājot vēstules tekstu, un atgriežas mapē, kura bija  atvērta pirms tam.
+    </para>
+ </entry>
+
+<entry id="compose-identity" state="uptodate">
+    <title>Vēstules rakstīšana: Identitāte</title>
+    <heading>Identitāte</heading>
+    <para>
+      No izkrītošās izvēlnes izvēlieties vieno no Personīgās informācijas sadaļā (Iestatījumi) definētajām identitātēm, kura kalpos kā nosūtītāja adrese.
+    </para>
+</entry>
+
+<entry id="compose-from">
+    <title>Vēstules rakstīšana: No</title>
+    <heading>No</heading>
+    <para>
+    Ievadiet e-pasta adresi, no kuras vēlaties nosūtīt šo vēstuli.
+    </para>
+</entry>
+
+<entry id="compose-to" state="uptodate" md5="31cba17f169572c367aa8014831eb8f8">
+    <title>Vēstules rakstīšana: To (Kam)</title>
+    <heading>"Kam"</heading>
+    <para>
+    Ievadiet vēstules saņēmēja(u) adresi(es). Vairāku adresātu gadījumā adrese ir jāatdala ar komatu, citi atdalītāji izraisīs kļūdu.
+    </para>
+</entry>
+
+<entry id="compose-cc" state="uptodate" md5="97571433ab037ef9c4d101a56bf74e25">
+    <title>Vēstules rakstīšana: Cc</title>
+    <heading>"Cc"</heading>
+    <para>
+    Ievadiet saņēmēju adreses, kuriem vēlaties nosūtīt vēstules kopijas. Vairāku adresātu gadījumā adreses ir jāatdala ar komatu, citi atdalītāji izraisīs kļūdu.
+    </para>
+    <para>
+Vēstules kopijas parasti tiek nosūtītas adresātiem, kuri nav tiešie vēstules saņēmēji, taču kuriem ir jābūt informētiem par vēstules nosūtīšanu. Visi "To:" un "Cc:" laukos uzskaitītie saņēmēji redz vēstules adresātu uzskaitījumu.
+    </para>
+</entry>
+
+<entry id="compose-bcc" state="uptodate" md5="aa8f9e2d44fdb74def0fa15240ff687b">
+    <title>Vēstules rakstīšana: Bcc</title>
+    <heading>"Bcc"</heading>
+    <para>
+    Ievadiet saņēmēju adreses, kuriem vēlaties nosūtīt slēptās vēstules kopijas. Vairāku adresātu gadījumā adreses ir jāatdala ar komatu, citi atdalītāji izraisīs kļūdu.
+  </para>
+   <para>
+Slēptās kopijas parasti tiek sūtītas saņēmējiem, kas nav nedz tiešie, nedz netiešie saņēmēji ("To:" un "Cc:" saņēmēji), bet kuriem ir nepieciešams būt informētiem par vēstules saturu, slēpjot informāciju par saņemšanu no citiem adresātiem. Tas nozīmē, ka šo saņēmēju identitātes būs zināmas tikai vēstules nosūtītājam un slēptās kopijas saņēmējam. Piemēram, Jūs vēlaties nosūtīt vēstuli adresātam, vienlaicīgi informējot par to augstākstāvošu personu, taču nebrīdinot vēstules adresātu par šo faktu.
+    </para>
+</entry>
+
+<entry id="compose-subject" state="uptodate" md5="0639a8790e306acc9e19b4d1ce342d53">
+    <title>Vēstules rakstīšana: Temats</title>
+    <heading>"Temats"</heading>
+    <para>
+    Norādiet vēstules tematu. Mēģiniet formulēt vēstules tematu īsu, vienkāršu un pietiekoši informatīvu. Temats ir vienkāršākais veids, lai aprakstītu vēstules saturu, kā arī - vēl svarīgāk - atvieglotu vēstuļu kārtošanu un palīdzētu sameklēt svarīgākās no tām. 
+  </para>
+  <para>
+    Pie tam, ja pārsūtat vēstuli ar "Atbildēt" vai "Pārsūtīt", temata rinda tiek kopēta uz jauno vēstuli un tādējādi ir ļoti parocīgi izmantojama, lai noteiktu, kuras vēstules ir saistītas, veidojot sarakstes pavedienu. Vienlaikus, ja atbilde vai pārsūtījums satur jaunas idejas, Jūs varat labot temata rindu, tādējādi informējot saņēmēju(s) par sarakstes pavediena attīstību.
+    </para>
+</entry>
+
+<entry id="compose-charset" state="uptodate" md5="c2c878070445af81407da5bfc4083ea3">
+    <title>Vēstules rakstīšana: Kodējums</title>
+    <heading>Kodējums</heading>
+    <para>
+    Nosaka nosūtāmās vēstules teksta kodējumu.
+    </para>
+    <tip>
+      Tas attiecas tikai uz vēstulēm, kuras rakstāt no jauna. Atbildot uz vēstuli, (pagaidām) tiek izmantots saņemtās vēstules teksta kodējums, līdz ar ko var rasties situācija, ka atbildes vēstules saņēmējs var arī nespēt izlasīt Jūsu atbildi, ja izmantosiet, piemēram, iespraudumus kirilicā vai tml.
+    </tip>
+</entry>
+
+<entry id="compose-options" state="uptodate" md5="5f1d50a733c8b7e46aecece28822ff70">
+    <title>Vēstules rakstīšana: Opcijas</title>
+    <heading>"Opcijas"</heading>
+    <para>
+    Šīs opcijas palīdz sagatavot vēstuli.
+    </para>
+    <para>
+    Uzklikšķiniet "Pareizrakstības pārbaude" lai pārbaudītu pareizrakstību.
+    </para>
+    <tip>
+      Ja izmantojat Mozilla Firefox, Seamonkey vai Opera pārlūkus, ieteicam izmanto tajos iebūvēto pareizrakstības pārbaudi.
+    </tip>
+    <para>
+    Uzklikšķiniet "Pielikumi", lai pārietu uz vēstules rakstīšanas loga apakšu, kur var vēstulei pievienot pielikumus.
+    </para>
+    <para>
+    Ja sistēma pieļauj saglabāt nosūtīto vēstuļu kopijas, aktivējiet izvēles rūtiņu "Saglabāt kopiju", lai saglabātu šīs vēstules kopiju. Vēstule tiks saglabāta vai nu noklusētajā mapē vai arī mapē, kura būs norādīta Personīgās informācijas Identitāšu sadaļā. Ja administrators ir atļāvis izvēli, Jūs varēsiet izvēlēties vēlamo mapi no izkrītošā saraksta.
+  </para>
+      <para>
+    Saglabājiet svarīgu vēstuļu kopijas, lai vēlāk būtu iespējams atsaukt atmiņā rakstīto. Jūs varat ieslēgt šādu darbību Personīgās informācijas Identitāšu sadaļā. Jūs varat arī noteikt apkopes uzdevumus, kas periodiski iztīra vai pārdēvē nosūtīto vēstuļu mapes.
+  </para>
+      <para>
+    Neiesakām saglabāt visu nosūtīto vēstuļu kopijas, jo tādējādi Jums piešķirtā uzglabāšanas kvota var tikt izsmelta ļoti ātri, īpaši, ja sūtat vēstules ar pievienotiem failiem; Jūsu pastkastīte būs pilna un nevarēsiet saņemt jaunas vēstules.
+    </para>
+</entry>
+
+<entry id="compose-attachments" state="uptodate" md5="c61d86cfad0842f122278366bb2804b0">
+    <title>Vēstules rakstīšana: Pielikumu pievienošana</title>
+    <heading>"Pielikumu pievienošana"</heading>
+    <para>
+    Jums ir iespēja pievienot vēstulei pielikumā failus, ja izmantojamā pārlūka programma uztur augšupielādi. Vienlaikus var augšupielādēt vairāk nekā 1 failu.
+    </para>
+    <para>Pirmais solis: ievadiet pilnu ceļu līdz pievienojamajam failam vai arī uzklikšķiniet "Browse" pogai uz izvēlieties pievienojamo failu. Faila nosaukums un ceļš līdz tam parādās Pielikumu sadaļā. Ja Jūsu pārlūks atbalsta Javascript, Jums tiks piedāvāta papildus faila pievienošanas un vienlaicīgas augšupielādes iespēja.
+    </para>
+    <para>Otrais solis: Izvēlieties, vai pievienoto failu vēlaties redzēt kā pielikumu vai arī to ir jāiekļauj vēstules tekstā. Saņēmēja vēstuļu lasīšanai izmantotajai programmatūrai jābūt spējīgai apstrādāt ietvertā faila tipu, citādi šī daļa tiks attēlota kā pielikums.
+    </para>
+    <para>
+    Ja vien nevēlaties mainīt pielikumu aprakstu vai arī norādīt, ka pielikumu ir jāietver tekstā, pielikumu pievienošanu var uzskatīt par pabeigtu. Pielikumi tiks augšupielādi, kad nospiedīsiet pogu Sūtīt. Ja vēlaties mainīt aprakstu, vai pielikuma izvietojumu vēstulē, varat nospiest pogu "Apstiprināt" lai augšupielādētu pielikumus uzreiz un saglabātu citas izmaiņas pievienotajos pielikumos.
+    </para>
+
+    <tip>
+    Ņemiet vērā, ka lielu failu vai lēna Internet pieslēguma gadījumā pielikumu augšupielāde un pievienošana vēstulei var patērēt zināmu laiku. Esiet pacietīgi un neklikšķiniet uz citām saitēm un pogām, kamēr notiek faila (-u) augšupielāde.
+    </tip>
+</entry>
+
+<entry id="compose-current-attachments" state="uptodate" md5="1dac09e0dba4d062ec6a4f82718956b7">
+    <title>Vēstules rakstīšana: Pievienotie pielikumi</title>
+    <heading>Pievienotie pielikumi</heading>
+    <para>
+    Šajā sadaļā tiek parādīti vēstulei jau pievienotie faili.
+    </para>
+    <heading>Dzēst pievienoto(s) failu(s)</heading>
+    <para>
+    Lai dzēstu pievienoto(s) failu(s):
+    </para>
+    <para>
+    Pirmais: Ieķeksējiet rūtiņu blakus dzēšamā faila nosaukumam.
+    </para>
+    <para>
+    Otrais:  Lai uzreiz redzētu izmaiņas, uzklikšķiniet pogu "Apstiprināt" virs pievienoto pielikumu sekcijas vai arī izmaiņas tiks izdarītas automātiski nosūtot vēstuli.
+    </para>
+    <heading>Mainīt pielikuma izvietojumu</heading>
+    <para>
+    Lai mainītu pielikumu izvietojumu:
+    </para>
+    <para>
+    Pirmais: Izmainiet katra pielikuma izvietojumu - vai nu uz "iekļauts" vai "pielikums" - pēc vajadzības.
+    </para>
+    <para>
+    Otrais:  Lai uzreiz redzētu izmaiņas, uzklikšķiniet pogu "Apstiprināt" virs pievienoto pielikumu sekcijas vai arī izmaiņas tiks izdarītas automātiski nosūtot vēstuli.
+    </para>
+    <heading>Mainīt pielikuma aprakstu</heading>
+    <para>
+    Lai manītu pielikuma aprakstu (tekstu, ko kā pielikuma aprakstu redzēs saņēmējs):
+    </para>
+    <para>
+    Pirmais: Ievadiet aprakstu Apraksta laukā.
+    </para>
+    <para>
+    Otrais:  Lai uzreiz redzētu izmaiņas, uzklikšķiniet pogu "Apstiprināt" virs pievienoto pielikumu sekcijas vai arī izmaiņas tiks izdarītas automātiski nosūtot vēstuli.
+    </para>
+</entry>
+
+<entry id="compose-priority" state="uptodate" md5="b023367c36de3ce1567d27ccaa45640c">
+    <title>Vēstules rakstīšana: Prioritāte</title>
+    <heading>Prioritāte</heading>
+    <para>
+    Uzstāda Jūsu nosūtāmās vēstules "X-Priority" galveni. "X-Priority" iezīme ir sava veida standarts, par ko ir vienojušies Netscape, Mozilla, Opera un  Outlook pasta klienti. Citi klienti, kas neuztur šādas iezīmes lietošanu, to vienkārši ignorēs.
+    </para>
+</entry>
+
+<entry id="compose-save-attachments" state="uptodate" md5="eee31308484dc59cb84d8b7de3e8465a">
+    <title>Vēstules rakstīšana: Saglabāt pielikumu(s)</title>
+    <para>
+    Nosaka, vai Jūsu sastādītās vēstules pielikumi tiks saglabāti kopā ar vēstuli nosūtīto vēstuļu mapē. "Jā" nozīmē pielikumu saglabāšanu, "Nē" - pielikumi tiks aizvākti no vēstules pēc tās nosūtīšanas visiem saņēmējiem. Izvēloties "Nē" un nesaglabājot potenciāli liela izmēra pielikums Jūs palīdzēsiet taupīgi izmantot brīvo vietu uz servera diskiem.
+    </para>
+</entry>
+
+<entry id="compose-link-attachments" state="uptodate" md5="63b3841c95aed31b5372f0fa770ee382">
+    <title>Vēstules rakstīšana: Piesaistīt pielikumu(s)</title>
+    <para>
+    Nosaka, vai Jūs vēstules pielikumi tiks nosūtīti kā vēstules sastāvdaļa vai arī pielikumi tiks saglabāti uz lokālā servera. Piesaistīto pielikumu gadījumā saņēmējs(-i) vēstulē saņems lejupielādes saiti un varēs lejupielādēt pielikumus patstāvīgi. Pielikumu piesaiste priekšrocība - tā palīdz būtiski samazināt izejošo sūtījumu apjomu. Piesaistes trūkums - nav iespējams garantēt, ka piesaistītais pielikums būs pieejams vienmēr, jo pielikuma dati tiek nošķirti no saņemtās vēstules.
+    </para>
+</entry>
+
+<entry id="folder-options" state="uptodate">
+    <title>Mapes: Mapju vadība</title>
+    <para>
+      Mapes var izvēlēties atķeksējot kreisajā malā esošās rūtiņas. Pēc izvēles pabeigšanas, izvēlieties darbību no izkrītošās Darbību izvēlnes.
+    </para>
+    <heading>Izveidot</heading>
+    <para>
+      Ja iespējams, izveidot jaunu mapi. Lai izveidotu mapi pamatlīmenī, izvēlieties 'Izveidot' neatzīmējot nevienu mapi kreisajā slejā. Lai izveidotu apakšmapi jau eksistējošā mapē, atzīmējiet to kreisajā slejā pirms 'Izveidot' izvēles.
+    </para>
+    <heading>Pārdēvēt</heading>
+    <para>
+      Pārdēvē mapi. Lai pārdēvētu, atzīmējiet mapes kreisajā slejā un izvēlieties 'Pārdēvēt'. Pārdēvējot vienlaikus tiek pārdēvētas arī visas apakšmapes.
+    </para>
+    <heading>Dzēst</heading>
+    <para>
+      Dzēs mapi un visas tajā atrodošās vēstules. Lai dzēstu, atzīmējiet dzēšamās mapes kreisajā slejā un izvēlieties 'Dzēst'. Ja dzēšat mapi ar apakšmapēm, tās netiks automātiski izdzēstas. Lai izdzēstu apakšmapes, tās ir jāatzīmē kreisajā slejā un jāizvēlas 'Dzēst'.
+    </para>
+    <heading>Iztukšot</heading>
+    <para>
+      Lai dzēstu visas mapē atrodošās vēstules saglabājot pašu mapi, kreisajā slejā atzīmējiet iztukšojamās mapes un izvēlieties 'Iztukšot'.
+    </para>
+    <heading>Iztīrīt</heading>
+    <para>
+      Lai dzēstu visas mapē atrodošās vēstules saglabājot pašu mapi, kreisajā slejā atzīmējiet iztukšojamās mapes un izvēlieties 'Iztīrīt'. Šāda darbība parādās tikai tad, ja neizmantojat Atkritumu mapi.
+    </para>
+    <heading>Parakstīties/Atrakstīties</heading>
+    <para>
+      Atzīmē mapi kā parakstītu vai neparakstītu. Ja mape ir parakstīta, tā parādīsies visos izkrītošajos mapju sarakstos. Šī iespēja parādās tikai lietojot IMAP mapju parakstīšanos.
+    </para>
+    <para>
+      Lai parakstītos, atzīmējiet vajadzīgās mapes kreisajā slejā un izvēlieties 'Parakstīties'. Lai atrakstītos, atzīmējiet vajadzīgās mapes kreisajā slejā un izvēlieties 'Atrakstīties'.
+    </para>
+    <heading>Pārbaudīt jaunpienākušo pastu/Nepārbaudīt jaunpienākušo pastu</heading>
+    <para>
+      Atzīmē pārbaudāmo mapi Mapju navigatorā un sānjoslā (ja ieslēgta).
+    </para>
+    <para>
+      Lai uzstādītu šo karogu, atzīmējiet vajadzīgās mapes kreisajā slejā un izvēlieties 'Pārbaudīt jaunpienākušo pastu'. Lai atceltu šo karogu, atzīmējiet vajadzīgās mapes kreisajā slejā un izvēlieties 'Nepārbaudīt jaunpienākušo pastu'. 
+    </para>
+    <heading>Atzīmēt visas vēstules kā redzētas/neredzētas</heading>
+    <para>
+       Lai atzīmētu visas vēstules mapē kā redzētas, atzīmējiet vajadzīgās mapes kreisajā slejā un izvēlieties 'Atzīmēt visas vēstules kā redzētas'. Lai atzīmētu visas vēstules mapē kā neredzētas, atzīmējiet vajadzīgās mapes kreisajā slejā un izvēlieties 'Atzīmēt visas vēstules kā neredzētas'.
+    </para>
+    <heading>Lejuplādēt</heading>
+    <para>
+      Lai lejupielādētu visas vēstules vienā failā (mbox formātā), kreisajā slejā atzīmējiet vajadzīgo mapi un  izvēlieties 'Lejuplādēt'. Lai lejuplādētu vēstules saspiestā veidā, izvēlieties 'Lejuplādēt [zip. formāts]'.
+    </para>
+    <heading>Importēt vēstules</heading>
+    <para>
+      Ar šo darbību ir iespējams importēt mbox formāta vai .eml failus Jūsu izvēlētajā mapē. Izvēlieties mērķa mapi un izvēlieties 'Importēt'. Jums tiks piedāvāts norādīt importējamo mbox vai .eml failu.
+    </para>
+    <heading>Atsvaidzināt mapju koku</heading>
+    <para>
+      Atsvaidzina mapju koka grafisko attēlojumu pieprasot informāciju no pasta servera. Šī nav ikdienišķa darbība, ja vien vienlaicīgi nepieslēdzaties pasta serverim ar citu klientu un šis klients izdara izmaiņas mapju struktūrā.
+    </para>
+    <heading>Rādīt/slēpt neparakstītās</heading>
+    <para>
+      Ja izmantojat IMAP mapju parakstīšanos/atrakstīšanos, parāda vai paslēpj mapes. Lai parakstītos/atrakstītos uz mapi, atzīmējiet to kreisajā slejā  un izvēlieties 'Parakstīties/Atrakstīes' darbību.
+    </para>
+    <heading>Izvērst visu</heading>
+    <para>
+    Izvērst visu mapju koku.
+    </para>
+    <heading>Savērst visu</heading>
+    <para>
+    Savērst visu mapju koku.
+    </para>
+</entry>
+
+<entry id="filters" state="uptodate" md5="5ef60786767e638fbf5ba8fc5bd5d9d2">
+    <title>Filtri: Pielietot</title>
+    <heading>Pielieto filtru likumus</heading>
+    <para>
+    Uzklikšķiniet uz "Pielietot filtrus' ikonas blakus INBOX vārdam pastkastes skatā, lai filtrētu vēstules atbilstoši definētajiem filtru likumiem.
+    </para>
+</entry>
+
+<entry id="filter-edit-rules" state="uptodate" md5="5baa5708ac9449e797f967313a9e1a27">
+    <title>Filtri: Labot filtru likumus</title>
+    <heading>Labot filtru likumus</heading>
+    <para>
+    Uzklikšķiniet "Labot filtru likumus" lai pievienotu, labotu vai dzēstu definētos filtru likumus.
+    </para>
+</entry>
+
+<entry id="filter-edit-blacklist" state="uptodate" md5="80ff7803c66599c7035f7f8811d218cc">
+    <title>Filtri: Labot melno sarakstu</title>
+    <heading>Labot melno sarakstu</heading>
+    <para>
+    Uzklikšķiniet "Labot melno sarakstu" lai pievienotu, labotu vai dzēstu e-pasta adreses, no kurām vēstules nevēlaties saņemt NEKAD.
+    </para>
+</entry>
+
+<entry id="filter-edit-whitelist" state="uptodate" md5="330c3a8fad198c7afe855c101c63cd0f">
+    <title>Filtri: Labot balto sarakstu</title>
+    <heading>Labot balto sarakstu</heading>
+    <para>
+    Uzklikšķiniet "Labot balto sarakstu" lai pievienotu, labotu vai dzēstu e-pasta adreses, no kurām vēstules vēlaties saņemt VIENMĒR.
+    </para>
+</entry>
+
+<entry id="filter-on-login" state="uptodate" md5="37d9297d1cca46435e36b6e38e45dcdb">
+    <title>Filtri: Filtrēt pieslēdzoties</title>
+    <heading>Pielietot filtrēšanas likumus pieslēdzoties?</heading>
+    <para>
+      Izvēlieties šo iestatījumu, ja vēlaties pielietot filtrēšanas likumus pieslēdzoties IMP.
+    </para>
+</entry>
+
+<entry id="filter-on-display" state="uptodate" md5="f5afc305402ef52bad108933f3f33291">
+    <title>Filtri: Filtrēt atsvaidzinot</title>
+    <heading>Pielieto filtrēšanas likumus vienmēr, kad tiek atvērts INBOX?</heading>
+    <para>
+    Izvēlieties šo iestatījumu, ja vēlaties pielietot filtrēšanas likumus vienmēr, kad tiek atvērts INBOX.
+    </para>
+</entry>
+
+<entry id="filter-any-mailbox" state="uptodate">
+    <title>Filtri: Filtrēt ikvienu pastkasti</title>
+    <heading>Pielietot filtrēšanas likumus ikvienai pastkastei?</heading>
+    <para>
+    Izvēlieties šo iestatījumu, ja vēlaties pielietot filtrēšanas likumus visām pasta mapēs. Parasti filtrēšanas likumi tiek pielietoti tikai vēstulēm, kas atrodas INBOX. Ja izvēlēsieties šo iespēju, visu mapju lapām tiks pievienota ikona, kuras nospiešana pielietos filtrus atvērtajā mapē. PIEZĪME: filtru izmantošana mapēs, kas nav INBOX, var novest pie dīvainiem rezultātiem (piemēram - vēstules kopija var tikt nogādāta tajā pašā mapē) vai/un arī nevēlamiem rezultātiem (piemēram, var izsaukt vēstuļu pārvietošanu vai dzēšanu, ja ir ieviesti jauni filtrēšanas likumi pēc att. vēstules nogādāšanas atvērtajā mapē).
+    </para>
+</entry>
+
+<entry id="pgp-compose-attach-pubkey" state="uptodate">
+    <title>PGP: Pievienot publisko atslēgu</title>
+    <heading>Pievienot publisko atslēgu</heading>
+    <para>
+     Ja atzīmēts šis iestatījums, tad izejošajām vēstulēm tiks pievienots Jūsu PGP Publiskās atslēgas kopija (ja tāda eksistē). Noklusēto darbību varat iestatīt PGP iestatījumu lapā. 
+    </para>
+</entry>
+
+<entry id="pgp-option-scan-body" state="uptodate">
+    <title>PGP: Pārbaudīt vēstules tekstu</title>
+    <heading>Pārbaudīt vēstules tekstu</heading>
+    <para>
+    Ja atzīmēts šis iestatījums, IMP meklēs PGP datus visu vēstuļu tekstos un parādīs datus, ja tādi tiks atrasti. Ņemiet vērā, ka tas var būtiski palēnināt darbību, jo ikviena vēstules tiks skanēta PGP datu meklējumos.
+    </para>
+</entry>
+
+<entry id="pgp-option-reply-pubkey" state="uptodate">
+    <title>PGP: Atbildot pārbaudīt PGP publisko atslēgu</title>
+    <heading>Atbildot pārbaudīt PGP publisko atslēgu</heading>
+    <para>
+    Ja atzīmēts šis iestatījums un PGP šifrēšana rakstot vēstules tiek izmantota pēc noklusēšanas, IMP pirms atbildes izveidošanas pārbaudīs vai ir pieejami visu saņēmēju publisko atslēgu dati. Šī iestatījuma trūkums ir iespējamā darbības palēnināšanas atverot vēstules rakstīšanas logu. Vienlaikus ieguvums ir iespēja nekavējoties noskaidrot vai varēsiet nosūtīt šifrētu vēstuli visiem atbildes saņēmējiem.
+    </para>
+</entry>
+
+<entry id="compose-options-encrypt" state="uptodate">
+    <title>Vēstules rakstīšana: Šifrēšanas iestatījumi</title>
+    <heading>Nešifrēts</heading>
+    <para>
+    Sūtīt vēstuli atklātā tekstā (nešifrētu).
+    </para>
+    <heading>Šifrēt ar PGP</heading>
+    <para>
+    Šī iespēja ļauj šifrēt vēstuli, izmantojot PGP un saņēmēja publisko atslēgu, un nosūtīt to. Jums ir JĀBŪT adrešu grāmatā saglabātai saņēmēja publiskajai atslēgai, citādi saņemsiet atteikumu. Ja Jums adrešu grāmatā ir saglabāta saņēmēja publiskā atslēga, taču sistēma joprojām atsakās nosūtīt vēstuli, pārbaudiet, vai e-pasta adrese saņēmēja laukā sakrīt ar e-pasta adresi, kurai saglabāta publiskā atslēga. Šifrētie dati tiks pievienoti izejošajai vēstulei.
+    </para>
+    <heading>Parakstīt ar PGP</heading>
+    <para>
+    Šī iespēja ļauj elektroniski parakstīt vēstuli ar PGP, izmantojot Jūsu privāto atslēgu. Ja šīs sesijas laikā Jūsu privātās atslēgas parole vēl nav ievadīta, tā tiks pieprasīta. Saņēmējam ir jābūt Jūsu publiskās atslēgas kopijai lai varētu pārbaudīt elektroniskā paraksta derīgumu.
+    </para>
+    <heading>Parakstīt/šifrēt ar PGP</heading>
+    <para>
+    Šī iespēja ļauj vispirms elektroniski parakstīt vēstuli un pēc tam šifrēt iegūto rezultātu. Skat. "Šifrēt ar PGP" un "Parakstīt ar PGP" plašākam izklāstam.
+    </para>
+    <heading>Šifrēt ar paroli, izmantojot PGP</heading>
+    <para>
+    Šī iespēja ļauj šifrēt vēstuli ar PGP izmantojot paroli. Jums tiks pieprasīts ievadīt šifrēšanai izmantojamo paroli. Nododiet šifrēšanā izmantoto paroli, izmantojot drošu kanālu, piemēram - personīgi, pa tālruni utml. Šifrētie dati tiks pievienoti izejošajai vēstulei.
+    </para>
+    <heading>Parakstīt/Šifrēt ar paroli, izmantojot PGP</heading>
+    <para>
+    Šī iespēja ļauj vispirms elektroniski parakstīt vēstuli un pēc tam šifrēt iegūto rezultātu ar paroli. Skat. "Šifrēt ar paroli, izmantojot PGP" un "Parakstīt ar PGP" plašākam izklāstam.
+    </para>
+    <heading>Šifrēt vēstuli ar S/MIME</heading>
+    <para>
+    Šī iespēja ļauj šifrēt vēstuli, izmantojot S/MIME un saņēmēja sertifikātu, un nosūtīt to. Jums ir JĀBŪT adrešu grāmatā saglabātam saņēmēja sertifikātam, citādi saņemsiet atteikumu. Ja Jums adrešu grāmatā ir saglabāts saņēmēja sertifikāts, taču sistēma joprojām atsakās nosūtīt vēstuli, pārbaudiet, vai e-pasta adrese saņēmēja laukā sakrīt ar e-pasta adresi, kurai saglabāts sertifikāts. Šifrētie dati tiks pievienoti izejošajai vēstulei.
+    </para>
+    <heading>Parakstīt vēstuli ar S/MIME</heading>
+    <para>
+    Šī iespēja ļauj elektroniski parakstīt vēstuli ar S/MIME, izmantojot Jūsu sertifikātu. Ja šīs sesijas laikā Jūsu sertifikāta parole vēl nav ievadīta, tā tiks pieprasīta.
+    </para>
+    <heading>Parakstīt/šifrēt vēstuli ar S/MIME</heading>
+    <para>
+    Šī iespēja ļauj vispirms elektroniski parakstīt vēstuli un pēc tam šifrēt iegūto rezultātu. Skat. "Šifrēt vēstuli ar S/MIME" un "Parakstīt vēstuli ar S/MIME" plašākam izklāstam.
+    </para>
+</entry>
+
+<entry id="pgp-overview" state="uptodate">
+    <title>PGP: Apskats</title>
+    <heading>Kas ir PGP?</heading>
+    <para>
+    PGP ir līdzeklis drošiem sakariem un datu uzglabāšanai, īpaši izmantojot e-pastu. To var izmantot datu šifrēšanai un elektronisko parakstu izveidošanai. Šo iespēju nodrošināšanai IMP izmanto GnuPG (GNU Privacy Guard).
+    </para>
+    <heading>Ieslēgt PGP funkcionalitāti?</heading>
+    <para>
+    Ja šis iestatījums ir iespējots, Jūs varēsiet izveidot/apskatīt Jūsu privātās PGP atslēgas, pievienot/dzēst citu personu publiskās atslēgas, lasīt šifrētu pastu, pārbaudīt elektroniskos parakstus un šifrēt/parakstīt izejošo korespondenci.
+    </para>
+</entry>
+
+<entry id="pgp-option-attach-pubkey" state="uptodate">
+    <title>PGP: Iespējas - Pievienot publisko atslēgu</title>
+    <heading>Iespējas - Pievienot publisko atslēgu</heading>
+    <para>
+    Ja izvēlēts, Jūsu PGP Publiskā atslēga, ja tāda pastāv, tiks pievienota visām izejošajām vēstulēm pēc noklusēšanas.
+    </para>
+</entry>
+
+<entry id="pgp-manage-pubkey" state="uptodate">
+    <title>PGP: Publisko atslēgu vadība</title>
+    <heading>Pārskats</heading>
+    <para>
+    Šajā logā ir uzskaitīti visi kontakti Jūsu adrešu grāmatā, kuriem ir publiskās PGP atslēgas. Tie ir VIENĪGIE lietotāji, kuriem Jūs varat nosūtīt šifrētu vēstuli vai arī pārbaudīt elektronisko parakstu.
+    </para>
+    <heading>Apskatīt</heading>
+    <para>
+    Atver logu PGP Publiskās atslēgas apskatei.
+    </para>
+    <heading>Detaļas</heading>
+    <para>
+    Parāda sīkāku informāciju par PGP Publisko atslēgu.
+    </para>
+    <heading>Dzēst</heading>
+    <para>
+    Dzēš publisko atslēgu no Jūsu adrešu grāmatas.
+    </para>
+</entry>
+
+<entry id="pgp-import-pubkey" state="uptodate">
+    <title>PGP: Publisko atslēgu vadība - Imports</title>
+    <heading>Importēt Publiskās atslēgas</heading>
+    <para>
+    Šī poga atvērs logu, izmantojot kuru Jūs varēsiet pašrocīgi importēt PGP Publisko atslēgu. Atslēgu var ievilkt teksta laukā, vai, ja atslēga atrodas uz Jūsu datora faila veidā, importēt. Ja atslēga ir derīga, tā tiks ievietota Jūsu adrešu grāmatā un logs tiks aizvērts. Ja atslēga tiks atzīta par nederīgu un tiks sniegts paskaidrojums par iespējamiem iemesliem.
+    </para>
+</entry>
+
+<entry id="pgp-overview-personalkey" state="uptodate">
+    <title>PGP: Personīgo atslēgu vadība</title>
+    <heading>Pārskats</heading>
+    <para>
+    Ja vēlaties elektroniski parakstīt vēstules vai sniegt citiem iespēju nosūtīt Jums šifrētas vēstules, Jums ir jābūt personīgajam privātās/publiskās PGP atslēgas pārim.
+    </para>
+    <heading>Jūsu Publiskā atslēga</heading>
+    <para>
+    Jūsu publiskajai atslēgai jābūt pieejamai ikvienam, no kura vēlaties saņemt šifrētu vēstuli, ko tikai Jūs varēsiet atšifrēt (izmantojot Jūsu Privāto atslēgu). Bez tam, Jūsu publiskajai atslēgai jābūt pieejamai ikvienam, kuram vēlaties nosūtīt elektroniski parakstītu vēstuli - Publiskā atslēga ir nepieciešama elektroniskā paraksta pārbaudei.
+    </para>
+    <heading>Jūsu Privātā atslēga</heading>
+    <para>
+    Jūsu Privātā atslēga ir nepieciešamai Jums pienākušo ar Jūs Publisko atslēgu šifrēto vēstuļu atvēršanai. Bez tam, Privātā atslēga ir nepieciešama, ja vēlaties elektroniski parakstīt vēstules. Jūs Privātā atslēga tiks aizsargāt ar paroli, kuru tiks pieprasīts ievadīt atslēgu izveidošanas laikā. Tādejādi, ikviena darbība, kurai nepieciešama privātā atslēga, izsauks IMP atslēgas paroles ievadīšanas pieprasījumu. Parole ir jāievada tikai vienu reizi sesijas laikā; IMP to saglabās līdz iziesiet no sistēmas. (Ņemiet vērā - no sistēmas ir jāiziet, nevis vienkārši jāaizver pārlūks!)
+    </para>
+</entry>
+
+<entry id="pgp-personalkey-public" state="uptodate">
+    <title>PGP: Personīgo atslēgu vadība - Publiskā atslēga</title>
+    <heading>Apskatīt</heading>
+    <para>
+    Atver logu PGP Publiskās atslēgas apskatei.
+    </para>
+    <heading>Detaļas</heading>
+    <para>
+    Parāda sīkāku informāciju par PGP Publisko atslēgu.
+    </para>
+</entry>
+
+<entry id="pgp-personalkey-private" state="uptodate">
+    <title>PGP: Personīgo atslēgu vadība - Privātā atslēga</title>
+    <heading>Ievadiet paroli</heading>
+    <para>
+    Atver paroles ievadīšanas logu. Ja ievadīta pareiza parole, IMP to saglabās līdz sesijas beigām.
+    </para>
+    <heading>Aizmirst paroli</heading>
+    <para>
+    Iztīra ievadīto paroli no atmiņas. Ja veiksiet kāds citas darbības, kurās iesaistīta privātās atslēgas izmantošana, parole būs jāievada atkārtoti.
+    </para>
+    <heading>Apskatīt</heading>
+    <para>
+    Atver logu privātās atslēgas apskatei. NEKĀDĀ GADĪJUMĀ NESŪTIET SAVU PRIVĀTO ATSLĒGU NEVIENAM - šī iespēja ir paredzēta tikai gadījumiem, ja vēlaties eksportēt savu privāto atslēgu izmantošanai kādā citā programmā.
+    </para>
+    <heading>Detaļas</heading>
+    <para>
+    Parāda sīkāku informāciju par PGP privāto atslēgu.
+    </para>
+</entry>
+
+<entry id="pgp-personalkey-delete" state="uptodate">
+    <title>PGP: Personīgo atslēgu vadība - Dzēst</title>
+    <heading>Dzēst Personīgo atslēgu</heading>
+    <para>
+    Nospiežot šo pogu no IMP iestatījumiem tiks izdzēsts Jūsu personīgais publiskās/privātās atslēgu pāris
+    </para>
+</entry>
+
+<entry id="pgp-personalkey-create-name" state="uptodate">
+    <title>PGP: Izveidot Personīgo atslēgu - Vārds</title>
+    <heading>Vārds</heading>
+    <para>
+    Vārds, kur vēlaties iekļaut personīgajās atslēgās. Obligāti aizpildāmais lauks.
+    </para>
+</entry>
+
+<entry id="pgp-personalkey-create-comment" state="uptodate">
+    <title>PGP: Izveidot Personīgo atslēgu - Komentārs</title>
+    <heading>Komentārs</heading>
+    <para>
+    Komentārs, ko vēlaties iekļaut personīgajās atslēgās. Nav obligāts.
+    </para>
+</entry>
+
+<entry id="pgp-personalkey-create-email" state="uptodate">
+    <title>PGP: Izveidot Personīgo atslēgu - e-pasta adrese</title>
+    <heading>e-pasta adrese</heading>
+    <para>
+    E-pasta adrese, kas tiks saistīta ar personīgajām atslēgām.Obligāti aizpildāmais lauks.
+    </para>
+</entry>
+
+<entry id="pgp-personalkey-create-keylength" state="uptodate">
+    <title>PGP: Izveidot Personīgo atslēgu - Atslēgas garums</title>
+    <heading>Atslēgas garums</heading>
+    <para>
+    Ģenerētās atslēgas garums bitos. Jo lielāka vērtība, jo lielāka drošība (vienlaikus arī ilgāks atslēgas ģenerēšanas un šifrēšanas laiks). Noklusētais lielums - 1024 biti - nodrošina pietiekamu drošības līmeni. Ja vēlaties palielināt atslēgas garumu, ieteicams to darīt ar 1024 bitu soli.
+    </para>
+</entry>
+
+<entry id="pgp-personalkey-create-passphrase" state="uptodate">
+    <title>PGP: Izveidot Personīgo atslēgu - Parole</title>
+    <heading>Parole</heading>
+    <para>
+    Parole, ar kuru aizsargāt Jūsu personīgo privāto atslēgu. Tai jābūt VISMAZ  6 zīmes garai, tā nedrīkst sakrist ar Jūsu lietotāja vārdu, nedrīkst būt atrodama vārdnīcā un, vēlams, jāsatur burti un cipari. Parole ir jāievada divreiz sakritības pārbaudei. Obligāti aizpildāmais lauks.
+    </para>
+</entry>
+
+<entry id="pgp-personalkey-create-actions" state="uptodate">
+    <title>PGP: Izveidot Personīgo atslēgu - Darbības</title>
+    <heading>Izveidot atslēgas</heading>
+    <para>
+    Izveidot un saglabāt Jūsu personīgo publiskās/privātās atslēgu pāri.
+    </para>
+    <heading>Importēt atslēgu pāri</heading>
+    <para>
+    Importē publiskās/privātās atslēgu pāri. Šī poga atver logu, izmantojot kuru Jūs varat pašrocīgi importēt savu publiskās/privātās atslēgu pāri. Atslēgas var ievilkt teksta laukā, vai, ja atslēgas atrodas uz Jūsu datora faila veidā, importēt. Ja atslēga ir derīga, tā tiks ievietota Jūsu adrešu grāmatā un logs tiks aizvērts. Ja atslēgas tiks atzītas par derīgām, tās tiks pievienotas iestatījumiem un logs aizvērsies; ja nē - tiks sniegts paskaidrojums par iespējamiem iemesliem.
+    </para>
+</entry>
+
+<entry id="smime-overview" state="uptodate">
+    <title>S/MIME: Apskats</title>
+    <heading>Kas ir S/MIME?</heading>
+    <para>
+    S/MIME ir privātās/publiskās atslēgu pāra sistēma, kas nodrošina elektronisko parakstu, privātumu un iejaukšanās noteikšanu. S/MIME var nodrošināt privātumu šifrējot vēstules tikai adresātam izlasāmā veidā, tas ļauj arī identificēt nosūtītāju ar elektroniskā paraksta palīdzību. Šifrēšana un elektroniskais paraksts kopā nodrošina iespēju konstatēt iejaukšanos, nosakot, vai vēstule ir mainīta kopš nosūtīšanas brīža.
+    </para>
+    <heading>Ieslēgt S/MIME funkcionalitāti?</heading>
+    <para>
+    Ja šis iestatījums ir iespējots, Jūs varēsiet importēt savu personīgo S/MIME sertifikātu, lasīt šifrētu pastu, pārbaudīt elektroniskos parakstus un šifrēt/parakstīt izejošo korespondenci.  
+    </para>
+</entry>
+
+<entry id="smime-overview-personalkey" state="uptodate">
+    <title>S/MIME: Personīgās atslēgas</title>
+    <heading>Apskats</heading>
+    <para>
+    Ja vēlaties elektroniski parakstīt vai šifrēt vēstules, Jums ir nepieciešams publiskais/privātais S/MIME atslēgu pāris.  
+    </para>
+</entry>
+
+<entry id="smime-import-personal-certs" state="uptodate">
+    <title>S/MIME: Importēt personīgos sertifikātus</title>
+    <heading>Importēt personīgos sertifikātus</heading>
+    <para>
+    Importē personīgos sertifikātus no PKCS #12 formāta failiem. PKCS #12 formāta failus parasti iegūst eksportējot atslēgu no pārlūka (piem Firefox, Internet Explorer) vai no sertifikātu glabātuves, ko nodrošina operētājsistēma (piem. Windows XP). Ja atslēgas tiks atzītas par derīgām, tās tiks pievienotas iestatījumiem un logs aizvērsies; ja nē - tiks sniegts paskaidrojums par iespējamiem iemesliem.
+    </para>
+</entry>
+
+<entry id="smime-delete-personal-certs" state="uptodate">
+    <title>S/MIME: Dzēst personīgos sertifikātus</title>
+    <heading>Dzēst personīgos sertifikātus</heading>
+    <para>
+    Dzēš personīgos sertifikātus no iestatījumiem. Turpmāk Jums vairs nebūs iespējas elektroniski parakstīt vēstules vai lasīt ar S/MIME šifrētas Jums adresētas vēstules.
+    </para>
+</entry>
+
+<entry id="smime-manage-pubkey" state="uptodate">
+    <title>S/MIME: Publisko atslēgu vadība</title>
+    <heading>S/MIME: Publisko atslēgu vadība</heading>
+    <para>
+    Organizējiet savu S/MIME publisko atslēgu sarakstu.
+    </para>
+    <heading>Apskatīt</heading>
+    <para>
+    Parāda publisko atslēgu teksta veidā.
+    </para>
+    <heading>Detaļas</heading>
+    <para>
+    Parāda sīkāku publiskās atslēgas informāciju.
+    </para>
+    <heading>Dzēst</heading>
+    <para>
+    Dzēš izvēlēto publisko atslēgu no glabātuves. Publiskās atslēgas izdzēšana liegs iespēju nosūtīt šifrētu vēstuli attiecīgajam adresātam.
+    </para>
+</entry>
+
+<entry id="printing" state="uptodate">
+    <title>Drukāšana</title>
+    <heading>Drukāt vēstuli</heading>
+    <para>
+    Lai izdrukātu šobrīd aplūkojam vēstuli, uzklikšķiniet "Drukāt" saitei vēstules augšpusē. Drukāšanai formatēta vēstule tiks atvērta jaunā logā. Atkarībā no Jūsu pārlūka un operētājsistēmas var parādīties drukāšanas dialoga logs. Ja tāds neatveras, izmantojiet darbību "Print" no izvēlnes "File".
+    </para>
+</entry>
+
+<entry id="sorting" state="uptodate">
+    <title>Šķirošana un pavedieni</title>
+    <heading>Šķirot ierakstus</heading>
+    <para>
+    Apskatot vēstuļu sarakstu ir iespējams tās kārtot pēc jebkuras slejas, uzklikšķinot slejas galvenei. Lai pārslēgtu šķirošanas virzienu no augoša uz dilstošu un otrādi, jāuzklikšķina uz bultiņas simbola blakus slejas galvenei.
+    </para>
+    <heading>Pavedieni</heading>
+    <para>
+    Lai grupētu vēstules pēc pavediena (temata), uzklikšķiniet [Pavediens] saitei temata slejas galvenē. Lai atgrieztos pie šķirošanas pēc temata, uzklikšķiniet saitei [Temats] slejas galvenē.
+    </para>
+</entry>
+
+<entry id="prefs-rename_sentmail_monthly" state="uptodate">
+    <title>Iestatījumi: ik mēnesi pārdēvēt nosūtīto vēstuļu mapi</title>
+    <para>
+    Izmantojiet šo iestatījumu, ja vēlaties pārdēvēt nosūtīto vēstuļu mapi katra mēneša sākumā. Mapes nosaukumam tiks pievienots gads un mēnesis un izveidota jauna nosūtīto vēstuļu mape.  
+    </para>
+</entry>
+
+<entry id="prefs-delete_sentmail_monthly_keep" state="uptodate">
+    <title>Iestatījumi: ik mēnesi dzēst nosūtīto vēstuļu mapi</title>
+    <para>
+    Šī iestatījuma izmantošana ļauj katra mēneša sākumā atbrīvoties no iepriekš noteiktus mēnešus vecām nosūtīto vēstuļu mapēm. Visas nosūtīto vēstuļu mapes, kas ir vecākas par iestatīto lielumu, tiks izdzēstas.
+    Tas var būt noderīgi, ja Jums, piemēram, ir noteikts pieļaujamais pastkastes apjoms (kvota).
+    </para>
+</entry>
+
+<entry id="prefs-purge_sentmail_interval" state="uptodate">
+    <title>Iestatījumi: tīrīt nosūtītās vēstules</title>
+    <para>
+    Nosaka, cik bieži tīrīt nosūtīto vēstuļu mapi(-es).
+    </para>
+</entry>
+
+<entry id="prefs-purge_sentmail_keep" state="uptodate">
+    <title>Iestatījumi: tīrot nosūtītās vēstules saglabāt</title>
+    <para>
+    Gadījumā, ja tīrāt vēstules no nosūtīto vēstuļu mapes(-ēm), nosaka, par cik dienām vecākas vēstules dzēst.
+    </para>
+</entry>
+
+<entry id="prefs-delete_attachments_monthly_keep" state="uptodate">
+    <title>Iestatījumi: ik mēnesi dzēst piesaistītos pielikumus</title>
+    <para>
+    Ja Jūsu konta konfigurācija pieļauj saistīto pielikumu nosūtīšanu, šis iestatījums nosaka pēc cik mēnešiem vecie saistītie pielikumi tiks iztīrīti. Visi saistītie pielikumi, kas vecāki par norādīto vērtību, tiks izdzēsti. Tas var būt noderīgi, ja Jums, piemēram, ir noteikts pieļaujamais pastkastes apjoms (kvota).
+    </para>
+</entry>
+
+<entry id="prefs-purge_trash_interval" state="uptodate">
+    <title>Iestatījumi: Apkope: tīrīt miskasti</title>
+    <para>
+    Cik bieži tīrīt miskasti?
+    </para>
+</entry>
+
+<entry id="prefs-purge_trash_keep" state="uptodate">
+    <title>Iestatījumi: Apkope: saglabāt tīrot miskasti</title>
+    <para>
+    Par cik dienām vecākas vēstules dzēst tīrot miskasti?
+    </para>
+</entry>
+
+<entry id="prefs-purge_spam_interval" state="uptodate">
+    <title>Iestatījumi: Apkope: tīrīt mēstuļkasti</title>
+    <para>
+    Cik bieži tīrīt mēstuļu mapi?
+    </para>
+</entry>
+
+<entry id="prefs-purge_spam_keep" state="uptodate">
+    <title>Iestatījumi: Apkope: saglabāt tīrot mēstuļkasti</title>
+    <para>
+    Par cik dienām vecākas mēstules dzēst tīrot mēstuļkasti?
+    </para>
+</entry>
+
+<entry id="prefs-attrib_text" state="uptodate">
+     <title>Iestatījumi: Vēstules rakstīšana: Ievadteksts</title>
+     <para>
+     Šeit Jūs varat ievadīt frāzi, kas parādīsies pirms citētā teksta atbildes vēstulē.
+     </para>
+     <para>
+     Jūs varat ietvert vienu vai vairākas papildu instrukcijas, lai atbildē iekļautu papildu informāciju par oriģinālo vēstuli. Instrukcijas sastāv no simbola '%', kam seko atbilstošais burts. Izmantojamas sekojošas instrukcijas:
+     </para>
+
+     <para> %f : Nosūtītāja vārds un e-pasta adrese</para>
+     <para> %a : Nosūtītāja e-pasta adrese</para>
+     <para> %p : Nosūtītāja vārds</para>
+     <para> %r : Pilns RFC 2822 stila datums un laika josla</para>
+     <para> %d : Datums kā nedēļas diena, dd. mm, GGGG</para>
+     <para> %x : Datums atbilstoši lokālei</para>
+     <para> %c : Datums un laiks atbilstoši lokālei</para>
+     <para> %m : Message-ID (vēstules identifikators)</para>
+     <para> %s : Temats</para>
+     <para> %n : Jauna rinda</para>
+     <para> %% : '%' simbols</para>
+
+</entry>
+
+<entry id="prefs-default_msg_charset" state="uptodate">
+    <title>Iestatījumi: Noklusētais vēstules teksta kodējums</title>
+    <para>
+    Nosaka noklusēto teksta kodējumu vēstules daļām, kurām nav skaidri norādīta kodējuma informācija. Atbilstoši RFC 2045 vēstules ar nenorādītu kodējuma informāciju tiek attēlota izmantojot US-ASCII kodējumu. Vienlaikus, atsevišķi īpaši greizi pasta klienti var nosūtīt vēstules citos kodējumos, nenorādot korektu kodējuma informāciju vēstules galvenēs. Iestatiet šo parametru atbilstoši vajadzībām vai izvēlieties noklusēto, lai izmantotu MIME noklusēto kodējumu.
+    </para>
+</entry>
+
+<entry id="prefs-request_mdn" state="uptodate">
+    <title>Iestatījumi: Pieprasīt izlasīšanas apstiprinājumu</title>
+    <para>
+    "Pieprasīt izlasīšanas apstiprinājumu" nosūta vēstules adresātam pieprasījumu apstiprināt izlasīšanu lai informētu Jūs par vēstules atvēršanas faktu. Ne visi pasta klientu atbalsta šo funkcionalitāti.
+    </para>
+</entry>
+
+<entry id="prefs-send_mdn" state="uptodate">
+    <title>Iestatījumi: Nosūtīt izlasīšanas apstiprinājumu</title>
+    <para>
+    "Nosūtīt izlasīšanas apstiprinājumu" nosūta izlasīšanas apstiprinājumu adresātam, kurš ir pieprasījis apstiprinājumu par vēstules izlasīšanu. Pēc noklusēšanas Jums tiks piedāvāta iespēja nosūtīt šo apstiprinājumu. 
+    </para>
+</entry>
+
+<entry id="prefs-delete_spam_after_report" state="uptodate">
+    <title>Iestatījumi: Dzēst mēstuli pēc ziņošanas</title>
+    <para>
+    Varat izvēlēties vienu no trim darbībām pēc paziņojuma par mēstules (spama) saņemšanu nosūtīšanas.
+    </para>
+    <para>
+    Pirmā - varat izvēlēties nedarīt neko - tiks nosūtīts paziņojums par mēstules saņemšanu, taču pati mēstule paliks atvērtajā mapē.
+    </para>
+    <para>
+    Otrā - varat mēstuli nodzēst uzreiz pēc paziņojuma nosūtīšanas.
+    </para>
+    <para>
+    Trešā - pēc paziņojuma nosūtīšanas vēstuli pārvietot uz mēstuļu mapi
+    </para>
+</entry>
+
+<entry id="prefs-move_ham_after_report" state="uptodate">
+    <title>Iestatījumi: Pārvietot pēc paziņojuma par nevainīgumu</title>
+    <para>
+     Varat izvēlēties vienu no divām darbībām pēc paziņojuma par nevainīgumu nosūtīšanas vēstulei, kas iepriekš bijusi atzīmēta kā mēstule.
+    </para>
+    <para>
+    Pirmā - varat izvēlēties nedarīt neko - tiks nosūtīts paziņojums par nevainīgumu, taču pati vēstule paliks atvērtajā mapē.
+    </para>
+    <para>
+    Otrā - pēc paziņojuma nosūtīšanas vēstuli pārvietot uz Inbox.
+    </para>
+</entry>
+
+<entry id="prefs-image_replacement" state="uptodate">
+    <title>Iestatījumi: Attēlu aizvietošana</title>
+    <para>
+    Apskatot vēstules iekļautā veidā, bloķēt visus attēlus līdz brīdim, kad pieprasīsiet to attēlošanu? Ņemiet vērā, ja izvēlēts režīms Rādīt kā pielikumu, attēli tiks rādīti vienmēr.
+    </para>
+</entry>
+
+<entry id="prefs-image_addrbook" state="uptodate">
+    <title>Iestatījumi: Attēlu aizvietošana/Rādīt, ja ir adrešu grāmatā</title>
+    <para>
+    Ja bloķējat attēlus no attēlošanas iekļautā veidā, vai rādīt attēlus automātiski, ja autors ir Jūsu adrešu grāmatā?
+    </para>
+</entry>
+
+<entry id="prefs-mailbox_start" state="uptodate">
+    <title>Iestatījumi: Pastkastes pirmā lapa</title>
+    <para>
+    Nosaka, kura pastkastes lapa tiks atvērta pieslēdzoties pastkastei.
+    </para>
+</entry>
+
+<entry id="prefs-save_attachments" state="uptodate">
+    <title>Iestatījumi: Saglabāt nosūtīto vēstuļu pielikumus</title>
+    <para>
+     Ja saglabājat nosūtītās vēstules Nosūtīto vēstuļu mapē, varat izvēlēties, ko darīt ar pielikumu datiem. Pastāv sekojošas iespējas: 
+    </para>
+
+    <para>* "Vienmēr saglabāt pielikumus" - NEKAD nerādīt jautājumu par pielikuma saglabāšanu rakstīšanas logā, pielikumi vienmēr tiks saglabāti kopā ar vēstuli.</para>
+     <para>* "Vienmēr jautāt nosūtot pielikumu, noklusētais - JĀ" - VIENMĒR pieprasīs apstiprināt pielikuma saglabāšanu, noklusētā atbilde - saglabāt pielikumu.</para>
+     <para>* "Vienmēr jautāt nosūtot pielikumu, noklusētais - NĒ" - VIENMĒR pieprasīs apstiprināt pielikuma saglabāšanu, noklusētā atbilde - nesaglabāt pielikumu.</para>
+     <para>* "Nekad nesaglabāt pielikumus" - NEKAD nerādīt jautājumu par pielikuma saglabāšanu rakstīšanas logā, pielikumi netiks saglabāti kopā ar vēstuli.</para>
+</entry>
+
+<entry id="virtual_inbox" state="uptodate">
+    <title>Mapes: Virtuālais Inbox</title>
+    <para>
+    Virtuālais Inbox ir saglabātais vaicājums, kas atbrīvo Jūs no nepieciešamības pārlūkot visas mapes jauno vēstuļu meklējumos. Tā vietā visas parakstītās mapes tiek pārlūkotas automātiski un rezultāts tiek parādīts vienā (virtuālajā) mapē.  
+    </para>
+</entry>
+
+<entry id="virtual_trash" state="uptodate">
+    <title>Mapes: Virtuālā miskaste</title>
+    <para>
+    Virtuālā miskaste ir saglabātais vaicājums, kas atbrīvo no nepieciešamības ierīkot atsevišķu miskastes mapi. Tā vietā, lai dzēstās vēstules pārvietotu uz centrālo miskasti, tās tiek atzīmētas kā dzēstas un paliek tajā pašā mapē. Ja iestatījums 'Rādīt dzēstās vēstules' ir izslēgts, dzēstās vēstules neparādīsies attiecīgajās mapēs. Ja lietotājs uzklikšķina Virtuālai miskastei, tiek pārbaudītas *visas* mapes un visas tajās atrodamās vēstules, kas atzīmētas kā dzēstas, tiek parādītas vienā mapē.
+    </para>
+</entry>
+
+</help>
