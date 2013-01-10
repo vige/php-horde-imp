@@ -1,0 +1,6316 @@
+# IMP Czech Translation.
+# Copyright 2004-2013 Horde LLC (http://www.horde.org/)
+# This file is distributed under the same license as the Horde package.
+# Pavel Chytil <pavel@chytil.tk>, 2001-2004.
+# Petra Kostinkova <kostinkova.petra@active24.cz>, 2012
+# Michal Foist <foist.michal@active24.cz>, 2012
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: IMP 4.1.4\n"
+"Report-Msgid-Bugs-To: dev@lists.horde.org\n"
+"POT-Creation-Date: 2012-01-20 11:03+0100\n"
+"PO-Revision-Date: 2012-04-16 15:24+0200\n"
+"Last-Translator: Michal Foist <michal@foist.cz>\n"
+"Language-Team: Czech <dev@lists.horde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: folders.php:352 mailbox.php:361
+#, php-format
+msgid " (Accesskey %s)"
+msgstr " (Přístupová klávesa %s)"
+
+#: lib/Notification/Handler/Decorator/NewmailNotify.php:72
+msgid " and "
+msgstr "a"
+
+#: lib/Ajax/Application.php:610
+#, php-format
+msgid "\"%s\" mailbox no longer polled for new mail."
+msgstr "\"%s\" schránka již nevyužívána pro zjištění nových zpráv."
+
+#: lib/Ajax/Application.php:607
+#, php-format
+msgid "\"%s\" mailbox now polled for new mail."
+msgstr "\"%s\" schránka právě použita pro zjištění nových zpráv."
+
+#: lib/Quota/Base.php:57
+#, php-format
+msgid "%.0f %s"
+msgstr "%.0f z %s"
+
+#: lib/Quota/Base.php:51
+#, php-format
+msgid "%.0f%% of %.0f %s"
+msgstr "%.0f%% z %.0f %s"
+
+#: folders.php:290 folders.php:301 lib/Message.php:830
+#, php-format
+msgid "%.2fMB"
+msgstr "%.2fMB"
+
+#: mailbox.php:439 templates/dimp/javascript_defs.php:173
+#, php-format
+msgid "%d - %d of %d Messages"
+msgstr "%d - %d z %d Zpráv"
+
+#: lib/Views/ShowMessage.php:270
+#, php-format
+msgid "%d Attachment"
+msgid_plural "%d Attachments"
+msgstr[0] "%d Příloha"
+msgstr[1] "%d Přílohy"
+msgstr[2] "%d Příloh"
+
+#: mailbox.php:442 thread.php:154
+#, php-format
+msgid "%d Messages"
+msgstr "%d zpráv"
+
+#: lib/Ajax/Application.php:1370
+#, php-format
+msgid "%d message was purged from \"%s\"."
+msgid_plural "%d messages were purged from \"%s\"."
+msgstr[0] "%d zprávy byla odstraněna z \"%s\"."
+msgstr[1] "%d zpráv byly odstraněny z \"%s\"."
+msgstr[2] "%d zpráv bylo odstraněno z \"%s\"."
+
+#: lib/Spam.php:228
+#, php-format
+msgid "%d messages have been deleted."
+msgstr "%d zpráv bylo vymazáno."
+
+#: lib/Spam.php:192
+#, php-format
+msgid "%d messages have been reported as innocent."
+msgstr "%d zpráv bylo nahlášeno jako ok."
+
+#: lib/Spam.php:190
+#, php-format
+msgid "%d messages have been reported as spam."
+msgstr "%d zpráv bylo nahlášeno jako nechtěné zprávy (spam)."
+
+#: templates/mobile/javascript_defs.php:81
+#, php-format
+msgid "%d more messages..."
+msgstr "%d více zpráv..."
+
+#: lib/Block/Newmail.php:97
+#, php-format
+msgid "%d more unseen message..."
+msgid_plural "%d more unseen messages..."
+msgstr[0] "%d nepřečtená zpráva..."
+msgstr[1] "%d nepřečtené zprávy..."
+msgstr[2] "%d nepřečtených zpráv..."
+
+#: lib/Block/Summary.php:89
+#, php-format
+msgid "%d new"
+msgid_plural "%d new"
+msgstr[0] "%d nová"
+msgstr[1] "%d nové"
+msgstr[2] "%d nových"
+
+#: mailbox-mimp.php:138
+#, php-format
+msgid "%d of %d"
+msgstr "%d z %d"
+
+#: templates/dimp/javascript_defs.php:213
+#, php-format
+msgid "%d recipients"
+msgstr "%d příjemců"
+
+#: mailbox-mimp.php:135
+#, php-format
+msgid "%d total"
+msgstr "%d celkem"
+
+#: mailbox-mimp.php:133
+#, php-format
+msgid "%d unseen"
+msgstr "%d nepřečtených"
+
+#: lib/Search/Element/Header.php:49
+#, php-format
+msgid "%s (Header) for '%s'"
+msgstr "%s (hlavička) pro '%s'"
+
+#: lib/Contents.php:776 lib/Ui/Mailbox.php:148
+#, php-format
+msgid "%s KB"
+msgstr "%s kB"
+
+#: lib/Contents.php:775 lib/Ui/Mailbox.php:147
+#, php-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: lib/Search/Element/Text.php:54
+#, php-format
+msgid "%s for '%s'"
+msgstr "%s pro '%s'"
+
+#: lib/Mime/Viewer/Itip.php:668
+#, php-format
+msgid "%s has cancelled \"%s\"."
+msgstr "%s zrušil(a) \"%s\"."
+
+#: lib/Mime/Viewer/Itip.php:663
+#, php-format
+msgid "%s has cancelled an instance of the recurring \"%s\"."
+msgstr "%s zrušil(a) instanci vracejícího se \"%s\"."
+
+#: lib/Mime/Viewer/Itip.php:503
+#, php-format
+msgid "%s has replied to a free/busy request."
+msgstr "%s odpověděl(a) na žádost o volném čase."
+
+#: lib/Mime/Viewer/Itip.php:653
+#, php-format
+msgid "%s has replied to the invitation to \"%s\"."
+msgstr "%s odpověděl(a) na pozvánku k \"%s\"."
+
+#: lib/Mime/Viewer/Itip.php:493
+#, php-format
+msgid "%s has sent you free/busy information."
+msgstr "%s zaslal(a) informaci o volném čase."
+
+#: lib/LoginTasks/Task/RenameSentmailMonthly.php:60
+#, php-format
+msgid "%s mailbox being renamed at the start of the month."
+msgstr "Na začátku měsíce bude schránka %s přejmenována."
+
+#: lib/Contents.php:1310
+#, php-format
+msgid "%s part"
+msgstr "%s část"
+
+#: lib/Spam.php:144
+#, php-format
+msgid "%s report from %s"
+msgstr "%s report od %s"
+
+#: lib/Mime/Viewer/Itip.php:499
+#, php-format
+msgid "%s requests your free/busy information."
+msgstr "%s žádá o informaci o volném čase."
+
+#: lib/Mime/Viewer/Itip.php:623
+#, php-format
+msgid "%s requests your presence at \"%s\"."
+msgstr "%s žádá o Vaši účast na \"%s\"."
+
+#: lib/Mime/Viewer/Itip.php:604
+#, php-format
+msgid "%s wants to notify you about changes of \"%s\"."
+msgstr "%s si Vás přeje upozornit na změny \"%s\"."
+
+#: lib/Message.php:438
+#, php-format
+msgid "%s was successfully added to \"%s\"."
+msgstr "%s byl(a) úspěšně přidán(a) do \"%s\"."
+
+#: lib/Ajax/Application.php:902
+#, php-format
+msgid "%s was successfully added to your address book."
+msgstr "Položka %s byla úspěšně přidána do kontaktů."
+
+#: templates/dimp/index.inc:533
+#, php-format
+msgid ""
+"%s will delete the current message and move to the next message if a single "
+"message is selected."
+msgstr ""
+"%s smaže tuto zprávu a přesune se na další pokud je vybrána jedna zpráva."
+
+#: lib/Mime/Viewer/Itip.php:640
+#, php-format
+msgid "%s wishes to amend \"%s\"."
+msgstr "%s si přeje pozměnit \"%s\"."
+
+#: lib/Mime/Viewer/Itip.php:593 lib/Mime/Viewer/Itip.php:624
+#: lib/Mime/Viewer/Itip.php:867
+#, php-format
+msgid "%s wishes to make you aware of \"%s\"."
+msgstr "%s si Vás přeje upozornit na \"%s\"."
+
+#: lib/Mime/Viewer/Itip.php:647
+#, php-format
+msgid "%s wishes to receive the latest information about \"%s\"."
+msgstr "%s si přeje obdržet aktuální informace o \"%s\"."
+
+#: compose.php:1074
+#, php-format
+msgid "%s%% of allowed size"
+msgstr "%s%% z povolené velikosti"
+
+#: message.php:318 message.php:322 message.php:447
+#, php-format
+msgid "%s: %s"
+msgstr "%s: %s"
+
+#: lib/Mime/Viewer/Html.php:193
+#, php-format
+msgid ""
+"%s: This message may not be from whom it claims to be. Beware of following "
+"any links in it or of providing the sender with any personal information."
+msgstr ""
+"%s: Tato zpráva pravděpodobně není od odesílatele, od kterého to vypadá, že "
+"by být měla. Buďte opatrní, neklikejte na žádné odkazy v této zprávě ani "
+"neuvádějte žádné osobní údaje odesilateli."
+
+#: lib/Compose.php:2067
+#, php-format
+msgid "%u Forwarded Messages"
+msgstr "%u Přeposílaných zpráv"
+
+#: rss.php:83
+#, php-format
+msgid "%u of %u messages in %s unread."
+msgstr "%u z %u zpráv v %s nepřečtených."
+
+#: message.php:448
+#, php-format
+msgid "(%d&nbsp;of&nbsp;%d)"
+msgstr "(%d&nbsp;z&nbsp;%d)"
+
+#: lib/Prefs/Ui.php:1632
+msgid "(HTML)"
+msgstr "(HTML)"
+
+#: message-mimp.php:353
+#, php-format
+msgid "(Message %d of %d)"
+msgstr "(Zpráva %d z %d)"
+
+#: lib/Prefs/Ui.php:1632
+msgid "(Plain Text)"
+msgstr "(Prostý text)"
+
+#: templates/imp/contacts/contacts.html:50
+msgid "* Add these by clicking OK *"
+msgstr "* Přidat tyto kliknutím na OK *"
+
+#: templates/imp/contacts/contacts.html:34
+msgid "* Please select address(es) *"
+msgstr "* Prosím vyberte emailové adresy *"
+
+#: lib/Mime/Viewer/Itip.php:533 lib/Mime/Viewer/Itip.php:832
+#: lib/Mime/Viewer/Itip.php:961
+msgid "-- select --"
+msgstr "-- výběr --"
+
+#: templates/dimp/javascript_defs.php:104
+msgid "1 day"
+msgstr "1 den"
+
+#: templates/dimp/javascript_defs.php:102
+msgid "1 hour"
+msgstr "1 hodina"
+
+#: config/prefs.php:1487
+msgid "100 characters"
+msgstr "100 znaků"
+
+#: config/prefs.php:1490
+msgid "1000 characters"
+msgstr "1000 znaků"
+
+#: templates/dimp/javascript_defs.php:101
+msgid "15 minutes"
+msgstr "15 minut"
+
+#: config/prefs.php:1488
+msgid "250 characters"
+msgstr "250 znaků"
+
+#: templates/dimp/javascript_defs.php:100
+msgid "5 minutes"
+msgstr "5 minut"
+
+#: config/prefs.php:1489
+msgid "500 characters"
+msgstr "500 znaků"
+
+#: templates/dimp/javascript_defs.php:103
+msgid "6 hours"
+msgstr "6 hodin"
+
+#: lib/Mime/Viewer/Pgp.php:308
+msgid "A PGP Public Key is attached to the message."
+msgstr "Veřejný PGP klíč byl přiložen ke zprávě."
+
+#: templates/dimp/index.inc:522
+msgid "A left click"
+msgstr "Kliknutí levým tlačítkem myši"
+
+#: lib/Mime/Viewer/Mdn.php:61
+msgid ""
+"A message you have sent has resulted in a return notification from the "
+"recipient."
+msgstr "Vámi zaslaná zpráva byla potvrzena příjemcem."
+
+#: lib/Compose.php:2947
+msgid ""
+"A message you were composing when your session expired has been recovered. "
+"You may resume composing your message by going to your Drafts folder."
+msgstr ""
+"Zpráva, kterou jste vytvářeli během expirace vaší session byla obnovena. "
+"Můžete se navrátit k jejímu vytváření přechodem do složky Koncepty."
+
+#: templates/imp/javascript_defs.php:58
+msgid ""
+"A popup window could not be opened. Perhaps you have set your browser to "
+"block popup windows?"
+msgstr ""
+"Vyskakující (PopUp) okno elze otevřít. Zřejmě jste nastavili Váš prohlížeč "
+"tak, aby blokoval vyskakovací okna."
+
+#: templates/dimp/javascript_defs.php:179
+msgid ""
+"A popup window could not be opened. Your browser may be blocking popups."
+msgstr ""
+"Vyskakující (PopUp) okno elze otevřít. Zřejmě jste nastavili Váš prohlížeč "
+"tak, aby blokoval vyskakovací okna."
+
+#: templates/dimp/index.inc:524
+msgid "A right-click on a message or a folder will display available actions."
+msgstr ""
+"Kliknutí pravým tlačítkem myši na zprávě nebo složce zobrazí dostupné akce."
+
+#: lib/Prefs/Ui.php:693
+#, php-format
+msgid "ACL for \"%s\" successfully created for the mailbox \"%s\"."
+msgstr "ACL pro \"%s\" úspěšně vytvořeno pro schránku \"%s\"."
+
+#: lib/Prefs/Ui.php:718
+#, php-format
+msgid "ACL rights for \"%s\" updated for the mailbox \"%s\"."
+msgstr "ACL práva pro \"%s\" aktualizována pro schránku \"%s\"."
+
+#: lib/Imap/Acl.php:26
+msgid "ACLs not configured for this server."
+msgstr "ACLs není nakonfigurováno pro tento server."
+
+#: lib/Mime/Viewer/Itip.php:630
+msgid "Accept and add to my calendar"
+msgstr "Přijmout požadavek a přidat jej do kalendáře"
+
+#: lib/Mime/Viewer/Itip.php:627
+msgid "Accept and update in my calendar"
+msgstr "Přijmout a přidat do kalendáře"
+
+#: lib/Mime/Viewer/Itip.php:633
+msgid "Accept request"
+msgstr "Přijmout požadavek"
+
+#: lib/Mime/Viewer/Itip.php:981
+msgid "Accepted"
+msgstr "Přijato"
+
+#: templates/mimp/mailbox/mailbox.html:36
+msgid "Action:"
+msgstr "Akce:"
+
+#: lib/Mime/Viewer/Itip.php:531 lib/Mime/Viewer/Itip.php:828
+#: lib/Mime/Viewer/Itip.php:830 lib/Mime/Viewer/Itip.php:959
+#: templates/prefs/searches.html:10 templates/prefs/searches.html:54
+msgid "Actions"
+msgstr "Úkony"
+
+#: themes/active/info.php:8
+msgid "Active 24"
+msgstr "Active 24"
+
+#: lib/Ui/Message.php:350 lib/Ui/Message.php:378
+#, php-format
+msgid "Add %s to my Address Book"
+msgstr "Přidat %s do mých kontaktů"
+
+#: templates/dimp/compose/compose.html:114
+msgid "Add Bcc"
+msgstr "Přidat Bcc (skrytou kopii)"
+
+#: templates/dimp/compose/compose.html:111
+msgid "Add Cc"
+msgstr "Přidat kopii:"
+
+#: templates/imp/search/search.html:42
+msgid "Add OR clause"
+msgstr "Přidat nebo doplnit"
+
+#: templates/imp/search/search.html:40
+msgid "Add search criteria:"
+msgstr "Přidat vyhledávací kritéria:"
+
+#: lib/Ui/Search.php:46
+msgid "Add search folder:"
+msgstr "Přidat prohledávání složky:"
+
+#: lib/Mime/Viewer/Itip.php:595
+msgid "Add this to my calendar"
+msgstr "Přidat tuto položku do kalendáře"
+
+#: lib/Mime/Viewer/Itip.php:869
+msgid "Add this to my tasklist"
+msgstr "Přidat toto do mých úkolů"
+
+#: templates/dimp/index.inc:481 templates/dimp/message/message.html:145
+msgid "Add to Address Book"
+msgstr "Přidat do adresáře"
+
+#: lib/Mime/Viewer/Itip.php:631
+msgid "Add to my calendar"
+msgstr "Přidat do kalendáře"
+
+#: lib/Compose.php:2851
+#, php-format
+msgid "Added \"%s\" as an attachment."
+msgstr "Přidáno \"%s\" jako příloha."
+
+#: lib/Prefs/Ui.php:840
+#, php-format
+msgid "Added flag \"%s\"."
+msgstr "Přidána značka \"%s\"."
+
+#: config/prefs.php:660
+msgid ""
+"Additional headers to display when viewing: <em>(enter each header on a new "
+"line)</em>"
+msgstr ""
+"Zobrazit další hlavičky při prohlížení: <em>(vložit každou hlavičku na nový "
+"řádek)</em>"
+
+#: compose.php:743 compose.php:744 compose.php:890 contacts.php:117
+#: templates/imp/contacts/contacts.html:8
+msgid "Address Book"
+msgstr "Kontakty"
+
+#: config/prefs.php:1190
+msgid "Address Books"
+msgstr "Kontakty"
+
+#: config/prefs.php:50
+msgid ""
+"Addresses to BCC all messages: <em>(optional, enter each address on a new "
+"line)</em>"
+msgstr ""
+"Emailové adresy, na které se budou zasílány skryté kopie (BCC) všech zpráv: "
+"<em>(nepovinné, vložit každou hlavičku na nový řádek)</em>"
+
+#: config/prefs.php:43
+msgid ""
+"Addresses to explicitly tie to this identity: <em>(optional, enter each "
+"address on a new line)</em>"
+msgstr ""
+"Emailové adresy patřící této identitě: <i>(nepovinné, vložit každou hlavičku "
+"na nový řádek)</i>"
+
+#: lib/Imap/Acl.php:152
+msgid "Administer"
+msgstr "Spravovat"
+
+#: templates/dimp/index.inc:488
+msgid "Advanced Search..."
+msgstr "Pokročilé vyhledávání"
+
+#: templates/dimp/index.inc:53 templates/dimp/javascript_defs.php:166
+msgid "Alerts _Log"
+msgstr "_Oznámení"
+
+#: lib/Search/Query.php:265 templates/imp/search/search-all.html:2
+msgid "All Mailboxes"
+msgstr "Všechny schránky"
+
+#: lib/LoginTasks/Task/PurgeSentmail.php:88
+#, php-format
+msgid ""
+"All messages in the folder(s) \"%s\" older than %s days will be permanently "
+"deleted."
+msgstr ""
+"Všechny zprávy ve Vaší složce(kách) \"%s\" starší než %s dní budou trvale "
+"vymazány."
+
+#: templates/imp/javascript_defs.php:51
+msgid ""
+"All messages in the following folder(s) will be downloaded into one MBOX "
+"file:"
+msgstr ""
+"Všechny zprávy v následující složce budou staženy do jednoho MBOX souboru:"
+
+#: templates/dimp/javascript_defs.php:163
+msgid ""
+"All messages in this mailbox will be downloaded into one MBOX file. This may "
+"take some time. Are you sure you want to continue?"
+msgstr ""
+"Všechny zprávy z této schránky budou staženy do jednoho MBOX souboru.Toto "
+"může trvat nějaký čas. Skutečně chcete pokračovat?"
+
+#: lib/LoginTasks/Task/PurgeSpam.php:73 lib/LoginTasks/Task/PurgeTrash.php:75
+#, php-format
+msgid ""
+"All messages in your \"%s\" folder older than %s days will be permanently "
+"deleted."
+msgstr ""
+"Všechny zprávy ve Vaší složce \"%s\" starší než %s dní budou trvale vymazány."
+
+#: lib/LoginTasks/Task/DeleteAttachmentsMonthly.php:75
+#, php-format
+msgid "All old linked attachments more than %s months old will be deleted."
+msgstr "Všechny staré přílohy starší něž %s měsíců, budou vymazány."
+
+#: lib/LoginTasks/Task/DeleteSentmailMonthly.php:81
+#, php-format
+msgid "All old sent-mail folders more than %s months old will be deleted."
+msgstr "Všechny složky s odeslanou poštou starší něž %s měsíců budou vymazány."
+
+#: lib/Prefs/Ui.php:728
+#, php-format
+msgid "All rights on mailbox \"%s\" successfully removed for \"%s\"."
+msgstr "Všechna práva pro složku \"%s\" byla úspěšně odstraněna pro \"%s\"."
+
+#: lib/Application.php:189
+msgid "Allow Folder Creation?"
+msgstr "Dovolit vytváření složek?"
+
+#: config/prefs.php:1172
+msgid "Allow filter rules to be applied in any mailbox?"
+msgstr "Dovolit použití filtrovacích pravidel na jakoukoliv složku?"
+
+#: templates/dimp/index.inc:531
+msgid "Alt"
+msgstr "Alt"
+
+#: config/prefs.php:303
+msgid "Always"
+msgstr "Vždy"
+
+#: config/prefs.php:686
+msgid "Always prompt"
+msgstr "Vždy vyzývat"
+
+#: config/prefs.php:277
+msgid "Always save attachments"
+msgstr "Vždy uložit přílohy"
+
+#: lib/Ui/Compose.php:65
+msgid "Ambiguous address found."
+msgstr "Nejednoznačná adresa nalezena."
+
+#: compose-mimp.php:353
+#, php-format
+msgid "Ambiguous matches for \"%s\" (first 5 matches displayed):"
+msgstr "Nejednoznačné shody pro \"%s\" (prvních 5 zobrazeno):"
+
+#: compose-mimp.php:354
+#, php-format
+msgid "Ambiguous matches for \"%s\":"
+msgstr "Nejednoznačné shody pro \"%s\":"
+
+#: lib/Message.php:572
+msgid "An error occured while attempting to strip the attachment."
+msgstr "Nastala chyba při pokusu o oddělení přílohy ze zprávy."
+
+#: lib/Message.php:413
+msgid "An unknown error occured while creating the new note."
+msgstr "Při zakládání nového úkolu došlo k neznámé chybě."
+
+#: lib/Message.php:409
+msgid "An unknown error occured while creating the new task."
+msgstr "Při zakládání nového úkolu došlo k neznámé chybě."
+
+#: lib/Mime/Viewer/Itip.php:862
+msgid "An unknown person"
+msgstr "Neznámá osoba"
+
+#: lib/Flag/Imap/Answered.php:33
+msgid "Answered"
+msgstr "Zodpovězené"
+
+#: templates/dimp/index.inc:55 templates/imp/mailbox/header.html:17
+msgid "Apply Filters"
+msgstr "Aplikovat filtry"
+
+#: config/prefs.php:1156
+msgid "Apply filter rules upon logging on?"
+msgstr "Použít filtrovací pravidla při přihlášení do systému?"
+
+#: config/prefs.php:1164
+msgid "Apply filter rules whenever Inbox is displayed?"
+msgstr "Používat filtrovací pravidla kdykoliv je zobrazena Doručená pošta?"
+
+#: message.php:681
+msgid "Are you sure you want to PERMANENTLY delete all attachments?"
+msgstr "Skutečně chcete TRVALE odstraňovat všechny přílohy?"
+
+#: message.php:526
+msgid "Are you sure you want to PERMANENTLY delete these messages?"
+msgstr "Skutečně chcete TRVALE odstraňovat tyto zprávy?"
+
+#: thread.php:165
+msgid "Are you sure you want to delete all messages in this thread?"
+msgstr "Skutečně chcete vymazat všechny zprávy v tomto vlákně?"
+
+#: templates/imp/javascript_defs.php:35
+msgid "Are you sure you want to delete this Virtual Folder Definition?"
+msgstr "Skutečně chcete vymazat tuto virtuální složku?"
+
+#: lib/Prefs/Ui.php:1244
+msgid "Are you sure you want to delete this filter?"
+msgstr "Skutečně chcete odstranit tento filtr?"
+
+#: lib/Prefs/Ui.php:789
+msgid "Are you sure you want to delete this flag?"
+msgstr "Skutečně chcete odstranit tuto značku?"
+
+#: lib/Prefs/Ui.php:1130 lib/Prefs/Ui.php:1487
+msgid "Are you sure you want to delete this public key?"
+msgstr "Skutečně chcete vymazat tento veřejný klíč?"
+
+#: lib/Prefs/Ui.php:1245
+msgid "Are you sure you want to delete this virtual folder?"
+msgstr "Skutečně chcete odstranit tuto virtuální složku?"
+
+#: lib/Prefs/Ui.php:1020 lib/Prefs/Ui.php:1420
+msgid ""
+"Are you sure you want to delete your keypair? (This is NOT recommended!)"
+msgstr ""
+"Skutečně chcete vymazat tento klíčový pár? (Toto není doporučeno provádět!)"
+
+#: templates/imp/javascript_defs.php:23
+msgid "Are you sure you want to do this?"
+msgstr "Skutečně to chcete udělat?"
+
+#: templates/imp/javascript_defs.php:65
+msgid ""
+"Are you sure you want to move the message(s)? (Some message information "
+"might get lost, like message headers, text formatting or attachments!)"
+msgstr ""
+"Jste si jisti, že chcete přesunout tuto (tyto) zprávu(y)? (některé informace "
+"jako hlavička zprávy, formát textu a přílohy mohou být ztraceny)"
+
+#: templates/imp/javascript_defs.php:33
+msgid "Are you sure you wish to PERMANENTLY delete these messages?"
+msgstr "Skutečně chcete trvale smazat tyto zprávy?"
+
+#: lib/Contents.php:855
+msgid "Are you sure you wish to PERMANENTLY delete this attachment?"
+msgstr "Skutečně chcete trvale smazat tuto přílohu?"
+
+#: templates/imp/javascript_defs.php:34
+msgid "Are you sure you wish to delete all mail in this mailbox?"
+msgstr "Skutečně chcete vymazat všechny zprávy v této schránce?"
+
+#: lib/Application.php:293
+msgid "Are you sure you wish to empty your spam folder?"
+msgstr "Skutečně chcete vyprázdnit složku nevyžádané pošty?"
+
+#: lib/Application.php:280
+msgid "Are you sure you wish to empty your trash folder?"
+msgstr "Skutečně chcete vyprázdnit koš?"
+
+#: templates/imp/javascript_defs.php:67
+msgid "Are you sure you wish to report this message as innocent?"
+msgstr "Skutečně chcete nahlásit tuto zprávu jako chtěnou (ham)?"
+
+#: templates/imp/javascript_defs.php:66
+msgid "Are you sure you wish to report this message as spam?"
+msgstr "Skutečně chcete nahlásit tuto zprávu jako nechtěnou (spam)?"
+
+#: templates/dimp/index.inc:458
+msgid "Arrival (No Sort)"
+msgstr "Příjem (bez třídění)"
+
+#: templates/dimp/index.inc:466
+msgid "Arrival Time"
+msgstr "Čas doručení"
+
+#: config/prefs.php:1020
+msgid "Arrival time on server"
+msgstr "Čas doručení na server"
+
+#: message.php:549 templates/dimp/index.inc:404
+#: templates/dimp/message/message.html:134
+msgid "As Attachment"
+msgstr "Jako Příloha"
+
+#: config/prefs.php:415
+msgid "As attachment"
+msgstr "jako příloa"
+
+#: config/prefs.php:417
+msgid "As both body text and an attachment"
+msgstr "Jako text i jako přílohu"
+
+#: config/prefs.php:999
+msgid "Ascending"
+msgstr "Vzestupně"
+
+#: config/prefs.php:302
+msgid "Ask"
+msgstr "Zeptat se"
+
+#: templates/mimp/compose/compose.html:61
+msgid "Attach"
+msgstr "Přiložit"
+
+#: compose.php:1005
+msgid "Attach Files"
+msgstr "Přiložit soubory"
+
+#: compose.php:995
+msgid "Attach a copy of your PGP public key to the message?"
+msgstr "Přiložit kopii Vašeho PGP klíče ke zprávě?"
+
+#: compose.php:1000
+msgid "Attach your contact information to the message?"
+msgstr "Připojit Vaše kontaktní informace ke zprávě?"
+
+#: lib/Compose.php:2149 lib/Compose.php:2252
+#, php-format
+msgid ""
+"Attached file \"%s\" exceeds the attachment size limits. File NOT attached."
+msgstr ""
+"Přiložený soubor \"%s\" přesahuje povolený limit pro velikost příloh. Soubor "
+"NEBYL přiložen."
+
+#: lib/Mime/Viewer/Itip.php:373
+msgid "Attached is a reply to a calendar request you sent."
+msgstr "Přiložena je odpověď na Vaší žádosti z kalendáře."
+
+#: templates/imp/javascript_defs.php:28 templates/mimp/message/message.html:10
+msgid "Attachment"
+msgstr "Jako příloha"
+
+#: attachment.php:59
+#, php-format
+msgid "Attachment %s deleted."
+msgstr "Příloha %s vymazána."
+
+#: lib/Compose.php:2639
+msgid "Attachment Information"
+msgstr "Informace o příloze"
+
+#: message.php:551 templates/dimp/index.inc:406
+#: templates/dimp/message/message.html:136
+msgid "Attachment and Body Text"
+msgstr "Příloha a text zprávy"
+
+#: lib/Compose.php:746
+msgid "Attachment stripped: Original attachment type"
+msgstr "Příloha odstraněna: Originální typ přílohy"
+
+#: lib/Ajax/Application.php:1446 message-dimp.php:37 message.php:195
+msgid "Attachment successfully stripped."
+msgstr "Příloha úspěšně oddělena."
+
+#: compose.php:908 lib/Compose.php:2596 message.php:689 message.php:719
+#: templates/imp/compose/compose.html:249
+msgid "Attachments"
+msgstr "Přílohy"
+
+#: lib/Mime/Viewer/Itip.php:729 lib/Mime/Viewer/Itip.php:912
+msgid "Attendees"
+msgstr "Účastníci"
+
+#: lib/Contents.php:1289
+msgid "Audio part"
+msgstr "Audio část"
+
+#: lib/Search/Element/Autogenerated.php:51
+#: lib/Search/Filter/Autogenerated.php:22
+msgid "Automatically Generated Messages"
+msgstr "Automaticky generované zprávy"
+
+#: config/prefs.php:592
+msgid ""
+"Automatically show images in messages when the sender is in my address book?"
+msgstr ""
+"Automaticky zobrazit obrázky ve zprávách, pokud je odesílatel v mých "
+"kontaktech?"
+
+#: lib/Mime/Viewer/Itip.php:762 lib/Mime/Viewer/Itip.php:948
+msgid "Awaiting Response"
+msgstr "Očekávaná odpověď"
+
+#: message.php:495 thread.php:138
+#, php-format
+msgid "Bac_k to %s"
+msgstr "_Zpět do %s"
+
+#: lib/Application.php:634
+msgid "Back"
+msgstr "Zpět"
+
+#: message.php:495 thread.php:138
+#, php-format
+msgid "Back to %s"
+msgstr "Zpět do %s"
+
+#: thread.php:135
+msgid "Back to Multiple Message View Index"
+msgstr "Zpět na index zpráv"
+
+#: lib/Ui/Message.php:30 search.php:60 templates/dimp/index.inc:228
+#: templates/imp/contacts/contacts.html:44
+msgid "Bcc"
+msgstr "Bcc"
+
+#: templates/dimp/compose/compose.html:98
+msgid "Bcc:"
+msgstr "Skrytá kopie:"
+
+#: config/prefs.php:257
+msgid "Before Signature"
+msgstr "Před podpisem"
+
+#: mailbox.php:592 message.php:564 templates/dimp/index.inc:381
+#: templates/dimp/index.inc:426
+msgid "Blacklist"
+msgstr "Černá listina"
+
+#: config/prefs.php:583
+msgid "Block images in messages unless they are specifically requested?"
+msgstr "Blokovat obrázky ve zprávách, pokud nejsou specificky vyžádány?"
+
+#: search.php:72 templates/dimp/index.inc:493
+msgid "Body"
+msgstr "Obsah zprávy"
+
+#: config/prefs.php:256
+msgid "Bottom"
+msgstr "Dole"
+
+#: search.php:379
+msgid "Built-in Filters cannot be edited."
+msgstr "Vestavěné filtry nemohou být editovány."
+
+#: search.php:372
+msgid "Built-in Virtual Folders cannot be edited."
+msgstr "Vestavěné virtuální složky nemohou být editovány."
+
+#: lib/Search/Element/Bulk.php:45 lib/Search/Filter/Bulk.php:22 search.php:113
+msgid "Bulk Messages"
+msgstr "Hromadné zprávy"
+
+#: compose-mimp.php:296 lib/Ajax/Imple/PassphraseDialog.php:86
+#: templates/dimp/javascript_defs.php:157
+#: templates/imp/compose/redirect.html:45
+#: templates/imp/contacts/contacts.html:70
+#: templates/imp/folders/folders_confirm.html:24
+#: templates/imp/folders/import.html:17 templates/imp/search/search.html:110
+#: templates/mimp/compose/compose.html:56 templates/pgp/import_key.html:49
+#: templates/saveimage/saveimage.html:21 templates/smime/import_key.html:70
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: templates/imp/compose/compose.html:26
+#: templates/imp/compose/compose.html:208
+msgid "Cancel Message"
+msgstr "Zrušit zprávu"
+
+#: templates/dimp/javascript_defs.php:210
+msgid ""
+"Cancelling this message will permanently discard its contents and will "
+"delete auto-saved drafts.\n"
+"Are you sure you want to do this?"
+msgstr ""
+"Zrušení této zprávy bude mít za následek kompletní zrátu jejího obsahu a "
+"odstranění automaticky ukládaných konceptů. \n"
+"Skutečně toto chcete provést?"
+
+#: templates/imp/javascript_defs.php:23
+msgid "Cancelling this message will permanently discard its contents."
+msgstr ""
+"Zrušení této zprávy bude mít za následek kompletní zrátu jejího obsahu."
+
+#: lib/Imap/Tree.php:1496
+msgid "Cannot directly create mailbox in this folder."
+msgstr "Není možné zřídit mailbox přímo v této složce."
+
+#: lib/Mime/Viewer/Partial.php:96
+#, php-format
+msgid ""
+"Cannot display message - found only %s of %s parts of this message in the "
+"current mailbox."
+msgstr ""
+"Nelze zobrazit zprávu - bylo nalezeno pouze %s z %s částí této zprávy v "
+"aktuální schránce."
+
+#: lib/Message.php:150
+msgid "Cannot move messages to Trash - no Trash mailbox set in preferences."
+msgstr ""
+"Nelze přesunout zprávy do koše - v nastavení není nakonfigurována žádná "
+"složka koše."
+
+#: smime.php:108
+msgid "Cannot retrieve public key from message."
+msgstr "Není možné získat veřejný klíč ze zprávy."
+
+#: compose.php:916
+#, php-format
+msgid "Cannot save sent-mail message to \"%s\" as that mailbox is read-only."
+msgstr ""
+"Nelze uložit odeslanou zprávu do \"%s\" , protože schránka je pouze ke čtení."
+
+#: lib/Message.php:474
+msgid "Cannot strip the MIME part as the mailbox is read-only."
+msgstr ""
+"Není možné odloučit MIME část z důvodu toho, že schránka je nyní pouze ke "
+"čtení."
+
+#: lib/Compose.php:2111 lib/Ui/Message.php:29 search.php:56
+#: templates/dimp/index.inc:224 templates/imp/contacts/contacts.html:43
+msgid "Cc"
+msgstr "Kopie"
+
+#: templates/dimp/compose/compose.html:87
+msgid "Cc:"
+msgstr "Kopie:"
+
+#: compose-mimp.php:50
+msgid "Cc: "
+msgstr "Kopie:"
+
+#: lib/Mime/Viewer/Itip.php:744 lib/Mime/Viewer/Itip.php:930
+msgid "Chair Person"
+msgstr "Předsedající"
+
+#: templates/prefs/acl.html:70
+msgid "Change"
+msgstr "Změnit"
+
+#: config/prefs.php:942
+msgid ""
+"Change display preferences such as how many messages you see on each page "
+"and how messages are sorted."
+msgstr ""
+"Změňit nastaveníi zobrazení, jako například kolik zpráv bude na jedné "
+"obrazovce a jak budou uspořádány."
+
+#: config/prefs.php:1062
+msgid "Change folder navigation display preferences."
+msgstr "Změnit nastavení zobrazení navigace složek."
+
+#: config/prefs.php:16
+msgid ""
+"Change the name, address, and signature that people see when they read and "
+"reply to your email."
+msgstr ""
+"Změnit jméno, adresu a podpis, který lidé uvidí, když si budou číst nebo "
+"odpovídat na Vaši zprávu."
+
+#: config/prefs.php:1492
+msgid "Characters to display in preview:"
+msgstr "Znaky pro zobrazení v náhledu:"
+
+#: templates/imp/folders/actions.html:6
+#: templates/imp/mailbox/message_headers.html:5
+msgid "Check All/None"
+msgstr "Zkontrolovat Vše/Nic"
+
+#: lib/Ui/Compose.php:109 lib/Views/Compose.php:132
+msgid "Check Spelling"
+msgstr "Zkontrolovat pravopis"
+
+#: folders.php:368 mailbox.php:736
+msgid "Check _All/None"
+msgstr "Zatrhnout _Vše/Nic"
+
+#: templates/dimp/index.inc:279 templates/imp/folders/actions.html:29
+msgid "Check for New Mail"
+msgstr "Zkontrolovat Novou Poštu"
+
+#: config/prefs.php:1333
+msgid "Check for valid recipient PGP public keys while replying?"
+msgstr "Ověřit validitu PGP veřejných klíčů příjemce při odpovídání."
+
+#: config/prefs.php:202
+msgid "Check spelling before sending a message?"
+msgstr "Zkontrolovat pravopis před zasláním zprávy?"
+
+#: lib/Ui/Compose.php:110 templates/dimp/javascript_defs.php:158
+msgid "Checking..."
+msgstr "Ověřuji ..."
+
+#: templates/imp/folders/actions.html:11 templates/imp/folders/actions.html:13
+msgid "Choose Action"
+msgstr "Vybrat akci"
+
+#: config/prefs.php:1252
+msgid "Choose the address book to use when adding addresses."
+msgstr "Vybrat kontakty, které budou použity pro přidávání adres."
+
+#: templates/dimp/index.inc:149
+msgid "Clear Search"
+msgstr "Vyčistit vyhledávání"
+
+#: mailbox.php:581
+msgid "Clear Sort"
+msgstr "Vyčistit řazení"
+
+#: lib/Mime/Viewer/Images.php:120
+#, php-format
+msgid ""
+"Click %s to convert the image file into a format your browser can attempt to "
+"view."
+msgstr ""
+"Klikněte na %s pro konverzi obrázkového souboru na typ, který lze zobrazit."
+
+#: lib/Contents.php:564
+#, php-format
+msgid "Click %s to download the data."
+msgstr "Klikněte na %s ke stažení dat."
+
+#: lib/Filter.php:131
+#, php-format
+msgid "Click %s to go to %s management page."
+msgstr "Klikněte na %s pro přechod na %s stránku s managementem."
+
+#: lib/Views/ShowMessage.php:249 message.php:657
+#, php-format
+msgid "Click %s to send the notification message."
+msgstr "Klikněte na %s pro odeslání upozornění."
+
+#: lib/Mime/Viewer/Smime.php:309 lib/Mime/Viewer/Smime.php:313
+msgid "Click HERE to verify the data."
+msgstr "Klikněte SEM pro ověření dat."
+
+#: lib/Mime/Viewer/Pgp.php:400 lib/Mime/Viewer/Pgp.php:404
+msgid "Click HERE to verify the message."
+msgstr "Klikněte SEM pro ověření zprávy."
+
+#: templates/dimp/index.inc:546
+msgid "Click HERE to view the message in a new window."
+msgstr "Klikněte SEM pro zobrazení zprávy v novém okně."
+
+#: lib/Prefs/Ui.php:940
+#, php-format
+msgid "Click here to open all mailto: links using %s."
+msgstr "Klikněte sem pro otevření všech mailto: odkazů použitím %s"
+
+#: templates/dimp/index.inc:527
+#, php-format
+msgid ""
+"Click on a message while holding down the %s key to select multiple "
+"messages.  To select a range of messages, click the first message of the "
+"range, navigate to the last message of the range, and then click on the last "
+"message while holding down the %s key."
+msgstr ""
+"Klikněte na zprávu při současném podržení klávesy %s pro výběr více zpráv. "
+"Pro selekci výběru zpráv, klepněte na první zprávu daného výběru, podržte "
+"klávesu %s , přesuňte kurzor na poslední zprávu výběru a klepněte na ní."
+
+#: templates/dimp/compose/compose.html:161
+msgid "Click this box to add the original message as an attachment."
+msgstr "Klepběte na tento box pro přidání originální zprávy jako přílohy."
+
+#: templates/dimp/compose/compose.html:158
+msgid "Click this box to add the original message text to the body."
+msgstr ""
+"Klepběte na tento box pro přidání původní zprávy do těla vytvářené zprávy."
+
+#: config/prefs.php:1038
+msgid "Clicking on the address will compose a new message to the sender"
+msgstr "Kliknutím na adresu lze vytvořit novou zprávu pro odesílatele"
+
+#: config/prefs.php:1039
+msgid "Clicking on the address will open the message to be read"
+msgstr "Kliknutím na adresu lze zobrazit zprávu k přečtení"
+
+#: templates/dimp/index.inc:518
+msgid "Close"
+msgstr "Zavřít"
+
+#: lib/Ui/Compose.php:229
+msgid "Close this window"
+msgstr "Zavřít toto okno"
+
+#: folders.php:383 templates/dimp/index.inc:291 templates/dimp/index.inc:322
+#: templates/dimp/index.inc:333
+msgid "Collapse All"
+msgstr "Sbalit vše"
+
+#: folders.php:383
+msgid "Collapse All Folders"
+msgstr "Sbalit všechny složky"
+
+#: templates/dimp/index.inc:167
+msgid "Collapse Headers"
+msgstr "Sbalit hlavičku"
+
+#: templates/prefs/flags.html:8
+msgid "Color"
+msgstr "Barva"
+
+#: lib/Prefs/Ui.php:823
+msgid "Color Picker"
+msgstr "Kapátko barev"
+
+#: config/prefs.php:1092
+msgid "Combine all namespaces"
+msgstr "Sloučit všsechna jmenná místa"
+
+#: templates/prefs/pgpprivatekey.html:59
+msgid "Comment:"
+msgstr "Komentář:"
+
+#: lib/Mime/Viewer/Itip.php:993
+msgid "Completed"
+msgstr "Dokončeno"
+
+#: config/prefs.php:166 config/prefs.php:334 config/prefs.php:356
+#: config/prefs.php:401 config/prefs.php:436 config/prefs.php:493
+#: config/prefs.php:1517 templates/dimp/index.inc:143
+msgid "Compose"
+msgstr "Vytvořit"
+
+#: compose-mimp.php:45
+msgid "Compose Message"
+msgstr "Vytvořit zprávu"
+
+#: config/prefs.php:1525
+msgid "Compose messages in a separate window?"
+msgstr "Vytvářet zprávy v novém okně?"
+
+#: config/prefs.php:167
+msgid "Composition"
+msgstr "Vytváření zpráv"
+
+#: templates/dimp/index.inc:309
+msgid "Compressed (.zip file)"
+msgstr "Komprimováno (.zip soubor)"
+
+#: config/prefs.php:911
+msgid "Configure flag highlighting."
+msgstr "Nastavit zvýraznění značek."
+
+#: config/prefs.php:1262
+msgid "Configure how event or meeting requests should be handled."
+msgstr "Nastavte jak má být zacházeno s událostmi nebo žádostmi o schůzky."
+
+#: config/prefs.php:543
+msgid "Configure how messages are displayed."
+msgstr "Nastavit, jak budou zprávy zobrazovány."
+
+#: config/prefs.php:403
+msgid "Configure how you forward mail."
+msgstr "Nastavit, jak přeposílat zprávy."
+
+#: config/prefs.php:358
+msgid "Configure how you reply to mail."
+msgstr "Nastavit, jak odpovídat na zprávy."
+
+#: config/prefs.php:168
+msgid "Configure how you send mail."
+msgstr "Nastavit, jak posílat zprávy."
+
+#: config/prefs.php:1541
+msgid "Configure preferences for the dynamic view."
+msgstr "Nastavení  pro dynamické zobrazení."
+
+#: config/prefs.php:1424
+msgid "Configure preferences for the mobile view."
+msgstr "Nastavení pro mobilní zobrazení."
+
+#: config/prefs.php:1459
+msgid "Configure preferences for the traditional view."
+msgstr "Nastavení pro tradiční zobrazení."
+
+#: config/prefs.php:787
+msgid "Configure spam reporting."
+msgstr "Nastavit ohlašování spamu."
+
+#: search.php:117
+msgid "Contains Attachment(s)"
+msgstr "Obsahuje přílohu(y)"
+
+#: config/prefs.php:1280
+#, php-format
+msgid "Control PGP support for %s."
+msgstr "Nastavení podpory PGP v %s."
+
+#: config/prefs.php:1360
+#, php-format
+msgid "Control S/MIME support for %s."
+msgstr "Nastavení podpory S/MIME v %s."
+
+#: config/prefs.php:866
+msgid ""
+"Control when new mail will be checked for, and whether or not to notify you "
+"when it arrives."
+msgstr ""
+"Nastavení kontroly příchozích zpráv a zda-li informovat o jejich příchodu."
+
+#: lib/Mime/Viewer/Html.php:111
+msgid "Convert HTML data to plain text and view in new window."
+msgstr "Zkonvertovat HTML data do prostého textu a zobrazit v novém okně."
+
+#: config/prefs.php:638
+msgid "Convert textual emoticons into graphical ones?"
+msgstr "Převést citové ikonky (smajlíky) z textu do grafiky?"
+
+#: mailbox.php:531 message.php:486
+msgid "Copy"
+msgstr "Kopírovat"
+
+#: templates/dimp/javascript_defs.php:159
+#, php-format
+msgid "Copy %s to %s"
+msgstr "Kopírovat %s do %s"
+
+#: mailbox.php:531 message.php:486
+msgid "Copy to folder"
+msgstr "Kopírovat do složky"
+
+#: lib/Imap/Acl.php:77
+#, php-format
+msgid "Could not add rights for user \"%s\" for the mailbox \"%s\"."
+msgstr "Není možné přidat práva pro uživatele \"%s\" ke schránce \"%s\"."
+
+#: lib/Compose.php:2227
+#, php-format
+msgid "Could not attach %s to the message."
+msgstr "Nelze přiložit %s do zprávy."
+
+#: view.php:190
+msgid "Could not auto-determine data type."
+msgstr "Nelze automaticky determinovat typ dat."
+
+#: lib/Crypt/Pgp.php:346
+msgid "Could not connect to public PGP keyserver"
+msgstr "Nleze se připojit k serveru s veřejnými PGP klíči"
+
+#: attachment.php:39
+#, php-format
+msgid "Could not create the VFS backend: %s"
+msgstr "Nelze vytvořit VFS backend: %s"
+
+#: lib/Mailbox.php:724
+#, php-format
+msgid "Could not delete Virtual Folder \"%s\"."
+msgstr "Nelze smazat virtuální složku \"%s\"."
+
+#: lib/Message.php:772
+#, php-format
+msgid "Could not delete messages from %s. This mailbox is read-only."
+msgstr "Nelze smazat zprávy z %s. Tato schránka je pouze ke čtení."
+
+#: view.php:62
+msgid "Could not display attachment data."
+msgstr "Nelze zobrazitt data přílohy."
+
+#: lib/Spam.php:239
+msgid ""
+"Could not move message to spam mailbox - no spam mailbox defined in "
+"preferences."
+msgstr ""
+"Nelze přesunout zprávu do složky nevyžádané pošty - složka nevyžádanépošty "
+"není definována."
+
+#: lib/Imap.php:358
+#, php-format
+msgid "Could not open mailbox \"%s\"."
+msgstr "Nelze otevřít schránku \"%s\"."
+
+#: lib/Ajax/Application.php:1012 lib/Imap.php:360
+msgid "Could not open mailbox."
+msgstr "Nelze otevřít schránku."
+
+#: lib/Imap/Acl.php:99
+#, php-format
+msgid "Could not remove rights for user \"%s\" for the mailbox \"%s\"."
+msgstr "Nelze odebra práva pro uživatele \"%s\" ke schránce \"%s\"."
+
+#: lib/Imap/Acl.php:53
+msgid "Could not retrieve ACL"
+msgstr "Nelze získat ACL"
+
+#: lib/Ui/Compose.php:175
+msgid "Could not retrieve message data from the mail server."
+msgstr "Nelze znovu získat zprávu ze serveru."
+
+#: lib/Crypt/Pgp.php:241
+#, php-format
+msgid "Could not retrieve public key for %s."
+msgstr "Nelze znovu získat veřejný klíč pro %s."
+
+#: lib/Imap.php:365
+msgid "Could not save message data because it is too large."
+msgstr "Nelze uložit data zprávy protože jsou moc velká."
+
+#: lib/Compose.php:1006 lib/Compose.php:1021
+msgid "Could not save recipients."
+msgstr "Nelze uložit příjemce."
+
+#: templates/imp/folders/actions.html:16
+msgid "Create"
+msgstr "Vytvořit"
+
+#: lib/Imap/Acl.php:156
+msgid "Create Folders"
+msgstr "Vytvořit složky"
+
+#: templates/prefs/pgpprivatekey.html:116
+msgid "Create Keys"
+msgstr "Vytvořit klíče"
+
+#: templates/imp/flist/flist.html:9
+msgid "Create New Mailbox"
+msgstr "Vytvořit nový mailbox"
+
+#: lib/Prefs/Ui.php:1324
+msgid "Create a new sent-mail folder"
+msgstr "Vytvořit novou složku odeslané pošty"
+
+#: config/prefs.php:1123
+msgid ""
+"Create filtering rules to organize your incoming mail, sort it into folders, "
+"and delete spam."
+msgstr ""
+"Vytvořit pravidla filtrování pro organizování příchozích zpráv, jejich "
+"třidění a mazání nevyžádané pošty."
+
+#: templates/dimp/javascript_defs.php:160
+msgid "Create folder:"
+msgstr "Vytvořit složku:"
+
+#: templates/prefs/stationery.html:7
+msgid "Create new stationery"
+msgstr "Vytvořit nový vzor"
+
+#: templates/dimp/index.inc:272 templates/dimp/index.inc:315
+msgid "Create subfolder"
+msgstr "Vytvořit podsložku"
+
+#: templates/dimp/javascript_defs.php:161
+#, php-format
+msgid "Create subfolder of %s:"
+msgstr "Vytvořit podsložku složky %s:"
+
+#: lib/Imap/Acl.php:155
+msgid "Create subfolders"
+msgstr "Vytvořit podsložky"
+
+#: config/prefs.php:1023
+msgid "Criteria to use when sorting by date:"
+msgstr "Kritéria pro použití při řazení podle data:"
+
+#: templates/dimp/index.inc:522 templates/dimp/index.inc:527
+#: templates/dimp/index.inc:536
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: templates/imp/compose/compose.html:304
+msgid "Current Attachments"
+msgstr "Aktuální přílohy"
+
+#: lib/Prefs/Ui.php:592
+#, php-format
+msgid "Current access to %s"
+msgstr "Současný přístup do %s"
+
+#: search.php:68
+msgid "Custom Header"
+msgstr "Uživatelská hlavička"
+
+#: search.php:488
+msgid "Custom Header:"
+msgstr "Uživatelská hlavička:"
+
+#: mailbox.php:638
+msgid "Dat_e"
+msgstr "_Datum"
+
+#: config/prefs.php:984 lib/Compose.php:2091 lib/Ui/Message.php:26
+#: templates/dimp/index.inc:216 templates/dimp/index.inc:455
+#: templates/dimp/javascript_defs.php:129
+#: templates/mobile/javascript_defs.php:69
+msgid "Date"
+msgstr "Datum"
+
+#: lib/Search/Element/Date.php:60
+msgid "Date Equals"
+msgstr "Datum je"
+
+#: search.php:80
+msgid "Date Equals (=)"
+msgstr "Datum je (=)"
+
+#: search.php:489
+msgid "Date Selection"
+msgstr "Výběr data"
+
+#: lib/Search/Element/Date.php:68
+msgid "Date Since"
+msgstr "Datum od"
+
+#: search.php:88
+msgid "Date Since (>=)"
+msgstr "Datum od  (>=)"
+
+#: lib/Search/Element/Date.php:64
+msgid "Date Until"
+msgstr "Datum do"
+
+#: search.php:84
+msgid "Date Until (<)"
+msgstr "Datum do (<)"
+
+#: config/prefs.php:1021
+msgid "Date in message headers"
+msgstr "Datum v hlavičce zprávy"
+
+#: templates/imp/search/search.html:122
+msgid "Days"
+msgstr "Dny"
+
+#: lib/Mime/Viewer/Itip.php:984
+msgid "Declined"
+msgstr "Zamítnut"
+
+#: config/prefs.php:673
+msgid "Default (US-ASCII)"
+msgstr "Implicitní (US-ASCII)"
+
+#: config/prefs.php:221
+msgid "Default method to compose messages:"
+msgstr "Výchozí metoda vytváření zpráv"
+
+#: config/prefs.php:991
+msgid "Default sorting criteria:"
+msgstr "Výchozí třídící kritéria:"
+
+#: config/prefs.php:1002
+msgid "Default sorting direction:"
+msgstr "Výchozí směr třídění:"
+
+#: templates/dimp/index.inc:533
+msgid "Del"
+msgstr "Del"
+
+#: lib/Mime/Viewer/Itip.php:990
+msgid "Delegated"
+msgstr "Přiděleno"
+
+#: lib/Imap/Acl.php:164 mailbox.php:559 message-dimp.php:176
+#: message-mimp.php:265 message.php:523 templates/dimp/index.inc:142
+#: templates/dimp/index.inc:275 templates/dimp/index.inc:386
+#: templates/imp/contacts/contacts.html:60
+#: templates/imp/folders/actions.html:19
+#: templates/mimp/mailbox/mailbox.html:38 templates/prefs/pgppublickey.html:13
+#: templates/prefs/smimepublickey.html:13
+msgid "Delete"
+msgstr "Smazat"
+
+#: lib/Prefs/Ui.php:1130 lib/Prefs/Ui.php:1487
+#, php-format
+msgid "Delete %s Public Key"
+msgstr "Smazat veřejný klíč %s"
+
+#: templates/prefs/pgpprivatekey.html:40
+msgid "Delete Current Keys"
+msgstr "Smazat současné klíče"
+
+#: lib/Imap/Acl.php:160
+msgid "Delete Folders"
+msgstr "Smazat složky"
+
+#: templates/prefs/smimeprivatekey.html:34
+msgid "Delete Personal Certificate"
+msgstr "Vymazat soukromý certifikát"
+
+#: templates/imp/folders/folders_confirm.html:23
+msgid "Delete Selected Folders"
+msgstr "Smazat vybrané složky"
+
+#: templates/prefs/stationery.html:50
+msgid "Delete Stationery"
+msgstr "Smazat vzor"
+
+#: thread.php:163
+msgid "Delete Thread"
+msgstr "Smazat vlákno"
+
+#: templates/dimp/index.inc:357
+msgid "Delete Virtual Folder"
+msgstr "Smazat virtuální složku"
+
+#: lib/Mime/Viewer/Itip.php:670
+msgid "Delete from my calendar"
+msgstr "Smazat z mého kalendáře"
+
+#: config/prefs.php:816
+msgid "Delete message"
+msgstr "Smazat zprávu"
+
+#: lib/Imap/Acl.php:163
+msgid "Delete messages"
+msgstr "Smazat zprávy"
+
+#: config/prefs.php:292
+msgid ""
+"Delete old linked attachments after this many months (0 to never delete)?"
+msgstr "Odstranit staré přílohy po tolika měsících (0 nemazat nikdy)?"
+
+#: config/prefs.php:515
+msgid ""
+"Delete old sent mail folders after this many months (0 to never delete)?"
+msgstr ""
+"Vymazat staré složky odeslané pošty po tolika měsících (0 nemazat nikdy)?"
+
+#: lib/Imap/Acl.php:159
+msgid "Delete subfolders"
+msgstr "Smazat podsložky"
+
+#: templates/dimp/index.inc:533
+msgid "Delete the currently selected message(s)."
+msgstr "Odstranit právě vybranou(é) zprávu(y)."
+
+#: templates/imp/compose/compose.html:329
+msgid "Delete?"
+msgstr "Smazat?"
+
+#: lib/Flag/Imap/Deleted.php:37
+msgid "Deleted"
+msgstr "Smazané"
+
+#: lib/Mailbox.php:720
+#, php-format
+msgid "Deleted Virtual Folder \"%s\"."
+msgstr "Smazat virtuální složku \"%s\"."
+
+#: compose.php:172 lib/Ajax/Application.php:1333
+#, php-format
+msgid "Deleted attachment \"%s\"."
+msgstr "Smazaná příloha \"%s\"."
+
+#: lib/Prefs/Ui.php:855
+#, php-format
+msgid "Deleted flag \"%s\"."
+msgstr "Smazaná značka \"%s\"."
+
+#: config/prefs.php:701
+msgid "Deleting and Moving Messages"
+msgstr "Smazání a přesouvání zpráv"
+
+#: lib/Mime/Viewer/Itip.php:635
+msgid "Deny request"
+msgstr "Zamítnout požadavek"
+
+#: lib/Mime/Viewer/Itip.php:552
+msgid "Deny request for free/busy information"
+msgstr "Zamítnout požadavek na informaci o volném čase"
+
+#: config/prefs.php:1000
+msgid "Descending"
+msgstr "Sestupně"
+
+#: lib/Mime/Viewer/Itip.php:720 lib/Mime/Viewer/Itip.php:901
+msgid "Description"
+msgstr "Popis"
+
+#: templates/imp/compose/compose.html:325
+msgid "Description:"
+msgstr "Popis:"
+
+#: templates/prefs/pgpprivatekey.html:19 templates/prefs/pgpprivatekey.html:30
+#: templates/prefs/pgppublickey.html:13
+#: templates/prefs/smimeprivatekey.html:19
+#: templates/prefs/smimepublickey.html:13
+msgid "Details"
+msgstr "Detaily"
+
+#: lib/Compose.php:2836
+#, php-format
+msgid "Did not attach \"%s\" as it was only partially uploaded."
+msgstr "Nepřiloženo \"%s\", soubor byl pouze částečně uploadnutý (nahraný)."
+
+#: lib/Compose.php:2845
+#, php-format
+msgid "Did not attach \"%s\" as the file was empty."
+msgstr "Nelze přiložit \"%s\", soubor je prázdný"
+
+#: lib/Compose.php:2832
+#, php-format
+msgid ""
+"Did not attach \"%s\" as the maximum allowed upload size has been exceeded."
+msgstr "Nepřiloženo \"%s\", maximální velikost uploadu byla překročena."
+
+#: lib/Compose.php:2840
+#, php-format
+msgid ""
+"Did not attach \"%s\" as the server configuration did not allow the file to "
+"be uploaded."
+msgstr ""
+"Nepřipojeno \"%s\", protože nastavení serveru neumožnilo upload (nahrání) "
+"souboru."
+
+#: config/prefs.php:631
+msgid "Dim signatures?"
+msgstr "Zešedivět podpisy?"
+
+#: config/prefs.php:1052
+msgid "Display attachment information about a message in the mailbox listing?"
+msgstr "Zobrazit informaci o příloze zprávy v seznamu schránky?"
+
+#: config/prefs.php:1532
+msgid "Display confirmation in popup window after sending a message?"
+msgstr "Zobrazit potvrzení v PopUp okně po odeslání zprávy?"
+
+#: config/prefs.php:891
+msgid "Display notification when new mail arrives?"
+msgstr "Zobrazit upozornění o nové zprávě?"
+
+#: config/prefs.php:1434
+msgid "Display only the first 250 characters of a message initially?"
+msgstr "Zobrazit při náhledu pouze prních 250 znaků zprávy?"
+
+#: config/prefs.php:839
+msgid "Display the \"Empty Spam\" link in the menubar?"
+msgstr ""
+"Zobrazit ikonku \"Vyprázdnit složku nevyžádané pošty\" v nabídkové liště?"
+
+#: config/prefs.php:754
+msgid "Display the \"Empty Trash\" link in the menubar?"
+msgstr "Zobrazit ikonku \"Vyprázdnit koš\" v nabídkové liště?"
+
+#: templates/mimp/mailbox/mailbox.html:44
+msgid "Do Action"
+msgstr "Provést akci"
+
+#: search.php:495 templates/imp/search/search-basic.html:24
+#: templates/imp/search/search-basic.html:38
+msgid "Do NOT Match"
+msgstr "NESHODUJÍ se"
+
+#: templates/dimp/index.inc:280 templates/imp/folders/actions.html:30
+msgid "Do Not Check for New Mail"
+msgstr "Nekontrolovat Novou Poštu"
+
+#: config/prefs.php:1040
+msgid "Do not generate a link in the From: column"
+msgstr "Negenerovat linky ve sloupci Od:"
+
+#: config/prefs.php:648
+msgid "Do not show parts"
+msgstr "Nezobrazovat části"
+
+#: templates/imp/javascript_defs.php:24
+msgid "Doing so will discard this message permanently."
+msgstr "Provedení tohoto zcela zruší zprávu."
+
+#: templates/dimp/index.inc:502
+msgid "Don't Show"
+msgstr "Nezobrazovat"
+
+#: templates/imp/mailbox/navbar.html:38
+msgid "Don't Show:"
+msgstr "Nezobrazovat:"
+
+#: lib/Contents.php:812 templates/imp/folders/actions.html:34
+msgid "Download"
+msgstr "Stáhnout"
+
+#: lib/Contents.php:825
+#, php-format
+msgid "Download %s in .zip Format"
+msgstr "Stáhnout %s ve formátu .zip"
+
+#: templates/imp/folders/actions.html:35
+msgid "Download (.zip format)"
+msgstr "Stáhnout [.zip formát]"
+
+#: message.php:677
+msgid "Download All Attachments (in .zip file)"
+msgstr "Stáhnout všechny přílohy (v .zip souboru)"
+
+#: message-mimp.php:147
+msgid "Download Attachment"
+msgstr "Stáhnout přílohu"
+
+#: templates/mimp/message/part.html:5
+msgid "Download attachment"
+msgstr "Stáhnout přílohu"
+
+#: lib/Flag/Imap/Draft.php:37
+msgid "Draft"
+msgstr "Rozepsané"
+
+#: lib/Ajax/Application.php:1825
+msgid "Draft automatically saved."
+msgstr "Koncept automaticky uložen."
+
+#: config/prefs.php:437 lib/Mailbox.php:1567 lib/Mailbox.php:1656
+msgid "Drafts"
+msgstr "Koncepty"
+
+#: lib/Prefs/Ui.php:748
+msgid "Drafts folder:"
+msgstr "Složka s rozepsanou poštou:"
+
+#: config/prefs.php:1540
+msgid "Dynamic View"
+msgstr "Dynamické zobrazení"
+
+#: templates/prefs/pgpprivatekey.html:70
+msgid "E-mail Address:"
+msgstr "E-mailová adresa:"
+
+#: mailbox.php:842
+msgid "END"
+msgstr "KONEC"
+
+#: lib/Mime/Viewer/Status.php:102
+msgid "ERROR: Your message could not be delivered."
+msgstr "CHYBA: Nelze doručit Vaši zprávu."
+
+#: lib/Mime/Viewer/Html.php:194
+msgid "EXAMPLE"
+msgstr "PŘÍKLAD"
+
+#: lib/Imap/Tree.php:1648 templates/prefs/stationery.html:12
+msgid "Edit"
+msgstr "Upravit"
+
+#: templates/dimp/index.inc:298
+msgid "Edit ACL"
+msgstr "Upravit ACL"
+
+#: templates/imp/search/search.html:11
+msgid "Edit Filter"
+msgstr "Editovat filtr"
+
+#: mailbox.php:412 templates/dimp/index.inc:151
+msgid "Edit Search Query"
+msgstr "Upravit vyhledávací dotaz"
+
+#: lib/Imap/Tree.php:1648 mailbox.php:409 templates/dimp/index.inc:356
+#: templates/imp/search/search.html:8
+msgid "Edit Virtual Folder"
+msgstr "Upravit virtuální složku"
+
+#: templates/dimp/index.inc:350
+msgid "Edit Virtual Folders"
+msgstr "Upravit virtuální složky"
+
+#: message-mimp.php:283 message.php:556 templates/dimp/index.inc:367
+msgid "Edit as New"
+msgstr "Editovat jako Novou"
+
+#: config/prefs.php:336
+msgid "Edit stationery and form responses."
+msgstr "Editovat předlohy odpovědí."
+
+#: config/prefs.php:1141
+msgid "Edit your Blacklist"
+msgstr "Upravit listinu nežádoucích (blacklist)"
+
+#: config/prefs.php:1134
+msgid "Edit your Filter Rules"
+msgstr "Upravit filtrovací pravidla"
+
+#: config/prefs.php:1148
+msgid "Edit your Whitelist"
+msgstr "Upravit seznam povolených (whitelist)"
+
+#: lib/Message.php:799
+#, php-format
+msgid "Emptied all messages from %s."
+msgstr "Vyprázdněny všechny zprávy z %s."
+
+#: lib/Message.php:778
+msgid "Emptied all messages from Virtual Trash Folder."
+msgstr "Vyprázdněny všechny zprávy z virtuálního koše."
+
+#: templates/dimp/index.inc:274 templates/imp/folders/actions.html:20
+msgid "Empty"
+msgstr "Vyprázdnit"
+
+#: templates/imp/mailbox/header.html:29
+msgid "Empty Mailbox"
+msgstr "Vyprázdnit schránku"
+
+#: templates/imp/folders/folders_confirm.html:23
+msgid "Empty Selected Folders"
+msgstr "Vyprázdnit vybrané složky"
+
+#: lib/Application.php:294
+msgid "Empty _Spam"
+msgstr "Vyprázdit složku _nevyžádané pošty"
+
+#: lib/Application.php:281
+msgid "Empty _Trash"
+msgstr "Vyprázdit _koš"
+
+#: config/prefs.php:1299
+msgid "Enable PGP functionality?"
+msgstr "Zapnout PGP?"
+
+#: config/prefs.php:1379
+msgid "Enable S/MIME functionality?"
+msgstr "Zapnout S/MIME?"
+
+#: config/prefs.php:1479
+msgid "Enable message previews?"
+msgstr "Umožnit ukázky zpráv?"
+
+#: templates/prefs/searches.html:9 templates/prefs/searches.html:53
+msgid "Enabled?"
+msgstr "Zapnuto?"
+
+#: compose.php:988
+msgid "Encr_yption Options"
+msgstr "Možnosti š_ifrování"
+
+#: templates/dimp/compose/compose.html:56
+msgid "Encryption:"
+msgstr "Šifrování:"
+
+#: templates/dimp/index.inc:532
+msgid "End"
+msgstr "Konec"
+
+#: lib/Compose.php:1879
+msgid "End forwarded message"
+msgstr "Konec přeposlané zprávy"
+
+#: lib/Compose.php:1679
+msgid "End message"
+msgstr "Konec zprávy"
+
+#: lib/Compose.php:1679
+#, php-format
+msgid "End message from %s"
+msgstr "Konec zprávy od %s"
+
+#: lib/Mime/Viewer/Itip.php:525 lib/Mime/Viewer/Itip.php:527
+#: lib/Mime/Viewer/Itip.php:703 lib/Mime/Viewer/Itip.php:705
+msgid "End:"
+msgstr "Konec:"
+
+#: templates/dimp/index.inc:535
+msgid "Enter"
+msgstr "Enter"
+
+#: lib/Prefs/Ui.php:1011 lib/Prefs/Ui.php:1413
+msgid "Enter Passphrase"
+msgstr "Vložte heslo"
+
+#: lib/Prefs/Ui.php:352
+msgid "Enter the name for your new drafts folder."
+msgstr "Vložte jméno nové složky pro rozepsané zprávy."
+
+#: lib/Prefs/Ui.php:414
+msgid "Enter the name for your new spam folder."
+msgstr "Zadejte jméno pro Vaši novou složku s nevyžádanou poštou"
+
+#: lib/Prefs/Ui.php:424
+msgid "Enter the name for your new trash folder."
+msgstr "Vložte jméno nové složky koše"
+
+#: lib/Ajax/Imple/PassphraseDialog.php:72
+msgid "Enter the passphrase used to encrypt this message."
+msgstr "Musíte zadat heslo, které bylo použito pro zašifrování této zprávy."
+
+#: lib/Ajax/Imple/PassphraseDialog.php:68
+msgid "Enter your personal PGP passphrase."
+msgstr "Vložte Vaše osobní PGP heslo."
+
+#: lib/Ajax/Imple/PassphraseDialog.php:76
+msgid "Enter your personal S/MIME passphrase."
+msgstr "Vložte vaše osobní S/MIME heslo."
+
+#: search.php:76 templates/dimp/index.inc:492
+#: templates/imp/search/search-basic.html:20
+msgid "Entire Message"
+msgstr "Celá zpráva"
+
+#: lib/Search/Element/Text.php:52
+msgid "Entire Message (including Headers)"
+msgstr "Kompletní zpráva (včetně hlaviček)"
+
+#: lib/Compose.php:1048 message.php:178 thread.php:62
+#, php-format
+msgid "Entry \"%s\" was successfully added to the address book"
+msgstr "Položka \"%s\" byla úspěšně přidána do kontaktů"
+
+#: lib/Mime/Status.php:65
+msgid "Error"
+msgstr "Chyba"
+
+#: lib/Mime/Viewer/Itip.php:301 lib/Mime/Viewer/Itip.php:409
+#, php-format
+msgid "Error sending reply: %s."
+msgstr "Nastala chyba při zasílání odpovědi: %s."
+
+#: lib/Imap.php:353
+msgid "Error when communicating with the mail server."
+msgstr "Chyba při komunikaci s mailserverem."
+
+#: templates/dimp/javascript_defs.php:151
+msgid "Error when communicating with the server."
+msgstr "Nastala chyba při komunikaci se serverem."
+
+#: lib/Compose.php:1954
+msgid "Error when redirecting message."
+msgstr "Došlo k chybě při přesměrování zprávy."
+
+#: templates/dimp/index.inc:39
+msgid ""
+"Error! This application requires javascript to be available and enabled in "
+"your browser."
+msgstr "Chyba! Tato zpráva vyžatuje zapnutí javascriptu ve Vašem prohlížeči."
+
+#: config/prefs.php:1261
+msgid "Event Requests"
+msgstr "Požadavek události"
+
+#: lib/Mime/Viewer/Itip.php:130
+msgid "Event successfully deleted."
+msgstr "Událost byla úspěšně smazána."
+
+#: config/prefs.php:881
+msgid "Every 15 minutes"
+msgstr "Každých 15 minut"
+
+#: config/prefs.php:878
+msgid "Every 30 seconds"
+msgstr "Každých 30 sekund"
+
+#: config/prefs.php:483 config/prefs.php:880
+msgid "Every 5 minutes"
+msgstr "Každých 5 minut"
+
+#: config/prefs.php:882
+msgid "Every half hour"
+msgstr "Každou půl hodinu"
+
+#: config/prefs.php:482 config/prefs.php:879
+msgid "Every minute"
+msgstr "Každou minutu"
+
+#: templates/imp/mailbox/header.html:22
+msgid "Exit Search"
+msgstr "Öpustit vyhledávání"
+
+#: folders.php:382 templates/dimp/index.inc:290 templates/dimp/index.inc:321
+#: templates/dimp/index.inc:332
+msgid "Expand All"
+msgstr "Rozbalit vše"
+
+#: folders.php:382
+msgid "Expand All Folders"
+msgstr "Rozbalit všechny složky"
+
+#: templates/dimp/index.inc:166
+msgid "Expand Headers"
+msgstr "Rozbalit Hlavičky"
+
+#: compose-mimp.php:98 compose-mimp.php:99 compose-mimp.php:125
+#: templates/mimp/compose/compose.html:55
+msgid "Expand Names"
+msgstr "Rozbalit jména"
+
+#: config/prefs.php:1084
+msgid "Expand the entire folder tree by default in the folders view?"
+msgstr ""
+"Implicitně rozbalit celou strukturu složek při jejich zobrazování v seznamu "
+"složek?"
+
+#: templates/dimp/index.inc:294
+msgid "Export"
+msgstr "Export"
+
+#: lib/Application.php:326
+msgid "Fi_lters"
+msgstr "Fi_ltry"
+
+#: templates/imp/javascript_defs.php:27 templates/imp/compose/compose.html:268
+msgid "File"
+msgstr "Soubor"
+
+#: templates/dimp/index.inc:131 templates/imp/search/search.html:96
+#: templates/prefs/searches.html:52
+msgid "Filter"
+msgstr "Filtr"
+
+#: search.php:306
+#, php-format
+msgid "Filter \"%s\" created succesfully."
+msgstr "Filtr \"%s\" byl úspěšně vytvořen."
+
+#: lib/Prefs/Ui.php:1270
+#, php-format
+msgid "Filter \"%s\" deleted."
+msgstr "Filtr \"%s\" vymazán."
+
+#: search.php:302
+#, php-format
+msgid "Filter \"%s\" edited successfully."
+msgstr "Filtr \"%s\" byl úspěšně modifikován."
+
+#: templates/dimp/index.inc:500
+msgid "Filter By"
+msgstr "Filtrovat"
+
+#: templates/imp/mailbox/navbar.html:28 templates/imp/mailbox/navbar.html:30
+msgid "Filter Messages"
+msgstr "Filtrovat zprávy"
+
+#: config/prefs.php:558
+msgid "Filter message content for unwanted text (e.g. profanity)?"
+msgstr "Odfiltrovat nevhodná slova ze zprávy (například urážky)?"
+
+#: config/prefs.php:1122
+msgid "Filters"
+msgstr "Filtry"
+
+#: lib/Filter.php:130
+#, php-format
+msgid "Filters: %s management page"
+msgstr "Filtry: %s stránka managementu"
+
+#: templates/imp/contacts/contacts.html:13
+msgid "Find:"
+msgstr "Najít:"
+
+#: config/prefs.php:966
+msgid "First (oldest) Unseen Message"
+msgstr "První (nejstarší) nepřečtená zpráva."
+
+#: config/prefs.php:968 mailbox-mimp.php:260
+#: templates/imp/mailbox/navbar.html:75
+msgid "First Page"
+msgstr "První stránka"
+
+#: search.php:490
+msgid "Flag:"
+msgstr "Značka:"
+
+#: lib/Flag/Imap/Flagged.php:37
+msgid "Flagged for Followup"
+msgstr "Označeno pro následování"
+
+#: config/prefs.php:910
+msgid "Flags"
+msgstr "Značky"
+
+#: mailbox.php:600 message.php:547
+msgid "Fo_rward"
+msgstr "_Přeposlat"
+
+#: lib/Block/Summary.php:102 lib/Mailbox.php:1640
+#: templates/imp/folders/folders_size.html:6
+msgid "Folder"
+msgstr "Složka"
+
+#: templates/dimp/index.inc:96
+msgid "Folder Actions"
+msgstr "Akce složek"
+
+#: folders.php:250 templates/imp/folders/folders_confirm.html:6
+msgid "Folder Actions - Confirmation"
+msgstr "Akce složky - potvrzení"
+
+#: config/prefs.php:1061
+msgid "Folder Display"
+msgstr "Zobrazení složky"
+
+#: folders.php:324 folders.php:411 templates/imp/folders/head.html:2
+#: templates/prefs/initialpage.html:10
+msgid "Folder Navigator"
+msgstr "Prohlížeč složek"
+
+#: folders.php:273 templates/imp/folders/folders_size.html:1
+msgid "Folder Sizes"
+msgstr "Velikosti složek"
+
+#: lib/Block/Summary.php:27
+msgid "Folder Summary"
+msgstr "Shrnutí složek"
+
+#: folders-mimp.php:26 folders.php:28
+msgid "Folder use is not enabled."
+msgstr "Použití složek není aktivováno."
+
+#: folders-mimp.php:63 lib/Ui/Mimp.php:41 templates/mobile/folders.html.php:4
+msgid "Folders"
+msgstr "Složky"
+
+#: config/prefs.php:576
+msgid ""
+"For messages with alternative representations of the text part, which part "
+"should we display?"
+msgstr ""
+"U zpráv s možností alternativního zobrazení textové části se má zobrazit "
+"která část?"
+
+#: compose-mimp.php:182 lib/Compose.php:1823 lib/Compose.php:1826
+#: lib/Notification/Event/Status.php:27 mailbox.php:600 message-dimp.php:149
+#: message-mimp.php:281 message.php:547 templates/dimp/index.inc:134
+#: templates/dimp/index.inc:366
+msgid "Forward"
+msgstr "Přeposlat"
+
+#: lib/Flag/Imap/Forwarded.php:33
+msgid "Forwarded"
+msgstr "Přeposlané"
+
+#: lib/Compose.php:2054
+msgid "Forwarded Message"
+msgstr "Přeposlaná zpráva:"
+
+#: lib/Compose.php:1877
+msgid "Forwarded message"
+msgstr "Přeposlaná zpráva"
+
+#: lib/Compose.php:1877
+#, php-format
+msgid "Forwarded message from %s"
+msgstr "Přeposlaná zpráva od %s"
+
+#: compose-mimp.php:181
+msgid "Forwarded message will be automatically added to your outgoing message."
+msgstr "Přeposílaná zpráva bude automaticky přidána k vámi odesílané zprávě."
+
+#: config/prefs.php:402
+msgid "Forwards"
+msgstr "Přeposílání"
+
+#: lib/Mime/Viewer/Itip.php:402
+msgid "Free/Busy Request Response"
+msgstr "Odpověď na žádost o volném čase"
+
+#: mailbox.php:648
+msgid "Fro_m"
+msgstr "_Od"
+
+#: lib/Compose.php:2095 lib/Ui/Mailbox.php:114 lib/Ui/Message.php:27
+#: mailbox-mimp.php:220 search.php:44 templates/dimp/index.inc:212
+#: templates/dimp/index.inc:452 templates/dimp/index.inc:494
+#: templates/dimp/javascript_defs.php:109
+#: templates/mobile/javascript_defs.php:53
+#: templates/imp/compose/compose.html:31
+#: templates/imp/search/search-basic.html:16
+msgid "From"
+msgstr "Od"
+
+#: config/prefs.php:985
+msgid "From Address"
+msgstr "Z adresy"
+
+#: templates/mobile/message.html.php:14 templates/dimp/compose/compose.html:65
+#: templates/imp/thread/thread.html:19 templates/mimp/compose/compose.html:10
+msgid "From:"
+msgstr "Od:"
+
+#: templates/saveimage/saveimage.html:13
+msgid "Gallery"
+msgstr "Galerie"
+
+#: config/prefs.php:14 config/prefs.php:114 config/prefs.php:136
+msgid "General"
+msgstr "Všeobecné možnosti"
+
+#: templates/dimp/index.inc:144
+msgid "Get Mail"
+msgstr "Stáhnout poštu"
+
+#: folders.php:370 lib/Mime/Viewer/Itip.php:564 lib/Mime/Viewer/Itip.php:834
+#: lib/Mime/Viewer/Itip.php:963
+msgid "Go"
+msgstr "Jdi na"
+
+#: templates/imp/search/search-basic.html:43
+msgid "Go to Advanced Search Page..."
+msgstr "Přejít na pokročilé vyhledávání"
+
+#: thread.php:137
+msgid "Go to Message"
+msgstr "Jít na zprávu"
+
+#: lib/IMP.php:115
+#, php-format
+msgid "Go to address book entry of \"%s\""
+msgstr "Přejít do kontaktu \"%s\""
+
+#: lib/Block/Newmail.php:58
+msgid "Go to your Inbox..."
+msgstr "Přejít do složky Doručená pošta"
+
+#: lib/Contents.php:564 lib/Filter.php:130 lib/Mime/Viewer/Appledouble.php:90
+#: lib/Mime/Viewer/Images.php:119 lib/Mime/Viewer/Mdn.php:78
+#: lib/Mime/Viewer/Mdn.php:86 lib/Mime/Viewer/Status.php:103
+#: lib/Mime/Viewer/Status.php:115 lib/Mime/Viewer/Status.php:126
+#: lib/Views/ShowMessage.php:249 message.php:657
+msgid "HERE"
+msgstr "ZDE"
+
+#: templates/prefs/stationery.html:30
+msgid "HTML"
+msgstr "HTML"
+
+#: lib/Compose.php:1214
+msgid "HTML Message"
+msgstr "HTML Zpráva"
+
+#: templates/dimp/compose/compose.html:28
+msgid "HTML composition"
+msgstr "Přepnout na HTML vytváření zprávy"
+
+#: config/prefs.php:573
+msgid "HTML part"
+msgstr "HTML část"
+
+#: message.php:598
+msgid "Headers"
+msgstr "Hlavičky"
+
+#: templates/dimp/index.inc:448
+msgid "Help"
+msgstr "Nápověda"
+
+#: config/prefs.php:621
+msgid "Hidden"
+msgstr "Skryté"
+
+#: config/prefs.php:619
+msgid "Hidden in List Messages"
+msgstr "Skryté v seznamu zpráv"
+
+#: config/prefs.php:618
+msgid "Hidden in Thread View"
+msgstr "Skryté zobrazení vlákna"
+
+#: config/prefs.php:620
+msgid "Hidden in Thread View and List Messages"
+msgstr "Skryté při zobrazení vlákna a seznamu zpráv"
+
+#: templates/dimp/index.inc:510 templates/dimp/message/message.html:152
+msgid "Hide Addresses"
+msgstr "Skrýt adresy"
+
+#: templates/dimp/javascript_defs.php:166
+msgid "Hide Alerts _Log"
+msgstr "Skrýt oznámení"
+
+#: mailbox.php:280 templates/dimp/index.inc:444
+msgid "Hide Deleted"
+msgstr "Skrýt smazané"
+
+#: templates/dimp/index.inc:413
+msgid "Hide Preview"
+msgstr "Skrýt Náhled"
+
+#: folders.php:376 templates/dimp/index.inc:329
+msgid "Hide Unsubscribed"
+msgstr "Skrýt nepřihlášené"
+
+#: compose.php:855 message.php:329 templates/dimp/javascript_defs.php:226
+msgid "High"
+msgstr "Vysoká"
+
+#: lib/Flag/System/HighPriority.php:37 message.php:329
+msgid "High Priority"
+msgstr "Vysoká důležitost"
+
+#: templates/dimp/index.inc:532
+msgid "Home"
+msgstr "Domů"
+
+#: templates/dimp/index.inc:48
+msgid "Horde"
+msgstr "Horde"
+
+#: templates/dimp/index.inc:415
+msgid "Horizontal Layout"
+msgstr "Horizontální zobrazení"
+
+#: config/prefs.php:419
+msgid "How should messages be forwarded by default?"
+msgstr "Jaké má být výchozí nastavení přeposílání zpráv?"
+
+#: config/prefs.php:1095
+msgid "How should namespaces be displayed in the folder tree view?"
+msgstr "Jak mají být jmenná místa zobrazena z pohledu stromu složky?"
+
+#: config/prefs.php:392
+msgid "How to attribute quoted lines in a reply"
+msgstr "Jak označit citace v odpovědích"
+
+#: lib/Mime/Viewer/Pgp.php:254
+msgid ""
+"However, no personal private key exists so the message cannot be decrypted."
+msgstr "Žádný osobní klíč není definován, zprávu nelze dešifrovat."
+
+#: templates/prefs/flags.html:7
+msgid "Icon"
+msgstr "Ikona"
+
+#: templates/imp/folders/folders_confirm.html:13
+msgid "If you continue, all messages in the folder(s) will be lost!"
+msgstr ""
+"Pokud budete pokračovat, všechny zprávy ve složce(kách) budou ztraceny!"
+
+#: saveimage.php:54
+msgid "Image"
+msgstr "Obrázky"
+
+#: lib/Contents.php:1292
+msgid "Image part"
+msgstr "Obrázková část"
+
+#: lib/Mime/Viewer/Html.php:214
+msgid "Images have been blocked in this message part."
+msgstr "Obrázky v této části zprávy byly zablokovány z důvodu ochrany."
+
+#: templates/dimp/index.inc:295 templates/imp/folders/import.html:16
+msgid "Import"
+msgstr "Importovat"
+
+#: templates/pgp/import_key.html:48 templates/smime/import_key.html:69
+msgid "Import Key"
+msgstr "Importovat klíč"
+
+#: templates/prefs/pgpprivatekey.html:118
+msgid "Import Keypair"
+msgstr "Importovat klíčový pár"
+
+#: templates/imp/folders/actions.html:37 templates/imp/folders/import.html:7
+msgid "Import Messages"
+msgstr "Důležité zprávy"
+
+#: lib/Crypt/Pgp.php:677
+msgid "Import PGP Key"
+msgstr "Importovat PGP klíč"
+
+#: templates/prefs/smimeprivatekey.html:40
+msgid "Import Personal Certificate"
+msgstr "Importovat soukromý certifikát"
+
+#: templates/pgp/import_key.html:11
+msgid "Import Personal Private PGP Key"
+msgstr "Importovat soukromý PGP klíč"
+
+#: templates/pgp/import_key.html:18
+msgid "Import Personal Private PGP Key Here:"
+msgstr "Importovat soukromý PGP klíč sem:"
+
+#: templates/pgp/import_key.html:11
+msgid "Import Personal Public PGP Key"
+msgstr "Importovat veřejný PGP klíč"
+
+#: templates/pgp/import_key.html:18
+msgid "Import Personal Public PGP Key Here:"
+msgstr "Importovat osobní veřejný PGP klíč sem:"
+
+#: templates/smime/import_key.html:11
+msgid "Import Personal S/MIME Certificates"
+msgstr "Importovat soukromý S/MIME certifikát"
+
+#: templates/prefs/pgppublickey.html:30 templates/prefs/smimepublickey.html:30
+msgid "Import Public Key"
+msgstr "Importovat veřejný klíč"
+
+#: templates/pgp/import_key.html:11
+msgid "Import Public PGP Key"
+msgstr "Importovat veřejný PGP klíč"
+
+#: templates/pgp/import_key.html:18
+msgid "Import Public PGP Key Here:"
+msgstr "Importovat veřejný PGP klíč sem:"
+
+#: templates/smime/import_key.html:11
+msgid "Import Public S/MIME Key"
+msgstr "Importovat veřejný S/MIME klíč"
+
+#: lib/Crypt/Smime.php:513
+msgid "Import S/MIME Key"
+msgstr "Importovat S/MIME klíč"
+
+#: templates/imp/folders/import.html:12
+msgid "Import mbox or .eml file"
+msgstr "Importovat mbox nebo .eml soubor"
+
+#: lib/Ui/Folder.php:190
+#, php-format
+msgid "Imported %d message from %s."
+msgid_plural "Imported %d messages from %s"
+msgstr[0] "Importována %d zpráva od %s."
+msgstr[1] "Importovány %d zprávy od %s."
+msgstr[2] "Importováno %d zpráv od %s."
+
+#: pgp.php:67
+msgid ""
+"Imported key contains your PGP private key. Only add your public key in the "
+"first step!"
+msgstr ""
+"Importovaný klíč obsahuje Váš PGP privátní klíč. Vložte pouze veřejný klíč v "
+"kroku jedna!"
+
+#: message.php:550 templates/dimp/index.inc:405
+#: templates/dimp/message/message.html:135
+msgid "In Body Text"
+msgstr "Text v těle zprávy"
+
+#: lib/Mime/Viewer/Itip.php:996
+msgid "In Process"
+msgstr "V procesu"
+
+#: config/prefs.php:416
+msgid "In the body text"
+msgstr "Text v těle zprávy"
+
+#: lib/Mailbox.php:1559 lib/Mailbox.php:1650 lib/Ui/Mimp.php:32
+#: templates/prefs/initialpage.html:8
+msgid "Inbox"
+msgstr "Doručené zprávy"
+
+#: config/prefs.php:383
+msgid "Include a brief summary of the header in a reply?"
+msgstr "Zahrnout stručné shrnutí hlaviček do Vaší odpovědi?"
+
+#: config/prefs.php:369
+msgid "Include original message in a reply?"
+msgstr "Zahrnout původní zprávu do Vaší odpovědi?"
+
+#: lib/Mime/Viewer/Mdn.php:62
+msgid "Info"
+msgstr "Informace"
+
+#: lib/Prefs/Ui.php:1129 lib/Prefs/Ui.php:1486
+#, php-format
+msgid "Information on %s Public Key"
+msgstr "Informace o veřejném klíči %s"
+
+#: lib/Prefs/Ui.php:1015
+msgid "Information on Personal Private Key"
+msgstr "Informace o soukromém klíči"
+
+#: lib/Prefs/Ui.php:1404
+msgid "Information on Personal Public Certificate"
+msgstr "Informace o osobním veřejném certifikátu"
+
+#: lib/Prefs/Ui.php:1000
+msgid "Information on Personal Public Key"
+msgstr "Informace o veřejném klíči"
+
+#: templates/imp/javascript_defs.php:29
+msgid "Inline"
+msgstr "Jako část zprávy"
+
+#: message-dimp.php:168 templates/dimp/index.inc:139
+msgid "Innocent"
+msgstr "Není nevyžádaná"
+
+#: lib/Imap/Acl.php:144
+msgid "Insert"
+msgstr "Vložit"
+
+#: templates/smime/import_key.html:19
+msgid "Insert Certificate Here:"
+msgstr "Vložit certifikát sem:"
+
+#: lib/Imap/Acl.php:143
+msgid "Insert messages"
+msgstr "Vložit zprávy"
+
+#: lib/Mime/Viewer/Itip.php:412
+msgid "Invalid Action selected for this component."
+msgstr "Pro tuto komponentu byla vybrána nesprávná akce."
+
+#: lib/Ui/Mailbox.php:68 lib/Ui/Mailbox.php:81
+#: templates/dimp/javascript_defs.php:154
+msgid "Invalid Address"
+msgstr "Neplatná adresa"
+
+#: templates/dimp/javascript_defs.php:155
+msgid "Invalid Subject"
+msgstr "Neplatný předmět"
+
+#: lib/Compose.php:1146
+#, php-format
+msgid "Invalid character in e-mail address: %s."
+msgstr "Neplatný znak v e-mailová adrese: %s."
+
+#: lib/Compose.php:1097
+#, php-format
+msgid "Invalid e-mail address: %s."
+msgstr "Neplatná e-mailová adresa: %s."
+
+#: lib/Crypt/Smime.php:486
+msgid "Invalid key"
+msgstr "Neplatný klíč"
+
+#: lib/Ajax/Imple/PassphraseDialog.php:151
+#: lib/Ajax/Imple/PassphraseDialog.php:164
+msgid "Invalid passphrase entered."
+msgstr "Vloženo nesprávné heslo."
+
+#: pgp.php:112
+msgid "Invalid personal PGP private key."
+msgstr "Váš soukromý PGP klíč je neplatný."
+
+#: pgp.php:80
+msgid "Invalid personal PGP public key."
+msgstr "Váš veřejný PGP klíč je neplatný."
+
+#: lib/Flag/Imap/Junk.php:35
+msgid "Junk"
+msgstr "Nežádoucí"
+
+#: templates/imp/compose/compose.html:304
+#: templates/imp/compose/compose.html:314
+#: templates/imp/compose/compose.html:316
+msgid "KB"
+msgstr "kB"
+
+#: templates/prefs/pgpprivatekey.html:81
+msgid "Key Length:"
+msgstr "Délka klíče:"
+
+#: lib/Prefs/Ui.php:1033
+msgid ""
+"Key generation may take a long time to complete.  Continue with key "
+"generation?"
+msgstr ""
+"Vygenerování klíče může trvat dlouhou dobu. Pokračovat v generovaní klíče?"
+
+#: templates/prefs/pgppublickey.html:37 templates/prefs/smimepublickey.html:37
+msgid "Key import is not available. File upload is not enabled on this server."
+msgstr ""
+"Import klíče není dostupný. Upload souborů není na tomto serveru povolen."
+
+#: templates/prefs/pgppublickey.html:25 templates/prefs/smimepublickey.html:25
+msgid ""
+"Key import is not available. You have no address book defined to add your "
+"contacts."
+msgstr "Import klíče není dostupný. Nemáte nadefinován žádný zdroj kontaktů."
+
+#: lib/Prefs/Ui.php:1083
+msgid "Key successfully sent to the public keyserver."
+msgstr "Klíč byl úspěšně zaslán na veřejný klíčový server."
+
+#: templates/prefs/flags.html:6
+msgid "Label"
+msgstr "Štítek"
+
+#: templates/imp/search/search.html:103
+msgid "Label:"
+msgstr "Štítek:"
+
+#: config/prefs.php:967
+msgid "Last (newest) Unseen Message"
+msgstr "Poslední (nejnovější) nepřečtená zpráva"
+
+#: config/prefs.php:969 mailbox-mimp.php:265
+#: templates/imp/mailbox/navbar.html:98
+msgid "Last Page"
+msgstr "Poslední stránka"
+
+#: compose.php:1031
+msgid "Link Attachments?"
+msgstr "Přílohy jako webové odkazy?"
+
+#: attachment.php:26 lib/Compose.php:2580
+msgid "Linked attachments are forbidden."
+msgstr "Zasílání příloh jako odkazy není povoleno."
+
+#: lib/Compose.php:2603
+#, php-format
+msgid "Links will expire on %s"
+msgstr "Přílohy jako odkazy vyprší v %s"
+
+#: lib/Imap/Acl.php:128
+msgid "List"
+msgstr "Seznam"
+
+#: config/prefs.php:1211
+msgid ""
+"List all contacts when loading the contacts screen? (if disabled, you will "
+"only see contacts that you search for explicitly)"
+msgstr ""
+"Zobrazit seznam všech kontaktů po otevření kontaktů? (pokud není aktivováno, "
+"uvidíte pouze kontakty, které jste zadali pro vyhledání)"
+
+#: lib/Mime/Viewer/Html.php:224
+msgid "Load Styling?"
+msgstr "Nahrát úpravy (styling)?"
+
+#: lib/Mime/Viewer/Html.php:87 search.php:491 templates/dimp/index.inc:37
+#: templates/dimp/index.inc:82 templates/dimp/index.inc:109
+#: templates/dimp/javascript_defs.php:170
+#: templates/dimp/compose/compose-base.html:2
+#: templates/dimp/message/message.html:2
+msgid "Loading..."
+msgstr "Nahrává se ..."
+
+#: lib/Mime/Viewer/Itip.php:725
+msgid "Location"
+msgstr "Místo"
+
+#: lib/Ui/Mimp.php:44 templates/mobile/folders.html.php:6
+#: templates/mobile/mailbox.html.php:5 templates/mobile/message.html.php:5
+msgid "Log out"
+msgstr "Odhlásit"
+
+#: templates/dimp/javascript_defs.php:178
+msgid "Logging Out..."
+msgstr "Odhlašování..."
+
+#: compose.php:857 message.php:334 templates/dimp/javascript_defs.php:235
+msgid "Low"
+msgstr "Nizká"
+
+#: lib/Flag/System/LowPriority.php:29 message.php:334
+msgid "Low Priority"
+msgstr "Nízká důležitost"
+
+#: lib/Mime/Viewer/Appledouble.php:92
+msgid "Macintosh File"
+msgstr "Soubor pochází z Macintosh"
+
+#: config/prefs.php:1468 lib/Mailbox.php:1679
+msgid "Mailbox"
+msgstr "Složka"
+
+#: folders.php:128 lib/Ajax/Application.php:161
+#, php-format
+msgid "Mailbox \"%s\" already exists."
+msgstr "Schránka \"%s\" již existuje."
+
+#: lib/Views/ListMessages.php:250
+#, php-format
+msgid "Mailbox %s does not exist."
+msgstr "Schránka %s neexistuje."
+
+#: config/prefs.php:941
+msgid "Mailbox Display"
+msgstr "Zobrazení schránky"
+
+#: lib/Mailbox/List.php:266 lib/Mailbox/List.php:291
+msgid "Mailbox listing failed"
+msgstr "Zobrazení seznamu schránky selhalo"
+
+#: lib/Mailbox.php:609
+msgid "Mailbox structure on server has changed."
+msgstr "Struktura schránky na serveru byla změněna."
+
+#: lib/Flag/System/List.php:29
+msgid "Mailing List Message"
+msgstr "Zpráva v seznamu zpráv"
+
+#: lib/Search/Element/Mailinglist.php:44 lib/Search/Filter/Mailinglist.php:22
+#: search.php:121
+msgid "Mailing List Messages"
+msgstr "Zprávy v seznamu zpráv"
+
+#: config/prefs.php:438
+msgid "Manage message drafts."
+msgstr "Pravovat koncepty."
+
+#: config/prefs.php:495
+msgid "Manage sent mail folders."
+msgstr "Spravovat složku odeslané pošty."
+
+#: config/prefs.php:138
+msgid "Manage your saved searches"
+msgstr "Spravovat vámi uložené vahledávání"
+
+#: lib/Imap/Acl.php:140
+msgid "Mark (Other)"
+msgstr "Značka (jiný)"
+
+#: lib/Imap/Acl.php:136
+msgid "Mark (Seen)"
+msgstr "Značka (přečtený)"
+
+#: templates/imp/folders/actions.html:32
+msgid "Mark All Messages as Seen"
+msgstr "Označit všechny zprávy jako přečtené"
+
+#: templates/imp/folders/actions.html:33
+msgid "Mark All Messages as Unseen"
+msgstr "Označit všechny zprávy jako nepřečtené"
+
+#: templates/imp/message/navbar_navigate.html:8
+#: templates/imp/message/navbar_navigate.html:10
+msgid "Mark Message"
+msgstr "Označit zprávu"
+
+#: templates/imp/mailbox/navbar.html:8 templates/imp/mailbox/navbar.html:10
+msgid "Mark Messages"
+msgstr "Označit zprávy"
+
+#: templates/dimp/index.inc:277
+msgid "Mark all as"
+msgstr "Označit vše jako:"
+
+#: templates/dimp/index.inc:370 templates/dimp/index.inc:419
+msgid "Mark as"
+msgstr "Označit jako:"
+
+#: templates/imp/mailbox/navbar.html:12
+#: templates/imp/message/navbar_navigate.html:12
+msgid "Mark as:"
+msgstr "Označit jako:"
+
+#: config/prefs.php:601
+msgid "Mark different levels of quoting with different colors?"
+msgstr "Označit různé úrovně citací různými barvami?"
+
+#: config/prefs.php:721
+msgid "Mark messages as Seen when deleting?"
+msgstr "Označit zprávy jako přečtené při smazání?"
+
+#: config/prefs.php:609
+msgid "Mark simple markup?"
+msgstr "Označit jednotným značením?"
+
+#: lib/Imap/Acl.php:135
+msgid "Mark with Seen/Unseen flags"
+msgstr "Označit jako přečtené/nepřečtené"
+
+#: lib/Imap/Acl.php:139
+msgid "Mark with other flags (e.g. Important/Answered)"
+msgstr "Označit ostatními značkami (např. důležité/odpovězené)"
+
+#: templates/imp/compose/compose.html:273
+msgid "Maximum Attachment Size"
+msgstr "Maximální velikost přílohy"
+
+#: lib/Application.php:193
+msgid "Maximum Number of Folders"
+msgstr "Maximální počet stran"
+
+#: lib/Application.php:197
+msgid "Maximum Number of Recipients per Message"
+msgstr "Maximální počet příjemců na jednu zprávu"
+
+#: lib/Application.php:201
+msgid "Maximum Number of Recipients per Time Period"
+msgstr "Maximální počet příjemců v časovém intervalu"
+
+#: templates/imp/compose/compose.html:262
+msgid "Maximum number of attachments reached."
+msgstr "Byl dosažen maximální počet příloh."
+
+#: templates/imp/compose/compose.html:259
+msgid "Maximum total attachment size reached."
+msgstr "Byla dosažena maximální velikost příloh."
+
+#: templates/dimp/javascript_defs.php:167
+msgid "Mbox or .eml file:"
+msgstr "Mbox nebo .eml soubor:"
+
+#: templates/mimp/compose/compose.html:71
+#: templates/mimp/folders/folders.html:5
+#: templates/mimp/mailbox/mailbox.html:49
+#: templates/mimp/mailbox/search.html:14
+#: templates/mimp/message/message.html:32
+msgid "Menu"
+msgstr "Menu"
+
+#: config/prefs.php:541 config/prefs.php:700 config/prefs.php:785
+#: config/prefs.php:864 config/prefs.php:909 lib/Compose.php:1673
+#: templates/dimp/javascript_defs.php:171
+msgid "Message"
+msgstr "Zpráva"
+
+#: lib/Ajax/Application.php:1676
+#, php-format
+msgid "Message \"%s\" redirected successfully."
+msgstr "Zráva  \"%s\"  byla úspěšně přesměrována."
+
+#: lib/Ajax/Application.php:1626
+#, php-format
+msgid "Message \"%s\" sent successfully."
+msgstr "Zpráva \"%s\" byla úspěšně odeslána."
+
+#: lib/Search/Element/Text.php:51 templates/imp/search/search-basic.html:19
+msgid "Message Body"
+msgstr "Tělo zprávy"
+
+#: compose-mimp.php:340
+msgid "Message Composition"
+msgstr "Vytváření zprávy"
+
+#: templates/dimp/index.inc:467
+msgid "Message Date"
+msgstr "Datum zprávy"
+
+#: templates/dimp/index.inc:250 templates/dimp/message/message.html:91
+msgid "Message Log"
+msgstr "Log zprávy"
+
+#: config/prefs.php:988
+msgid "Message Size"
+msgstr "Velikost zprávy"
+
+#: message.php:572
+msgid "Message Source"
+msgstr "Zdrojový kód zprávy"
+
+#: lib/Compose.php:1673
+#, php-format
+msgid "Message from %s"
+msgstr "Zpráva od %s"
+
+#: lib/Flag/System/Attachment.php:29
+msgid "Message has Attachments"
+msgstr "Zpráva má přílohy"
+
+#: lib/Flag/System/Encrypted.php:29
+msgid "Message is Encrypted"
+msgstr "Zpráva je šifrovná"
+
+#: lib/Flag/System/Signed.php:29
+msgid "Message is Signed"
+msgstr "Zpráva je podepsaná"
+
+#: lib/Contents.php:1296
+msgid "Message part"
+msgstr "Část zprávy"
+
+#: compose-mimp.php:196 compose.php:366 compose.php:372
+#: lib/Ajax/Application.php:1676
+msgid "Message redirected successfully."
+msgid_plural "Messages redirected successfully."
+msgstr[0] "Zráva byla úspěšně přesměrována."
+msgstr[1] "Zrávy byly úspěšně přesměrovány."
+msgstr[2] "Zrávy byly úspěšně přesměrovány."
+
+#: lib/Compose.php:772
+#, php-format
+msgid "Message sent successfully, but not saved to %s."
+msgstr "Zpráva byla úspěšně odeslána, ale nebyla uložena do %s"
+
+#: compose-mimp.php:279 compose.php:508 compose.php:515
+#: lib/Ajax/Application.php:1626
+msgid "Message sent successfully."
+msgstr "Zpráva byla úspěšně odeslána."
+
+#: lib/Mime/Viewer/Html.php:223
+msgid ""
+"Message styling has been suppressed in this message part since the style "
+"data lives on a remote server."
+msgstr ""
+"Formát stylů v této části zprávy byl potlačen, protože data stylu jsou "
+"umístěna na vzdáleném serveru."
+
+#: templates/dimp/message/message.html:116
+#: templates/mimp/compose/compose.html:43
+msgid "Message:"
+msgstr "Zpráva:"
+
+#: templates/dimp/javascript_defs.php:172
+msgid "Messages"
+msgstr "Zprávy"
+
+#: lib/Search/Filter/Contacts.php:23
+msgid "Messages From Personal Contacts"
+msgstr "Zpráva od osobních kontaktů"
+
+#: config/prefs.php:1030
+msgid "Messages per page in the mailbox view."
+msgstr "Zpráv na stránku v pohledu složky."
+
+#: mailbox.php:243
+msgid "Messages to"
+msgstr "Zprávy do"
+
+#: lib/Search/Filter/Attachment.php:22
+msgid "Messages with Attachments"
+msgstr "Zprávy s přílohami"
+
+#: config/prefs.php:1270
+msgid "Minutes needed to consider a event as a non-conflicting one in iTip"
+msgstr "Minuty potřebné ke zvážení nekonfliktnosti události v iTip"
+
+#: mobile.php:19
+msgid "Mobile Mail"
+msgstr "Mobilní mail"
+
+#: config/prefs.php:1423
+msgid "Mobile View"
+msgstr "Mobilní zobrazení"
+
+#: templates/imp/search/search.html:123
+msgid "Months"
+msgstr "Měsíce"
+
+#: mailbox.php:530 message.php:485
+msgid "Move"
+msgstr "Přesunout"
+
+#: templates/dimp/javascript_defs.php:174
+#, php-format
+msgid "Move %s to %s"
+msgstr "Přesunout %s do %s"
+
+#: templates/dimp/index.inc:530
+msgid "Move one page up/down through the message list."
+msgstr "Přejít o jednu stránku nahoru/dolů v seznamu zpráv."
+
+#: templates/dimp/index.inc:100
+msgid "Move to Base Level"
+msgstr "Přejít na výchozí pozici"
+
+#: config/prefs.php:829
+msgid "Move to Inbox"
+msgstr "Přesunout do složky Doručená pošta"
+
+#: mailbox.php:530 message.php:485
+msgid "Move to folder"
+msgstr "Přesunout do složky"
+
+#: config/prefs.php:817
+msgid "Move to spam folder"
+msgstr "Přesunout do spam složky"
+
+#: templates/dimp/index.inc:532
+msgid "Move to the beginning/end of the message list."
+msgstr "Přejít na začátek/konec seznamu zpráv."
+
+#: templates/dimp/index.inc:534
+msgid "Move to the next unseen message (non-search folders only)."
+msgstr "Přejít na další nepřečtenou zprávu (pouze pro složky bez vyhledávání)."
+
+#: templates/dimp/index.inc:529
+msgid "Move up/down through the message list."
+msgstr "Pohyb nahoru/dolů v seznamu zpráv."
+
+#: lib/Contents.php:1299
+msgid "Multipart part"
+msgstr "Multipart část"
+
+#: thread.php:173
+msgid "Multiple Message View"
+msgstr "Zobrazení více zpráv"
+
+#: templates/imp/thread/thread.html:2
+msgid "Multiple Message View:"
+msgstr "Zobrazení více zpráv:"
+
+#: compose-dimp.php:150
+msgid "Multiple messages can only be forwarded as attachments."
+msgstr "Výběr více zpráv může být vždy přeposílán pouze jako soubor příloh."
+
+#: templates/dimp/index.inc:534
+msgid "N"
+msgstr "N"
+
+#: config/prefs.php:983
+msgid "NONE"
+msgstr "ŽÁDNÝ"
+
+#: lib/Mime/Viewer/Itip.php:731 lib/Mime/Viewer/Itip.php:917
+msgid "Name"
+msgstr "Jméno"
+
+#: lib/Prefs/Ui.php:1065
+msgid "Name and/or email cannot be empty"
+msgstr "Nelze nechat jméno a/nebo email prázdný"
+
+#: lib/Mime/Viewer/Itip.php:1000
+msgid "Needs Action"
+msgstr "Potřebuje zákrok"
+
+#: templates/prefs/acl.html:28
+msgid "Negative Right"
+msgstr "Negativní pravé"
+
+#: config/prefs.php:301 config/prefs.php:523 config/prefs.php:761
+#: config/prefs.php:846 config/prefs.php:877
+msgid "Never"
+msgstr "Nikdy"
+
+#: config/prefs.php:280
+msgid "Never save attachments"
+msgstr "Nikdy neukládat přílohy"
+
+#: config/prefs.php:685
+msgid "Never send read receipt"
+msgstr "Nikdy neodesílat potvrzení o přečtení"
+
+#: templates/prefs/flags.html:47
+msgid "New Flag"
+msgstr "Nová značka"
+
+#: templates/dimp/index.inc:327
+msgid "New Folder"
+msgstr "Nová složka"
+
+#: config/prefs.php:865
+msgid "New Mail"
+msgstr "Nová zpráva"
+
+#: compose-dimp.php:72 compose.php:192 lib/Application.php:534
+#: lib/Ui/Compose.php:228 lib/Ui/Mimp.php:36 templates/dimp/index.inc:480
+#: templates/dimp/message/message.html:144
+msgid "New Message"
+msgstr "Nová zpráva"
+
+#: lib/Ui/Message.php:343 lib/Ui/Message.php:371 mailbox.php:855
+#, php-format
+msgid "New Message to %s"
+msgstr "Nová zpráva pro %s"
+
+#: mailbox-mimp.php:252
+#, php-format
+msgid "New Search in %s"
+msgstr "Nové vyhledávání v %s"
+
+#: lib/Block/Newmail.php:27
+msgid "Newest Unseen Messages"
+msgstr "Nejnovější nepřečtené zprávy"
+
+#: templates/mobile/message.html.php:24
+msgid "Next"
+msgstr "Další"
+
+#: message-mimp.php:291 message.php:505
+msgid "Next Message"
+msgstr "Další zpráva"
+
+#: mailbox-mimp.php:264 templates/imp/mailbox/navbar.html:91
+msgid "Next Page"
+msgstr "Další stránka"
+
+#: config/prefs.php:481 config/prefs.php:1080
+#: templates/imp/javascript_defs.php:38 templates/imp/compose/compose.html:292
+msgid "No"
+msgstr "Ne"
+
+#: templates/prefs/searches.html:35 templates/prefs/searches.html:71
+msgid "No Actions Available"
+msgstr "Žádné akce nejsou dostupné"
+
+#: templates/dimp/javascript_defs.php:175
+msgid "No Alerts"
+msgstr "Žádná upozornění"
+
+#: templates/prefs/pgppublickey.html:18 templates/prefs/smimepublickey.html:18
+msgid "No Keys in Keyring"
+msgstr "Žádné klíče nejsou dostupné"
+
+#: mailbox.php:437 rss.php:82 templates/dimp/javascript_defs.php:176
+msgid "No Messages"
+msgstr "Žádné zprávy"
+
+#: pgp.php:40
+msgid "No PGP public key imported."
+msgstr "Žádný veřejný PGP klíč nebyl importován."
+
+#: mailbox.php:824
+msgid "No Preview Text"
+msgstr "Bez náhledu"
+
+#: smime.php:39
+msgid "No S/MIME public key imported."
+msgstr "Žádný veřejný S/MIME klíč nebyl importován."
+
+#: templates/prefs/searches.html:86
+msgid "No Saved Searches Defined."
+msgstr "Žádná uložená vyhledávání definována."
+
+#: templates/imp/search/search.html:35
+msgid "No Search Criteria"
+msgstr "Žádná vyhledávací kritéria"
+
+#: templates/imp/search/search.html:65
+msgid "No Search Folders"
+msgstr "Žádné vyhledávání ve složkách"
+
+#: templates/prefs/newmailaudio.html:7
+msgid "No Sound"
+msgstr "Bez Zvuku"
+
+#: lib/Spam.php:173
+msgid "No Subject"
+msgstr "Žádný předmět"
+
+#: templates/dimp/index.inc:344
+msgid "No actions available"
+msgstr "Žádné akce nejsou dostupné"
+
+#: smime.php:119
+msgid "No certificate found."
+msgstr "Nebyl nalezen žádný certifikát"
+
+#: lib/Crypt/Smime.php:152
+msgid "No email information located in the public key."
+msgstr "Ve veřejném klíči nebyly nalezeny žádné informace o emailu."
+
+#: folders.php:168
+msgid "No folders were specified"
+msgstr "Žádná složka nebyla určena"
+
+#: lib/Block/Summary.php:99
+msgid "No folders with unseen messages"
+msgstr "Žádné složky neobsahují nepřečtené zprávy"
+
+#: lib/IMP.php:444
+msgid "No limit"
+msgstr "Bez Limitu"
+
+#: lib/Compose.php:1704
+msgid "No message body text"
+msgstr "Žádný text ve zprávě"
+
+#: templates/dimp/javascript_defs.php:189
+msgid "No messages matched the search query."
+msgstr "Vašim vyhledávacím kritériím neodpovídá žádná zpráva."
+
+#: templates/imp/mailbox/empty_mailbox.html:4
+msgid "No messages matched your search criteria."
+msgstr "Vašim vyhledávacím kritériím neodpovídá žádná zpráva."
+
+#: templates/mimp/mailbox/mailbox.html:30
+msgid "No messages."
+msgstr "Žádné zprávy."
+
+#: lib/Ajax/Imple/PassphraseDialog.php:154
+#: lib/Ajax/Imple/PassphraseDialog.php:167
+msgid "No passphrase entered."
+msgstr "Nebylo vloženo heslo."
+
+#: pgp.php:116
+msgid "No personal PGP private key imported."
+msgstr "Žádný soukromý PGP klíč nebyl importován."
+
+#: pgp.php:84
+msgid "No personal PGP public key imported."
+msgstr "Žádný veřejný PGP klíč nebyl importován."
+
+#: lib/Mime/Viewer/Smime.php:189
+msgid "No personal private key exists so the data is unable to be decrypted."
+msgstr "Žádný osobní klíč neexistuje, zprávu nelze dešifrovat."
+
+#: search-basic.php:79
+msgid "No search criteria specified."
+msgstr "Nespecifikována žádná vyhledávací kritéria."
+
+#: templates/dimp/javascript_defs.php:214
+msgid "No spelling errors found."
+msgstr "Gramatické chyby nenalezeny."
+
+#: lib/Block/Newmail.php:60
+msgid "No unread messages"
+msgstr "žádné nepřečtené zprávy"
+
+#: lib/Mime/Viewer/Itip.php:752 lib/Mime/Viewer/Itip.php:938
+msgid "Non Participant"
+msgstr "Není účastníkem"
+
+#: lib/IMP.php:481 lib/Mime/Viewer/Itip.php:715 lib/Mime/Viewer/Itip.php:896
+#: templates/imp/search/search-basic.html:14
+#: templates/imp/search/search-basic.html:31 templates/prefs/drafts.html:7
+#: templates/prefs/sentmail.html:7 templates/prefs/spam.html:7
+#: templates/prefs/trash.html:7
+msgid "None"
+msgstr "Nic"
+
+#: compose.php:856 templates/dimp/javascript_defs.php:230
+msgid "Normal"
+msgstr "Normální"
+
+#: lib/Flag/Base.php:180
+#, php-format
+msgid "Not %s"
+msgstr "Není %s"
+
+#: lib/Flag/Imap/NotJunk.php:31
+msgid "Not Junk"
+msgstr "Není Nežádoucí"
+
+#: lib/Crypt/Pgp.php:141 lib/Crypt/Smime.php:146
+msgid "Not a valid public key."
+msgstr "Neplatný veřejný klíč."
+
+#: templates/imp/flist/flist.html:28
+msgid "Notepads"
+msgstr "Zápisník"
+
+#: config/prefs.php:815 config/prefs.php:828
+msgid "Nothing"
+msgstr "Nic"
+
+#: templates/mobile/notice.html.php:3
+msgid "Notice"
+msgstr "Poznámka"
+
+#: attachment.php:98
+msgid "Notification: Linked attachment downloaded"
+msgstr "Upozornění: Přilinkovaná příloha byla stažena"
+
+#: lib/Ajax/Imple/PassphraseDialog.php:87
+#: templates/imp/contacts/contacts.html:69
+msgid "OK"
+msgstr "OK"
+
+#: lib/Search/Element/Or.php:31 search.php:496
+#: templates/pgp/import_key.html:30 templates/smime/import_key.html:31
+msgid "OR"
+msgstr "NEBO"
+
+#: templates/dimp/javascript_defs.php:177
+msgid "Ok"
+msgstr "Ok"
+
+#: lib/LoginTasks/Task/DeleteSentmailMonthly.php:60
+msgid "Old sent-mail folders being purged."
+msgstr "Staré složky s odeslanými zprávami se vyprazdňují."
+
+#: lib/Search/Element/Within.php:73 search.php:92
+msgid "Older Than"
+msgstr "Starší než"
+
+#: lib/Block/Summary.php:44
+msgid "Only display folders with unread messages in them?"
+msgstr "Zobrazit pouze složky obsahující nepřečtené zprávy?"
+
+#: templates/imp/javascript_defs.php:47
+msgid "Only one folder should be selected for this action."
+msgstr "Tuto operaci lze provést pouze s jednou složkou."
+
+#: config/prefs.php:1442
+msgid ""
+"Only show download confirmation page if message part is greater than this "
+"size, in bytes. Set to 0 to always require the confirmation page."
+msgstr ""
+"Zobrazit pouze konfirmaci o stažení pokud je část zprávy větší než tato "
+"velikost v bytech. Nastavení 0 znamená zobrazení konfirmace vždy."
+
+#: lib/IMP.php:345 lib/IMP.php:353
+msgid "Open Fo_lder"
+msgstr "Ot_evřít složku"
+
+#: lib/IMP.php:353
+msgid "Open Folder"
+msgstr "Otevřít složku"
+
+#: templates/dimp/index.inc:170 templates/dimp/index.inc:180
+msgid "Open in new window"
+msgstr "Otevřít v novém okně"
+
+#: templates/dimp/index.inc:535
+msgid "Open message in a popup window."
+msgstr "Otevřít zprávu ve vyskakovacím (PopUp) okně?"
+
+#: lib/Mailbox.php:1636
+msgid "Opened Folder"
+msgstr "Otevřená složka"
+
+#: lib/Mime/Viewer/Itip.php:748 lib/Mime/Viewer/Itip.php:934
+msgid "Optional Participant"
+msgstr "Možní účastníci"
+
+#: config/prefs.php:940 config/prefs.php:1060 config/prefs.php:1121
+#: config/prefs.php:1189 config/prefs.php:1260 config/prefs.php:1278
+#: config/prefs.php:1358 config/prefs.php:1422 config/prefs.php:1457
+#: config/prefs.php:1539 templates/dimp/index.inc:145
+msgid "Other"
+msgstr "Jiné"
+
+#: lib/Mailbox.php:1522
+msgid "Other Users"
+msgstr "Ostatní uživatelé"
+
+#: config/prefs.php:1279
+msgid "PGP"
+msgstr "PGP"
+
+#: lib/Crypt/Pgp.php:37
+msgid "PGP Encrypt Message"
+msgstr "PGP kódování zprávy"
+
+#: lib/Crypt/Pgp.php:48
+msgid "PGP Encrypt Message with passphrase"
+msgstr "PGP kódování zprávy s klíčem"
+
+#: lib/Compose.php:1369
+msgid "PGP Error: "
+msgstr "PGP chyba: "
+
+#: templates/prefs/pgpprivatekey.html:8
+msgid "PGP Personal Keypair support requires a secure web connection."
+msgstr "Použití PGP klíčového páru vyžaduje zabezpečené připojení."
+
+#: pgp.php:35
+#, php-format
+msgid "PGP Public Key for \"%s (%s)\" was successfully added."
+msgstr "Veřejný PGP klíč pro \"%s (%s)\" byl úspěšně přidán."
+
+#: lib/Prefs/Ui.php:1161
+#, php-format
+msgid "PGP Public Key for \"%s\" was successfully deleted."
+msgstr "Veřejný PGP klíč pro \"%s\" byl úspěšně vymazán."
+
+#: templates/prefs/pgppublickey.html:3
+msgid "PGP Public Keyring"
+msgstr "Veřejný PGP svazek"
+
+#: lib/Crypt/Pgp.php:42
+msgid "PGP Sign Message"
+msgstr "Podepsat zprávu pomocí PGP"
+
+#: lib/Crypt/Pgp.php:43
+msgid "PGP Sign/Encrypt Message"
+msgstr "Podepsat/Šifrovat zprávu pomocí PGP"
+
+#: lib/Crypt/Pgp.php:49
+msgid "PGP Sign/Encrypt Message with passphrase"
+msgstr "Podepsat/Šifrovat zprávu pomocí PGP klíče"
+
+#: compose.php:701
+msgid ""
+"PGP encryption cannot be used by default as public keys cannot be found for "
+"all recipients."
+msgstr ""
+"PGP kódování nemůže být standardně používáno jako veřejné klíče, nemůže být "
+"nalezeno pro všechny příjemce."
+
+#: lib/Prefs/Ui.php:1089
+msgid "PGP passphrase successfully unloaded."
+msgstr "PGP heslo bylo úspěšně odemčeno."
+
+#: pgp.php:107
+msgid "PGP private key successfully added."
+msgstr "PGP soukromý klíč byl úspěšně přidán."
+
+#: pgp.php:73
+msgid "PGP public key successfully added."
+msgstr "PGP veřejný klíč byl úspěšně přidán."
+
+#: config/prefs.php:1304
+msgid ""
+"PGP support requires popup windows to be used.  If your browser is currently "
+"set to disable popup windows, you must change this setting or else the PGP "
+"features will not work correctly."
+msgstr ""
+"Podpora PGP potřebuje použít vyskakovací okna. Pokud Váš prohlížeč zamezuje "
+"použití těchto oken, je zapotřebí umožnit použití těchto oken, jinak nebudou "
+"PGP funkce pracovat správně."
+
+#: lib/Compose.php:1326
+msgid "PGP: Need passphrase for personal private key."
+msgstr "PGP: Je potřeba heslo pro Váš osobní privátní klíč."
+
+#: lib/Compose.php:1338
+msgid "PGP: Need passphrase to encrypt your message with."
+msgstr "PGP: Je potřeba heslo pro zakódování Vaší zprávy."
+
+#: mailbox.php:440
+#, php-format
+msgid "Page %d of %d"
+msgstr "Strana %d z %d"
+
+#: templates/imp/mailbox/navbar.html:88
+msgid "Page:"
+msgstr "Stránka:"
+
+#: lib/Views/ShowMessage.php:269 message.php:719
+msgid "Parts"
+msgstr "Části"
+
+#: templates/prefs/pgpprivatekey.html:106
+msgid "Passphrase (Again):"
+msgstr "Heslo klíče (znovu):"
+
+#: templates/prefs/pgpprivatekey.html:95
+msgid "Passphrase:"
+msgstr "Heslo:"
+
+#: lib/Prefs/Ui.php:1068
+msgid "Passphrases cannot be empty"
+msgstr "Nelze zadat prázdné heslo"
+
+#: lib/Prefs/Ui.php:1070
+msgid "Passphrases do not match"
+msgstr "Hesla se neshodují"
+
+#: templates/smime/import_key.html:54
+msgid "Password:"
+msgstr "Heslo:"
+
+#: templates/dimp/javascript_defs.php:162
+#, php-format
+msgid "Permanently delete %s?"
+msgstr "Trvale odstranit %s?"
+
+#: templates/dimp/javascript_defs.php:164
+#, php-format
+msgid "Permanently delete all %d messages in %s?"
+msgstr "Trvale odstranit všechny %d zprávy v %s?"
+
+#: lib/Flag/System/Personal.php:29
+msgid "Personal"
+msgstr "Osobní"
+
+#: config/prefs.php:15
+msgid "Personal Information"
+msgstr "Osobní informace"
+
+#: lib/Search/Element/Personal.php:61 lib/Search/Filter/Personal.php:22
+#: search.php:125
+msgid "Personal Messages"
+msgstr "Osobní zprávy"
+
+#: lib/Prefs/Ui.php:1074
+msgid "Personal PGP keypair generated successfully."
+msgstr "Váš PGP klíčový pár byl úspěšně vytvořen."
+
+#: lib/Prefs/Ui.php:1059
+msgid "Personal PGP keys deleted successfully."
+msgstr "Vaše PGP klíče byly úspěšně smazány."
+
+#: smime.php:90
+msgid "Personal S/MIME certificates NOT imported."
+msgstr "Osobní S/MIME certifikáty NEBYLY importovány:"
+
+#: smime.php:93
+msgid "Personal S/MIME certificates NOT imported: "
+msgstr "Osobní S/MIME certifikáty NEBYLY importovány:"
+
+#: lib/Prefs/Ui.php:1443
+msgid "Personal S/MIME keys deleted successfully."
+msgstr "Vaše S/MIME klíče byly úspěšně smazány."
+
+#: templates/dimp/index.inc:530 templates/dimp/index.inc:531
+msgid "PgDown"
+msgstr "PgDown"
+
+#: templates/dimp/index.inc:530 templates/dimp/index.inc:531
+msgid "PgUp"
+msgstr "PgUp"
+
+#: config/prefs.php:81
+msgid "Place your signature before replies and forwards?"
+msgstr "Umístit Váš podpis před odpovědí či přeposlanou zprávou?"
+
+#: config/prefs.php:218
+msgid "Plain Text"
+msgstr "Prostý text"
+
+#: lib/Compose.php:1235
+msgid "Plaintext Message"
+msgstr "Zpráva v prostém textu"
+
+#: config/prefs.php:574
+msgid "Plaintext part"
+msgstr "Část v prostém textu"
+
+#: templates/prefs/newmailaudio.html:2
+msgid ""
+"Play a sound when receiving new mail? Although most browsers support "
+"embedded sound files, some may require a plugin."
+msgstr ""
+"Přehrát zvuk při příchodu nové zprávy? Tato volba vyžaduje podporu zvukových "
+"objektů v prohlížeči, což může vyžadovat plugin."
+
+#: lib/Application.php:377
+msgid "Please choose a mail server."
+msgstr "Vybrat poštovní server:"
+
+#: templates/imp/javascript_defs.php:68
+msgid "Please enter a name for the new folder:"
+msgstr "Prosím zadejte název nové složky:"
+
+#: lib/Prefs/Ui.php:788
+msgid "Please enter the label for the new flag:"
+msgstr "Prosím zadejte název nové značky:"
+
+#: templates/imp/javascript_defs.php:49 templates/imp/javascript_defs.php:50
+msgid "Please enter the name of the new folder:"
+msgstr "Prosím zadejte název nové složky:"
+
+#: templates/imp/javascript_defs.php:54
+msgid "Please enter the new name:"
+msgstr "Prosím zadejte nové jméno:"
+
+#: templates/imp/javascript_defs.php:62
+msgid "Please provide your password."
+msgstr "Prosím zadejte Vaše heslo."
+
+#: templates/imp/javascript_defs.php:61
+msgid "Please provide your username."
+msgstr "Prosím zadejte Vaše uživatelské jméno."
+
+#: templates/imp/javascript_defs.php:46
+msgid "Please select a folder before you perform this action."
+msgstr "Prosím nejdříve vyberte složku a pak proveďte akci."
+
+#: search.php:493
+msgid "Please select at least one folder to search."
+msgstr "Prosím vyberte nejméně jednu složku k prohledání."
+
+#: search.php:492
+msgid "Please select at least one search criteria."
+msgstr "Prosím vyberte nejméně jedno vyhledávací kritérium."
+
+#: config/prefs.php:1102
+msgid "Poll all folders for new mail?"
+msgstr "Zkontrolovat novou poštu ve všechn složkách?"
+
+#: templates/dimp/javascript_defs.php:180 templates/mobile/folders.html.php:3
+msgid "Portal"
+msgstr "Portál"
+
+#: lib/Mime/Viewer/Itip.php:795
+msgid "Possible Conflicts"
+msgstr "Možné konflikty"
+
+#: lib/Imap/Acl.php:148
+msgid "Post"
+msgstr "Pošta"
+
+#: lib/Imap/Acl.php:147
+msgid "Post to this mailbox (not enforced by IMAP)"
+msgstr "Příspěvek do této schránky (ne vynucený IMAPem)"
+
+#: config/prefs.php:64
+msgid "Precede your text signature with dashes ('-- ')?"
+msgstr "Uvést podpis pomlčkami ('-- ')?"
+
+#: templates/dimp/index.inc:75
+msgid "Preferences"
+msgstr "Předvolby"
+
+#: compose.php:1064
+msgid "Preview"
+msgstr "Náhled"
+
+#: templates/mobile/message.html.php:23
+msgid "Previous"
+msgstr "Předchozí"
+
+#: message-mimp.php:288 message.php:498
+msgid "Previous Message"
+msgstr "Předchozí zpráva"
+
+#: mailbox-mimp.php:261 templates/imp/mailbox/navbar.html:82
+msgid "Previous Page"
+msgstr "Předchozí stránka"
+
+#: lib/Contents.php:842 lib/Contents.php:843
+msgid "Print"
+msgstr "Tisk"
+
+#: view.php:273
+msgid "Printed By"
+msgstr "Vytištěno"
+
+#: lib/Mime/Viewer/Itip.php:889 message-mimp.php:207 message.php:328
+#: message.php:333
+msgid "Priority"
+msgstr "Důležitost"
+
+#: templates/dimp/compose/compose.html:50
+msgid "Priority:"
+msgstr "Důležitost:"
+
+#: templates/smime/import_key.html:59
+msgid "Private Key Password:"
+msgstr "Heslo osobního klíče:"
+
+#: config/prefs.php:279
+msgid "Prompt every time an attachment is sent; default to NO"
+msgstr "Zeptat se pokaždé, když se posílá příloha, implicitně NE"
+
+#: config/prefs.php:278
+msgid "Prompt every time an attachment is sent; default to YES"
+msgstr "Zeptat se pokaždé, když se posílá příloha, implicitně ANO"
+
+#: config/prefs.php:691
+msgid ""
+"Prompt to send read receipt (a/k/a message disposition notification) when "
+"requested by the sender?"
+msgstr ""
+"Zaslat potvrzení o přečtení (dispoziční oznámení) pokud je vyžadováno "
+"odesílatelem?"
+
+#: lib/Crypt/Pgp.php:330
+msgid "Public PGP keyserver support has been disabled."
+msgstr "Podpora veřejných PGP serverů byla vypnuta."
+
+#: mailbox.php:455 mailbox.php:575
+msgid "Pur_ge Deleted"
+msgstr "Vyčisti_t smazané"
+
+#: lib/Imap/Acl.php:168 templates/imp/folders/actions.html:22
+msgid "Purge"
+msgstr "Vymazat"
+
+#: mailbox-mimp.php:215 mailbox.php:455 mailbox.php:575
+#: templates/dimp/index.inc:439
+msgid "Purge Deleted"
+msgstr "Vyčistit smazané"
+
+#: config/prefs.php:847
+msgid "Purge Spam how often:"
+msgstr "Jak často vyprazdňovat složku SPAM:"
+
+#: config/prefs.php:762
+msgid "Purge Trash how often:"
+msgstr "Jak často vyprázdnit koš:"
+
+#: lib/Imap/Acl.php:167
+msgid "Purge messages"
+msgstr "Odstranit zprávy"
+
+#: config/prefs.php:855
+msgid "Purge messages in Spam folder older than this amount of days."
+msgstr "Vyčistit zprávy ze složky SPAM, které jsou starší než tento počet dní."
+
+#: config/prefs.php:770
+msgid "Purge messages in Trash folder older than this amount of days."
+msgstr "Smazat zprávy z koše, které jsou starší než následující počet dní."
+
+#: config/prefs.php:532
+msgid "Purge messages in sent mail folder(s) older than this amount of days."
+msgstr ""
+"Odstranit zprávy ze složky Odeslaná pošta, které jsou starší než tento počet "
+"dní."
+
+#: config/prefs.php:524
+msgid "Purge sent mail how often:"
+msgstr "Jak často vyprazdňovat složku Odeslaná pošta:"
+
+#: lib/LoginTasks/Task/PurgeSpam.php:58
+#, php-format
+msgid "Purging %d message from Spam folder."
+msgid_plural "Purging %d messages from Spam folder."
+msgstr[0] "Odstraňování %d zprávu ze složky SPAM."
+msgstr[1] "Odstraňování %d zprávy ze složky SPAM."
+msgstr[2] "Odstraňování %d zpráv ze složky SPAM."
+
+#: lib/LoginTasks/Task/PurgeTrash.php:63
+#, php-format
+msgid "Purging %d message from Trash folder."
+msgid_plural "Purging %d messages from Trash folder."
+msgstr[0] "Odstraňuji %d zprávu z koše."
+msgstr[1] "Odstraňuji %d zprávy z koše."
+msgstr[2] "Odstraňuji %d zpráv z koše."
+
+#: lib/LoginTasks/Task/PurgeSentmail.php:67
+#, php-format
+msgid "Purging %d messages from sent-mail folder."
+msgstr "Odstraňování %d zpráv ze složky Odeslaná pošta."
+
+#: lib/LoginTasks/Task/PurgeSentmail.php:65
+#, php-format
+msgid "Purging 1 message from sent-mail folder %s."
+msgstr "Odstraňování 1 zprávy ze složky Odeslaná pošta %s."
+
+#: lib/Quota/Base.php:48
+#, php-format
+msgid "Quota status: %.2f %s / %.2f %s  (%.2f%%)"
+msgstr "Stav kvóty: %.2f %s / %.2f %s  (%.2f%%)"
+
+#: lib/Quota/Base.php:54
+#, php-format
+msgid "Quota status: %.2f %s / NO LIMIT"
+msgstr "Stav kvóty: %.2f %s / NO LIMIT"
+
+#: lib/IMP.php:443
+#, php-format
+msgid "Quota status: NO LIMIT"
+msgstr "Stav kvóty: BEZ LIMITU"
+
+#: config/prefs.php:390
+#, php-format
+msgid "Quoting %f:"
+msgstr "Cituji %f:"
+
+#: lib/Imap/Acl.php:132
+msgid "Read"
+msgstr "Číst"
+
+#: templates/dimp/compose/compose.html:35
+msgid "Read Receipt"
+msgstr "Potvrzení o přečtení"
+
+#: lib/Imap/Acl.php:131
+msgid "Read messages"
+msgstr "Přečtené zprávy"
+
+#: mailbox-mimp.php:141 templates/dimp/index.inc:116
+#: templates/imp/mailbox/header.html:13
+msgid "Read-Only"
+msgstr "Pouze ke čtení"
+
+#: templates/dimp/javascript_defs.php:215
+msgid ""
+"Really discard all formatting information? This operation cannot be undone."
+msgstr "Opravdu zrušit veškeré formátování? Tato operace je nevratná."
+
+#: templates/dimp/index.inc:335
+msgid "Rebuild Folder List"
+msgstr "Obnovit seznam složek v menu"
+
+#: templates/imp/folders/actions.html:42
+msgid "Rebuild Folder Tree"
+msgstr "Obnovit seznam složek"
+
+#: templates/imp/search/search.html:20
+msgid "Recent Searches"
+msgstr "Poslední vyhledávání"
+
+#: templates/imp/search/search.html:24 templates/imp/search/search.html:26
+msgid "Recent Searches:"
+msgstr "Poslední vyhledávání:"
+
+#: lib/Compose.php:576
+msgid "Recipient address does not match the currently selected identity."
+msgstr "Adresa příjemce nesouhlasí s právě vybranou identitou."
+
+#: search.php:48 templates/dimp/index.inc:495
+#: templates/imp/search/search-basic.html:17
+msgid "Recipients (To/Cc/Bcc)"
+msgstr "Příjemci (Komu/Kopie/Skrytá kopie)"
+
+#: lib/Search/Element/Recipient.php:60
+#, php-format
+msgid "Recipients (To/Cc/Bcc) for '%s'"
+msgstr "Příjemci (Komu/Kopie/Skrytá kopie) pro '%s'"
+
+#: message.php:554 message.php:596
+msgid "Redirec_t"
+msgstr "Přes_měrovat"
+
+#: compose-dimp.php:202 compose-mimp.php:188 compose-mimp.php:191
+#: compose.php:354 lib/Notification/Event/Status.php:32
+#: lib/Views/Compose.php:181 mailbox.php:601 message-mimp.php:282
+#: message.php:554 message.php:596 templates/dimp/index.inc:409
+#: templates/dimp/message/message.html:139
+#: templates/imp/compose/redirect.html:43
+#: templates/mimp/compose/compose.html:37
+msgid "Redirect"
+msgstr "Přesměrovat"
+
+#: compose.php:354
+msgid "Redirect Messages"
+msgstr "Přesměrovat zprávy"
+
+#: folders-mimp.php:55 mailbox-mimp.php:208
+msgid "Refresh"
+msgstr "Obnovit"
+
+#: config/prefs.php:884
+msgid "Refresh Folder Views:"
+msgstr "Obnovit zobrazení složek:"
+
+#: templates/dimp/index.inc:150
+msgid "Refresh Search Results"
+msgstr "Aktualizovat Výsledky vyhledávání"
+
+#: folders.php:344
+msgid "Reload View"
+msgstr "Obnovit zobrazení"
+
+#: lib/Mime/Viewer/Itip.php:538 lib/Mime/Viewer/Itip.php:557
+msgid "Remember the free/busy information."
+msgstr "Zapamatovat si informaci o volném čase."
+
+#: config/prefs.php:1082
+msgid "Remember the last view"
+msgstr "Zapamatovat si poslední zobrazení"
+
+#: lib/Imap/Exception.php:94
+msgid "Remote server is down. Please try again later."
+msgstr "Vzdálený server je kaput. Prosíme zkuste to znovu později."
+
+#: templates/dimp/javascript_defs.php:212
+msgid "Remove"
+msgstr "Odstranit"
+
+#: templates/dimp/index.inc:273 templates/dimp/index.inc:316
+#: templates/imp/folders/actions.html:18
+msgid "Rename"
+msgstr "Přejmenovat"
+
+#: templates/dimp/javascript_defs.php:182
+#, php-format
+msgid "Rename %s to:"
+msgstr "Přejmenovat %s na:"
+
+#: config/prefs.php:506
+msgid "Rename sent mail folder at beginning of month?"
+msgstr "Přejmenovat složku odeslaných zprávi na začátku měsíce?"
+
+#: lib/Mailbox.php:776
+#, php-format
+msgid "Renaming \"%s\" to \"%s\" failed. This is what the server said"
+msgstr "Přejmenování \"%s\" na \"%s\" selhalo. Toto je zpráva od serveru"
+
+#: config/prefs.php:357
+msgid "Replies"
+msgstr "Odpovědi"
+
+#: compose-mimp.php:166 lib/Notification/Event/Status.php:39
+#: message-dimp.php:143 message-mimp.php:271 message.php:535
+#: templates/dimp/index.inc:133 templates/dimp/index.inc:365
+msgid "Reply"
+msgstr "Odpovědět"
+
+#: message-mimp.php:278
+msgid "Reply All"
+msgstr "Odpovědět všem:"
+
+#: lib/Mime/Viewer/Itip.php:299 lib/Mime/Viewer/Itip.php:407
+msgid "Reply Sent."
+msgstr "Odpověď byla zaslána."
+
+#: templates/dimp/compose/compose.html:151
+#: templates/dimp/compose/compose.html:155
+#: templates/imp/compose/compose.html:158
+#: templates/imp/compose/compose.html:172
+msgid "Reply To Sender instead"
+msgstr "Odpovědět odesilateli"
+
+#: compose-mimp.php:165
+msgid "Reply text will be automatically appended to your outgoing message."
+msgstr "Text odpovědi bude automaticky přidán k Vámi odesílané zprávě."
+
+#: compose-dimp.php:120 compose.php:287
+msgid "Reply to All:"
+msgstr "Odpovědět všem:"
+
+#: message-mimp.php:274
+msgid "Reply to List"
+msgstr "Odpovědět seznamu:"
+
+#: compose-dimp.php:125 compose.php:302
+msgid "Reply to List:"
+msgstr "Odpovědět seznamu:"
+
+#: lib/Mime/Viewer/Itip.php:540 lib/Mime/Viewer/Itip.php:549
+#: lib/Mime/Viewer/Itip.php:559
+msgid "Reply with Not Supported Message"
+msgstr "Odpověď s nestandardní zprávou"
+
+#: lib/Mime/Viewer/Itip.php:547
+msgid "Reply with free/busy for next 2 months."
+msgstr "Odpověď s informací o volném čase na příští 2 měsíce."
+
+#: lib/Mime/Viewer/Itip.php:546
+msgid "Reply with requested free/busy information."
+msgstr "Odpovědět s požadovanou informací o volném čase."
+
+#: lib/Compose.php:2099 lib/Ui/Message.php:31
+msgid "Reply-To"
+msgstr "Odpovědět-komu"
+
+#: compose-dimp.php:115 compose.php:275
+msgid "Reply:"
+msgstr "Odpověď:"
+
+#: templates/mimp/mailbox/mailbox.html:42
+msgid "Report As Innocent"
+msgstr "Nahlásit jako chtěnou zprávu"
+
+#: templates/mimp/mailbox/mailbox.html:41
+msgid "Report As Spam"
+msgstr "Nahlásit jako neyžádanou zprávu spam"
+
+#: mailbox.php:613 message-mimp.php:305 message.php:593
+#: templates/dimp/index.inc:378
+msgid "Report as Innocent"
+msgstr "Nahlásit jako chtěnou zprávu (ham)"
+
+#: mailbox.php:607 message-mimp.php:299 message.php:587
+#: templates/dimp/index.inc:375
+msgid "Report as Spam"
+msgstr "Nahlásit jako nechtěnou zprávu (spam)"
+
+#: compose.php:953
+msgid "Request a _Read Receipt"
+msgstr "Žádost o _potvrzení přečtení"
+
+#: config/prefs.php:305
+msgid "Request read receipts?"
+msgstr "Požádat o potvrzení přečtení?"
+
+#: lib/Ajax/Application.php:1007 lib/Views/ShowMessage.php:116 mailbox.php:117
+msgid "Requested message not found."
+msgstr "Žádná zpráva nebyla nalezena."
+
+#: lib/Mime/Viewer/Itip.php:740 lib/Mime/Viewer/Itip.php:926
+msgid "Required Participant"
+msgstr "Požadovaní účastníci"
+
+#: templates/imp/contacts/contacts.html:26
+#: templates/imp/search/search-basic.html:50
+#: templates/imp/search/search.html:113
+msgid "Reset"
+msgstr "Vynulovat"
+
+#: lib/Mime/Viewer/Itip.php:147
+msgid "Respondent Status Updated."
+msgstr "Byl aktualizován stav odpovídajících."
+
+#: message.php:578 templates/dimp/index.inc:141
+msgid "Resume"
+msgstr "Pokračovat"
+
+#: templates/dimp/index.inc:200 templates/dimp/index.inc:362
+msgid "Resume Draft"
+msgstr "Navrátit se k rozepsanému konceptu"
+
+#: lib/Ui/Compose.php:111
+msgid "Resume Editing"
+msgstr "Pokračovat v úpravě"
+
+#: search.php:505
+#, php-format
+msgid "Return to %s"
+msgstr "Návrat k %s"
+
+#: templates/imp/folders/folders_size.html:30
+msgid "Return to Folders"
+msgstr "Návrat ke složkám"
+
+#: templates/mimp/message/part.html:12
+msgid "Return to message view"
+msgstr "Návrat k zobrazení zprávy"
+
+#: config/prefs.php:713
+msgid ""
+"Return to the mailbox listing after deleting, moving, or copying a message?"
+msgstr "Vrátit se do složky po smazání, přesunutí, nebo zkopírování zprávy?"
+
+#: config/prefs.php:219
+msgid "Rich Text (HTML)"
+msgstr "Rich Text (HTML)"
+
+#: lib/Mime/Viewer/Itip.php:731 lib/Mime/Viewer/Itip.php:917
+msgid "Role"
+msgstr "Úloha"
+
+#: templates/mimp/mailbox/search.html:10
+msgid "Run Search"
+msgstr "Spustit vyhledávání"
+
+#: config/prefs.php:1359
+msgid "S/MIME"
+msgstr "S/MIME"
+
+#: lib/Crypt/Smime.php:35
+msgid "S/MIME Encrypt Message"
+msgstr "S/MIME šifrovaná zpráva"
+
+#: lib/Compose.php:1401
+msgid "S/MIME Error: "
+msgstr "S/MIME chyba: "
+
+#: lib/Compose.php:1379
+msgid "S/MIME Error: Need passphrase for personal private key."
+msgstr "S/MIME chyba: Je zapotřebí heslo pro Váš osobní klíč."
+
+#: templates/prefs/smimeprivatekey.html:8
+msgid "S/MIME Personal Certificate support requires a secure web connection."
+msgstr ""
+"Pro podporu S/MIME osobního certifikátu je třeba zabezpečené připojení."
+
+#: lib/Prefs/Ui.php:1518
+#, php-format
+msgid "S/MIME Public Key for \"%s\" was successfully deleted."
+msgstr "S/MIME veřejný klíč pro \"%s\" byl úspěšně smazán."
+
+#: templates/prefs/smimepublickey.html:3
+msgid "S/MIME Public Keyring"
+msgstr "S/MIME veřejná klíčenka"
+
+#: smime.php:86
+msgid "S/MIME Public/Private Keypair successfully added."
+msgstr "S/MIME veřejný/soukromý klíčový pár byl úspěšně přidán."
+
+#: lib/Crypt/Smime.php:40
+msgid "S/MIME Sign Message"
+msgstr "S/MIME podepsaná zpráva"
+
+#: lib/Crypt/Smime.php:41
+msgid "S/MIME Sign/Encrypt Message"
+msgstr "S/MIME podepsaná/šifrovaná zpráva"
+
+#: lib/Prefs/Ui.php:1446
+msgid "S/MIME passphrase successfully unloaded."
+msgstr "S/MME heslo bylo úspěšně zrušeno."
+
+#: smime.php:36
+msgid "S/MIME public key successfully added."
+msgstr "S/MIME veřejný klíč úspěšně přidán."
+
+#: lib/Mime/Viewer/Smime.php:184
+msgid ""
+"S/MIME support is not currently enabled so the data is unable to be "
+"decrypted."
+msgstr "Podpora S/MIME není aktivována, data nelze dešifrovat."
+
+#: lib/Mime/Viewer/Smime.php:246
+msgid ""
+"S/MIME support is not enabled so the digital signature is unable to be "
+"verified."
+msgstr "Podpora S/MIME není aktivována, digitální podpis nelze ověřit."
+
+#: config/prefs.php:1384
+msgid ""
+"S/MIME support requires popup windows to be used.  If your browser is "
+"currently set to disable popup windows, you must change this setting or else "
+"the S/MIME features will not work correctly."
+msgstr ""
+"Podpora S/MIME potřebuje vyskakovací okna. Pokud Váš prohlížeč zamezuje "
+"použití těchto oken, je zapotřebí umožnit použití těchto oken, jinak S/MIME "
+"nebude správně pracovat"
+
+#: compose.php:844
+msgid "S_ubject"
+msgstr "_Předmět"
+
+#: compose.php:919
+msgid "Sa_ve a copy in "
+msgstr "_Uložit kopii do "
+
+#: message.php:582
+msgid "Sa_ve as"
+msgstr "_Uložit jako"
+
+#: templates/dimp/index.inc:194 templates/dimp/message/message.html:45
+#: templates/imp/search/search.html:109
+msgid "Save"
+msgstr "Uložit"
+
+#: lib/Views/ShowMessage.php:272
+msgid "Save All"
+msgstr "Uložit vše"
+
+#: templates/dimp/compose/compose.html:139
+msgid "Save Attachments in sent folder"
+msgstr "Uložit přílohy se zprávou ve složce pro odeslanou poštu"
+
+#: compose.php:1028
+msgid "Save Attachments with message in sent-mail folder?"
+msgstr "Uložit přílohy se zprávou ve složce pro odeslanou poštu?"
+
+#: lib/Mime/Viewer/Smime.php:297
+msgid "Save Certificate in your Address Book"
+msgstr "Uložit Certifikát do kontaktů"
+
+#: compose-mimp.php:205 compose-mimp.php:208 compose-mimp.php:254
+#: templates/imp/compose/compose.html:24
+#: templates/imp/compose/compose.html:206
+#: templates/mimp/compose/compose.html:52
+msgid "Save Draft"
+msgstr "Uložit rozepsanou zprávu"
+
+#: saveimage.php:59
+msgid "Save Image"
+msgstr "Uložit obrázek"
+
+#: lib/Contents.php:834
+msgid "Save Image in Gallery"
+msgstr "Ulořit obrázek do galerie"
+
+#: templates/prefs/stationery.html:48
+msgid "Save Stationery"
+msgstr "Uložit vzor"
+
+#: compose.php:792
+msgid "Save _Draft"
+msgstr "Uložit _rozepsanou zprávu"
+
+#: message.php:582
+msgid "Save as"
+msgstr "Uložit jako"
+
+#: lib/Views/Compose.php:137
+msgid "Save as Draft"
+msgstr "Uložit jako koncept"
+
+#: config/prefs.php:472
+msgid "Save drafts as unseen?"
+msgstr "Uložit rozepsanou zprávu jako nepřečtenou zprávu?"
+
+#: config/prefs.php:485
+msgid "Save drafts automatically while composing?"
+msgstr "Ukládat koncepty automaticky při vytváření zpráv?"
+
+#: templates/dimp/compose/compose.html:42
+msgid "Save in"
+msgstr "Uložit do"
+
+#: config/prefs.php:1202
+msgid "Save recipients automatically to the default address book?"
+msgstr "Uložit automaticky příjemce do kontaktů?"
+
+#: config/prefs.php:88
+msgid "Save sent mail?"
+msgstr "Uložit odeslanou poštu?"
+
+#: lib/Mime/Viewer/Pgp.php:317
+msgid "Save the key to your address book."
+msgstr "Uložit klíč do kontaktů"
+
+#: config/prefs.php:137 templates/imp/search/search.html:80
+msgid "Saved Searches"
+msgstr "Uložená vyhledávání"
+
+#: search.php:494
+msgid "Saved searches require a label."
+msgstr "Uložená vyhledávání musí mít název."
+
+#: lib/Compose.php:292
+msgid "Saving the draft failed. Could not create a drafts folder."
+msgstr "Ukládání konceptu selhalo. Není možné vytvořit složku Koncepty."
+
+#: lib/Compose.php:287
+msgid "Saving the draft failed. No draft folder specified."
+msgstr ""
+"Nepodařilo se uložit rozepsanou zprávu. Žádná složka konceptů nepecifikována."
+
+#: lib/Compose.php:231
+#, php-format
+msgid ""
+"Saving the draft failed. The %s header contains an invalid e-mail address: "
+"%s."
+msgstr ""
+"Nepodařilo se uložit rozepsanou zprávu. Hlavička %s obsahuje neplatnou e-"
+"mailovou adresu: %s."
+
+#: templates/dimp/index.inc:531
+msgid "Scroll up/down through the display of the previewed message."
+msgstr "Rolovat nahoru/dolů náhledem zprávy."
+
+#: lib/Application.php:549 lib/Search/Filter.php:30 lib/Search/Query.php:249
+#: mailbox-mimp.php:254 search-basic.php:114 search.php:511
+#: templates/dimp/index.inc:286 templates/dimp/index.inc:318
+#: templates/dimp/javascript_defs.php:183
+#: templates/imp/contacts/contacts.html:25
+#: templates/imp/folders/actions.html:40 templates/imp/mailbox/header.html:20
+#: templates/imp/search/search.html:13
+msgid "Search"
+msgstr "Vyhledat"
+
+#: mailbox-mimp.php:93 search-basic.php:111
+#, php-format
+msgid "Search %s"
+msgstr "Vyhledat %s"
+
+#: search.php:497
+msgid "Search All Mailboxes"
+msgstr "Prohledat všechny schránky"
+
+#: templates/dimp/index.inc:287 templates/dimp/index.inc:319
+msgid "Search All Subfolders"
+msgstr "Prohledat všechny podsložky"
+
+#: templates/dimp/index.inc:486
+msgid "Search By"
+msgstr "Vyhledat přes"
+
+#: templates/imp/search/search.html:31
+msgid "Search Criteria"
+msgstr "Vyhledávací kritéria"
+
+#: templates/imp/search/search-basic.html:11
+msgid "Search Criteria:"
+msgstr "Vyhledávací kritéria:"
+
+#: templates/imp/search/search-basic.html:28
+msgid "Search Flags:"
+msgstr "Vyhledávání značek:"
+
+#: templates/imp/search/search.html:61
+msgid "Search Folders"
+msgstr "Vyhledávání složek"
+
+#: lib/Search/Query.php:138 templates/imp/contacts/contacts.html:32
+msgid "Search Results"
+msgstr "Výsledky vyhledávání"
+
+#: search.php:498
+msgid "Search Term:"
+msgstr "Vyhledávací termín:"
+
+#: search.php:499
+msgid "Search all subfolders?"
+msgstr "Prohledat všechny podsložky?"
+
+#: lib/Ui/Compose.php:60
+#, php-format
+msgid "Search for \"%s\" failed: no address found."
+msgstr "Hledání \"%s\" selhalo: Adresa nenalezena"
+
+#: templates/mimp/mailbox/search.html:7
+msgid "Search:"
+msgstr "Vyhledat:"
+
+#: search-basic.php:27
+msgid "Searching is not available."
+msgstr "Vyhledávání není dostupné."
+
+#: lib/Flag/Imap/Seen.php:34 templates/dimp/index.inc:303
+msgid "Seen"
+msgstr "Přečtené"
+
+#: templates/dimp/index.inc:554 templates/dimp/index.inc:563
+msgid "Select All"
+msgstr "Vybrat vše"
+
+#: config/prefs.php:1191
+msgid "Select address book sources for adding and searching for addresses."
+msgstr "Vybrat zdroj kontaktů pro přidávaní a vyhledávání adres."
+
+#: templates/dimp/index.inc:536
+msgid "Select all messages in the current mailbox."
+msgstr "Vybrat všechny zprávy v aktuální schránce."
+
+#: templates/imp/compose/compose.html:92
+msgid "Select stationery:"
+msgstr "Vybrat vzor:"
+
+#: templates/saveimage/saveimage.html:9
+msgid "Select the gallery to save the image in."
+msgstr "Vyberte galerii pro uložení obrázku."
+
+#: templates/imp/contacts/contacts.html:48
+msgid "Selected Addresses"
+msgstr "Vybrané adresy:"
+
+#: compose-mimp.php:206 compose-mimp.php:214 compose-mimp.php:267
+#: lib/Views/Compose.php:128 templates/mimp/compose/compose.html:49
+msgid "Send"
+msgstr "Odeslat"
+
+#: lib/Prefs/Ui.php:1001 templates/prefs/pgpprivatekey.html:19
+msgid "Send Key to Public Keyserver"
+msgstr "Poslat klíč veřejnému klíčovému serveru"
+
+#: lib/Mime/Viewer/Itip.php:648
+msgid "Send Latest Information"
+msgstr "Poslat nejaktuálnější informace"
+
+#: templates/imp/compose/compose.html:21
+#: templates/imp/compose/compose.html:203
+msgid "Send Message"
+msgstr "Odeslat zprávu"
+
+#: templates/dimp/javascript_defs.php:211 templates/imp/javascript_defs.php:26
+msgid "Send message without a Subject?"
+msgstr "Odeslat zprávu bez předmětu?"
+
+#: lib/Mime/Viewer/Smime.php:287
+#, php-format
+msgid "Sender: %s"
+msgstr "Odesílatel: %s"
+
+#: lib/Mailbox.php:1572 lib/Mailbox.php:1577 lib/Mailbox.php:1675
+msgid "Sent"
+msgstr "Odeslané"
+
+#: config/prefs.php:494
+msgid "Sent Mail"
+msgstr "Odeslaná pošta"
+
+#: lib/Prefs/Ui.php:1332
+msgid "Sent mail folder:"
+msgstr "Složka s odeslanou poštou:"
+
+#: lib/Application.php:369
+msgid "Server"
+msgstr "Server"
+
+#: templates/prefs/specialuse.html:3
+msgid "Server Suggestion:"
+msgstr "Doporučení serveru:"
+
+#: lib/Imap/Acl.php:30
+msgid "Server does not support ACLs."
+msgstr "Tento server nepodporuje ACLs."
+
+#: config/prefs.php:210
+msgid "Set a priority header when composing messages?"
+msgstr "Nastavit při vytváření zpráv prioritní hlavičku?"
+
+#: lib/Imap/Acl.php:151
+msgid "Set permissions for other users"
+msgstr "Nastavit práva pro ostatní uživatele"
+
+#: config/prefs.php:702
+msgid "Set preferences for what happens when you move and delete messages."
+msgstr "Nastavit akce prováděné při přesouvání a mazání zpráv."
+
+#: config/prefs.php:115
+msgid "Share Folders"
+msgstr "Sdílené složky"
+
+#: config/prefs.php:116
+msgid "Share your mail folders with other users."
+msgstr "Sdílet poštovní složky s jinými uživateli."
+
+#: lib/Mailbox.php:1525
+msgid "Shared"
+msgstr "Sdílené"
+
+#: templates/dimp/index.inc:522 templates/dimp/index.inc:527
+#: templates/dimp/index.inc:533 templates/dimp/index.inc:534
+msgid "Shift"
+msgstr "Shift"
+
+#: config/prefs.php:1325
+msgid "Should PGP signed messages automatically be verified when viewed?"
+msgstr "Mají se PGP podepsané zprávy automaticky ověřovat při zobrazení?"
+
+#: config/prefs.php:1391
+msgid "Should S/MIME signed messages automatically be verified when viewed?"
+msgstr "Mají se S/MIME podepsané zprávy automaticky ověřovat při zobrazení?"
+
+#: config/prefs.php:623
+msgid ""
+"Should large blocks of quoted text be shown or hidden by default? It can be "
+"toggled easily whichever you choose."
+msgstr ""
+"Měly by být velké bloky citovaního textu skryté nebo zobrazené? Lze "
+"jednoduše přepnout při prohlížení zprávy bez ohledu na výběr zde."
+
+#: config/prefs.php:1318
+msgid "Should the body of text/plain messages be scanned for PGP data?"
+msgstr "Mají se těla text/plain zpráv prohledávat na PGP data?"
+
+#: config/prefs.php:464
+msgid "Should the compose window be closed after saving a draft?"
+msgstr "Má se okno pro vytvoření zprávy uzavřít po uložení rozepsané zprávy?"
+
+#: config/prefs.php:1311
+msgid "Should your PGP public key to be attached to your messages by default?"
+msgstr "Má se Váš veřejný PGP klíč implicitně připojit k zaslaným zprávám?"
+
+#: templates/dimp/index.inc:509 templates/dimp/message/message.html:151
+#, php-format
+msgid "Show Addresses - %d recipients"
+msgstr "Zobrazit adresy - %d příjemců"
+
+#: templates/mimp/message/message.html:6
+msgid "Show All"
+msgstr "Zobrazit vše"
+
+#: folders-mimp.php:58 folders.php:376 templates/dimp/index.inc:330
+msgid "Show All Folders"
+msgstr "Zobrazit všechny složky"
+
+#: message.php:603
+msgid "Show All Headers"
+msgstr "Zobrazit všechny hlavičky"
+
+#: message.php:672
+msgid "Show All Message Parts"
+msgstr "Zobrazit všechny části zprávy"
+
+#: message.php:600
+msgid "Show Common Headers"
+msgstr "Zobrazit všechny společné hlavičky"
+
+#: mailbox.php:278 templates/dimp/index.inc:443
+msgid "Show Deleted"
+msgstr "Zobrazit smazané"
+
+#: lib/Mime/Viewer/Html.php:215
+msgid "Show Images?"
+msgstr "Zobrazit obrázky?"
+
+#: message.php:606
+msgid "Show Mailing List Information"
+msgstr "Zobrazit informace o konferenci"
+
+#: templates/dimp/index.inc:501
+msgid "Show Only"
+msgstr "Zobrazit pouze"
+
+#: templates/imp/mailbox/navbar.html:33
+msgid "Show Only:"
+msgstr "Zobrazit pouze:"
+
+#: templates/dimp/index.inc:414
+msgid "Show Preview"
+msgstr "Zobrazit Náhled"
+
+#: templates/imp/folders/actions.html:39
+msgid "Show Size"
+msgstr "Zobrazit velikost"
+
+#: folders-mimp.php:58
+msgid "Show Subscribed Folders"
+msgstr "Zobrazit přihlášené složky"
+
+#: templates/imp/search/search.html:73
+msgid "Show Unsubscribed Folders"
+msgstr "Zobrazit nepřihlášené složky"
+
+#: config/prefs.php:647
+msgid "Show all attachments"
+msgstr "Zobrazit všechny přílohy"
+
+#: config/prefs.php:932
+msgid "Show all flags (including flags set by other mail programs)?"
+msgstr ""
+"Zobrazit všechny značky (včetně značek přidaných jinými poštovními  "
+"programy)?"
+
+#: config/prefs.php:1449
+msgid ""
+"Show all inline parts by default in message view? If unchecked, will treat "
+"all but the first viewable inline part as attachments."
+msgstr ""
+"Zobrazit veškeré vkládané části ve výchozím zobrazení zprávy? Pokud "
+"nezatrženo vkládané části budou zobrazeny jako přílohy."
+
+#: config/prefs.php:646
+msgid "Show all parts"
+msgstr "Zobrazit všechny části"
+
+#: config/prefs.php:565
+msgid "Show an icon to allow stripping of attachments from messages?"
+msgstr "Zobrazit ikonku pro odstranění příloh ze zpráv?"
+
+#: templates/mobile/message.html.php:17
+msgid "Show less"
+msgstr "Zobrazit méně"
+
+#: templates/mobile/message.html.php:13
+msgid "Show more"
+msgstr "Zobrazit více"
+
+#: config/prefs.php:1093
+msgid "Show non-private mailboxes in separate folders"
+msgstr "Zobrazit neprivátní mailboxy v oddělených složkách"
+
+#: config/prefs.php:1506
+msgid "Show previews for unread messages only?"
+msgstr "Zobrazit ukázky pouze pro nepřečtené zprávy?"
+
+#: config/prefs.php:1513
+msgid "Show previews in tooltips?"
+msgstr "Zobrazit náhledy v tipech?"
+
+#: config/prefs.php:195
+msgid "Show the Bcc: header field when composing mail?"
+msgstr "Zobrazit Bcc: hlavičkové pole při vytváření zprávy?"
+
+#: config/prefs.php:188
+msgid "Show the Cc: header field when composing mail?"
+msgstr "Zobrazit Cc: hlavičkové pole při vytváření zpravy?"
+
+#: config/prefs.php:1549
+msgid "Show the dynamic view by default, if the browser supports it?"
+msgstr ""
+"Zobrazit  jako výchozí dynamické zobrazení pokud to prohlížeč podporuje?"
+
+#: config/prefs.php:1180
+msgid "Show the filter icon on the menubar?"
+msgstr "Zobrazit ikonku filtrování v nabídkové liště?"
+
+#: config/prefs.php:617
+msgid "Shown"
+msgstr "Zobrazené"
+
+#: mailbox.php:663
+msgid "Si_ze"
+msgstr "Vel."
+
+#: templates/dimp/index.inc:456 templates/dimp/javascript_defs.php:138
+#: templates/mobile/javascript_defs.php:73
+#: templates/imp/folders/folders_size.html:7
+msgid "Size"
+msgstr "Velikost"
+
+#: search.php:101
+msgid "Size (KB) <"
+msgstr "Velikost (KB) <"
+
+#: search.php:106
+msgid "Size (KB) >"
+msgstr "Velikost (KB) >"
+
+#: lib/Search/Element/Size.php:54
+msgid "Size - Greater Than (KB)"
+msgstr "Velikost - Větší než (KB)"
+
+#: lib/Search/Element/Size.php:55
+msgid "Size - Less Than (KB)"
+msgstr "Velikost - menší než (KB)"
+
+#: templates/imp/compose/compose.html:314
+#: templates/imp/compose/compose.html:316
+msgid "Size:"
+msgstr "Velikost:"
+
+#: templates/dimp/index.inc:566
+msgid "Sort"
+msgstr "Řazení"
+
+#: mailbox.php:637
+msgid "Sort by Date"
+msgstr "Setřídit podle data"
+
+#: mailbox.php:647
+msgid "Sort by From Address"
+msgstr "Setřídit podle adresy odesílatele"
+
+#: mailbox.php:662
+msgid "Sort by Message Size"
+msgstr "Setřídit podle velikosti zprávy"
+
+#: mailbox.php:657
+msgid "Sort by Subject"
+msgstr "Setřídit podle předmětu"
+
+#: mailbox.php:652
+msgid "Sort by Thread"
+msgstr "Setřídit podle vláken"
+
+#: mailbox.php:642
+msgid "Sort by To Address"
+msgstr "Setřídit podle adresy příjemce"
+
+#: lib/Mailbox.php:1585 lib/Mailbox.php:1662 message-dimp.php:158
+#: templates/dimp/index.inc:136
+msgid "Spam"
+msgstr "Spam"
+
+#: config/prefs.php:786
+msgid "Spam Reporting"
+msgstr "Ohlašování spamu"
+
+#: lib/Prefs/Ui.php:1594
+msgid "Spam folder:"
+msgstr "Složka nevyžádané pošty:"
+
+#: lib/Ui/Compose.php:112
+msgid "Spell Check Failed"
+msgstr "Kontrola pravopisu selhala"
+
+#: lib/Mime/Viewer/Itip.php:516 lib/Mime/Viewer/Itip.php:518
+#: lib/Mime/Viewer/Itip.php:692 lib/Mime/Viewer/Itip.php:694
+msgid "Start:"
+msgstr "Začátek:"
+
+#: compose.php:868 config/prefs.php:335 templates/prefs/stationery.html:5
+msgid "Stationery"
+msgstr "Formulář"
+
+#: lib/Prefs/Ui.php:1641
+msgid "Stationery name:"
+msgstr "Jméno formuláře:"
+
+#: lib/Prefs/Ui.php:1643
+msgid "Stationery type:"
+msgstr "Typ formuláře:"
+
+#: lib/Prefs/Ui.php:1646
+msgid "Stationery:"
+msgstr "Formulář:"
+
+#: lib/Mime/Viewer/Itip.php:731 lib/Mime/Viewer/Itip.php:917
+msgid "Status"
+msgstr "Stav"
+
+#: message.php:679
+msgid "Strip All Attachments"
+msgstr "Odebrat všechny přílohy"
+
+#: lib/Contents.php:855 lib/Contents.php:857
+msgid "Strip Attachment"
+msgstr "Odstranit přílohu"
+
+#: config/prefs.php:1499
+msgid "Strip linebreaks in preview?"
+msgstr "Odstranit konce řádek v náhledu?"
+
+#: mailbox.php:658
+msgid "Sub_ject"
+msgstr "Předmět"
+
+#: config/prefs.php:987 lib/Compose.php:2103 lib/Ui/Message.php:32
+#: mailbox-mimp.php:221 search.php:64 templates/dimp/index.inc:208
+#: templates/dimp/index.inc:453 templates/dimp/index.inc:496
+#: templates/dimp/javascript_defs.php:120
+#: templates/mobile/javascript_defs.php:61
+#: templates/dimp/message/message.html:53
+#: templates/imp/search/search-basic.html:18
+msgid "Subject"
+msgstr "Předmět"
+
+#: templates/dimp/compose/compose.html:121
+#: templates/mimp/compose/compose.html:40
+msgid "Subject:"
+msgstr "Předmět:"
+
+#: templates/imp/search/search-basic.html:49
+#: templates/imp/search/search.html:112 templates/saveimage/saveimage.html:20
+msgid "Submit"
+msgstr "Odeslat"
+
+#: templates/dimp/index.inc:282 templates/imp/folders/actions.html:25
+msgid "Subscribe"
+msgstr "Podepsat"
+
+#: lib/Mime/Status.php:69
+msgid "Success"
+msgstr "Úspěšně"
+
+#: templates/imp/folders/folders_size.html:22
+msgid "Sum"
+msgstr "Součet"
+
+#: lib/Mime/Viewer/Itip.php:713 lib/Mime/Viewer/Itip.php:715
+#: lib/Mime/Viewer/Itip.php:894 lib/Mime/Viewer/Itip.php:896
+msgid "Summary"
+msgstr "Shrnutí"
+
+#: templates/prefs/stationery.html:32
+msgid "Switch"
+msgstr "Přepínač"
+
+#: compose.php:958 compose.php:961
+msgid "Switch Composition Method"
+msgstr "Přepnout kompoziční metodu"
+
+#: templates/imp/compose/compose.html:146
+msgid "Switch to HTML composition"
+msgstr "Přepnout na HTML kompozici"
+
+#: templates/imp/compose/compose.html:146
+msgid "Switch to plain text composition"
+msgstr "Přepnout na textovou kompozici"
+
+#: templates/imp/message/navbar_navigate.html:32
+msgid "Target Folder"
+msgstr "Cílová složka"
+
+#: templates/imp/mailbox/navbar.html:61
+msgid "Target Mailbox:"
+msgstr "Cílový mailbox:"
+
+#: templates/imp/flist/flist.html:21
+msgid "Task Lists"
+msgstr "Úkoly"
+
+#: compose.php:979
+msgid "Te_xt"
+msgstr "Te_xt"
+
+#: lib/Mime/Viewer/Mdn.php:78 lib/Mime/Viewer/Status.php:103
+#: lib/Mime/Viewer/Status.php:115
+msgid "Technical details"
+msgstr "Technické detaily"
+
+#: lib/Mime/Viewer/Mdn.php:78
+#, php-format
+msgid "Technical details can be viewed %s."
+msgstr "Technické detaily o zprávě mohou být zobrazeny %s."
+
+#: lib/Mime/Viewer/Status.php:103
+#, php-format
+msgid "Technical error details can be viewed %s."
+msgstr "Technická chybová hlášení mohou být zobrazena %s."
+
+#: lib/Mime/Viewer/Status.php:115
+#, php-format
+msgid "Technical message details can be viewed %s."
+msgstr "Technické detaily o zprávě mohou být zobrazeny %s."
+
+#: lib/Mime/Viewer/Itip.php:634
+msgid "Tentatively Accept request"
+msgstr "Prozatímně potvrzená žádost"
+
+#: lib/Mime/Viewer/Itip.php:987
+msgid "Tentatively Accepted"
+msgstr "Prozatímně potvrzeno"
+
+#: templates/prefs/stationery.html:29
+msgid "Text"
+msgstr "Text"
+
+#: lib/Contents.php:1302
+msgid "Text part"
+msgstr "Textová část"
+
+#: config/prefs.php:1042
+msgid "The From: column of the message should be linked:"
+msgstr "Sloupec od: by měl být linkován:"
+
+#: lib/Mime/Viewer/Appledouble.php:90
+msgid "The Macintosh resource fork"
+msgstr "Macintosh resource fork"
+
+#: lib/Mime/Viewer/Appledouble.php:90
+#, php-format
+msgid "The Macintosh resource fork can be downloaded %s."
+msgstr "Macintosh resource fork může být stažen z %s."
+
+#: lib/Ajax/Application.php:1396
+msgid ""
+"The Message Disposition Notification was not sent. This is what the server "
+"said"
+msgstr "Zpráva o přečtení nebyla odeslána. Toto je zpráva ze serveru"
+
+#: lib/Ajax/Application.php:1404
+msgid "The Message Disposition Notification was sent successfully."
+msgstr "Zpráva o přečtení byla úspěšně odeslána."
+
+#: templates/dimp/compose/compose.html:132
+msgid "The attachment limit has been reached."
+msgstr "Bylo dosaženo maximálního limitu pro přílohu."
+
+#: attachment.php:32
+msgid "The attachment was not found."
+msgstr "Příloha nebyla nalezena."
+
+#: lib/Mime/Viewer/Itip.php:90
+msgid "The calendar data is invalid"
+msgstr "Data v kalendáři jsou neplatná"
+
+#: templates/dimp/javascript_defs.php:152
+msgid "The connection to the server has been restored."
+msgstr "Spojení se serverem bylo obnoveno."
+
+#: lib/LoginTasks/Task/RenameSentmailMonthly.php:107
+#, php-format
+msgid "The current sent-mail mailbox(es) \"%s\" will be renamed."
+msgstr "Současná složka(y) odeslané pošty \"%s\" bude(ou) přejmenována."
+
+#: lib/Mime/Viewer/Pgp.php:269
+msgid ""
+"The data in this part does not appear to be a valid PGP encrypted message. "
+"Error: "
+msgstr "Tato zpráva nevypadá jako validní PGP zakódovaná zpráva. Chyba: "
+
+#: lib/Mime/Viewer/Pgp.php:235
+msgid "The data in this part has been compressed via PGP."
+msgstr "Data v této části zprávy jsou zkomprimována pomocí PGP."
+
+#: lib/Mime/Viewer/Pgp.php:366
+msgid ""
+"The data in this part has been digitally signed via PGP, but the signature "
+"cannot be verified."
+msgstr ""
+"Data v této části zprávy jsou digitálně podepsána pomocí PGP, ale podpis se "
+"nepodařilo ověřit."
+
+#: lib/Mime/Viewer/Pgp.php:282 lib/Mime/Viewer/Pgp.php:370
+msgid "The data in this part has been digitally signed via PGP."
+msgstr "Data v této části zprávy jsou digitálně podepsána pomocí PGP."
+
+#: lib/Mime/Viewer/Smime.php:236
+msgid "The data in this part has been digitally signed via S/MIME."
+msgstr "Data v této části zprávy jsou digitálně podepsána pomocí S/MIME."
+
+#: lib/Mime/Viewer/Pgp.php:185
+msgid ""
+"The data in this part has been encrypted via PGP, however, PGP support is "
+"disabled so the message cannot be decrypted."
+msgstr ""
+"Data v této části zprávy jsou zakódována přes PGP, nicméně, podpora PGP je "
+"vypnutá, taže zprávu není možné dekódovat."
+
+#: lib/Mime/Viewer/Pgp.php:206 lib/Mime/Viewer/Pgp.php:237
+msgid "The data in this part has been encrypted via PGP."
+msgstr "Data v této části zprávy jsou je šifrována pomocí PGP."
+
+#: lib/Mime/Viewer/Smime.php:174
+msgid "The data in this part has been encrypted via S/MIME."
+msgstr "Data v této části zprávy jsou šifrována pomocí S/MIME."
+
+#: config/prefs.php:675
+msgid "The default charset for messages with no charset information:"
+msgstr "Implicitní kódování pro zprávy bez určeného kódování:"
+
+#: config/prefs.php:231
+msgid "The default font family to use in the HTML editor."
+msgstr "Výchozí font family pro použití v HTML editoru."
+
+#: config/prefs.php:240
+msgid "The default font size to use in the HTML editor (in pixels)."
+msgstr "Výchozí velikost fontu pro použití v HTML editoru (v pixelech)."
+
+#: lib/Compose.php:316
+#, php-format
+msgid "The draft has been saved to the \"%s\" folder."
+msgstr "Rozepsaná zpráva byla uložena ve složce \"%s\"."
+
+#: lib/Compose.php:318
+msgid "The draft was not successfully saved."
+msgstr "Koncept úspěšně uložen."
+
+#: lib/Mime/Viewer/Itip.php:199
+msgid "The event was added to your calendar."
+msgstr "Událost byla přidána do Vašeho kalendáře."
+
+#: lib/Mime/Viewer/Itip.php:179
+msgid "The event was updated in your calendar."
+msgstr "Událost ve Vašem kalendáři byla aktualizována."
+
+#: lib/Compose.php:2183
+#, php-format
+msgid "The file %s could not be attached."
+msgstr "Soubor %s nemohl být přiložen."
+
+#: lib/Ajax/Application.php:312
+#, php-format
+msgid "The folder \"%s\" is already empty."
+msgstr "Složka \"%s\" je již prázdná."
+
+#: folders.php:218
+#, php-format
+msgid "The folder \"%s\" may not be deleted."
+msgstr "Složka \"%s\" nemůže být smazána."
+
+#: folders.php:225 lib/Ajax/Application.php:306
+#, php-format
+msgid "The folder \"%s\" may not be emptied."
+msgstr "Složka \"%s\" nemůže být vyprázdněna."
+
+#: templates/dimp/index.inc:528
+msgid "The following keyboard shortcuts are available:"
+msgstr "Následující klávesové zkratky jsou dostupné:"
+
+#: lib/Contents.php:570
+msgid "The initial portion of this text part is displayed below."
+msgstr "Úvodní část textu je zobrazena níže."
+
+#: lib/Mime/Viewer/Html.php:194
+msgid "The links that caused this warning have this background color:"
+msgstr "Odkazy, které byly příčinou tohoto varování mají tuto barvu pozadí:"
+
+#: lib/Imap.php:383
+msgid ""
+"The mail server has denied the request. Details have been logged for the "
+"administrator."
+msgstr ""
+"Poštovní server zamítl žádost. Detailní popis chyby byl zalogován pro "
+"administrátora."
+
+#: lib/Imap.php:379
+msgid ""
+"The mail server is reporting corrupt data in your mailbox. Details have been "
+"logged for the administrator."
+msgstr ""
+"Poštovní server hlásí poškozená data ve Vaší schránce. Detailní popis chyby "
+"byl zalogován pro administrátora."
+
+#: lib/Mailbox.php:729
+#, php-format
+msgid "The mailbox \"%s\" may not be deleted."
+msgstr "Schránka \"%s\" nemůže být smazána."
+
+#: lib/Mailbox.php:766
+#, php-format
+msgid "The mailbox \"%s\" may not be renamed."
+msgstr "Schránka \"%s\" nemůže být přejmenována."
+
+#: lib/Mailbox.php:686
+#, php-format
+msgid "The mailbox \"%s\" was not created. This is what the server said"
+msgstr "Schránka \"%s\" nebyla vytvořena. Toto je zpráva ze serveru"
+
+#: lib/Mailbox.php:737
+#, php-format
+msgid "The mailbox \"%s\" was not deleted. This is what the server said"
+msgstr "Schránka \"%s\" nebyla smazána. Toto je zpráva ze serveru"
+
+#: lib/Mailbox.php:690
+#, php-format
+msgid "The mailbox \"%s\" was successfully created."
+msgstr "Schránka \"%s\" byla úspěšně vytvořena."
+
+#: lib/Mailbox.php:735
+#, php-format
+msgid "The mailbox \"%s\" was successfully deleted."
+msgstr "Schránka \"%s\" byla úspěšně smazána."
+
+#: lib/Mailbox.php:780
+#, php-format
+msgid "The mailbox \"%s\" was successfully renamed to \"%s\"."
+msgstr "Schránka \"%s\" byla úspěšně přejmenována na \"%s\"."
+
+#: lib/Message.php:787
+#, php-format
+msgid "The mailbox %s is already empty."
+msgstr "Složka %s je již prázdná."
+
+#: lib/Spam.php:185
+#, php-format
+msgid "The message \"%s\" has been reported as innocent."
+msgstr "Zpráva \"%s\"  byla ohlášena jako vyžádaná."
+
+#: lib/Spam.php:179
+#, php-format
+msgid "The message \"%s\" has been reported as spam."
+msgstr "Zpráva \"%s\"  byla ohlášena jako SPAM."
+
+#: templates/imp/javascript_defs.php:42
+msgid "The message being composed has been closed."
+msgstr "Vytvářená zpráva byla zavřena."
+
+#: templates/dimp/javascript_defs.php:211 templates/imp/javascript_defs.php:26
+msgid "The message does not have a Subject entered."
+msgstr "Zpráva nemá předmět."
+
+#: lib/Spam.php:186
+#, php-format
+msgid "The message from \"%s\" has been reported as innocent."
+msgstr "Zpráva od \"%s\" byla ohlášena jako vyžádaná."
+
+#: lib/Spam.php:180
+#, php-format
+msgid "The message from \"%s\" has been reported as spam."
+msgstr "Zpráva od \"%s\" byla ohlášena jako SPAM."
+
+#: lib/Filter.php:69 lib/Spam.php:226
+msgid "The message has been deleted."
+msgstr "Zpráva byla vymazána."
+
+#: lib/Compose.php:2916
+msgid ""
+"The message you were composing has been saved as a draft. The next time you "
+"login, you may resume composing your message."
+msgstr ""
+"Zpráva, kterou vytváříte byla uložena do složky Koncepty. Až se příště "
+"přihlásíte, můžete se navrátit k její další editaci."
+
+#: lib/Filter.php:71
+msgid "The messages have been deleted."
+msgstr "Zprávy byly vymazány."
+
+#: lib/Block/Newmail.php:37
+msgid "The number of unseen messages to show"
+msgstr "Počet nepřečtených zpráv k zobrazení"
+
+#: lib/Imap.php:391
+msgid "The object could not be created because it already exists."
+msgstr "Objekt nebylo možné vytvořit neboť již existuje."
+
+#: lib/Imap.php:395
+msgid "The object could not be deleted because it does not exist."
+msgstr "Objekt nemůže být odstraněn neboť již neexistuje."
+
+#: lib/Imap.php:387
+msgid ""
+"The operation failed because you have exceeded your quota on the mail server."
+msgstr "Operace selhala z důvodu překročení kvóty mailserveru."
+
+#: templates/dimp/compose/compose.html:167
+#: templates/imp/compose/compose.html:185
+msgid ""
+"The recipient has indicated that they prefer replies in these languages:"
+msgstr "Příjemce uvedl, že preferuje odpovědi v následujících jazycích:"
+
+#: message.php:656
+msgid ""
+"The sender of this message is requesting a notification from you when you "
+"have read this message."
+msgstr "Odesílatel této zprávy od Vás požaduje potvrzení o přečtení zprávy."
+
+#: lib/Views/ShowMessage.php:248
+msgid ""
+"The sender of this message is requesting notification from you when you have "
+"read this message."
+msgstr "Odesílatel této zprávy požaduje potvrzení o přečtení zprávy."
+
+#: templates/dimp/javascript_defs.php:168
+msgid "The server is still generating the message list."
+msgstr "Poštovní server stále generuje seznam zpráv."
+
+#: templates/dimp/javascript_defs.php:169
+msgid "The server was unable to generate the message list."
+msgstr "Poštovní server nebyl schopen vygenerovat seznam zpráv."
+
+#: lib/Message.php:92
+msgid "The source directory is read-only."
+msgstr "Zdrojový adresář je pouze ke čtení."
+
+#: attachment.php:48
+msgid ""
+"The specified attachment does not exist. It may have been deleted by the "
+"original sender."
+msgstr ""
+"Specifikovaná příloha neexistuje. Pravděpodobně byla odstraněna původním "
+"odesílatelem."
+
+#: attachment.php:122
+msgid "The specified file cannot be read."
+msgstr "Požadovaný soubor nelze přečíst."
+
+#: lib/Prefs/Ui.php:1679
+#, php-format
+msgid "The stationery \"%s\" has been added."
+msgstr "Formulář \"%s\" byl přidán."
+
+#: lib/Prefs/Ui.php:1666
+#, php-format
+msgid "The stationery \"%s\" has been deleted."
+msgstr "Formulář \"%s\" byl vymazán."
+
+#: lib/Prefs/Ui.php:1682
+#, php-format
+msgid "The stationery \"%s\" has been updated."
+msgstr "Formulář \"%s\" byl upraven."
+
+#: lib/Message.php:88
+msgid "The target directory is read-only."
+msgstr "Cílový adresář je pouze ke čtení."
+
+#: lib/Mime/Viewer/Itip.php:235
+msgid "The task has been added to your tasklist."
+msgstr "Úkol byl přidán do Vašeho seznamu úkolů."
+
+#: lib/Mime/Viewer/Status.php:119
+msgid "The text of the message"
+msgstr "Text zprávy"
+
+#: lib/Mime/Viewer/Status.php:118
+#, php-format
+msgid "The text of the message can be viewed %s."
+msgstr "Text zprávy lze zobrazit %s."
+
+#: lib/Mime/Viewer/Status.php:107
+msgid "The text of the returned message"
+msgstr "Text vrácené zprávy"
+
+#: lib/Mime/Viewer/Status.php:106
+#, php-format
+msgid "The text of the returned message can be viewed %s."
+msgstr "Text vrácené zprávy lze zobrazit %s."
+
+#: lib/Mime/Viewer/Mdn.php:86
+msgid "The text of the sent message"
+msgstr "Text zaslané zprávy"
+
+#: lib/Mime/Viewer/Mdn.php:86
+#, php-format
+msgid "The text of the sent message can be viewed %s."
+msgstr "Text zaslané zprávy lze zonrazit %s."
+
+#: lib/Mailbox.php:1276
+msgid "The uploaded file cannot be opened"
+msgstr "Nahraný soubor nelze otevřít."
+
+#: lib/Mime/Viewer/Itip.php:219
+msgid "The user's free/busy information was sucessfully stored."
+msgstr "Uživatelova informace o volném čase byla úspěšně uložena."
+
+#: lib/Mime/Viewer/Alternative.php:99
+msgid "There are no alternative parts that can be displayed inline."
+msgstr ""
+"Zpráva neobsahuje žádné aliternativní části, které by ještě bylo možné "
+"zobrazit."
+
+#: templates/dimp/javascript_defs.php:188
+#: templates/imp/mailbox/empty_mailbox.html:6
+msgid "There are no messages in this mailbox."
+msgstr "Tato složka neobsahuje žadné zprávy."
+
+#: lib/Contents.php:1477
+msgid "There are no parts that can be shown inline."
+msgstr ""
+"Zpráva neobsahuje žádné části, které by bylo možné zobrazit v tomto okně."
+
+#: templates/dimp/javascript_defs.php:153
+msgid ""
+"There has been no contact with the server for several minutes. The server "
+"may be temporarily unavailable or network problems may be interrupting your "
+"session. You will not see any updates until the connection is restored."
+msgstr ""
+"Žádný kontakt se serverem za posledních několik minut. Server může být "
+"dočasně nedostupný nebo Vaši session přerušily síťové problémy. Neuvidíte "
+"žádná aktuální data dokud nedojde k obnově připojení se serverem."
+
+#: thread.php:108
+msgid "There is no text that can be displayed inline."
+msgstr "Zpráva neobsahuje žádný text, který lze zobrazit v tomto okně."
+
+#: lib/Imap.php:374
+msgid ""
+"There was a temporary issue when attempting this operation. Please try again "
+"later."
+msgstr ""
+"Došlo k dočasnému problému při pokusu o danou operaci. Prosíme zkuste to "
+"později."
+
+#: lib/Message.php:79
+#, php-format
+msgid ""
+"There was an error copying messages from \"%s\" to \"%s\". This is what the "
+"server said"
+msgstr ""
+"Při kopírování zprávy z \"%s\" do \"%s\" došlo k chybě. Toto je zpráva ze "
+"serveru"
+
+#: lib/Message.php:190
+#, php-format
+msgid "There was an error deleting messages from the folder \"%s\"."
+msgstr "Chyba při odstraňování zprávy ze složky \"%s\"."
+
+#: lib/Mime/Viewer/Itip.php:132
+msgid "There was an error deleting the event:"
+msgstr "Nastala chyba při mazání události:"
+
+#: lib/Message.php:634
+#, php-format
+msgid "There was an error flagging messages in the folder \"%s\": %s."
+msgstr "Chyba při označování zpráv ve složce \"%s\": %s."
+
+#: lib/Ui/Folder.php:187
+#, php-format
+msgid "There was an error importing %s."
+msgstr "Při importu %s došlo k chybě."
+
+#: lib/Mime/Viewer/Itip.php:206
+msgid "There was an error importing the event:"
+msgstr "Nastala chyba při importování události:"
+
+#: lib/Mime/Viewer/Itip.php:242
+msgid "There was an error importing the task:"
+msgstr "Nastala chyba při importování úkolu:"
+
+#: lib/Mime/Viewer/Itip.php:221
+msgid "There was an error importing user's free/busy information:"
+msgstr "Nastala chyba při importování uživatelských volný/obsazený informací."
+
+#: lib/Message.php:75
+#, php-format
+msgid ""
+"There was an error moving messages from \"%s\" to \"%s\". This is what the "
+"server said"
+msgstr ""
+"Při přesunu zpráv z \"%s\" do \"%s\" došlo k chybě. Toto je zpráva ze serveru"
+
+#: lib/Compose.php:679
+#, php-format
+msgid "There was an error sending your message: %s"
+msgstr "Při odesílání Vaší zprávy došlo k chybě: %s"
+
+#: lib/Mime/Viewer/Itip.php:149 lib/Mime/Viewer/Itip.php:187
+msgid "There was an error updating the event:"
+msgstr "Nastala chyba při aktualizaci události:"
+
+#: mailbox-mimp.php:78
+msgid "There was an error viewing the requested message."
+msgstr "Chyba při zobrazování požadované zprávy"
+
+#: lib/Mime/Viewer/Itip.php:135 lib/Mime/Viewer/Itip.php:152
+#: lib/Mime/Viewer/Itip.php:210 lib/Mime/Viewer/Itip.php:224
+#: lib/Mime/Viewer/Itip.php:245 lib/Mime/Viewer/Itip.php:306
+msgid "This action is not supported."
+msgstr "Tato akce není podporována."
+
+#: lib/Mime/Viewer/Itip.php:251 lib/Mime/Viewer/Itip.php:419
+msgid "This action is not yet implemented."
+msgstr "Tato akce ještě není implementována."
+
+#: lib/Mime/Viewer/Audio.php:48
+#, php-format
+msgid "This audio file is reported to be %d minutes, %d seconds in length."
+msgstr "Tento audio soubor je hlášen jako %d minut, %d sekund dlouhý."
+
+#: lib/Message.php:185 lib/Message.php:622
+msgid "This folder is read-only."
+msgstr "Tato složka je pouze ke čtení."
+
+#: templates/imp/javascript_defs.php:55
+msgid "This folder may not be renamed:"
+msgstr "Tuto složku nelze přejmenovat:"
+
+#: lib/Mime/Viewer/Pdf.php:81
+msgid "This is a thumbnail of a PDF file attachment."
+msgstr "Toto je miniatura připojeného PDF souboru."
+
+#: lib/Mime/Viewer/Images.php:145
+msgid "This is a thumbnail of an image attachment."
+msgstr "Toto je miniatura připojeného obrázku"
+
+#: templates/dimp/javascript_defs.php:165
+msgid "This is the notification log"
+msgstr "Toto je log upozornění"
+
+#: templates/imp/javascript_defs.php:52
+msgid "This may take some time. Are you sure you want to continue?"
+msgstr "Toto může trvat nějaký čas. Skutečně chcete pokračovat?"
+
+#: lib/Mime/Viewer/Appledouble.php:89
+#, php-format
+msgid "This message contains a Macintosh file (named \"%s\")."
+msgstr "Tato zpráva obsahuje Macintosh soubor (s názvem \"%s\") ."
+
+#: lib/Contents.php:563
+msgid "This message part cannot be viewed because it is too large."
+msgstr "Tato část zprávy nemůže být zobrazena, protože je příliš velká."
+
+#: lib/Mime/Viewer/Html.php:109
+msgid ""
+"This message part contains HTML data, but inline HTML display is disabled."
+msgstr ""
+"Tato část zprávy obsahuje HTML data, ale zobrazování vložených HTML dat je "
+"vypnuto."
+
+#: lib/Mime/Viewer/Html.php:64
+msgid ""
+"This message part contains HTML data, but this data can not be displayed "
+"inline."
+msgstr "Tato zpráva obsahuje HTML data, která nelze zobrazit v tomto okně."
+
+#: message.php:488
+msgid "This message to"
+msgstr "Tato zpráva pro"
+
+#: lib/Mime/Viewer/Related.php:124
+msgid ""
+"This part contains an attachment that can not be displayed within this part:"
+msgstr "Tato část zprávy obsahuje přílohu, která zde nemůže být zobrazena."
+
+#: lib/Contents.php:616 message-mimp.php:157
+msgid "This part is empty."
+msgstr "Tato část je prázdná."
+
+#: lib/Mime/Viewer/Video.php:47
+#, php-format
+msgid "This video file is reported to be %d minutes, %d seconds in length."
+msgstr "Tento videosoubro je hlášen jako  %d minut, %d sekund dlouhý."
+
+#: templates/imp/javascript_defs.php:43
+msgid "This window must be called from a compose window."
+msgstr "Toto okno může být voláno pouze z okna pro vytváření zprávy."
+
+#: config/prefs.php:989 mailbox-mimp.php:222 templates/dimp/index.inc:454
+#: templates/mobile/javascript_defs.php:65
+msgid "Thread"
+msgstr "Vlákno"
+
+#: templates/imp/thread/thread.html:2
+msgid "Thread Display:"
+msgstr "Zobrazení vláken:"
+
+#: thread.php:133
+msgid "Thread List"
+msgstr "Seznam vláken"
+
+#: templates/dimp/index.inc:462
+msgid "Thread Sort"
+msgstr "Řazení vláken"
+
+#: thread.php:173
+msgid "Thread View"
+msgstr "Zobrazení podle vláken"
+
+#: compose.php:748 lib/Compose.php:2107 lib/Ui/Mailbox.php:106
+#: lib/Ui/Message.php:28 mailbox.php:643 search.php:52
+#: templates/dimp/index.inc:220 templates/dimp/javascript_defs.php:115
+#: templates/mobile/javascript_defs.php:57
+#: templates/imp/contacts/contacts.html:41
+msgid "To"
+msgstr "Komu"
+
+#: message-mimp.php:294
+#, php-format
+msgid "To %s"
+msgstr "Komu%s"
+
+#: config/prefs.php:986
+msgid "To Address"
+msgstr "Na adresu"
+
+#: message.php:543 templates/dimp/index.inc:398
+#: templates/dimp/message/message.html:126
+msgid "To All"
+msgstr "Všem"
+
+#: message.php:539 templates/dimp/index.inc:399
+#: templates/dimp/message/message.html:128
+msgid "To List"
+msgstr "Na seznam"
+
+#: message.php:536 templates/dimp/index.inc:397
+#: templates/dimp/message/message.html:125
+msgid "To Sender"
+msgstr "Odesílateli"
+
+#: message.php:543
+msgid "To _All"
+msgstr "Odpovědět _všem"
+
+#: message.php:539
+msgid "To _List"
+msgstr "Na seznam"
+
+#: templates/dimp/index.inc:519
+msgid "To preview a message, select it from the message list."
+msgstr "Pro náhled zprávy vyberte tuto ze seznamu zpráv."
+
+#: thread.php:117 thread.php:118 templates/dimp/compose/compose.html:77
+#: templates/dimp/compose/compose.html:195 templates/imp/thread/thread.html:19
+msgid "To:"
+msgstr "Komu:"
+
+#: compose-mimp.php:48
+msgid "To: "
+msgstr "Komu:"
+
+#: lib/Ui/Message.php:176
+#, php-format
+msgid "Today, %s %s"
+msgstr "Dnes, %s %s"
+
+#: config/prefs.php:255
+msgid "Top"
+msgstr "Nahoru"
+
+#: lib/Block/Summary.php:102
+msgid "Total"
+msgstr "Celkem"
+
+#: templates/imp/compose/compose.html:304
+msgid "Total Size:"
+msgstr "Celková velikost:"
+
+#: config/prefs.php:1458
+msgid "Traditional View"
+msgstr "Tradiční zobrazení"
+
+#: lib/Mailbox.php:1589 lib/Mailbox.php:1668
+msgid "Trash"
+msgstr "Koš"
+
+#: lib/Prefs/Ui.php:1760
+msgid "Trash folder:"
+msgstr "Složka koš:"
+
+#: lib/Mime/Viewer/Itip.php:187
+msgid "Trying to import the event instead."
+msgstr "Zkouška importování události."
+
+#: templates/imp/search/search.html:93
+msgid "Type:"
+msgstr "Typ:"
+
+#: lib/Quota/Command.php:92 lib/Quota/Hook.php:42 lib/Quota/Imap.php:52
+#: lib/Quota/Maildir.php:64 lib/Quota/Mdaemon.php:65
+#: lib/Quota/Mercury32.php:70
+msgid "Unable to retrieve quota"
+msgstr "Nelze zjistit kvótu"
+
+#: templates/dimp/index.inc:543
+msgid "Unable to view message in preview pane."
+msgstr "Není možné zobrazit zprávu v okně náhledu."
+
+#: templates/dimp/index.inc:308
+msgid "Uncompressed"
+msgstr "Rozbaleno"
+
+#: mailbox.php:563 message-mimp.php:264 message.php:521
+#: templates/dimp/index.inc:388 templates/dimp/index.inc:440
+#: templates/mimp/mailbox/mailbox.html:39
+msgid "Undelete"
+msgstr "Obnovit smazané"
+
+#: lib/Ui/Mailbox.php:88 lib/Ui/Mailbox.php:94 lib/Ui/Message.php:394
+#: lib/Views/ShowMessage.php:147
+msgid "Undisclosed Recipients"
+msgstr "Utajení příjemci"
+
+#: lib/Imap.php:349
+msgid "Unexpectedly disconnected from the mail server."
+msgstr "Neočekávané odpojení od poštovního serveru."
+
+#: lib/Mime/Viewer/Itip.php:467
+#, php-format
+msgid "Unhandled component of type: %s"
+msgstr "Neznámá (neošetřená) komponenta typu: %s"
+
+#: lib/Mime/Viewer/Itip.php:734
+msgid "Unknown"
+msgstr "Neznámé"
+
+#: lib/Ui/Mailbox.php:184
+msgid "Unknown Date"
+msgstr "Neznámé datum"
+
+#: lib/Mime/Viewer/Itip.php:680
+msgid "Unknown Meeting"
+msgstr "Neznámá schůzka"
+
+#: lib/Mime/Viewer/Itip.php:878
+msgid "Unknown Task"
+msgstr "Neznámý úkol"
+
+#: lib/Prefs/Ui.php:1005 lib/Prefs/Ui.php:1407
+msgid "Unload Passphrase"
+msgstr "Vložit heslo"
+
+#: templates/dimp/index.inc:371 templates/dimp/index.inc:420
+msgid "Unmark as"
+msgstr "Odznačit jako:"
+
+#: templates/imp/mailbox/navbar.html:17
+#: templates/imp/message/navbar_navigate.html:17
+msgid "Unmark as:"
+msgstr "Odznačit jako:"
+
+#: lib/Block/Summary.php:102 lib/Flag/System/Unseen.php:39
+#: templates/dimp/index.inc:304
+msgid "Unseen"
+msgstr "Nepřečtené"
+
+#: templates/dimp/index.inc:283 templates/imp/folders/actions.html:26
+msgid "Unsubscribe"
+msgstr "Odregistrovat"
+
+#: templates/imp/compose/compose.html:281
+msgid "Update"
+msgstr "Aktualizovat"
+
+#: lib/Mime/Viewer/Itip.php:628 lib/Mime/Viewer/Itip.php:665
+msgid "Update in my calendar"
+msgstr "Aktualizovat v mém kalendáři"
+
+#: lib/Mime/Viewer/Itip.php:656
+msgid "Update respondent status"
+msgstr "Aktualizovat stav odpovídajícího"
+
+#: lib/Mime/Viewer/Itip.php:642
+msgid "Update this event on my calendar"
+msgstr "Aktualizovat tuto položku v mém kalendáři"
+
+#: templates/pgp/import_key.html:38 templates/smime/import_key.html:40
+msgid "Upload:"
+msgstr "Upload:"
+
+#: templates/dimp/javascript_defs.php:216
+msgid "Uploading..."
+msgstr "Nahrává se ..."
+
+#: templates/prefs/sentmail.html:8
+msgid "Use Default Value"
+msgstr "Použít implicitní hodnotu"
+
+#: config/prefs.php:1072
+msgid "Use IMAP folder subscriptions?"
+msgstr "Používat přihlašování složek IMAP?"
+
+#: templates/prefs/trash.html:9
+msgid "Use Virtual Trash"
+msgstr "Použít virtuální koš"
+
+#: templates/prefs/acl.html:12
+msgid "User"
+msgstr "Uživatel"
+
+#: templates/dimp/javascript_defs.php:181
+msgid "User Options"
+msgstr "Uživatelské možnosti"
+
+#: lib/Imap/Acl.php:127
+msgid "User can see the mailbox"
+msgstr "Uživatel může vidět schránku"
+
+#: templates/dimp/javascript_defs.php:186
+msgid "Verifying..."
+msgstr "Ověřování..."
+
+#: templates/dimp/index.inc:416
+msgid "Vertical Layout"
+msgstr "Vertikální zobrazení"
+
+#: lib/Contents.php:1305
+msgid "Video part"
+msgstr "Videočást"
+
+#: templates/prefs/pgpprivatekey.html:19 templates/prefs/pgpprivatekey.html:30
+#: templates/prefs/pgppublickey.html:13
+#: templates/prefs/smimeprivatekey.html:19
+#: templates/prefs/smimeprivatekey.html:27
+#: templates/prefs/smimepublickey.html:13
+msgid "View"
+msgstr "Zobrazit"
+
+#: lib/Contents.php:796 lib/Contents.php:963 lib/Mime/Viewer/Zip.php:99
+#, php-format
+msgid "View %s"
+msgstr "Zobrazit %s"
+
+#: lib/Prefs/Ui.php:1128 lib/Prefs/Ui.php:1485
+#, php-format
+msgid "View %s Public Key"
+msgstr "Zobrazit veřejný klíč %s"
+
+#: lib/Mime/Viewer/Images.php:149 lib/Mime/Viewer/Images.php:151
+#: message-mimp.php:154
+msgid "View Attachment"
+msgstr "Zobrazit přílohu"
+
+#: lib/Mime/Viewer/Smime.php:293
+msgid "View Certificate"
+msgstr "Zobrazit certifikát"
+
+#: templates/mimp/message/message.html:28
+msgid "View Full Message"
+msgstr "Zobrazit celou zprávu"
+
+#: lib/Mime/Viewer/Html.php:65 lib/Mime/Viewer/Html.php:110
+msgid "View HTML data in new window."
+msgstr "Zobrazit HTML data v novém okně."
+
+#: templates/dimp/index.inc:363
+msgid "View Message"
+msgstr "Zobrazit zprávu"
+
+#: mailbox.php:616
+msgid "View Messages"
+msgstr "Zobrazit více zpráv"
+
+#: lib/Mime/Viewer/Pdf.php:151
+msgid "View PDF File"
+msgstr "Zobrazit PDF soubor"
+
+#: lib/Prefs/Ui.php:1014 lib/Prefs/Ui.php:1416
+msgid "View Personal Private Key"
+msgstr "Zobrazit Váš soukromý klíč"
+
+#: lib/Prefs/Ui.php:1403
+msgid "View Personal Public Certificate"
+msgstr "Zobrazit Váš osobní veřejný certifikát"
+
+#: lib/Prefs/Ui.php:999
+msgid "View Personal Public Key"
+msgstr "Zobrazit Váš veřejný klíč"
+
+#: lib/Mime/Viewer/Pgp.php:319
+msgid "View Public Key"
+msgstr "Zobrazit veřejný klíč"
+
+#: templates/dimp/index.inc:187 templates/dimp/index.inc:392
+#: templates/dimp/message/message.html:38
+msgid "View Source"
+msgstr "Zobrazit zdrojový kód"
+
+#: message.php:560
+msgid "View Thread"
+msgstr "Zobrazit vlákno"
+
+#: lib/Mime/Viewer/Itip.php:181 lib/Mime/Viewer/Itip.php:182
+#: lib/Mime/Viewer/Itip.php:201 lib/Mime/Viewer/Itip.php:202
+msgid "View event"
+msgstr "Zobrazit událost"
+
+#: mailbox.php:762
+#, php-format
+msgid "View messages in %s"
+msgstr "Zobrazit zprávy v %s"
+
+#: lib/Prefs/Ui.php:911
+msgid "View or mailbox to display after login:"
+msgstr "Zobrazení schránek nebo příchozí pošty po přihlášení do systému:"
+
+#: lib/Mime/Viewer/Itip.php:237 lib/Mime/Viewer/Itip.php:238
+msgid "View task"
+msgstr "Zobrazit úkol"
+
+#: lib/Mime/Viewer/Pgp.php:319
+msgid "View the raw text of the Public Key."
+msgstr "Zobrazit surový text Vašeho veřejného klíče"
+
+#: config/prefs.php:542
+msgid "Viewing"
+msgstr "Zobrazení"
+
+#: mailbox.php:370 mailbox.php:371 templates/imp/search/search.html:97
+#: templates/prefs/searches.html:8
+msgid "Virtual Folder"
+msgstr "Virtuální složka"
+
+#: search.php:324
+#, php-format
+msgid "Virtual Folder \"%s\" created succesfully."
+msgstr "Virtuální složka \"%s\" byla úspěšně vytvořena."
+
+#: lib/Prefs/Ui.php:1268
+#, php-format
+msgid "Virtual Folder \"%s\" deleted."
+msgstr "Virtuální složka \"%s\" byla odstraněna."
+
+#: search.php:321
+#, php-format
+msgid "Virtual Folder \"%s\" edited successfully."
+msgstr "Virtuální složka \"%s\" byla úspěšně změněna."
+
+#: templates/dimp/javascript_defs.php:187
+#, php-format
+msgid "Virtual Folder: %s"
+msgstr "Virtuální složka: %s"
+
+#: lib/Mailbox.php:1528 templates/dimp/index.inc:348
+msgid "Virtual Folders"
+msgstr "Virtuální složky"
+
+#: lib/Search/Vfolder/Vinbox.php:23
+msgid "Virtual Inbox"
+msgstr "Virtuální složka doručené pošty"
+
+#: lib/Search/Vfolder/Vtrash.php:30
+msgid "Virtual Trash"
+msgstr "Virtuální koš"
+
+#: lib/Contents.php:566 lib/Mime/Status.php:73 lib/Mime/Viewer/Html.php:193
+msgid "Warning"
+msgstr "Upozornění"
+
+#: config/prefs.php:317
+msgid ""
+"What language(s) do you prefer replies to your messages to be in? (Hold down "
+"the CTRL key when clicking to add multiple languages)"
+msgstr ""
+"V jakém jazyce byste preferovali odpovědi na Vaše zprávy? (Podržte klávesu "
+"Ctrl při kliknutí na přidávání více jazyků)"
+
+#: config/prefs.php:831
+msgid ""
+"What should we do with messages after they have been reported as innocent?"
+msgstr "Co se má provést se zprávami označenými jako vyžádané?"
+
+#: config/prefs.php:819
+msgid "What should we do with messages after they have been reported as spam?"
+msgstr "Co se má provést se zprávami označenými jako nevyžádané - spam?"
+
+#: config/prefs.php:729
+msgid ""
+"When deleting messages, move them to your Trash folder instead of marking "
+"them as deleted?"
+msgstr ""
+"Při mazání zpráv přesunout zprávy do koše místo označení jako vymazané?"
+
+#: config/prefs.php:428
+msgid ""
+"When forwarding a message in the body text, should we use the same format as "
+"the original message?"
+msgstr ""
+"Pokud se přeposílá zpráva v těle zprávy odesílané, má se použít ten samý "
+"formát jako u původní zprávy?"
+
+#: config/prefs.php:971
+msgid "When opening a mailbox for the first time, where do you want to start?"
+msgstr "Pokud se poprvé otevírá schránka, kde chcete začít?"
+
+#: config/prefs.php:377
+msgid ""
+"When replying to a message, should we use the same format as the original "
+"message?"
+msgstr ""
+"Pokud se na zprávu, má se použít ten samý formát jako u původní zprávy?"
+
+#: config/prefs.php:282
+msgid "When saving sent mail, should we save attachment data?"
+msgstr "Uložit také přílohy při ukládání zprávy do složky odeslané pošty?"
+
+#: config/prefs.php:247
+msgid ""
+"When sending mail or expanding addresses, what domain should we append to "
+"unqualified addresses (email addresses without \"@\")?"
+msgstr ""
+"Jaká doména by se měla přidat do nekompletních adres (emailové adresy bez \"@"
+"\") při odesílání zprávy nebo přidávání příjemců?"
+
+#: config/prefs.php:259
+msgid "Where should the cursor be located in the compose text area by default?"
+msgstr "Kde se má standardně nacházet kurzor v poli pro tvorbu nové zprávy?"
+
+#: config/prefs.php:650
+msgid "Which message parts do you want to display in the summary?"
+msgstr "Jakou část zprávy si přejete zobrazit v přehledu?"
+
+#: mailbox.php:596 message.php:568 templates/dimp/index.inc:384
+#: templates/dimp/index.inc:432
+msgid "Whitelist"
+msgstr "Bílá listina"
+
+#: templates/imp/search/search.html:124
+msgid "Years"
+msgstr "Roky"
+
+#: config/prefs.php:1081 templates/imp/javascript_defs.php:37
+#: templates/imp/compose/compose.html:291
+msgid "Yes"
+msgstr "Ano"
+
+#: templates/dimp/compose/compose.html:150
+#: templates/imp/compose/compose.html:157
+msgid "You are"
+msgstr "Vy jste"
+
+#: templates/imp/folders/folders_confirm.html:11
+msgid ""
+"You are attempting to delete all messages contained in the following folder"
+"(s)."
+msgstr "Pokoušíte se smazat všechny zprávy v následující(ch) složce(kách)."
+
+#: templates/imp/folders/folders_confirm.html:10
+msgid "You are attempting to delete the following folder(s)."
+msgstr "Pokoušíte se smazat následující složku(y)."
+
+#: templates/imp/javascript_defs.php:68
+msgid "You are copying/moving to a new folder."
+msgstr "Kopírování/Přesouvání do nové složky."
+
+#: templates/imp/javascript_defs.php:48
+msgid "You are creating a sub-folder to"
+msgstr "Vytváříte podsložku do"
+
+#: templates/imp/javascript_defs.php:50
+msgid "You are creating a top-level folder."
+msgstr "Vytváříte složku na nejvyšší úrovni."
+
+#: lib/Mailbox.php:660
+msgid "You are not allowed to create folders."
+msgstr "Nejste oprávněn(a) vytvářet složky."
+
+#: lib/Mailbox.php:667
+#, php-format
+msgid "You are not allowed to create more than %d folders."
+msgstr "Nejste oprávněn(a) vytvářet více než %d složek."
+
+#: lib/Compose.php:939
+#, php-format
+msgid ""
+"You are not allowed to send messages to more than %d recipients within %d "
+"hours."
+msgstr "Nemáte oprávnění posílat zprávy více než %d příjemců v %d hodinách."
+
+#: lib/Compose.php:1129
+#, php-format
+msgid "You are not allowed to send messages to more than %d recipients."
+msgstr "Nemáte oprávnění posílat zprávy více než %d příjemcům."
+
+#: templates/imp/javascript_defs.php:53
+msgid "You are renaming the folder:"
+msgstr "Přejmenováváte složku:"
+
+#: templates/dimp/compose/compose.html:154
+#: templates/imp/compose/compose.html:171
+msgid "You are replying to a mailing list"
+msgstr "Odpovídáte konferenčně seznamu uživatelů"
+
+#: templates/dimp/javascript_defs.php:185
+#, php-format
+msgid "You can snooze it for %s or %s dismiss %s it entirely"
+msgstr "Můžete to oddálit p %s nebo %s zrušit %s úplně"
+
+#: templates/prefs/stationery.html:44
+msgid ""
+"You can use the following placeholders in the stationery text: %c for the "
+"current message content; %s for the signature."
+msgstr ""
+"V textu vzoru můžete použít následující kotvy (placeholders): %c pro obsah "
+"součastné zprávy; %s pro podpis."
+
+#: lib/Mailbox.php:800
+#, php-format
+msgid "You cannot unsubscribe from \"%s\"."
+msgstr "Nemůžete se odhlásit  z \"%s\"."
+
+#: lib/Imap.php:369
+msgid "You do not have adequate permissions to carry out this operation."
+msgstr "Nemáte dostatečná práva pro pokračování v této operaci."
+
+#: lib/Prefs/Ui.php:580
+msgid "You do not have permission to change access to this folder."
+msgstr "Nemáte dostatečná práva pro změnu přístupových práv do této složky"
+
+#: lib/Maillog.php:198
+#, php-format
+msgid "You forwarded this message on %%s to: %s."
+msgstr "Přeposlali jste tuto zprávu %%s přijemci: %s."
+
+#: lib/Notification/Handler/Decorator/NewmailNotify.php:84
+#, php-format
+msgid "You have %d new mail message in %s."
+msgid_plural "You have %d new mail messages in %s."
+msgstr[0] "Máte %d novou zprávu v %s."
+msgstr[1] "Máte %d nové zprávy v %s."
+msgstr[2] "Máte %d nových zpráv v %s."
+
+#: lib/Prefs/Ui.php:529
+msgid ""
+"You have activated move to Trash but no Trash folder is defined. You will be "
+"unable to delete messages until you set a Trash folder in the preferences."
+msgstr ""
+"Aktivovali jste Přesunout do koše, ale žádná složka koš nebyla definována. "
+"Dokud v předvolbých nenastavíte složku pro Koš, nebudete moci mazat zprávy."
+
+#: compose.php:99
+msgid "You have already submitted this page."
+msgstr "Tuto stránku již máte aktivovánu."
+
+#: lib/Ajax/Application.php:120
+#, php-format
+msgid "You may not create child folders in \"%s\"."
+msgstr "Nemůžete zřídit podložku v \"%s\"."
+
+#: lib/Ajax/Application.php:196
+#, php-format
+msgid "You may not delete \"%s\"."
+msgstr "Nemůžete odstranit \"%s\"."
+
+#: lib/Ajax/Application.php:200
+#, php-format
+msgid "You may not rename \"%s\"."
+msgstr "Nemůžete přejmenovat \"%s\"."
+
+#: lib/Compose.php:1121
+msgid "You must enter at least one recipient."
+msgstr "Musíte zadat alespoň jednoho příjemce."
+
+#: lib/Mime/Viewer/Pgp.php:248
+msgid ""
+"You must enter the passphrase for your PGP private key to view this message."
+msgstr ""
+"Pro přečtení této zprávy musíte zadat heslo Vašeho soukromého PGP klíče."
+
+#: lib/Mime/Viewer/Smime.php:199
+msgid ""
+"You must enter the passphrase for your S/MIME private key to view this data."
+msgstr ""
+"Pro zobrazení těchto dat musíte zadat heslo Vašeho soukromého S/MIME klíče"
+
+#: lib/Mime/Viewer/Pgp.php:216
+msgid "You must enter the passphrase used to encrypt this message to view it."
+msgstr ""
+"Musíte zadat heslo, které bylo použito pro zašifrování této zprávy, jinak ji "
+"nebude možné zobrazit."
+
+#: templates/imp/javascript_defs.php:69
+msgid "You must select a target mailbox first."
+msgstr "Musíte nejdříve vybrat cílovou složku."
+
+#: templates/imp/javascript_defs.php:41
+msgid "You must select an address first."
+msgstr "Musíte nejdříve vybrat emailovou adresu."
+
+#: templates/imp/javascript_defs.php:32 templates/imp/javascript_defs.php:36
+msgid "You must select at least one message first."
+msgstr "Musíte nejdříve vybrat alespoň jednu zprávu."
+
+#: templates/imp/javascript_defs.php:25
+msgid "You must specify a recipient."
+msgstr "Musíte zadat příjemce."
+
+#: lib/Maillog.php:206
+#, php-format
+msgid "You redirected this message to %s on %%s."
+msgstr "Tato zpráva byla přesměrována na %s v %%s."
+
+#: lib/Maillog.php:214
+#, php-format
+msgid "You replied to all recipients of this message on %s."
+msgstr "Na tuto zprávu jste odpověděli všem příjemcům v %s."
+
+#: lib/Maillog.php:210
+#, php-format
+msgid "You replied to this message on %s."
+msgstr "Na tuto zprávu jste odpověděl(a) v %s."
+
+#: lib/Maillog.php:218
+#, php-format
+msgid "You replied to this message via the mailing list on %s."
+msgstr "Na tuto zprávu jste konferenčně odpověděli v %s."
+
+#: lib/Mailbox.php:808
+#, php-format
+msgid "You were not subscribed to \"%s\". Here is what the server said"
+msgstr "Složka \"%s\" nebyla aktivována. Toto je zpráva ze serveru"
+
+#: lib/Mailbox.php:810
+#, php-format
+msgid "You were not unsubscribed from \"%s\". Here is what the server said"
+msgstr "Složka \"%s\" nebyla deaktivována. Toto je zpráva ze serveru"
+
+#: lib/Mailbox.php:816
+#, php-format
+msgid "You were successfully subscribed to \"%s\"."
+msgstr "Úspěšně jste se registrovali pro \"%s\""
+
+#: lib/Mailbox.php:819
+#, php-format
+msgid "You were successfully unsubscribed from \"%s\"."
+msgstr "Úspěšně jste odregistrovali od \"%s\""
+
+#: lib/Search/Element/Within.php:74 search.php:96
+msgid "Younger Than"
+msgstr "Mladší než"
+
+#: lib/Prefs/Identity.php:132
+msgid ""
+"Your From address is not a valid email address. This can be fixed in your "
+"Personal Information preferences page."
+msgstr ""
+"Vaše Od adresa není platná e-mailová adresa. Toto můžete opravit na stránce "
+"Vašich Osobních informací."
+
+#: templates/prefs/pgpprivatekey.html:48
+msgid "Your Name:"
+msgstr "Vaše jméno:"
+
+#: templates/prefs/pgpprivatekey.html:3
+msgid "Your PGP Public/Private Keys"
+msgstr "Vaše PGP veřejné/soukromé klíče"
+
+#: templates/prefs/smimeprivatekey.html:24
+msgid "Your Private Certificate:"
+msgstr "Váš soukromý certifikát:"
+
+#: templates/prefs/pgpprivatekey.html:27
+msgid "Your Private Key:"
+msgstr "Váš soukromý klíč:"
+
+#: templates/prefs/smimeprivatekey.html:16
+msgid "Your Public Certificate:"
+msgstr "Váš veřejný certifikát:"
+
+#: templates/prefs/pgpprivatekey.html:16
+msgid "Your Public Key:"
+msgstr "Váš veřejný klíč:"
+
+#: config/prefs.php:29
+msgid "Your Reply-to: address: <em>(optional)</em>"
+msgstr "Vaše Reply-to: adresa: <i>(nepovinné)</i>"
+
+#: templates/prefs/smimeprivatekey.html:3
+msgid "Your S/MIME Public/Private Certificate"
+msgstr "Váš S/MIME veřejný/soukromý certifikát"
+
+#: config/prefs.php:36
+msgid ""
+"Your alias addresses: <em>(optional, enter each address on a new line)</em>"
+msgstr "Vaše aliasy: <em>(nepovinné, vložit jednu adresu na řádek)</em>"
+
+#: lib/Mime/Viewer/Images.php:112
+msgid "Your browser does not support inline display of this image type."
+msgstr "Váš prohlížeč nepodporuje zobrazení tohoto typu obrázku v těle zprávy."
+
+#: lib/Auth.php:438
+msgid ""
+"Your browser is too old to display the dynamic mode. Using traditional mode "
+"instead."
+msgstr ""
+"Váš prohlížeč je příliš zastaralý pro zobrazení dynamického módu. Použíje se "
+"tedy tradiční mód."
+
+#: lib/Prefs/Ui.php:772
+msgid "Your default encryption method for sending messages:"
+msgstr "Váše implicitní metoda šifrování pro odesílání zpráv:"
+
+#: templates/dimp/compose/compose.html:164
+msgid ""
+"Your identity has been switched to the identity associated with the current "
+"recipient address. Click this box to revert to the original identity. The "
+"identity will not be checked again during this compose action."
+msgstr ""
+"Vaše identita byla přepnuta na identitu asociovanou s adresou stávajícího "
+"příjemce. Klikkněte na tento box pro návrat zpět na původní identitu. "
+"Identita nebude znovu ověřována při této akci."
+
+#: compose-mimp.php:289 compose.php:486
+msgid ""
+"Your identity has been switched to the identity associated with the current "
+"recipient address. The identity will not be checked again during this "
+"compose action."
+msgstr ""
+"Vaše identita byla přepnuta na identitu asociovanou s adresou stávajícího "
+"příjemce. Identita nebude znovu ověřována při této akci."
+
+#: attachment.php:106
+#, php-format
+msgid ""
+"Your linked attachment has been downloaded by at least one user.\n"
+"\n"
+"Attachment name: %s\n"
+"Attachment date: %s\n"
+"\n"
+"Click on the following link to permanently delete the attachment:\n"
+"%s"
+msgstr ""
+"Vámi přilinkovaná příloha byla stažena alespoň jedním uživatelem.\n"
+"\n"
+"Jméno přílohy: %s\n"
+"Datum přílohy: %s\n"
+"\n"
+"Klikněte na následující odkaz pro trvalé smazání přílohy:\n"
+"%s"
+
+#: lib/Mime/Viewer/Status.php:114
+msgid "Your message was successfully delivered."
+msgstr "Vaše zpráva byla úspěšně doručena."
+
+#: templates/prefs/signaturehtml.html:2
+msgid ""
+"Your signature to use when composing with the HTML editor (if empty, the "
+"text signature will be used):"
+msgstr ""
+"Váš podpis pro použití při vytváření HTML editorem (pokud je prázdný, bude "
+"použit textový podpis):"
+
+#: config/prefs.php:57
+msgid "Your signature:"
+msgstr "Váš podpis:"
+
+#: lib/Message.php:516
+#, php-format
+msgid "[Attachment stripped: Original attachment type: %s, name: %s]"
+msgstr "[Příloha odstraněna: Orignální typ přílohy: %s, jméno: %s]"
+
+#: lib/Ui/Message.php:402
+msgid "[Hide Addresses]"
+msgstr "[Skrýt adresy]"
+
+#: lib/Compose.php:2073 lib/Compose.php:2407 lib/Ui/Mailbox.php:215
+#: lib/Views/ShowMessage.php:212 lib/Views/ShowMessage.php:214
+#: message-mimp.php:179 message.php:321
+msgid "[No Subject]"
+msgstr "[Žádný předmět]"
+
+#: lib/Ui/Message.php:401
+#, php-format
+msgid "[Show Addresses - %d recipients]"
+msgstr "[Zobrazit adresy - %d příjemců]"
+
+#: lib/Compose.php:2722
+msgid "[Truncated Text]"
+msgstr "[Upravený text]"
+
+#: compose.php:830
+msgid "_Bcc"
+msgstr "Sk_rytá kopie"
+
+#: mailbox.php:592 message.php:564
+msgid "_Blacklist"
+msgstr "_Černá listina"
+
+#: compose.php:827
+msgid "_Cc"
+msgstr "K_opie"
+
+#: mailbox.php:559 message.php:523
+msgid "_Delete"
+msgstr "_Smazat"
+
+#: lib/Application.php:310
+msgid "_Folders"
+msgstr "S_ložky"
+
+#: templates/dimp/index.inc:52
+msgid "_Get Mail"
+msgstr "_Stáhnout poštu"
+
+#: compose.php:808
+msgid "_Identity"
+msgstr "_Identita"
+
+#: lib/Application.php:268
+msgid "_Inbox"
+msgstr "_Doručené zprávy"
+
+#: templates/dimp/index.inc:78
+msgid "_Log Out"
+msgstr "_Odhlásit"
+
+#: message.php:572
+msgid "_Message Source"
+msgstr "Zdrojový kód zprávy"
+
+#: lib/Application.php:302 templates/dimp/index.inc:51
+msgid "_New Message"
+msgstr "_Nová zpráva"
+
+#: templates/dimp/index.inc:67 templates/dimp/index.inc:70
+msgid "_Portal"
+msgstr "_Portál"
+
+#: compose.php:851
+msgid "_Priority"
+msgstr "_Důležitost"
+
+#: mailbox.php:357
+#, php-format
+msgid "_Refresh %s"
+msgstr "_Obnovit %s"
+
+#: message.php:535
+msgid "_Reply"
+msgstr "_Odpovědět"
+
+#: lib/Application.php:318
+msgid "_Search"
+msgstr "_Vyhledat"
+
+#: compose.php:790
+msgid "_Send Message"
+msgstr "Ode_slat zprávu"
+
+#: mailbox.php:653
+msgid "_Thread"
+msgstr "_Vlákno"
+
+#: compose.php:823 compose.php:825
+msgid "_To"
+msgstr "_Komu"
+
+#: mailbox.php:563
+msgid "_Undelete"
+msgstr "_Obnovit smazané"
+
+#: message.php:560
+msgid "_View Thread"
+msgstr "Zobrazit _vlákno"
+
+#: mailbox.php:596 message.php:568
+msgid "_Whitelist"
+msgstr "_Bílá listina"
+
+#: lib/Notification/Handler/Decorator/NewmailNotify.php:77
+#: lib/Search/Filter.php:35 lib/Search/Query.php:257 search.php:487
+msgid "and"
+msgstr "a"
+
+#: lib/Notification/Handler/Decorator/NewmailNotify.php:79
+#, php-format
+msgid "and %d more mailbox"
+msgid_plural "and %d more mailboxes"
+msgstr[0] "a %d schránka navíc"
+msgstr[1] "a %d schránky navíc"
+msgstr[2] "a %d schránek navíc"
+
+#: lib/Compose.php:2138
+msgid "attachment"
+msgstr "příloha"
+
+#: view.php:95
+msgid "attachments.zip"
+msgstr "prilohy.zip"
+
+#: templates/dimp/javascript_defs.php:156
+msgid "base level of the folder tree"
+msgstr "základní stupeň stromu složek"
+
+#: templates/imp/compose/compose.html:273
+msgid "bytes"
+msgstr "bytů"
+
+#: lib/Search/Element/Within.php:86
+msgid "days"
+msgstr "dny"
+
+#: lib/Search/Element/Flag.php:58
+#, php-format
+msgid "flagged \"%s\""
+msgstr "označené \"%s\""
+
+#: templates/dimp/index.inc:173 templates/imp/contacts/contacts.html:16
+msgid "from"
+msgstr "od"
+
+#: lib/Search/Query.php:272
+msgid "in"
+msgstr "v"
+
+#: templates/imp/folders/import.html:14
+msgid "into folder"
+msgstr "Do složky"
+
+#: lib/Crypt/Pgp.php:715 lib/Crypt/Smime.php:550
+msgid "key"
+msgstr "klíč"
+
+#: lib/Application.php:635
+msgid "loading"
+msgstr "Nahrává se ..."
+
+#: lib/Ui/Folder.php:180
+msgid "mailbox file"
+msgstr "soubor složky"
+
+#: templates/imp/folders/folders_confirm.html:18
+msgid "messages"
+msgstr "zprávy"
+
+#: lib/Search/Element/Contacts.php:52
+msgid "messages from a personal contact"
+msgstr "zprávy od osobního kontaktu"
+
+#: lib/Search/Element/Contacts.php:51
+msgid "messages not from a personal contact"
+msgstr "zprávy ne od osobního kontaktu"
+
+#: lib/Search/Element/Attachment.php:63
+msgid "messages with attachment(s)"
+msgstr "zprávy s přílohami"
+
+#: lib/Search/Element/Attachment.php:62
+msgid "messages without attachment(s)"
+msgstr "zprávy bez příloh"
+
+#: lib/Search/Element/Within.php:82
+msgid "months"
+msgstr "měsíce"
+
+#: lib/Compose.php:746
+msgid "name"
+msgstr "jméno"
+
+#: lib/Search/Element/Autogenerated.php:51 lib/Search/Element/Bulk.php:45
+#: lib/Search/Element/Header.php:49 lib/Search/Element/Mailinglist.php:44
+#: lib/Search/Element/Personal.php:61 lib/Search/Element/Recipient.php:60
+#: lib/Search/Element/Text.php:54
+msgid "not"
+msgstr "ne"
+
+#: view.php:105
+#, php-format
+msgid "part %s"
+msgstr "část %s"
+
+#: templates/imp/compose/compose.html:157
+msgid "recipients"
+msgstr "příjemci"
+
+#: templates/dimp/compose/compose.html:150
+#: templates/imp/compose/compose.html:157
+msgid "replying to ALL"
+msgstr "Odpovídání všem"
+
+#: templates/dimp/javascript_defs.php:99
+msgid "select..."
+msgstr "vybrat..."
+
+#: templates/dimp/javascript_defs.php:184
+msgid "selected"
+msgstr "vybráno"
+
+#: templates/dimp/index.inc:522
+msgid "will display available actions."
+msgstr "Zobrazí dostupné akce."
+
+#: lib/Search/Element/Within.php:78
+msgid "years"
+msgstr "roky"
+
+#: lib/Filter.php:63
+msgid "your blacklist"
+msgstr "Vaše černá listina"
+
+#: lib/Filter.php:89
+msgid "your whitelist"
+msgstr "Vaše bílá listina"
