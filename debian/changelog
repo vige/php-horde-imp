@@ -1,8 +1,8 @@
-php-horde-imp (6.1.1-1) UNRELEASED; urgency=low
+php-horde-imp (6.1.1-1) unstable; urgency=low
 
   * New upstream version 6.1.1
 
- -- Mathieu Parent <sathieu@debian.org>  Wed, 12 Jun 2013 21:08:04 +0200
+ -- Mathieu Parent <sathieu@debian.org>  Wed, 12 Jun 2013 21:16:07 +0200
 
 php-horde-imp (6.1.0-1) unstable; urgency=low
 
