@@ -22,10 +22,10 @@
   <email>chuck@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2013-07-16</date>
- <time>22:42:56</time>
+ <date>2013-08-27</date>
+ <time>15:44:07</time>
  <version>
-  <release>6.1.3</release>
+  <release>6.1.4</release>
   <api>6.1.0</api>
  </version>
  <stability>
@@ -34,15 +34,18 @@
  </stability>
  <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
  <notes>
-* [mms] Workaround Chrome bug preventing drag/drop of attachments in dynamic compose (Bug #12418).
-* [mms] Better handle transient mail server connection issues in basic and minimal views.
-* [mms] Fix regression of redirect message not working in dynamic view (Bug #12417).
-* [jan] Fix link to setup browser for mailto: protocol.
-* [mms] Fix uploading attachments on Firefox 22+ in dynamic view.
-* [mms] Fix image upload dialog in the HTML compose editor.
-* [mms] Fix purging search previews from browser cache when switching mailboxes (Bug #12384).
-* [mms] Fix parsing signed &amp; encrypted S/MIME messages sent from Outlook 2007/2010 (Bug #12374).
-* [mms] Fix updating mailbox list when changing sort direction in search mailboxes (Bug #12369).
+* [mms] Fix auto-complete of addresses on the dynamic redirect page.
+* [mms] Fix updating flags in dynamic search view (Bug #12594).
+* [mms] Use Horde_Smtp to send messages via SMTP.
+* [mms] Fix applying the &apos;allow_folders&apos; permission.
+* [mms] Fix canceling/discarding compose message in basic view (Bug #12555).
+* [mms] Fix updating message index when deleting a message in basic message view (Bug #12539).
+* [mms] &apos;trailer&apos; hook now has the user&apos;s identity and the list of recipients passed as parameters.
+* [mms] Add ability to access all reply methods in smartmobile view.
+* [mms] Smarter sizing of popup windows in dynamic view.
+* [mms] Correctly save multipart/related data when saving compose message as a draft.
+* [mms] When checking for newmail in a mailbox, use the total number of recent messages seen at any time during the page access (Request #12447).
+* [mms] Workaround IE8&apos;s broken XMLHttpRequest when sending data in dynamic compose view (Bug #12474).
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -57,29 +60,29 @@
     <tasks:replace from="/usr/bin/env php" to="php_bin" type="pear-config" />
    </file>
    <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="config/.htaccess" role="horde" />
-   <file baseinstalldir="/" md5sum="c7d0d00af1be6a21d402e2d5e723a5cd" name="config/backends.php" role="horde" />
+   <file baseinstalldir="/" md5sum="dc2aa27588c02f3cde7922fce75bde58" name="config/backends.php" role="horde" />
    <file baseinstalldir="/" md5sum="f5b2cd65f94282a75e850d5fcb1a3918" name="config/conf.xml" role="horde" />
-   <file baseinstalldir="/" md5sum="dcfae83a9978c70a5173527cbea9a69b" name="config/hooks.php.dist" role="horde" />
+   <file baseinstalldir="/" md5sum="9bffa3e65e06cb261090a7170a2621d0" name="config/hooks.php.dist" role="horde" />
    <file baseinstalldir="/" md5sum="545d6c8e43c966f1e8c7efafb04958d9" name="config/menu.php.dist" role="horde" />
    <file baseinstalldir="/" md5sum="35fb7a630eb5b0e78204c03a65c8be9a" name="config/mime_drivers.php" role="horde" />
-   <file baseinstalldir="/" md5sum="3423cd56ff9f59fd5cd1199aed1ce9c1" name="config/prefs.php" role="horde" />
-   <file baseinstalldir="/" md5sum="ba55c6cdabe3586bf7ee038b642fb3a5" name="docs/CHANGES" role="doc" />
-   <file baseinstalldir="/" md5sum="418f4972a5230daf62e7c583e5014f7d" name="docs/CREDITS" role="doc" />
+   <file baseinstalldir="/" md5sum="04e21742665ed6dfcd973ab20c880b83" name="config/prefs.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b30f3e9b85e1571139c33eac49585d6d" name="docs/CHANGES" role="doc" />
+   <file baseinstalldir="/" md5sum="d89eeb9dd286ffc4d85acff26ccfa617" name="docs/CREDITS" role="doc" />
    <file baseinstalldir="/" md5sum="916ee8f122f8d2c61d488983932f3498" name="docs/INSTALL" role="doc" />
    <file baseinstalldir="/" md5sum="c09d35156899022d27cf78be7aecdd35" name="docs/PERFORMANCE" role="doc" />
-   <file baseinstalldir="/" md5sum="9daa5501ff85ee61cbcfa2bcd99a73e1" name="docs/RELEASE_NOTES" role="doc" />
-   <file baseinstalldir="/" md5sum="bab832b8b29920eef6a7a4af70d26c78" name="docs/RFCS" role="doc" />
-   <file baseinstalldir="/" md5sum="20242ad70017f67e4897736b3a45327f" name="docs/UPGRADING" role="doc" />
+   <file baseinstalldir="/" md5sum="5b2c6dfc1031b0b97e9e746e8105e4d2" name="docs/RELEASE_NOTES" role="doc" />
+   <file baseinstalldir="/" md5sum="839a7bf8ea94a3d2ed5da07daabf474a" name="docs/RFCS" role="doc" />
+   <file baseinstalldir="/" md5sum="fa9ae3cff3fe0630fc25a3146949b539" name="docs/UPGRADING" role="doc" />
    <file baseinstalldir="/" md5sum="4f0b95f82c951aa15d2144a89698621d" name="js/ckeditor/imageupload.js" role="horde" />
    <file baseinstalldir="/" md5sum="21be89e7ae8d168025131bfd02e8d4f8" name="js/ckeditor/pasteattachment.js" role="horde" />
    <file baseinstalldir="/" md5sum="1920c8f1326881a6b78f01cee6b5c18f" name="js/ckeditor/pasteignore.js" role="horde" />
    <file baseinstalldir="/" md5sum="97405fd741c97e72fc8fd9b323b4a167" name="js/jquery.mobile/plugins/listviewtaphold.js" role="horde" />
    <file baseinstalldir="/" md5sum="7fc8f8e1da77e30c6fb92768fd9efc3a" name="js/acl.js" role="horde" />
    <file baseinstalldir="/" md5sum="c72a79db77db676f344457f34155077c" name="js/compose-base.js" role="horde" />
-   <file baseinstalldir="/" md5sum="6ff36b131d16e1ce7f234723f1f6ea77" name="js/compose-dimp.js" role="horde" />
-   <file baseinstalldir="/" md5sum="4147d71f525efb170ebb31467de88e97" name="js/compose.js" role="horde" />
+   <file baseinstalldir="/" md5sum="bac3714f226c6b4be5885e5e37f79252" name="js/compose-dimp.js" role="horde" />
+   <file baseinstalldir="/" md5sum="fda0cf5fcd18b040c4087689644271ac" name="js/compose.js" role="horde" />
    <file baseinstalldir="/" md5sum="a3c170f362340713d7346890f2719de0" name="js/contacts.js" role="horde" />
-   <file baseinstalldir="/" md5sum="c13b20fff71d5cf34958a5d642ad92d8" name="js/dimpbase.js" role="horde" />
+   <file baseinstalldir="/" md5sum="5cb51c481324747e9bab06de762b0911" name="js/dimpbase.js" role="horde" />
    <file baseinstalldir="/" md5sum="79676c40fd2fb4e93b2c0a58112fe497" name="js/dimpcore.js" role="horde" />
    <file baseinstalldir="/" md5sum="4d3e3fe54a9c33628105a9c6dcc03cd9" name="js/draghandler.js" role="horde" />
    <file baseinstalldir="/" md5sum="e38284f7b0932a9720eb790e8bf17c48" name="js/flagprefs.js" role="horde" />
@@ -88,7 +91,7 @@
    <file baseinstalldir="/" md5sum="b2edc4daa0d4f315a7e22ccbf05c10c0" name="js/imp.js" role="horde" />
    <file baseinstalldir="/" md5sum="cc65fa0e471af36a3eb26ef6c3a2e90c" name="js/login.js" role="horde" />
    <file baseinstalldir="/" md5sum="5cbcbb8c71c4843711273d312aa26fa9" name="js/mailbox.js" role="horde" />
-   <file baseinstalldir="/" md5sum="068c21137cdd5a5176f66648afdbbff6" name="js/message-dimp.js" role="horde" />
+   <file baseinstalldir="/" md5sum="4f14dde3024ab63d06165d9ade77d492" name="js/message-dimp.js" role="horde" />
    <file baseinstalldir="/" md5sum="fc2d8ff5895d861326d0feb394b632f6" name="js/message.js" role="horde" />
    <file baseinstalldir="/" md5sum="adc82f6ff0cf2f9b58ee66a91def749d" name="js/murmurhash3.js" role="horde" />
    <file baseinstalldir="/" md5sum="961d31c1a68880150bcc2df63f81b82c" name="js/passphrase.js" role="horde" />
@@ -96,10 +99,10 @@
    <file baseinstalldir="/" md5sum="4c666819ca26d7bf08c1600a7c9eb2fd" name="js/search.js" role="horde" />
    <file baseinstalldir="/" md5sum="0908c5c2d1b45d7a34b94c532d234c86" name="js/searchesprefs.js" role="horde" />
    <file baseinstalldir="/" md5sum="8dc271ff751df7d5f3e0a6932f7af021" name="js/signaturehtml.js" role="horde" />
-   <file baseinstalldir="/" md5sum="a95a6f9c6a21bb00de08c648a5d9ba2e" name="js/smartmobile.js" role="horde" />
+   <file baseinstalldir="/" md5sum="0a63852400a74ab160874bbf09a8a4bb" name="js/smartmobile.js" role="horde" />
    <file baseinstalldir="/" md5sum="429ddb700bd6f5fb58454dbc7651bfac" name="js/viewport.js" role="horde" />
    <file baseinstalldir="/" md5sum="792b21f77bebebec94f3d1d8fc3b493e" name="js/viewport_utils.js" role="horde" />
-   <file baseinstalldir="/" md5sum="96d8ae641140cfff62682bf7394d3642" name="lib/Ajax/Application/Handler/Common.php" role="horde" />
+   <file baseinstalldir="/" md5sum="e9a786b8a54ebede8d61deed3f2967c4" name="lib/Ajax/Application/Handler/Common.php" role="horde" />
    <file baseinstalldir="/" md5sum="e9ff8332574d4009db55a174653215bc" name="lib/Ajax/Application/Handler/ComposeAttach.php" role="horde" />
    <file baseinstalldir="/" md5sum="06b29b5fd31d294374bc3f52655c522f" name="lib/Ajax/Application/Handler/Draft.php" role="horde" />
    <file baseinstalldir="/" md5sum="cf381fccf55ef243c20fb1efc243e58c" name="lib/Ajax/Application/Handler/Dynamic.php" role="horde" />
@@ -118,20 +121,20 @@
    <file baseinstalldir="/" md5sum="01832616f4b6b43d4cc6a3a6f1787150" name="lib/Ajax/Application.php" role="horde" />
    <file baseinstalldir="/" md5sum="ae436732d1703fc98fc6985a6c3ad8c8" name="lib/Ajax/Queue.php" role="horde" />
    <file baseinstalldir="/" md5sum="cbedac5dd856a07713c03f44c9861ed3" name="lib/Basic/Base.php" role="horde" />
-   <file baseinstalldir="/" md5sum="336f4e4b5516d6fc83ac16e8d86c1152" name="lib/Basic/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="573b0effd49b5259c515a92ca8bf9fec" name="lib/Basic/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="03f95c7d3d560246d3a8161dd744575d" name="lib/Basic/Contacts.php" role="horde" />
    <file baseinstalldir="/" md5sum="bb3fd3590e73ab15c9814a68e2d30d27" name="lib/Basic/Error.php" role="horde" />
    <file baseinstalldir="/" md5sum="82b55a38363d11c70e72d3e735e21e78" name="lib/Basic/Folders.php" role="horde" />
-   <file baseinstalldir="/" md5sum="f31953113a4e8ad6e7e2b8efa8e8c45e" name="lib/Basic/Mailbox.php" role="horde" />
-   <file baseinstalldir="/" md5sum="45843fc6262fe6948cf42955b61bf613" name="lib/Basic/Message.php" role="horde" />
+   <file baseinstalldir="/" md5sum="d257949be26615aaa2ebec80e73793fc" name="lib/Basic/Mailbox.php" role="horde" />
+   <file baseinstalldir="/" md5sum="3df98d6dc4831709ab8d154781b28a67" name="lib/Basic/Message.php" role="horde" />
    <file baseinstalldir="/" md5sum="5f96c08592f348cd710cea233edc296a" name="lib/Basic/Pgp.php" role="horde" />
    <file baseinstalldir="/" md5sum="c9f5565cbcf72c62ac93c331de93e5f4" name="lib/Basic/Saveimage.php" role="horde" />
-   <file baseinstalldir="/" md5sum="e06c6643ed56ec8239a458bd4882563f" name="lib/Basic/Search.php" role="horde" />
+   <file baseinstalldir="/" md5sum="ab9292cbdacd6931b7b9d00205100114" name="lib/Basic/Search.php" role="horde" />
    <file baseinstalldir="/" md5sum="b91076295b1b5e54c0096d33dec9b7a7" name="lib/Basic/Searchbasic.php" role="horde" />
    <file baseinstalldir="/" md5sum="2d2de8776aa985c1f9d46f27e22b985b" name="lib/Basic/Smime.php" role="horde" />
-   <file baseinstalldir="/" md5sum="c736e3ea8be82eb356a52f4c6409e75c" name="lib/Basic/Thread.php" role="horde" />
+   <file baseinstalldir="/" md5sum="779747cc5dfbc1f74631aa8515c10271" name="lib/Basic/Thread.php" role="horde" />
    <file baseinstalldir="/" md5sum="2ad820dcf403bbb743a6e1dbecc7756d" name="lib/Block/Newmail.php" role="horde" />
-   <file baseinstalldir="/" md5sum="4ea94f8efd66a76fbf914973760f1a56" name="lib/Block/Summary.php" role="horde" />
+   <file baseinstalldir="/" md5sum="a48f16de0fc7c86ba90d16f5e732e6f8" name="lib/Block/Summary.php" role="horde" />
    <file baseinstalldir="/" md5sum="e5be3334c2d1355a0ef83812c253ce5e" name="lib/Compose/Attachment/Linked/Metadata.php" role="horde" />
    <file baseinstalldir="/" md5sum="535837046072bbaa310a86640523a98a" name="lib/Compose/Attachment/Storage/Vfs.php" role="horde" />
    <file baseinstalldir="/" md5sum="9c8df257643ab3ddeb4f2ad0a57303c0" name="lib/Compose/Attachment/Storage/VfsLinked.php" role="horde" />
@@ -139,20 +142,20 @@
    <file baseinstalldir="/" md5sum="9b9024cd9010b4e42d132a894aedf2f2" name="lib/Compose/Attachment/Storage.php" role="horde" />
    <file baseinstalldir="/" md5sum="f552e483c15c6d7fa18ff3b8b1215ee3" name="lib/Compose/Attachment.php" role="horde" />
    <file baseinstalldir="/" md5sum="8d97be7d8a290f357787143d16e5210a" name="lib/Compose/Exception.php" role="horde" />
-   <file baseinstalldir="/" md5sum="855a42eec731f30a7b00e22fd322024f" name="lib/Compose/Link.php" role="horde" />
+   <file baseinstalldir="/" md5sum="2384fd6b875c538eba7bd578f0369812" name="lib/Compose/Link.php" role="horde" />
    <file baseinstalldir="/" md5sum="f8ee3e21e6892128943d260cc2e8bf65" name="lib/Compose/LinkedAttachment.php" role="horde" />
    <file baseinstalldir="/" md5sum="c33af472b398709b03c25acc2eb137ef" name="lib/Compose/References.php" role="horde" />
    <file baseinstalldir="/" md5sum="ed0625c31f8affb408f4a8dc3e2871d6" name="lib/Compose/Ui.php" role="horde" />
    <file baseinstalldir="/" md5sum="af0001e41a45507a621c9c9e9a201e2a" name="lib/Compose/View.php" role="horde" />
    <file baseinstalldir="/" md5sum="512ef626b5127010f06c9ca2b64d4419" name="lib/Contents/View.php" role="horde" />
-   <file baseinstalldir="/" md5sum="f005cff3286790cb6213392c03a4c875" name="lib/Crypt/Pgp.php" role="horde" />
-   <file baseinstalldir="/" md5sum="5057183bc8ebd6f5bca4f3e658cb4063" name="lib/Crypt/Smime.php" role="horde" />
+   <file baseinstalldir="/" md5sum="22a8e5a9eff297230cb2b5f3c3b51d64" name="lib/Crypt/Pgp.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c8ee347ac56ab3730854a562e7fe4b44" name="lib/Crypt/Smime.php" role="horde" />
    <file baseinstalldir="/" md5sum="c804d11e59b1842beec8a2569f38ad8e" name="lib/Dynamic/Compose/Common.php" role="horde" />
    <file baseinstalldir="/" md5sum="f46fce7b80d8500dfe928a3b1a173b0b" name="lib/Dynamic/Helper/Base.php" role="horde" />
    <file baseinstalldir="/" md5sum="6435733fff221cb71f64880332ece487" name="lib/Dynamic/AddressList.php" role="horde" />
    <file baseinstalldir="/" md5sum="3b018e4d4d65c7b743997ba05dc8d7e3" name="lib/Dynamic/Base.php" role="horde" />
    <file baseinstalldir="/" md5sum="6abc50487467ed42c7fd6fd2c6d6fce5" name="lib/Dynamic/Compose.php" role="horde" />
-   <file baseinstalldir="/" md5sum="39f0dfa8fef8ba07226edabf809afaf5" name="lib/Dynamic/Mailbox.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b8e368b9e51783808fad405f7107f71b" name="lib/Dynamic/Mailbox.php" role="horde" />
    <file baseinstalldir="/" md5sum="23a5455704e567ae8ee1ab1ab56d600b" name="lib/Dynamic/Message.php" role="horde" />
    <file baseinstalldir="/" md5sum="e1a108199190b3a4f6dba221c650d87c" name="lib/Factory/AuthImap.php" role="horde" />
    <file baseinstalldir="/" md5sum="01d51847651856824977e714f5b65b08" name="lib/Factory/Compose.php" role="horde" />
@@ -160,9 +163,9 @@
    <file baseinstalldir="/" md5sum="7299bbca8aba21ce203ef2132eb72475" name="lib/Factory/Contents.php" role="horde" />
    <file baseinstalldir="/" md5sum="c1f6202fc234d64cbe9f5b38d718d77a" name="lib/Factory/Flags.php" role="horde" />
    <file baseinstalldir="/" md5sum="773884a443c2f2b1f3bd6a3cac6e7395" name="lib/Factory/Identity.php" role="horde" />
-   <file baseinstalldir="/" md5sum="e74d1c8d631b9adfc8b83c45d414b5dd" name="lib/Factory/Imap.php" role="horde" />
+   <file baseinstalldir="/" md5sum="20ee5563dcc714dd2fa38834a8663e0a" name="lib/Factory/Imap.php" role="horde" />
    <file baseinstalldir="/" md5sum="ef0c4ce679494d0438b6ac077d7d2c0b" name="lib/Factory/Imaptree.php" role="horde" />
-   <file baseinstalldir="/" md5sum="1756eea0b8e909ea4f9953dce8bc2723" name="lib/Factory/Mail.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4ebb7d72b61e7171f5d2f39e50d6ee04" name="lib/Factory/Mail.php" role="horde" />
    <file baseinstalldir="/" md5sum="1bfcf6da30e206487549c0929ed8ad84" name="lib/Factory/Mailbox.php" role="horde" />
    <file baseinstalldir="/" md5sum="90977f23a7f4240c2168c87104c4c2d9" name="lib/Factory/MailboxList.php" role="horde" />
    <file baseinstalldir="/" md5sum="9cd89e2d086c9d78dcf8f94e17508641" name="lib/Factory/Maillog.php" role="horde" />
@@ -197,10 +200,11 @@
    <file baseinstalldir="/" md5sum="5be75e13a1893bea2441703d5308fe54" name="lib/Flag/Imap.php" role="horde" />
    <file baseinstalldir="/" md5sum="7697f1038636297474550136b8439cf5" name="lib/Flag/User.php" role="horde" />
    <file baseinstalldir="/" md5sum="5bcd11cc879e34e5e085f6bae4bd06fc" name="lib/Imap/Acl.php" role="horde" />
-   <file baseinstalldir="/" md5sum="5d4343aadb4b193aa5bed8fde47193e4" name="lib/Imap/Config.php" role="horde" />
+   <file baseinstalldir="/" md5sum="905de19516a0707af62e1720fc2883e0" name="lib/Imap/Config.php" role="horde" />
    <file baseinstalldir="/" md5sum="5abcd4fc31cd36dc8bb2f1206a97f003" name="lib/Imap/Exception.php" role="horde" />
+   <file baseinstalldir="/" md5sum="dc4875b0fde129eddb8ab3f7de4548a4" name="lib/Imap/Password.php" role="horde" />
    <file baseinstalldir="/" md5sum="afc8fb18cf6a73c469e083a0d468de3d" name="lib/Imap/PermanentFlags.php" role="horde" />
-   <file baseinstalldir="/" md5sum="db02719e9e5d6d7c09288223d1370c31" name="lib/Imap/Tree.php" role="horde" />
+   <file baseinstalldir="/" md5sum="42f1f1c73d35b4c657faa7de5831e66c" name="lib/Imap/Tree.php" role="horde" />
    <file baseinstalldir="/" md5sum="729c8c2bd831da8d76b371747362ae36" name="lib/Indices/Mailbox.php" role="horde" />
    <file baseinstalldir="/" md5sum="877f85db9493f56118f09331141bf1d7" name="lib/LoginTasks/SystemTask/GarbageCollection.php" role="horde" />
    <file baseinstalldir="/" md5sum="b3b121c19d68d650bfdfe262d52f0da1" name="lib/LoginTasks/SystemTask/Upgrade.php" role="horde" />
@@ -247,7 +251,7 @@
    <file baseinstalldir="/" md5sum="6dc8c42263d76804282f4a2d8b4204f1" name="lib/Mime/Headers.php" role="horde" />
    <file baseinstalldir="/" md5sum="0a705c0795924f11a145e269b7e7b755" name="lib/Mime/Status.php" role="horde" />
    <file baseinstalldir="/" md5sum="90ead9a744d37f06bab98af79c54c38a" name="lib/Minimal/Base.php" role="horde" />
-   <file baseinstalldir="/" md5sum="a0dee5d4b08a78859711212efe624bc3" name="lib/Minimal/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4c254413cb5156143fbf5dd1e6128868" name="lib/Minimal/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="2f88288dd6038ca092fb94e2122f6c83" name="lib/Minimal/Error.php" role="horde" />
    <file baseinstalldir="/" md5sum="e21d307c8f392e278ad458ccd7b1319b" name="lib/Minimal/Folders.php" role="horde" />
    <file baseinstalldir="/" md5sum="9daeaad49cb83787062ef6d003e0f0aa" name="lib/Minimal/Mailbox.php" role="horde" />
@@ -256,12 +260,12 @@
    <file baseinstalldir="/" md5sum="d2753ea9fd69dc1ce50b0682e88ce9f0" name="lib/Minimal/Search.php" role="horde" />
    <file baseinstalldir="/" md5sum="64d1a622feb83bf308ec1a3a9e04773b" name="lib/Notification/Event/Status.php" role="horde" />
    <file baseinstalldir="/" md5sum="cc339a29be058e74f0fda24b92c08cac" name="lib/Notification/Handler/Decorator/ImapAlerts.php" role="horde" />
-   <file baseinstalldir="/" md5sum="5d2846865ea406a9ba9c4284c7d73f0f" name="lib/Notification/Handler/Decorator/NewmailNotify.php" role="horde" />
+   <file baseinstalldir="/" md5sum="99f215123a08c0fb279454d3be8afd45" name="lib/Notification/Handler/Decorator/NewmailNotify.php" role="horde" />
    <file baseinstalldir="/" md5sum="c767fa2998c848458e822df49ad27ae0" name="lib/Prefs/Sort/Sortpref/Locked.php" role="horde" />
    <file baseinstalldir="/" md5sum="1091673105c334f458b25a042ce62d99" name="lib/Prefs/Sort/FixedDate.php" role="horde" />
    <file baseinstalldir="/" md5sum="4f6b5d3b0828932421707594bc0f04c3" name="lib/Prefs/Sort/None.php" role="horde" />
    <file baseinstalldir="/" md5sum="00d2ccf394d96c03ee3e9c447edcaa9d" name="lib/Prefs/Sort/Sortpref.php" role="horde" />
-   <file baseinstalldir="/" md5sum="db85a070e2164cb700430bcf37514f81" name="lib/Prefs/Special/Acl.php" role="horde" />
+   <file baseinstalldir="/" md5sum="d2f2fea0ac5186cb3c01608ea80a3dbf" name="lib/Prefs/Special/Acl.php" role="horde" />
    <file baseinstalldir="/" md5sum="664f7144025fe38c882639abe1ff2eaa" name="lib/Prefs/Special/ComposeTemplates.php" role="horde" />
    <file baseinstalldir="/" md5sum="bb050c4e5a0a987528931be62da1eb23" name="lib/Prefs/Special/Drafts.php" role="horde" />
    <file baseinstalldir="/" md5sum="5306a1fc6646120c1fe0cda8b4a981ea" name="lib/Prefs/Special/Encrypt.php" role="horde" />
@@ -281,13 +285,13 @@
    <file baseinstalldir="/" md5sum="eaab4c8a990bb5aff099ffa39ff7b76e" name="lib/Prefs/Special/Spam.php" role="horde" />
    <file baseinstalldir="/" md5sum="a0288a634472b3aaa6e58e4fcf721be4" name="lib/Prefs/Special/SpecialMboxes.php" role="horde" />
    <file baseinstalldir="/" md5sum="4fdb267b4df29afb9b5bcdd7dca56f19" name="lib/Prefs/Special/Trash.php" role="horde" />
-   <file baseinstalldir="/" md5sum="26578197933aafd46989d0b5cbf29a43" name="lib/Prefs/Identity.php" role="horde" />
+   <file baseinstalldir="/" md5sum="ff7c9e773e2efb9b24a09a2b2b269f42" name="lib/Prefs/Identity.php" role="horde" />
    <file baseinstalldir="/" md5sum="46b583c62d9c56bd455c332de9618116" name="lib/Prefs/Sort.php" role="horde" />
    <file baseinstalldir="/" md5sum="ca6b302b10d3190575ed910d206ea4e4" name="lib/Quota/Hook.php" role="horde" />
    <file baseinstalldir="/" md5sum="18579b5382c8e87390b318121651cee8" name="lib/Quota/Imap.php" role="horde" />
    <file baseinstalldir="/" md5sum="51a0d37d409813ec7b38be4dfe67046d" name="lib/Quota/Null.php" role="horde" />
    <file baseinstalldir="/" md5sum="19142d63f856ba012de928225921741e" name="lib/Quota/Ui.php" role="horde" />
-   <file baseinstalldir="/" md5sum="ec6d31a391b4c83a3f027134de3d934d" name="lib/Script/Package/ComposeBase.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4849aef81258f072ec3f29251f2a12cd" name="lib/Script/Package/ComposeBase.php" role="horde" />
    <file baseinstalldir="/" md5sum="bc12bacab7a7d52c25632a1bd6a6eaf2" name="lib/Script/Package/Imp.php" role="horde" />
    <file baseinstalldir="/" md5sum="8dfec6a3f82744cbe8e9ce6c6d783680" name="lib/Search/Element/Attachment.php" role="horde" />
    <file baseinstalldir="/" md5sum="f0d0c4ba2c052543cf5926567a5783b7" name="lib/Search/Element/Autogenerated.php" role="horde" />
@@ -332,22 +336,22 @@
    <file baseinstalldir="/" md5sum="e545d1ad0e1af275a066b1b16efb2b7f" name="lib/View/Subinfo.php" role="horde" />
    <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="lib/.htaccess" role="horde" />
    <file baseinstalldir="/" md5sum="ef191d12e123be2c1177e699a5a94768" name="lib/Api.php" role="horde" />
-   <file baseinstalldir="/" md5sum="7189267a07b83bec8c21c60a535540bf" name="lib/Application.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c19f752f974c486f1a5f946827af85fb" name="lib/Application.php" role="horde" />
    <file baseinstalldir="/" md5sum="89fbfbc915cfa31a075d2e22ff7cf58e" name="lib/Auth.php" role="horde" />
-   <file baseinstalldir="/" md5sum="80e7fbd5c100fdda5c394728e75c6566" name="lib/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="11fb661a6f752d9c4351a8926de45081" name="lib/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="2397c60d93e813b8fbf5f3d32b0ed475" name="lib/Contacts.php" role="horde" />
-   <file baseinstalldir="/" md5sum="3a805d7dd2b5839accebba6058b725b1" name="lib/Contents.php" role="horde" />
+   <file baseinstalldir="/" md5sum="601e92244bc23a714b99935503394470" name="lib/Contents.php" role="horde" />
    <file baseinstalldir="/" md5sum="a8004743c1b4cb2fbe7d0eca1cfa982e" name="lib/Editor.php" role="horde" />
    <file baseinstalldir="/" md5sum="30acc743a37a1a45bcd42a968c980337" name="lib/Exception.php" role="horde" />
    <file baseinstalldir="/" md5sum="9a0683728e01f2588180231d9fa2d634" name="lib/Filter.php" role="horde" />
    <file baseinstalldir="/" md5sum="0b02c965adb1b18dee575800c5f550d4" name="lib/Flags.php" role="horde" />
    <file baseinstalldir="/" md5sum="5fe1135a4fe503fa66e480446d313d51" name="lib/Images.php" role="horde" />
-   <file baseinstalldir="/" md5sum="e2d67f966fcc6ecdc35a528452731f46" name="lib/Imap.php" role="horde" />
+   <file baseinstalldir="/" md5sum="8742e4c9afc4ab0a86c7c13419d556ec" name="lib/Imap.php" role="horde" />
    <file baseinstalldir="/" md5sum="68f635ea0dc1f7186156de2583920304" name="lib/IMP.php" role="horde" />
    <file baseinstalldir="/" md5sum="1e5f223249607f702d85b3685e5665b3" name="lib/Indices.php" role="horde" />
-   <file baseinstalldir="/" md5sum="15bcace62d5b2e8b177ad3abf4894604" name="lib/Mailbox.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f3f1463d1d327380457340f393b01a60" name="lib/Mailbox.php" role="horde" />
    <file baseinstalldir="/" md5sum="f7e076a9ad3442a46c87355d1029cb1b" name="lib/Maillog.php" role="horde" />
-   <file baseinstalldir="/" md5sum="e33f2ebde248981417e52951d7de8aaf" name="lib/Message.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f3e8180ee8d5c14a674c76d541f8dd75" name="lib/Message.php" role="horde" />
    <file baseinstalldir="/" md5sum="b26007ad4c500369050e67c721601329" name="lib/Perms.php" role="horde" />
    <file baseinstalldir="/" md5sum="d760385a5e109188ae913bd48562910b" name="lib/Quota.php" role="horde" />
    <file baseinstalldir="/" md5sum="196ad3e66c43ee022641c341b13fafb4" name="lib/Search.php" role="horde" />
@@ -372,15 +376,15 @@
    <file baseinstalldir="/" md5sum="641a89f1264d0fd3db714de29374fc30" name="locale/da/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="b53a38f78d0b35c2beae8fedd58fa85e" name="locale/da/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="c03c8d75074eed4f309f8025e5f46305" name="locale/da/help.xml" role="horde" />
-   <file baseinstalldir="/" md5sum="5bce3709b7c0f840bc63c479f09a5d78" name="locale/de/LC_MESSAGES/imp.mo" role="horde" />
-   <file baseinstalldir="/" md5sum="a3a4585a1778d6e6359c2c35c2f051a9" name="locale/de/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="26c95f111981b2694d9471bfa425d906" name="locale/de/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="532c52dd938ecbd2152ee4456c3995e8" name="locale/de/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="89fbe14253d993f422bf02e218304e13" name="locale/de/help.xml" role="horde" />
    <file baseinstalldir="/" md5sum="2d9f4aa555bbe13a90124b217664a3b2" name="locale/el/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="98d330cd5de0871527a8b5f9a4f11319" name="locale/el/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="a5da4a83958630e2a95f69ada2e75442" name="locale/el/help.xml" role="horde" />
-   <file baseinstalldir="/" md5sum="15919e752e2277d2fce37669d9529e9d" name="locale/en/help.xml" role="horde" />
-   <file baseinstalldir="/" md5sum="4be95f742778004da7f209163d922f1c" name="locale/es/LC_MESSAGES/imp.mo" role="horde" />
-   <file baseinstalldir="/" md5sum="f0980961a07aa90909c546178182fc9f" name="locale/es/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="f832f6986919f9e01b7b0ac4c0697cb5" name="locale/en/help.xml" role="horde" />
+   <file baseinstalldir="/" md5sum="cd58f2bd3723ba8d42ef1df6a115ef85" name="locale/es/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="bae91dbe019eaff7226e7d4ec56801dd" name="locale/es/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="68c92c5fa86adac26bd40440129f17a8" name="locale/es/help.xml" role="horde" />
    <file baseinstalldir="/" md5sum="7d322296fdbff1eb4bf727ff598031e0" name="locale/et/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="0b709ebb8bd9260e9203ed2e8e256232" name="locale/et/LC_MESSAGES/imp.po" role="horde" />
@@ -404,8 +408,8 @@
    <file baseinstalldir="/" md5sum="f3709945a55a8a2dc3841846d63895c6" name="locale/hr/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="cc7d41fd933d8bb10d19d9abe41d78fc" name="locale/hr/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="618a98af2963dbe8e50e7e109638ac07" name="locale/hr/help.xml" role="horde" />
-   <file baseinstalldir="/" md5sum="e628a2e866d54037f4b35133a7f27367" name="locale/hu/LC_MESSAGES/imp.mo" role="horde" />
-   <file baseinstalldir="/" md5sum="63252db7c1bf6086007eff122b54ff60" name="locale/hu/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="a800fc5901b6b6c946e6ffd627ebb151" name="locale/hu/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="727c2bf9e29040b0179627eebfecc50e" name="locale/hu/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="5f3ee2b6bf6647994e58a338fbfd8d9c" name="locale/hu/help.xml" role="horde" />
    <file baseinstalldir="/" md5sum="65b8ef86bfdce9a5ec8cac182b904650" name="locale/id/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="349f127f3676157002daa5547cc9c260" name="locale/id/LC_MESSAGES/imp.po" role="horde" />
@@ -450,8 +454,8 @@
    <file baseinstalldir="/" md5sum="5ede5ba69082050edfebbe23272fd609" name="locale/ru/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="ae0f9fdf3014f043062085a39e10e3f4" name="locale/ru/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="69dc02cff357e68fe3ee676fc5094809" name="locale/ru/help.xml" role="horde" />
-   <file baseinstalldir="/" md5sum="a13b39c173fb0c5b6a42744c6c44ea04" name="locale/sk/LC_MESSAGES/imp.mo" role="horde" />
-   <file baseinstalldir="/" md5sum="a96ce87f2a3a551e2ebccac954756faa" name="locale/sk/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="b7f95f56570f6e1cfe6fbe9e589b4bf6" name="locale/sk/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="0856a3024a63d0891595646287a0fb07" name="locale/sk/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="ca332a7a983113a6de60e0b81d68f71e" name="locale/sk/help.xml" role="horde" />
    <file baseinstalldir="/" md5sum="660ee95f72a2166d5fb0a9662ffea69e" name="locale/sl/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="4fad581ad0ee391e22f5112915138ce3" name="locale/sl/LC_MESSAGES/imp.po" role="horde" />
@@ -473,7 +477,7 @@
    <file baseinstalldir="/" md5sum="e5a2b7c584c5c3ea2394aaf91ee48e5e" name="locale/zh_TW/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="a17c7d23da18466809a154b01a2c176a" name="locale/zh_TW/help.xml" role="horde" />
    <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="locale/.htaccess" role="horde" />
-   <file baseinstalldir="/" md5sum="5b7a571564c208b805002bd462e74194" name="locale/imp.pot" role="horde" />
+   <file baseinstalldir="/" md5sum="a5923cb240dada1574ab09f9841bcefc" name="locale/imp.pot" role="horde" />
    <file baseinstalldir="/" md5sum="709f5e1a60a9ad537a2fd4729826dfde" name="migration/1_imp_base_tables.php" role="horde" />
    <file baseinstalldir="/" md5sum="27fd015d9729a3a10d2f5a1e79460b6f" name="migration/2_imp_autoincrement_sentmail.php" role="horde" />
    <file baseinstalldir="/" md5sum="398a06b749daf0a53e3dc31104f37412" name="migration/3_imp_maillog_update.php" role="horde" />
@@ -493,7 +497,7 @@
    <file baseinstalldir="/" md5sum="c8f733da9cc3c1749e0c3e4f213e449a" name="templates/basic/mailbox/header.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="b06491ebc0c1c9ee64687fd1be43c925" name="templates/basic/mailbox/mailbox.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="298cd795dbf6cc6583558b7c96b09e18" name="templates/basic/mailbox/message_headers.html.php" role="horde" />
-   <file baseinstalldir="/" md5sum="6033a118f1cb95dcbecd3850caa542bd" name="templates/basic/mailbox/navbar.html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="457ccdb41ff2ea43328cd120927555fb" name="templates/basic/mailbox/navbar.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="cb809ecd35cc7c5c8a146d70b5bc9dae" name="templates/basic/mailbox/searchmbox.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="69efa3270942bec4750921edaf4680da" name="templates/basic/message/message.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="5453901a228eb9bb34c52085b3c5a003" name="templates/basic/message/navbar_actions.html.php" role="horde" />
@@ -553,7 +557,7 @@
    <file baseinstalldir="/" md5sum="4e3a3e4045ba7dbcf0a6c1f0a4f65f47" name="templates/smartmobile/copymove.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="476006049c1b4963cd61798120d99136" name="templates/smartmobile/folders.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="8ab750248253df4b6f71c361f58b7e41" name="templates/smartmobile/mailbox.html.php" role="horde" />
-   <file baseinstalldir="/" md5sum="4dbd51f509c0910f799c09e8ef402a38" name="templates/smartmobile/message.html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="733d2a978867ac83231380f2457db0ac" name="templates/smartmobile/message.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="6302a882e50634e27070fc78b1ef23cc" name="templates/smartmobile/search.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="ea4ffbd31767ebe59ceae9e2fcdd9b8e" name="templates/smime/import_key.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="9b6cac1093c7ce1194f36115ca4da5e1" name="templates/test/mailserver.inc" role="horde" />
@@ -564,7 +568,7 @@
    <file baseinstalldir="/" md5sum="3b80ad7fc8658402f9b6598ab2366469" name="test/Imp/Stub/HtmlViewer.php" role="test" />
    <file baseinstalldir="/" md5sum="27fef1379df2e696776e10a64e127648" name="test/Imp/Stub/ItipRequest.php" role="test" />
    <file baseinstalldir="/" md5sum="83a64305f8c6bc5a5d84c0265e64b484" name="test/Imp/Unit/Mime/Viewer/HtmlTest.php" role="test" />
-   <file baseinstalldir="/" md5sum="170cfe39af9d22c4c73eaeb72d6d68f1" name="test/Imp/Unit/Mime/Viewer/ItipTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="03bb50b48df3e66f4ba1846e8ed497da" name="test/Imp/Unit/Mime/Viewer/ItipTest.php" role="test" />
    <file baseinstalldir="/" md5sum="2bbbe53ae85fc7f2098773c5986b8492" name="test/Imp/Unit/ComposeTest.php" role="test" />
    <file baseinstalldir="/" md5sum="f6b7de6ccd506fa893d7fcce644e4e72" name="test/Imp/Unit/MboxParseTest.php" role="test" />
    <file baseinstalldir="/" md5sum="64ce85f2a9acc9307a24c0b5777ee198" name="test/Imp/Unit/QuotaTest.php" role="test" />
@@ -573,9 +577,9 @@
    <file baseinstalldir="/" md5sum="a47e4f64ab7dc7f76717e4947d54b1c0" name="test/Imp/Autoload.php" role="test" />
    <file baseinstalldir="/" md5sum="0a5018f0726d4673850fece3ad4d72c0" name="test/Imp/bootstrap.php" role="test" />
    <file baseinstalldir="/" md5sum="6a8eac9d6bbf9d695b5904c6ea0bf685" name="test/Imp/phpunit.xml" role="test" />
-   <file baseinstalldir="/" md5sum="18578c10c521d3084d50613f4531841e" name="themes/default/basic/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="d94b5d952e4f1bd57edd4f744681cb47" name="themes/default/basic/screen.css" role="horde" />
    <file baseinstalldir="/" md5sum="4eefa10f891e4f811da6beb0e6566c84" name="themes/default/block/screen.css" role="horde" />
-   <file baseinstalldir="/" md5sum="a026b293216f88e3c87e85ca0988c881" name="themes/default/dynamic/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="c2489f0a731dd9f5c7de7d0938b0a46d" name="themes/default/dynamic/screen.css" role="horde" />
    <file baseinstalldir="/" md5sum="57804edf454c2f9d8ba5b2d51343aeea" name="themes/default/graphics/flags/answered-inv.png" role="horde" />
    <file baseinstalldir="/" md5sum="b813e69e0d1a17acba3394dffe9164c5" name="themes/default/graphics/flags/answered.png" role="horde" />
    <file baseinstalldir="/" md5sum="7ff2916a9c97ece0407dfb4620510d2e" name="themes/default/graphics/flags/attachment-inv.png" role="horde" />
@@ -702,10 +706,10 @@
    <file baseinstalldir="/" md5sum="a51c9947d8e64482f99e8e523bb6e49f" name="themes/default/graphics/warning.png" role="horde" />
    <file baseinstalldir="/" md5sum="18595c4f0ae2b0e3a7f8d082cdee79c2" name="themes/default/graphics/whitelist.png" role="horde" />
    <file baseinstalldir="/" md5sum="0f9a5158ee5ac231c631f36703b87c0d" name="themes/default/minimal/screen.css" role="horde" />
-   <file baseinstalldir="/" md5sum="039515a5441f24136dbabb972884b830" name="themes/default/smartmobile/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="0940bdcac2bd9fab79647ea3b4f2f52e" name="themes/default/smartmobile/screen.css" role="horde" />
    <file baseinstalldir="/" md5sum="e9728c386d795587c4c68695402927ce" name="themes/default/mime.css" role="horde" />
    <file baseinstalldir="/" md5sum="636c569e89386694070c6f590d8faaf9" name="themes/default/rtl.css" role="horde" />
-   <file baseinstalldir="/" md5sum="57255708af1c80e1a93bc10eb8c82a1e" name="themes/default/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="d7fc0e01caa1ebef7c5f5ad8c6d70262" name="themes/default/screen.css" role="horde" />
    <file baseinstalldir="/" md5sum="70d84d761735495734332765f548026c" name="attachment.php" role="horde" />
    <file baseinstalldir="/" md5sum="90ca3a3d60ec4b2ab37489781b020fb9" name="basic.php" role="horde" />
    <file baseinstalldir="/" md5sum="83600a711e6dd70e3193eedf92653fe7" name="COPYING" role="doc" />
@@ -764,7 +768,7 @@
    <package>
     <name>Horde_Core</name>
     <channel>pear.horde.org</channel>
-    <min>2.5.0</min>
+    <min>2.7.0</min>
     <max>3.0.0alpha1</max>
     <exclude>3.0.0alpha1</exclude>
    </package>
@@ -820,7 +824,7 @@
    <package>
     <name>Horde_Imap_Client</name>
     <channel>pear.horde.org</channel>
-    <min>2.9.0</min>
+    <min>2.14.0</min>
     <max>3.0.0alpha1</max>
     <exclude>3.0.0alpha1</exclude>
    </package>
@@ -882,13 +886,6 @@
    </package>
    <package>
     <name>Horde_Perms</name>
-    <channel>pear.horde.org</channel>
-    <min>2.0.0</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
-   </package>
-   <package>
-    <name>Horde_Secret</name>
     <channel>pear.horde.org</channel>
     <min>2.0.0</min>
     <max>3.0.0alpha1</max>
@@ -1204,6 +1201,7 @@
    <install as="imp/lib/Imap/Acl.php" name="lib/Imap/Acl.php" />
    <install as="imp/lib/Imap/Config.php" name="lib/Imap/Config.php" />
    <install as="imp/lib/Imap/Exception.php" name="lib/Imap/Exception.php" />
+   <install as="imp/lib/Imap/Password.php" name="lib/Imap/Password.php" />
    <install as="imp/lib/Imap/PermanentFlags.php" name="lib/Imap/PermanentFlags.php" />
    <install as="imp/lib/Imap/Tree.php" name="lib/Imap/Tree.php" />
    <install as="imp/lib/Indices/Mailbox.php" name="lib/Indices/Mailbox.php" />
@@ -2959,6 +2957,32 @@
 * [mms] Fix purging search previews from browser cache when switching mailboxes (Bug #12384).
 * [mms] Fix parsing signed &amp; encrypted S/MIME messages sent from Outlook 2007/2010 (Bug #12374).
 * [mms] Fix updating mailbox list when changing sort direction in search mailboxes (Bug #12369).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>6.1.4</release>
+    <api>6.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-08-27</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Fix auto-complete of addresses on the dynamic redirect page.
+* [mms] Fix updating flags in dynamic search view (Bug #12594).
+* [mms] Use Horde_Smtp to send messages via SMTP.
+* [mms] Fix applying the &apos;allow_folders&apos; permission.
+* [mms] Fix canceling/discarding compose message in basic view (Bug #12555).
+* [mms] Fix updating message index when deleting a message in basic message view (Bug #12539).
+* [mms] &apos;trailer&apos; hook now has the user&apos;s identity and the list of recipients passed as parameters.
+* [mms] Add ability to access all reply methods in smartmobile view.
+* [mms] Smarter sizing of popup windows in dynamic view.
+* [mms] Correctly save multipart/related data when saving compose message as a draft.
+* [mms] When checking for newmail in a mailbox, use the total number of recent messages seen at any time during the page access (Request #12447).
+* [mms] Workaround IE8&apos;s broken XMLHttpRequest when sending data in dynamic compose view (Bug #12474).
    </notes>
   </release>
  </changelog>
