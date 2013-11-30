@@ -22,10 +22,10 @@
   <email>chuck@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2013-10-29</date>
- <time>17:35:04</time>
+ <date>2013-11-19</date>
+ <time>12:34:21</time>
  <version>
-  <release>6.1.5</release>
+  <release>6.1.6</release>
   <api>6.1.0</api>
  </version>
  <stability>
@@ -34,21 +34,9 @@
  </stability>
  <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
  <notes>
-* [mms] SECURITY: Fix XSS in message and search screens resulting from a user-defined flag label (João Machado &lt;geral@jpaulo.eu&gt;).
-* [mms] Send linked attachment download notification message in language of the sending user (Bug #12783).
-* [mms] Fix populating search fields when editing an advanced search query.
-* [mms] Trigger auto save draft in dynamic view if attachments have changed.
-* [mms] Improved UI for dropping attachments on dynamic compose screen.
-* [mms] Fix manually loading all addresses in a header.
-* [mms] Fix regression where reloading dynamic view would not load the previously selected message.
-* [mms] Fixed regression in enforcing max_recipients and max_timelimit permissions (Bug #12674).
-* [mms] Correctly enforce file size attachment limits on the first attachment (Bug #12663).
-* [mms] Don&apos;t attempt to get quota information from non-IMAP mailboxes (Bug #12608).
-* [jan] Don&apos;t attach address book behavior if contacts API is unavailable.
-* [mms] Fix regression where MIME headers were being displayed for PGP decrypted messages (Bug #12648).
-* [mms] Improved error handling when creating a new flag in dynamic view.
-* [mms] Make addresses in smartmobile full message header display clickable to open a compose window.
-* [mms] Don&apos;t display empty containers in dynamic folder list (Request #11425).
+* [mms] Fix regression where auto-saved drafts were not being deleted when cancelling compose message in dynamic view.
+* [mms] Fix regression in parsing permission values (Bug #12812).
+* [mms] Fix regression in showing non-available actions in dynamic mailbox view when ACL rules prevent them (Bug #12808).
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -68,12 +56,12 @@
    <file baseinstalldir="/" md5sum="9bffa3e65e06cb261090a7170a2621d0" name="config/hooks.php.dist" role="horde" />
    <file baseinstalldir="/" md5sum="545d6c8e43c966f1e8c7efafb04958d9" name="config/menu.php.dist" role="horde" />
    <file baseinstalldir="/" md5sum="35fb7a630eb5b0e78204c03a65c8be9a" name="config/mime_drivers.php" role="horde" />
-   <file baseinstalldir="/" md5sum="04e21742665ed6dfcd973ab20c880b83" name="config/prefs.php" role="horde" />
-   <file baseinstalldir="/" md5sum="9f7bc87a8f8a55f9c1ecded305cdbb02" name="docs/CHANGES" role="doc" />
+   <file baseinstalldir="/" md5sum="e3511b7324739b46555cb1b0e1575bba" name="config/prefs.php" role="horde" />
+   <file baseinstalldir="/" md5sum="35469c50d53a5bc08619f6eb2e8bd91d" name="docs/CHANGES" role="doc" />
    <file baseinstalldir="/" md5sum="d89eeb9dd286ffc4d85acff26ccfa617" name="docs/CREDITS" role="doc" />
-   <file baseinstalldir="/" md5sum="916ee8f122f8d2c61d488983932f3498" name="docs/INSTALL" role="doc" />
+   <file baseinstalldir="/" md5sum="166a4d8b0e69a3582f008fbedfcfd574" name="docs/INSTALL" role="doc" />
    <file baseinstalldir="/" md5sum="c09d35156899022d27cf78be7aecdd35" name="docs/PERFORMANCE" role="doc" />
-   <file baseinstalldir="/" md5sum="e44086f5d42b60ddd80e6f81680c4f5f" name="docs/RELEASE_NOTES" role="doc" />
+   <file baseinstalldir="/" md5sum="c7587fe5705f94eccfc0891e6324eeaa" name="docs/RELEASE_NOTES" role="doc" />
    <file baseinstalldir="/" md5sum="839a7bf8ea94a3d2ed5da07daabf474a" name="docs/RFCS" role="doc" />
    <file baseinstalldir="/" md5sum="fa9ae3cff3fe0630fc25a3146949b539" name="docs/UPGRADING" role="doc" />
    <file baseinstalldir="/" md5sum="4f0b95f82c951aa15d2144a89698621d" name="js/ckeditor/imageupload.js" role="horde" />
@@ -82,10 +70,10 @@
    <file baseinstalldir="/" md5sum="97405fd741c97e72fc8fd9b323b4a167" name="js/jquery.mobile/plugins/listviewtaphold.js" role="horde" />
    <file baseinstalldir="/" md5sum="7fc8f8e1da77e30c6fb92768fd9efc3a" name="js/acl.js" role="horde" />
    <file baseinstalldir="/" md5sum="c72a79db77db676f344457f34155077c" name="js/compose-base.js" role="horde" />
-   <file baseinstalldir="/" md5sum="3492f24a8b1b2af3f4bf5b7b5a38d78d" name="js/compose-dimp.js" role="horde" />
+   <file baseinstalldir="/" md5sum="ea963bb123a11e42b09bac2a909f94a5" name="js/compose-dimp.js" role="horde" />
    <file baseinstalldir="/" md5sum="fda0cf5fcd18b040c4087689644271ac" name="js/compose.js" role="horde" />
    <file baseinstalldir="/" md5sum="a3c170f362340713d7346890f2719de0" name="js/contacts.js" role="horde" />
-   <file baseinstalldir="/" md5sum="53ed7a622172b72a2c3dff898a9fe1bf" name="js/dimpbase.js" role="horde" />
+   <file baseinstalldir="/" md5sum="ae31fd8bc368dd58001cb90ed0b1ea74" name="js/dimpbase.js" role="horde" />
    <file baseinstalldir="/" md5sum="63b57b5e81268f606ae395076b7d7c2a" name="js/dimpcore.js" role="horde" />
    <file baseinstalldir="/" md5sum="d6952e7cbe3f763d05891b1a01097a37" name="js/draghandler.js" role="horde" />
    <file baseinstalldir="/" md5sum="e38284f7b0932a9720eb790e8bf17c48" name="js/flagprefs.js" role="horde" />
@@ -107,15 +95,15 @@
    <file baseinstalldir="/" md5sum="792b21f77bebebec94f3d1d8fc3b493e" name="js/viewport_utils.js" role="horde" />
    <file baseinstalldir="/" md5sum="4557d4e5c26864a7d1b0a01d99270182" name="lib/Ajax/Application/Handler/Common.php" role="horde" />
    <file baseinstalldir="/" md5sum="7073f77e0499dff6a26775e9d57e8a8d" name="lib/Ajax/Application/Handler/ComposeAttach.php" role="horde" />
-   <file baseinstalldir="/" md5sum="06b29b5fd31d294374bc3f52655c522f" name="lib/Ajax/Application/Handler/Draft.php" role="horde" />
-   <file baseinstalldir="/" md5sum="bcbdd2276286f248626d659997256838" name="lib/Ajax/Application/Handler/Dynamic.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0eedde7138a6cdb4bf1d444801b27fc9" name="lib/Ajax/Application/Handler/Draft.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f46eecb6fcceffb12254c33fc9359745" name="lib/Ajax/Application/Handler/Dynamic.php" role="horde" />
    <file baseinstalldir="/" md5sum="552f4fb3702010d3f1614c8f315bd476" name="lib/Ajax/Application/Handler/ImageUnblock.php" role="horde" />
    <file baseinstalldir="/" md5sum="6f1bc6fb3573c7ab274b77e0ddc3b97f" name="lib/Ajax/Application/Handler/Mboxtoggle.php" role="horde" />
    <file baseinstalldir="/" md5sum="5c67b681bf02ae479897dd01b366f4ee" name="lib/Ajax/Application/Handler/Passphrase.php" role="horde" />
    <file baseinstalldir="/" md5sum="6ec8dc29319dc85602ded7e6f2d70fb9" name="lib/Ajax/Application/Handler/Search.php" role="horde" />
    <file baseinstalldir="/" md5sum="1f5719b61a2b391d3018a3486df56a31" name="lib/Ajax/Application/Handler/Smartmobile.php" role="horde" />
    <file baseinstalldir="/" md5sum="a27c1978482fa2b95ad7bc468300f312" name="lib/Ajax/Application/Compose.php" role="horde" />
-   <file baseinstalldir="/" md5sum="2b129e35e87060330fac0fa0414eb1ac" name="lib/Ajax/Application/ListMessages.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f8b058abcfa76741a71d694f8f6c4d9f" name="lib/Ajax/Application/ListMessages.php" role="horde" />
    <file baseinstalldir="/" md5sum="95c92a07660ead917086f6d71c2f3e82" name="lib/Ajax/Application/ShowMessage.php" role="horde" />
    <file baseinstalldir="/" md5sum="fec028bb996c7d1aa46d5518b2587576" name="lib/Ajax/Application/Viewport.php" role="horde" />
    <file baseinstalldir="/" md5sum="c94b28039d97e03c2e359903af9fadd4" name="lib/Ajax/Imple/ContactAutoCompleter.php" role="horde" />
@@ -151,7 +139,7 @@
    <file baseinstalldir="/" md5sum="c33af472b398709b03c25acc2eb137ef" name="lib/Compose/References.php" role="horde" />
    <file baseinstalldir="/" md5sum="403174d9cdb6798d3437cb08ee8eb1fd" name="lib/Compose/Ui.php" role="horde" />
    <file baseinstalldir="/" md5sum="af0001e41a45507a621c9c9e9a201e2a" name="lib/Compose/View.php" role="horde" />
-   <file baseinstalldir="/" md5sum="390a6b74443ceec0c2d8c525998de6ee" name="lib/Contents/View.php" role="horde" />
+   <file baseinstalldir="/" md5sum="feb9c85f8bda0c42beb2dd236ad29927" name="lib/Contents/View.php" role="horde" />
    <file baseinstalldir="/" md5sum="22a8e5a9eff297230cb2b5f3c3b51d64" name="lib/Crypt/Pgp.php" role="horde" />
    <file baseinstalldir="/" md5sum="c8ee347ac56ab3730854a562e7fe4b44" name="lib/Crypt/Smime.php" role="horde" />
    <file baseinstalldir="/" md5sum="124f679455896b59d69943190db4cb53" name="lib/Dynamic/Compose/Common.php" role="horde" />
@@ -269,7 +257,7 @@
    <file baseinstalldir="/" md5sum="1091673105c334f458b25a042ce62d99" name="lib/Prefs/Sort/FixedDate.php" role="horde" />
    <file baseinstalldir="/" md5sum="4f6b5d3b0828932421707594bc0f04c3" name="lib/Prefs/Sort/None.php" role="horde" />
    <file baseinstalldir="/" md5sum="00d2ccf394d96c03ee3e9c447edcaa9d" name="lib/Prefs/Sort/Sortpref.php" role="horde" />
-   <file baseinstalldir="/" md5sum="7e348ed789edbbdcfa69484652c18dd4" name="lib/Prefs/Special/Acl.php" role="horde" />
+   <file baseinstalldir="/" md5sum="d86045ab2a507a02c0869d2baef5b45b" name="lib/Prefs/Special/Acl.php" role="horde" />
    <file baseinstalldir="/" md5sum="664f7144025fe38c882639abe1ff2eaa" name="lib/Prefs/Special/ComposeTemplates.php" role="horde" />
    <file baseinstalldir="/" md5sum="bb050c4e5a0a987528931be62da1eb23" name="lib/Prefs/Special/Drafts.php" role="horde" />
    <file baseinstalldir="/" md5sum="5306a1fc6646120c1fe0cda8b4a981ea" name="lib/Prefs/Special/Encrypt.php" role="horde" />
@@ -340,9 +328,9 @@
    <file baseinstalldir="/" md5sum="e545d1ad0e1af275a066b1b16efb2b7f" name="lib/View/Subinfo.php" role="horde" />
    <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="lib/.htaccess" role="horde" />
    <file baseinstalldir="/" md5sum="ef191d12e123be2c1177e699a5a94768" name="lib/Api.php" role="horde" />
-   <file baseinstalldir="/" md5sum="68c713e47043fa44eb1f87685a481cf5" name="lib/Application.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1e3e6fa940fbb1ac699728bf960c4b74" name="lib/Application.php" role="horde" />
    <file baseinstalldir="/" md5sum="16d5ea58fa8f2185e06cdbdb163429c5" name="lib/Auth.php" role="horde" />
-   <file baseinstalldir="/" md5sum="17494e65e39b479b50821263e41c0f94" name="lib/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="3e859249601290b3c4030aacecac9841" name="lib/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="2397c60d93e813b8fbf5f3d32b0ed475" name="lib/Contacts.php" role="horde" />
    <file baseinstalldir="/" md5sum="5418e9f0c97c38c1e634d53952d156da" name="lib/Contents.php" role="horde" />
    <file baseinstalldir="/" md5sum="a8004743c1b4cb2fbe7d0eca1cfa982e" name="lib/Editor.php" role="horde" />
@@ -350,13 +338,13 @@
    <file baseinstalldir="/" md5sum="ff0b6611d02df06c30e8d8b209c0a864" name="lib/Filter.php" role="horde" />
    <file baseinstalldir="/" md5sum="cfcc345d82bd4276c62496a214b6be8e" name="lib/Flags.php" role="horde" />
    <file baseinstalldir="/" md5sum="8d76d65d157af18ef37b73f599fd9a50" name="lib/Images.php" role="horde" />
-   <file baseinstalldir="/" md5sum="94ebe8ce10b5a17967a929a4deeb5ef9" name="lib/Imap.php" role="horde" />
+   <file baseinstalldir="/" md5sum="688750f9180be2f71310ddad6eeed8fc" name="lib/Imap.php" role="horde" />
    <file baseinstalldir="/" md5sum="68f635ea0dc1f7186156de2583920304" name="lib/IMP.php" role="horde" />
    <file baseinstalldir="/" md5sum="1e5f223249607f702d85b3685e5665b3" name="lib/Indices.php" role="horde" />
    <file baseinstalldir="/" md5sum="edfd7d5d61b9da5d21d8ebc1a2fb6c20" name="lib/Mailbox.php" role="horde" />
    <file baseinstalldir="/" md5sum="f7e076a9ad3442a46c87355d1029cb1b" name="lib/Maillog.php" role="horde" />
    <file baseinstalldir="/" md5sum="f3e8180ee8d5c14a674c76d541f8dd75" name="lib/Message.php" role="horde" />
-   <file baseinstalldir="/" md5sum="7221ba7183f833436031f3eff481513a" name="lib/Perms.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9866d243b1fb897eb233be8cde866b9f" name="lib/Perms.php" role="horde" />
    <file baseinstalldir="/" md5sum="d760385a5e109188ae913bd48562910b" name="lib/Quota.php" role="horde" />
    <file baseinstalldir="/" md5sum="f432d0faacd1a5e5f49e862e9d5be6ab" name="lib/Search.php" role="horde" />
    <file baseinstalldir="/" md5sum="0e35ef1908105f0e249c00ee4a06fcbb" name="lib/Sentmail.php" role="horde" />
@@ -572,7 +560,7 @@
    <file baseinstalldir="/" md5sum="3b80ad7fc8658402f9b6598ab2366469" name="test/Imp/Stub/HtmlViewer.php" role="test" />
    <file baseinstalldir="/" md5sum="27fef1379df2e696776e10a64e127648" name="test/Imp/Stub/ItipRequest.php" role="test" />
    <file baseinstalldir="/" md5sum="83a64305f8c6bc5a5d84c0265e64b484" name="test/Imp/Unit/Mime/Viewer/HtmlTest.php" role="test" />
-   <file baseinstalldir="/" md5sum="03bb50b48df3e66f4ba1846e8ed497da" name="test/Imp/Unit/Mime/Viewer/ItipTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="90e292788d72fb9b2ce1da9753be4d23" name="test/Imp/Unit/Mime/Viewer/ItipTest.php" role="test" />
    <file baseinstalldir="/" md5sum="2bbbe53ae85fc7f2098773c5986b8492" name="test/Imp/Unit/ComposeTest.php" role="test" />
    <file baseinstalldir="/" md5sum="f6b7de6ccd506fa893d7fcce644e4e72" name="test/Imp/Unit/MboxParseTest.php" role="test" />
    <file baseinstalldir="/" md5sum="64ce85f2a9acc9307a24c0b5777ee198" name="test/Imp/Unit/QuotaTest.php" role="test" />
@@ -583,7 +571,7 @@
    <file baseinstalldir="/" md5sum="6a8eac9d6bbf9d695b5904c6ea0bf685" name="test/Imp/phpunit.xml" role="test" />
    <file baseinstalldir="/" md5sum="d94b5d952e4f1bd57edd4f744681cb47" name="themes/default/basic/screen.css" role="horde" />
    <file baseinstalldir="/" md5sum="4eefa10f891e4f811da6beb0e6566c84" name="themes/default/block/screen.css" role="horde" />
-   <file baseinstalldir="/" md5sum="f076d1be03c07f675b19be21fea92ff7" name="themes/default/dynamic/screen.css" role="horde" />
+   <file baseinstalldir="/" md5sum="24810a2bc9383833c44e29b26b859418" name="themes/default/dynamic/screen.css" role="horde" />
    <file baseinstalldir="/" md5sum="57804edf454c2f9d8ba5b2d51343aeea" name="themes/default/graphics/flags/answered-inv.png" role="horde" />
    <file baseinstalldir="/" md5sum="b813e69e0d1a17acba3394dffe9164c5" name="themes/default/graphics/flags/answered.png" role="horde" />
    <file baseinstalldir="/" md5sum="7ff2916a9c97ece0407dfb4620510d2e" name="themes/default/graphics/flags/attachment-inv.png" role="horde" />
@@ -3017,6 +3005,23 @@
 * [mms] Improved error handling when creating a new flag in dynamic view.
 * [mms] Make addresses in smartmobile full message header display clickable to open a compose window.
 * [mms] Don&apos;t display empty containers in dynamic folder list (Request #11425).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>6.1.6</release>
+    <api>6.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-11-19</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mms] Fix regression where auto-saved drafts were not being deleted when cancelling compose message in dynamic view.
+* [mms] Fix regression in parsing permission values (Bug #12812).
+* [mms] Fix regression in showing non-available actions in dynamic mailbox view when ACL rules prevent them (Bug #12808).
    </notes>
   </release>
  </changelog>
