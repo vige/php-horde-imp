@@ -1,2 +1,7 @@
 #!/bin/sh
-php imp-6.2.1/test/Imp/AllTests.php
+
+set -x
+set -e
+
+cd imp*/test/./Imp
+phpunit -v .
