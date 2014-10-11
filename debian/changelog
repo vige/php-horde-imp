@@ -1,3 +1,9 @@
+php-horde-imp (6.2.2-3) UNRELEASED; urgency=medium
+
+  * Fixed DEP-8 tests, by removing "set -x"
+
+ -- Mathieu Parent <sathieu@debian.org>  Sat, 11 Oct 2014 11:35:24 +0200
+
 php-horde-imp (6.2.2-2) unstable; urgency=medium
 
   * Fixed DEP-8 tests
