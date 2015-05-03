@@ -1,8 +1,9 @@
-php-horde-imp (6.2.2-4) UNRELEASED; urgency=medium
+php-horde-imp (6.2.8-1) UNRELEASED; urgency=medium
 
   * Update Standards-Version to 3.9.6, no change
+  * New upstream version 6.2.8
 
- -- Mathieu Parent <sathieu@debian.org>  Sun, 03 May 2015 22:36:02 +0200
+ -- Mathieu Parent <sathieu@debian.org>  Sun, 03 May 2015 22:56:56 +0200
 
 php-horde-imp (6.2.2-3) unstable; urgency=medium
 
