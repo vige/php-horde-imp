@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.9.5" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>imp</name>
  <channel>pear.horde.org</channel>
  <summary>A web based webmail system</summary>
@@ -22,10 +22,10 @@
   <email>chuck@horde.org</email>
   <active>no</active>
  </lead>
- <date>2015-04-28</date>
- <time>21:21:09</time>
+ <date>2015-06-18</date>
+ <time>20:01:37</time>
  <version>
-  <release>6.2.8</release>
+  <release>6.2.9</release>
   <api>6.2.0</api>
  </version>
  <stability>
@@ -34,10 +34,14 @@
  </stability>
  <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
  <notes>
-* [mms] SECURITY: Fix XSS vulnerability when manually switching between plaintext -&gt; HTML compose mode.
-* [jan] Update Bcc address when switching identities (João Machado &lt;geral@jpaulo.eu&gt;, Bug #13922).
-* [jan] Fix protocol name in POP3 example backend configuration.
-* [mms] Don&apos;t honor linked attachment limit configuration options if linked attachments are disabled (Bug #13665).
+* [jan] Don&apos;t focus body field when composing message with HTML editor.
+* [jan] Protect against infinite request loop if expanding all mailboxes.
+* [jan] Don&apos;t show ACL context menu if ACL preferences are locked.
+* [jan] Fix redirecting in smartmobile mode (Bug #14002).
+* [jan] Fix address autocompletion in redirection window of smartmobile mode (Bug #14002).
+* [jan] Fix setting single recipients in redirection window in basic mode (Bug #14002).
+* [jan] Don&apos;t switch to regular compose view after an error in the redirection view in basic mode.
+* [jan] Fix cancelling redirection window in basic mode (Bug #14002).
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -60,11 +64,11 @@
    <file baseinstalldir="/" md5sum="545d6c8e43c966f1e8c7efafb04958d9" name="config/menu.php.dist" role="horde" />
    <file baseinstalldir="/" md5sum="e4e1d2dd51a883dda6def651b6d75930" name="config/mime_drivers.php" role="horde" />
    <file baseinstalldir="/" md5sum="d7c747e2a8a155d8e1a19630ff708586" name="config/prefs.php" role="horde" />
-   <file baseinstalldir="/" md5sum="344b3616a6a125e8ec5b524cd765285d" name="docs/CHANGES" role="doc" />
-   <file baseinstalldir="/" md5sum="fac2c25830cd8b07853afe0226261094" name="docs/CREDITS" role="doc" />
+   <file baseinstalldir="/" md5sum="3e25e55f489328f743862df2a11fa43d" name="docs/CHANGES" role="doc" />
+   <file baseinstalldir="/" md5sum="459695675f60ee6ebfa866b20a283eae" name="docs/CREDITS" role="doc" />
    <file baseinstalldir="/" md5sum="573ab0cdd22352610ee53f5bc124c2e0" name="docs/INSTALL" role="doc" />
    <file baseinstalldir="/" md5sum="bdcd78ed62e8ad76aa21af33453cd92f" name="docs/PERFORMANCE" role="doc" />
-   <file baseinstalldir="/" md5sum="30fcf5f75cc554df8a9de223826b621d" name="docs/RELEASE_NOTES" role="doc" />
+   <file baseinstalldir="/" md5sum="bbaab35bc6eed9153060dc946308018f" name="docs/RELEASE_NOTES" role="doc" />
    <file baseinstalldir="/" md5sum="32f3d14c1d15071400c0e6bf81d6ef7e" name="docs/RFCS" role="doc" />
    <file baseinstalldir="/" md5sum="8d9740c1de46015f45b81575d6a7aaa1" name="docs/UPGRADING" role="doc" />
    <file baseinstalldir="/" md5sum="90643b1b40a7791c0921197d1ca20b8e" name="js/ckeditor/imagepoll.js" role="horde" />
@@ -76,11 +80,11 @@
    <file baseinstalldir="/" md5sum="c2d0ac9372220531cb554c16815008c2" name="js/jquery.mobile/plugins/listviewtaphold.js" role="horde" />
    <file baseinstalldir="/" md5sum="5d468abaf15298c01a79cead54ea011d" name="js/jquery.mobile/plugins/textchange.js" role="horde" />
    <file baseinstalldir="/" md5sum="7e6ec5d19399f48911e6fe148d0cbb94" name="js/acl.js" role="horde" />
-   <file baseinstalldir="/" md5sum="02ca9c6e65b4a622e2e631ad3eeed29f" name="js/compose-base.js" role="horde" />
-   <file baseinstalldir="/" md5sum="c4709ce842a3ca53841f0705c158ea8d" name="js/compose-dimp.js" role="horde" />
-   <file baseinstalldir="/" md5sum="f9fa3a892f7694436e822bcad6ca0060" name="js/compose.js" role="horde" />
+   <file baseinstalldir="/" md5sum="51323af2e8b60e2460f4eaf56940d192" name="js/compose-base.js" role="horde" />
+   <file baseinstalldir="/" md5sum="c975e7e2f0fb86ae4854a5824a661a95" name="js/compose-dimp.js" role="horde" />
+   <file baseinstalldir="/" md5sum="6db9a7e783dae91722951ab221578f12" name="js/compose.js" role="horde" />
    <file baseinstalldir="/" md5sum="905cd21709241a6a1abd8159ca0b4b9c" name="js/contacts.js" role="horde" />
-   <file baseinstalldir="/" md5sum="414d3da3a9383530b428406024d544bc" name="js/dimpbase.js" role="horde" />
+   <file baseinstalldir="/" md5sum="04898cdf23210e79fb1b75562e08796d" name="js/dimpbase.js" role="horde" />
    <file baseinstalldir="/" md5sum="7f5bc0cf39a312a639d9630c4e404152" name="js/dimpcore.js" role="horde" />
    <file baseinstalldir="/" md5sum="e5ebf2e4d77fb380621846474b718a74" name="js/draghandler.js" role="horde" />
    <file baseinstalldir="/" md5sum="1e0ac6438750ed40645d4c06fa5f9ea6" name="js/editor.js" role="horde" />
@@ -99,7 +103,7 @@
    <file baseinstalldir="/" md5sum="77f79e57d3cc7db48f1253baf07aabc1" name="js/search.js" role="horde" />
    <file baseinstalldir="/" md5sum="12d7c541c1894d5a2f3060da4fb0bde1" name="js/searchesprefs.js" role="horde" />
    <file baseinstalldir="/" md5sum="89ab8b60cc06c5d4c9150780fe5f16d8" name="js/signaturehtml.js" role="horde" />
-   <file baseinstalldir="/" md5sum="ef43c74762ee7e6a96add45b62ef25b3" name="js/smartmobile.js" role="horde" />
+   <file baseinstalldir="/" md5sum="7d97761f2840c9c4fea1f731e2410c40" name="js/smartmobile.js" role="horde" />
    <file baseinstalldir="/" md5sum="e11a895b50cdcd7caecf46ef875d8830" name="js/viewport.js" role="horde" />
    <file baseinstalldir="/" md5sum="614bb0314d8490ed1dc304a5acc0acf3" name="js/viewport_utils.js" role="horde" />
    <file baseinstalldir="/" md5sum="98f1f3f62215a6d1ddd0122fb40e1ce0" name="lib/Ajax/Application/Handler/Common.php" role="horde" />
@@ -127,7 +131,7 @@
    <file baseinstalldir="/" md5sum="6ce4d05388567478a19deb652edbeef3" name="lib/Ajax/Application.php" role="horde" />
    <file baseinstalldir="/" md5sum="9c84abae798cd6e9bfc68dccc37a1872" name="lib/Ajax/Queue.php" role="horde" />
    <file baseinstalldir="/" md5sum="ec67e2d9661a6ab0bc0082a307dd8553" name="lib/Basic/Base.php" role="horde" />
-   <file baseinstalldir="/" md5sum="b12dd72807a58693eed84de748f1ed0a" name="lib/Basic/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9264662c20f72d7b004c726e3b0e7da6" name="lib/Basic/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="bd25ce4ab399087099e12024178754cd" name="lib/Basic/Contacts.php" role="horde" />
    <file baseinstalldir="/" md5sum="736d3da6db57737bd4297f7e8f60ad37" name="lib/Basic/Error.php" role="horde" />
    <file baseinstalldir="/" md5sum="0f9fb6307aba272f94de1cb9c045e7ad" name="lib/Basic/Folders.php" role="horde" />
@@ -170,7 +174,7 @@
    <file baseinstalldir="/" md5sum="d6c086f632c78bbf986576fef5c4c020" name="lib/Dynamic/AddressList.php" role="horde" />
    <file baseinstalldir="/" md5sum="40049f9b2bd3ddacf04c67ba20146c5a" name="lib/Dynamic/Base.php" role="horde" />
    <file baseinstalldir="/" md5sum="407a9f330df4a9b65dce5cb679581249" name="lib/Dynamic/Compose.php" role="horde" />
-   <file baseinstalldir="/" md5sum="04440c210d52ed34dee80dc7e4c93bf3" name="lib/Dynamic/Mailbox.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f875f84ce4083b2f0f94e4a22f30bbca" name="lib/Dynamic/Mailbox.php" role="horde" />
    <file baseinstalldir="/" md5sum="c92064093139cd7c526ff6747a438df7" name="lib/Dynamic/Message.php" role="horde" />
    <file baseinstalldir="/" md5sum="bea7baa7c233ad77b2fbaa385b5a184d" name="lib/Factory/AuthImap.php" role="horde" />
    <file baseinstalldir="/" md5sum="a2864fe76a305b08146143ed54e5f6fd" name="lib/Factory/Compose.php" role="horde" />
@@ -250,7 +254,7 @@
    <file baseinstalldir="/" md5sum="bfc4bfde1604e9f1df447589da1111b9" name="lib/Imap/Remote.php" role="horde" />
    <file baseinstalldir="/" md5sum="462020eaa088d11e1013e3e1ada482ff" name="lib/Indices/Mailbox.php" role="horde" />
    <file baseinstalldir="/" md5sum="3909ffb5901c52a215c0830de683c363" name="lib/LoginTasks/SystemTask/GarbageCollection.php" role="horde" />
-   <file baseinstalldir="/" md5sum="2ee1ac1ef4b5482adb0ef242475c4668" name="lib/LoginTasks/SystemTask/Upgrade.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0d8ad2e3a2e584302ba8359a4b68b448" name="lib/LoginTasks/SystemTask/Upgrade.php" role="horde" />
    <file baseinstalldir="/" md5sum="b30a985f6575d282ab8d5df91c59c94c" name="lib/LoginTasks/SystemTask/UpgradeAuth.php" role="horde" />
    <file baseinstalldir="/" md5sum="f6c06899d403f70707901efb73f4426c" name="lib/LoginTasks/Task/Autocreate.php" role="horde" />
    <file baseinstalldir="/" md5sum="81758d37b0d84b572fe611910fb33de1" name="lib/LoginTasks/Task/DeleteAttachmentsMonthly.php" role="horde" />
@@ -399,9 +403,9 @@
    <file baseinstalldir="/" md5sum="cd4babcb8bd3f83a02b6faff8a61f513" name="lib/View/Subinfo.php" role="horde" />
    <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="lib/.htaccess" role="horde" />
    <file baseinstalldir="/" md5sum="01300581f8df867c71d44cb8c1e0c0c9" name="lib/Api.php" role="horde" />
-   <file baseinstalldir="/" md5sum="5a07a0bcbfdb9c0fd0eccc5c509bab2b" name="lib/Application.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c9c6c4ca69aa56d7b9bc404c02b71649" name="lib/Application.php" role="horde" />
    <file baseinstalldir="/" md5sum="50e953713cc7ec747a405b11144b86d4" name="lib/Auth.php" role="horde" />
-   <file baseinstalldir="/" md5sum="36b144bd06de07e55619187aaa34c60a" name="lib/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="7abad04e9b8da4b42842b09031bee2f5" name="lib/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="f289efa009ebbed1a0f08792e8fe7887" name="lib/Contacts.php" role="horde" />
    <file baseinstalldir="/" md5sum="54fc930a617d44515bf4126f79626ba1" name="lib/Contents.php" role="horde" />
    <file baseinstalldir="/" md5sum="88a287eb71cf9de6bc6885ba94f4d8c0" name="lib/Exception.php" role="horde" />
@@ -434,7 +438,7 @@
    <file baseinstalldir="/" md5sum="8de33cd4c82abc03e9d568f5d235af20" name="locale/ca/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="ae8f7c0e881128d5aaa0d5869b533c20" name="locale/ca/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="942cf8a9ae58cf2ff6e0b624d2966af4" name="locale/ca/help.xml" role="horde" />
-   <file baseinstalldir="/" md5sum="80bd244c88453a7043ec8efe40180eb1" name="locale/cs/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="81b185a08ec65949a8b70e3185e6a625" name="locale/cs/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="cbe47e05b3e5bcb89af7b4de7ba7ae74" name="locale/cs/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="74a8b574329a1fab865b213aa43d3b36" name="locale/cs/help.xml" role="horde" />
    <file baseinstalldir="/" md5sum="f2126b1892c5c8ad80a99cb4f75d8a70" name="locale/da/LC_MESSAGES/imp.mo" role="horde" />
@@ -479,8 +483,8 @@
    <file baseinstalldir="/" md5sum="18ec46843dbcb1f9687261c89f6b9a8b" name="locale/id/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="8051f7b57ab504d346e0bfb1ea1e3c17" name="locale/is/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="2d607faf305d4921cb89d1dc806c0298" name="locale/is/LC_MESSAGES/imp.po" role="horde" />
-   <file baseinstalldir="/" md5sum="81767379c933baf6e6315b11c3117f18" name="locale/it/LC_MESSAGES/imp.mo" role="horde" />
-   <file baseinstalldir="/" md5sum="c9339541f3fee78eda931acd49cdc2f2" name="locale/it/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="02dc028813f7365ddb88d7e6f22e30bf" name="locale/it/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="b6f679e4290e86d62ae7d1626ac08ff0" name="locale/it/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="ce3ec0c2ff716c6f6e391b4edc540c57" name="locale/it/help.xml" role="horde" />
    <file baseinstalldir="/" md5sum="cd0b75dd0927cb7af0c50c356ad2892f" name="locale/ja/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="a3fadc5559de155ed45de38394404642" name="locale/ja/LC_MESSAGES/imp.po" role="horde" />
@@ -547,7 +551,7 @@
    <file baseinstalldir="/" md5sum="bdae83dd31b95179fb0ddf90a6ac1b3e" name="migration/2_imp_autoincrement_sentmail.php" role="horde" />
    <file baseinstalldir="/" md5sum="30f7991217eaa79149fff481b6eb4818" name="migration/3_imp_maillog_update.php" role="horde" />
    <file baseinstalldir="/" md5sum="d8f1bce78ebddc5bd4af4a3e352e5dcd" name="templates/basic/compose/compose.html.php" role="horde" />
-   <file baseinstalldir="/" md5sum="e3aad2b7fe65ea0fb2d4d044a26f963b" name="templates/basic/compose/redirect.html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="4cf557199bd3e7ee2c23ffd4a84b74ac" name="templates/basic/compose/redirect.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="88584848bd744da932a1d609c0784137" name="templates/basic/compose/success.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="cf30fea73df4e599453cf31a7a78101a" name="templates/basic/flist/flist.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="dde6849cbd682ebe7356901f3e71af17" name="templates/basic/folders/actions.html.php" role="horde" />
@@ -620,7 +624,7 @@
    <file baseinstalldir="/" md5sum="6140e3824534d65da81f77f5b4ab00b6" name="templates/saveimage/saveimage.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="947adda3fc0e19d1a1e5bb9ef8bafac1" name="templates/search/search-all.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="12288e0b4850f8894c86ceb54b387e43" name="templates/search/search.html.php" role="horde" />
-   <file baseinstalldir="/" md5sum="7c4b5fdbd907388f50608a8d96aae467" name="templates/smartmobile/compose.html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f2758a1ee6cf6d095ea9f0a8aea32c11" name="templates/smartmobile/compose.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="9d9bd133f265a4813079aba19c6142d1" name="templates/smartmobile/copymove.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="476006049c1b4963cd61798120d99136" name="templates/smartmobile/folders.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="2e063e3f54913b2f3e8f54ac465e0e2b" name="templates/smartmobile/mailbox.html.php" role="horde" />
@@ -3536,6 +3540,28 @@
 * [jan] Update Bcc address when switching identities (João Machado &lt;geral@jpaulo.eu&gt;, Bug #13922).
 * [jan] Fix protocol name in POP3 example backend configuration.
 * [mms] Don&apos;t honor linked attachment limit configuration options if linked attachments are disabled (Bug #13665).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>6.2.9</release>
+    <api>6.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2015-06-18</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [jan] Don&apos;t focus body field when composing message with HTML editor.
+* [jan] Protect against infinite request loop if expanding all mailboxes.
+* [jan] Don&apos;t show ACL context menu if ACL preferences are locked.
+* [jan] Fix redirecting in smartmobile mode (Bug #14002).
+* [jan] Fix address autocompletion in redirection window of smartmobile mode (Bug #14002).
+* [jan] Fix setting single recipients in redirection window in basic mode (Bug #14002).
+* [jan] Don&apos;t switch to regular compose view after an error in the redirection view in basic mode.
+* [jan] Fix cancelling redirection window in basic mode (Bug #14002).
    </notes>
   </release>
  </changelog>
