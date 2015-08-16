@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.9.5" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>imp</name>
  <channel>pear.horde.org</channel>
  <summary>A web based webmail system</summary>
@@ -22,10 +22,10 @@
   <email>chuck@horde.org</email>
   <active>no</active>
  </lead>
- <date>2015-06-18</date>
- <time>20:01:37</time>
+ <date>2015-07-31</date>
+ <time>21:50:21</time>
  <version>
-  <release>6.2.9</release>
+  <release>6.2.10</release>
   <api>6.2.0</api>
  </version>
  <stability>
@@ -34,14 +34,7 @@
  </stability>
  <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
  <notes>
-* [jan] Don&apos;t focus body field when composing message with HTML editor.
-* [jan] Protect against infinite request loop if expanding all mailboxes.
-* [jan] Don&apos;t show ACL context menu if ACL preferences are locked.
-* [jan] Fix redirecting in smartmobile mode (Bug #14002).
-* [jan] Fix address autocompletion in redirection window of smartmobile mode (Bug #14002).
-* [jan] Fix setting single recipients in redirection window in basic mode (Bug #14002).
-* [jan] Don&apos;t switch to regular compose view after an error in the redirection view in basic mode.
-* [jan] Fix cancelling redirection window in basic mode (Bug #14002).
+*
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -64,11 +57,11 @@
    <file baseinstalldir="/" md5sum="545d6c8e43c966f1e8c7efafb04958d9" name="config/menu.php.dist" role="horde" />
    <file baseinstalldir="/" md5sum="e4e1d2dd51a883dda6def651b6d75930" name="config/mime_drivers.php" role="horde" />
    <file baseinstalldir="/" md5sum="d7c747e2a8a155d8e1a19630ff708586" name="config/prefs.php" role="horde" />
-   <file baseinstalldir="/" md5sum="3e25e55f489328f743862df2a11fa43d" name="docs/CHANGES" role="doc" />
+   <file baseinstalldir="/" md5sum="44143136e3e04327b5258cfc7e8e190d" name="docs/CHANGES" role="doc" />
    <file baseinstalldir="/" md5sum="459695675f60ee6ebfa866b20a283eae" name="docs/CREDITS" role="doc" />
    <file baseinstalldir="/" md5sum="573ab0cdd22352610ee53f5bc124c2e0" name="docs/INSTALL" role="doc" />
    <file baseinstalldir="/" md5sum="bdcd78ed62e8ad76aa21af33453cd92f" name="docs/PERFORMANCE" role="doc" />
-   <file baseinstalldir="/" md5sum="bbaab35bc6eed9153060dc946308018f" name="docs/RELEASE_NOTES" role="doc" />
+   <file baseinstalldir="/" md5sum="42d8dfae72b7db3dda3d21c9fec54068" name="docs/RELEASE_NOTES" role="doc" />
    <file baseinstalldir="/" md5sum="32f3d14c1d15071400c0e6bf81d6ef7e" name="docs/RFCS" role="doc" />
    <file baseinstalldir="/" md5sum="8d9740c1de46015f45b81575d6a7aaa1" name="docs/UPGRADING" role="doc" />
    <file baseinstalldir="/" md5sum="90643b1b40a7791c0921197d1ca20b8e" name="js/ckeditor/imagepoll.js" role="horde" />
@@ -403,7 +396,7 @@
    <file baseinstalldir="/" md5sum="cd4babcb8bd3f83a02b6faff8a61f513" name="lib/View/Subinfo.php" role="horde" />
    <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="lib/.htaccess" role="horde" />
    <file baseinstalldir="/" md5sum="01300581f8df867c71d44cb8c1e0c0c9" name="lib/Api.php" role="horde" />
-   <file baseinstalldir="/" md5sum="c9c6c4ca69aa56d7b9bc404c02b71649" name="lib/Application.php" role="horde" />
+   <file baseinstalldir="/" md5sum="2597b4192dd321350ab7a94836760e94" name="lib/Application.php" role="horde" />
    <file baseinstalldir="/" md5sum="50e953713cc7ec747a405b11144b86d4" name="lib/Auth.php" role="horde" />
    <file baseinstalldir="/" md5sum="7abad04e9b8da4b42842b09031bee2f5" name="lib/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="f289efa009ebbed1a0f08792e8fe7887" name="lib/Contacts.php" role="horde" />
@@ -416,7 +409,7 @@
    <file baseinstalldir="/" md5sum="b6551fbf21566ef4d5c26c304bfe6962" name="lib/Imap.php" role="horde" />
    <file baseinstalldir="/" md5sum="de9fe233b1bc93e706c42522afc4b709" name="lib/IMP.php" role="horde" />
    <file baseinstalldir="/" md5sum="4648485f882f7537d20decf81809fe50" name="lib/Indices.php" role="horde" />
-   <file baseinstalldir="/" md5sum="a2576a785ebc4403246c2db242d27b47" name="lib/Mailbox.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c936a3d2d03fde0e968a485a307ab95a" name="lib/Mailbox.php" role="horde" />
    <file baseinstalldir="/" md5sum="b54487dd8b9f7f95db4c3ed2529c7c5b" name="lib/Maillog.php" role="horde" />
    <file baseinstalldir="/" md5sum="fe79d1ea783bf0425ff79dd94f65e79d" name="lib/Message.php" role="horde" />
    <file baseinstalldir="/" md5sum="06754d8088659072046e356b4fd15bee" name="lib/Perms.php" role="horde" />
@@ -3562,6 +3555,21 @@
 * [jan] Fix setting single recipients in redirection window in basic mode (Bug #14002).
 * [jan] Don&apos;t switch to regular compose view after an error in the redirection view in basic mode.
 * [jan] Fix cancelling redirection window in basic mode (Bug #14002).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>6.2.10</release>
+    <api>6.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2015-08-01</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+*
    </notes>
   </release>
  </changelog>
