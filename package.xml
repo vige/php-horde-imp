@@ -22,10 +22,10 @@
   <email>chuck@horde.org</email>
   <active>no</active>
  </lead>
- <date>2015-07-31</date>
- <time>21:50:21</time>
+ <date>2015-10-20</date>
+ <time>22:33:21</time>
  <version>
-  <release>6.2.10</release>
+  <release>6.2.11</release>
   <api>6.2.0</api>
  </version>
  <stability>
@@ -34,7 +34,9 @@
  </stability>
  <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
  <notes>
-*
+* [mjr] Request that the contacts API only consider email fields when detecting duplicates during automatic saving of attendees to the address book (Bug #14119).
+* [jan] Don&apos;t show &quot;Create Keys&quot; button if creating PGP keys is disabled (steffen.hau@rz.uni-mannheim.de, Request #14096).
+* [mjr] Fix displaying iTips with certain locale/date_format preference combinations (Bug #14076).
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -57,11 +59,11 @@
    <file baseinstalldir="/" md5sum="545d6c8e43c966f1e8c7efafb04958d9" name="config/menu.php.dist" role="horde" />
    <file baseinstalldir="/" md5sum="e4e1d2dd51a883dda6def651b6d75930" name="config/mime_drivers.php" role="horde" />
    <file baseinstalldir="/" md5sum="d7c747e2a8a155d8e1a19630ff708586" name="config/prefs.php" role="horde" />
-   <file baseinstalldir="/" md5sum="44143136e3e04327b5258cfc7e8e190d" name="docs/CHANGES" role="doc" />
+   <file baseinstalldir="/" md5sum="9fe4c87a0f02e5d6d605093034898a98" name="docs/CHANGES" role="doc" />
    <file baseinstalldir="/" md5sum="459695675f60ee6ebfa866b20a283eae" name="docs/CREDITS" role="doc" />
    <file baseinstalldir="/" md5sum="573ab0cdd22352610ee53f5bc124c2e0" name="docs/INSTALL" role="doc" />
    <file baseinstalldir="/" md5sum="bdcd78ed62e8ad76aa21af33453cd92f" name="docs/PERFORMANCE" role="doc" />
-   <file baseinstalldir="/" md5sum="42d8dfae72b7db3dda3d21c9fec54068" name="docs/RELEASE_NOTES" role="doc" />
+   <file baseinstalldir="/" md5sum="8f6f1d76cc7753705010800f672c46fc" name="docs/RELEASE_NOTES" role="doc" />
    <file baseinstalldir="/" md5sum="32f3d14c1d15071400c0e6bf81d6ef7e" name="docs/RFCS" role="doc" />
    <file baseinstalldir="/" md5sum="8d9740c1de46015f45b81575d6a7aaa1" name="docs/UPGRADING" role="doc" />
    <file baseinstalldir="/" md5sum="90643b1b40a7791c0921197d1ca20b8e" name="js/ckeditor/imagepoll.js" role="horde" />
@@ -289,7 +291,7 @@
    <file baseinstalldir="/" md5sum="452f45a37bf5c126c2b3125c5adab9ab" name="lib/Mime/Viewer/Externalbody.php" role="horde" />
    <file baseinstalldir="/" md5sum="58877420fa8bb9c980c19cd1752c47b4" name="lib/Mime/Viewer/Html.php" role="horde" />
    <file baseinstalldir="/" md5sum="abb866797d65c0a26d39a38a46967bb6" name="lib/Mime/Viewer/Images.php" role="horde" />
-   <file baseinstalldir="/" md5sum="4ea612e9d98655cb1583876f4752ca00" name="lib/Mime/Viewer/Itip.php" role="horde" />
+   <file baseinstalldir="/" md5sum="6d01f821c5192ef80e5b3e272bb322a9" name="lib/Mime/Viewer/Itip.php" role="horde" />
    <file baseinstalldir="/" md5sum="f0c5fb126dab191631338068582ca31c" name="lib/Mime/Viewer/Mdn.php" role="horde" />
    <file baseinstalldir="/" md5sum="d6663c9344a6c8f847e1b1e41ca24599" name="lib/Mime/Viewer/Partial.php" role="horde" />
    <file baseinstalldir="/" md5sum="822955f754b1f30b216786e78776a325" name="lib/Mime/Viewer/Pdf.php" role="horde" />
@@ -330,7 +332,7 @@
    <file baseinstalldir="/" md5sum="c0e3933ae5204e96976b1e825090253b" name="lib/Prefs/Special/InitialPage.php" role="horde" />
    <file baseinstalldir="/" md5sum="f5a6f26176d91e78f6c82e31396cd575" name="lib/Prefs/Special/Mailto.php" role="horde" />
    <file baseinstalldir="/" md5sum="5bd315f10007df7eaeef1769d12becf5" name="lib/Prefs/Special/NewmailSound.php" role="horde" />
-   <file baseinstalldir="/" md5sum="b337cee1848df70794e4796372188c84" name="lib/Prefs/Special/PgpPrivateKey.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0e9204ff9f3080861a6f0ba0941feedc" name="lib/Prefs/Special/PgpPrivateKey.php" role="horde" />
    <file baseinstalldir="/" md5sum="1bcd3d75e668e022a4fd6a6d2d993c60" name="lib/Prefs/Special/PgpPublicKey.php" role="horde" />
    <file baseinstalldir="/" md5sum="ef54bb9a599f76b44ec465f54560c31e" name="lib/Prefs/Special/Remote.php" role="horde" />
    <file baseinstalldir="/" md5sum="59b73eb31fa13f47955ade74da904f5e" name="lib/Prefs/Special/Searches.php" role="horde" />
@@ -396,9 +398,9 @@
    <file baseinstalldir="/" md5sum="cd4babcb8bd3f83a02b6faff8a61f513" name="lib/View/Subinfo.php" role="horde" />
    <file baseinstalldir="/" md5sum="a1751e1f10a3b96b05d0401c97e72008" name="lib/.htaccess" role="horde" />
    <file baseinstalldir="/" md5sum="01300581f8df867c71d44cb8c1e0c0c9" name="lib/Api.php" role="horde" />
-   <file baseinstalldir="/" md5sum="2597b4192dd321350ab7a94836760e94" name="lib/Application.php" role="horde" />
+   <file baseinstalldir="/" md5sum="deea8054e590d01d4759c7415906c2ec" name="lib/Application.php" role="horde" />
    <file baseinstalldir="/" md5sum="50e953713cc7ec747a405b11144b86d4" name="lib/Auth.php" role="horde" />
-   <file baseinstalldir="/" md5sum="7abad04e9b8da4b42842b09031bee2f5" name="lib/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b65169e5825ff6829a55015c55696fec" name="lib/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="f289efa009ebbed1a0f08792e8fe7887" name="lib/Contacts.php" role="horde" />
    <file baseinstalldir="/" md5sum="54fc930a617d44515bf4126f79626ba1" name="lib/Contents.php" role="horde" />
    <file baseinstalldir="/" md5sum="88a287eb71cf9de6bc6885ba94f4d8c0" name="lib/Exception.php" role="horde" />
@@ -601,7 +603,7 @@
    <file baseinstalldir="/" md5sum="7e0cc4db43235ce2289b20e7a29a7bc7" name="templates/prefs/initialpage.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="0e5eceb236051a4a4f958a861de60c90" name="templates/prefs/mailto.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="fb949f2183dbbed52af763e7e2dcd8a8" name="templates/prefs/newmailaudio.html.php" role="horde" />
-   <file baseinstalldir="/" md5sum="18dc731c3afaa1a7e8b85e93f60b04fd" name="templates/prefs/pgpprivatekey.html.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f1865ef6457865503e5fa07709d86000" name="templates/prefs/pgpprivatekey.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="578aa680b1d536f4537402d29cbb91d1" name="templates/prefs/pgppublickey.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="994466459f9bba002a074ef9844e618c" name="templates/prefs/remote.html.php" role="horde" />
    <file baseinstalldir="/" md5sum="204adb5e832cad097a6b1079e4dac40e" name="templates/prefs/searches.html.php" role="horde" />
@@ -3569,7 +3571,24 @@
    <date>2015-08-01</date>
    <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
    <notes>
-*
+* [mms] Ensure mailbox name is a valid string (Bug #14049).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>6.2.11</release>
+    <api>6.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2015-10-21</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mjr] Request that the contacts API only consider email fields when detecting duplicates during automatic saving of attendees to the address book (Bug #14119).
+* [jan] Don&apos;t show &quot;Create Keys&quot; button if creating PGP keys is disabled (steffen.hau@rz.uni-mannheim.de, Request #14096).
+* [mjr] Fix displaying iTips with certain locale/date_format preference combinations (Bug #14076).
    </notes>
   </release>
  </changelog>
