@@ -1,9 +1,9 @@
-php-horde-imp (6.2.11-1) UNRELEASED; urgency=medium
+php-horde-imp (6.2.11-1) unstable; urgency=medium
 
   * Upgaded to debhelper compat 9
   * New upstream version 6.2.11
 
- -- Mathieu Parent <sathieu@debian.org>  Fri, 23 Oct 2015 06:23:53 +0200
+ -- Mathieu Parent <sathieu@debian.org>  Sat, 24 Oct 2015 07:23:36 +0200
 
 php-horde-imp (6.2.10-1) unstable; urgency=medium
 
