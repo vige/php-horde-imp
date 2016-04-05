@@ -1,8 +1,8 @@
-php-horde-imp (6.2.14-1) UNRELEASED; urgency=medium
+php-horde-imp (6.2.14-1) unstable; urgency=medium
 
   * New upstream version 6.2.14
 
- -- Mathieu Parent <sathieu@debian.org>  Tue, 05 Apr 2016 22:11:38 +0200
+ -- Mathieu Parent <sathieu@debian.org>  Tue, 05 Apr 2016 23:13:02 +0200
 
 php-horde-imp (6.2.12-2) unstable; urgency=medium
 
