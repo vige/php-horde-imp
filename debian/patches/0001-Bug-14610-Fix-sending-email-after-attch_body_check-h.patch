@@ -1,0 +1,30 @@
+From 9333bcbcdf64176e824858dfe2004f801b549f19 Mon Sep 17 00:00:00 2001
+From: Michael J Rubinsky <mrubinsk@horde.org>
+Date: Thu, 13 Apr 2017 15:32:35 -0400
+Subject: [PATCH] Bug: 14610 Fix sending email after attch_body_check hook
+ fails.
+
+Need to add the compose object to the queue if we catch this
+exception since the SmartMobile view does not get the cacheid when
+the compose page is "loaded" since it's not (re)generated on each
+compose action.
+---
+ imp/lib/Ajax/Application/Handler/Common.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/imp-6.2.17/lib/Ajax/Application/Handler/Common.php b/imp-6.2.17/lib/Ajax/Application/Handler/Common.php
+index 83df6c9af2..f853be959a 100644
+--- a/imp-6.2.17/lib/Ajax/Application/Handler/Common.php
++++ b/imp-6.2.17/lib/Ajax/Application/Handler/Common.php
+@@ -578,7 +578,7 @@ class IMP_Ajax_Application_Handler_Common extends Horde_Core_Ajax_Application_Ha
+             return $result;
+         } catch (IMP_Compose_Exception $e) {
+             $result->success = 0;
+-
++            $this->_base->queue->compose($imp_compose);
+             if (is_null($e->tied_identity)) {
+                 $notify_level = 'horde.error';
+             } else {
+-- 
+2.11.0
+
