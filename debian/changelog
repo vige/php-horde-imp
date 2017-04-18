@@ -1,8 +1,8 @@
-php-horde-imp (6.2.17-2) UNRELEASED; urgency=medium
+php-horde-imp (6.2.17-2) unstable; urgency=medium
 
   * Fix sending email after attch_body_check hook fails (Closes: #859048)
 
- -- Mathieu Parent <sathieu@debian.org>  Tue, 18 Apr 2017 21:50:18 +0200
+ -- Mathieu Parent <sathieu@debian.org>  Tue, 18 Apr 2017 21:59:43 +0200
 
 php-horde-imp (6.2.17-1) unstable; urgency=medium
 
