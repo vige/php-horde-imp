@@ -1,6 +1,8 @@
 php-horde-imp (6.2.19-1) UNRELEASED; urgency=medium
 
   * New upstream version 6.2.19
+    - Remove 0001-Bug-14610-Fix-sending-email-after-attch_body_check-h.patch,
+      included upstream
 
  -- Mathieu Parent <sathieu@debian.org>  Fri, 30 Jun 2017 21:38:42 +0200
 
