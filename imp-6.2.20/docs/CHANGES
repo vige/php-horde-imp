@@ -1,4 +1,15 @@
 -------
+v6.2.20
+-------
+
+[jan] Fix finding reply or forward text from signed or encrypted messages with
+      HTML content again (Bug #14656).
+[mjr] Fix issue with reattaching a file after removing it on Chrome browsers
+      (Bug #14657),
+[jan] Allow Command-C to copy text from HTML message previews (Bug #14653).
+
+
+-------
 v6.2.19
 -------
 
