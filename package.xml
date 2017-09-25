@@ -22,10 +22,10 @@
   <email>chuck@horde.org</email>
   <active>no</active>
  </lead>
- <date>2017-08-01</date>
- <time>13:05:12</time>
+ <date>2017-09-19</date>
+ <time>14:32:00</time>
  <version>
-  <release>6.2.20</release>
+  <release>6.2.21</release>
   <api>6.2.0</api>
  </version>
  <stability>
@@ -34,9 +34,7 @@
  </stability>
  <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
  <notes>
-* [jan] Fix finding reply or forward text from signed or encrypted messages with HTML content again (Bug #14656).
-* [mjr] Fix issue with reattaching a file after removing it on Chrome browsers (Bug #14657),
-* [jan] Allow Command-C to copy text from HTML message previews (Bug #14653).
+* [jan] Officially support PHP 7.
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -59,11 +57,11 @@
    <file baseinstalldir="/" md5sum="0e2ba285bbabd045fd0b68e7a5bccc97" name="config/menu.php.dist" role="horde" />
    <file baseinstalldir="/" md5sum="e4e1d2dd51a883dda6def651b6d75930" name="config/mime_drivers.php" role="horde" />
    <file baseinstalldir="/" md5sum="43903b12210f6d5c66ea61b3a8bd18e9" name="config/prefs.php" role="horde" />
-   <file baseinstalldir="/" md5sum="1344be910c44aab542d9b9787c518145" name="docs/CHANGES" role="doc" />
+   <file baseinstalldir="/" md5sum="fa1f3d289b205170c4d0a6437f91aaa7" name="docs/CHANGES" role="doc" />
    <file baseinstalldir="/" md5sum="857804529e54d24b6540160de026c682" name="docs/CREDITS" role="doc" />
    <file baseinstalldir="/" md5sum="573ab0cdd22352610ee53f5bc124c2e0" name="docs/INSTALL" role="doc" />
    <file baseinstalldir="/" md5sum="bdcd78ed62e8ad76aa21af33453cd92f" name="docs/PERFORMANCE" role="doc" />
-   <file baseinstalldir="/" md5sum="292a8dbe36fc81dae9914ed915c9392f" name="docs/RELEASE_NOTES" role="doc" />
+   <file baseinstalldir="/" md5sum="949bb5d3532ac6bfd1d24f7fa4b9064b" name="docs/RELEASE_NOTES" role="doc" />
    <file baseinstalldir="/" md5sum="32f3d14c1d15071400c0e6bf81d6ef7e" name="docs/RFCS" role="doc" />
    <file baseinstalldir="/" md5sum="8d9740c1de46015f45b81575d6a7aaa1" name="docs/UPGRADING" role="doc" />
    <file baseinstalldir="/" md5sum="90643b1b40a7791c0921197d1ca20b8e" name="js/ckeditor/imagepoll.js" role="horde" />
@@ -399,7 +397,7 @@
    <file baseinstalldir="/" md5sum="4096bdb166636680fa152bfa5e5d2e60" name="lib/View/Subinfo.php" role="horde" />
    <file baseinstalldir="/" md5sum="f5a271e285ee67261f914f7982fdfa5a" name="lib/.htaccess" role="horde" />
    <file baseinstalldir="/" md5sum="744f2b452ebbd152f757aea2e0abf782" name="lib/Api.php" role="horde" />
-   <file baseinstalldir="/" md5sum="8639bf3a043df486305e747d32e2bb7c" name="lib/Application.php" role="horde" />
+   <file baseinstalldir="/" md5sum="9cf4b0a488b99fa48b9f1f615239e527" name="lib/Application.php" role="horde" />
    <file baseinstalldir="/" md5sum="1aa357207af37962a848c3c59dac3ba1" name="lib/Auth.php" role="horde" />
    <file baseinstalldir="/" md5sum="9925d53852c4e55e7c37c6ed78743f09" name="lib/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="b2cab73a755106f69d29da0fbb8c08e8" name="lib/Contacts.php" role="horde" />
@@ -797,8 +795,8 @@
   <required>
    <php>
     <min>5.3.0</min>
-    <max>6.0.0alpha1</max>
-    <exclude>6.0.0alpha1</exclude>
+    <max>8.0.0alpha1</max>
+    <exclude>8.0.0alpha1</exclude>
    </php>
    <pearinstaller>
     <min>1.7.0</min>
@@ -3757,6 +3755,21 @@
 * [jan] Fix finding reply or forward text from signed or encrypted messages with HTML content again (Bug #14656).
 * [mjr] Fix issue with reattaching a file after removing it on Chrome browsers (Bug #14657),
 * [jan] Allow Command-C to copy text from HTML message previews (Bug #14653).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>6.2.21</release>
+    <api>6.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2017-09-19</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [jan] Officially support PHP 7.
    </notes>
   </release>
  </changelog>
