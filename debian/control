@@ -6,8 +6,8 @@ Uploaders: Mathieu Parent <sathieu@debian.org>
 Build-Depends: debhelper (>= 11), pkg-php-tools, pear-horde-channel, php-horde-role
 Standards-Version: 4.1.3
 Homepage: http://www.horde.org/
-Vcs-git: https://anonscm.debian.org/git/pkg-horde/PEAR/php-horde-imp.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-horde/PEAR/php-horde-imp.git
+Vcs-Git: https://salsa.debian.org/horde-team/php-horde-imp.git
+Vcs-Browser: https://salsa.debian.org/horde-team/php-horde-imp
 
 Package: php-horde-imp
 Architecture: all
