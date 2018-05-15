@@ -1,9 +1,9 @@
-php-horde-imp (6.2.21-3) UNRELEASED; urgency=medium
+php-horde-imp (6.2.21-3) unstable; urgency=medium
 
   * Update Standards-Version to 4.1.4, no change
   * Update Maintainer field
 
- -- Mathieu Parent <sathieu@debian.org>  Mon, 14 May 2018 22:28:53 +0200
+ -- Mathieu Parent <sathieu@debian.org>  Tue, 15 May 2018 15:34:34 +0200
 
 php-horde-imp (6.2.21-2) unstable; urgency=medium
 
