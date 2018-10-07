@@ -1,3 +1,9 @@
+php-horde-imp (6.2.22-1) UNRELEASED; urgency=medium
+
+  * New upstream version 6.2.22
+
+ -- Mathieu Parent <sathieu@debian.org>  Sun, 07 Oct 2018 12:47:21 +0200
+
 php-horde-imp (6.2.21-3) unstable; urgency=medium
 
   * Update Standards-Version to 4.1.4, no change
