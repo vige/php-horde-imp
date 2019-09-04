@@ -134,11 +134,17 @@ class IMP_Message_Ui
                     'from_addr' => $from
                 )
             );
-
             $maillog->log($log_msg, new IMP_Maillog_Log_Mdn());
-
             $success = true;
-        } catch (Exception $e) {}
+        } catch (Exception $e) {
+            $injector->getInstance('IMP_Sentmail')->log(
+                IMP_Sentmail::MDN,
+                '',
+                $return_addr,
+                $success
+            );
+            throw $e;
+        }
 
         $injector->getInstance('IMP_Sentmail')->log(
             IMP_Sentmail::MDN,
