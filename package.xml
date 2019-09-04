@@ -22,10 +22,10 @@
   <email>chuck@horde.org</email>
   <active>no</active>
  </lead>
- <date>2018-07-04</date>
- <time>13:56:48</time>
+ <date>2019-05-28</date>
+ <time>15:26:10</time>
  <version>
-  <release>6.2.22</release>
+  <release>6.2.24</release>
   <api>6.2.0</api>
  </version>
  <stability>
@@ -34,9 +34,9 @@
  </stability>
  <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
  <notes>
-* [jan] Fix unprocessed placeholder when show recurring event&apos;s end dates (Bug #14768).
-* [jan] Fix retrieving one of multiple public PGP keys (mh &lt;mh@immerda.ch&gt;).
-* [jan] Fix generating PDF thumbnails with imagick extension 3.3.0+ (arjen+horde@de-korte.org, Bug #14697).
+* [mjr] Fix errors on initial quick search breaking subsequent searches (Bug #14838).
+* [mjr] Don&apos;t indicate success if MDN fails (Bug #14920).
+* [mjr] Fix/improve generation of PDF preview images.
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -59,11 +59,11 @@
    <file baseinstalldir="/" md5sum="0e2ba285bbabd045fd0b68e7a5bccc97" name="config/menu.php.dist" role="horde" />
    <file baseinstalldir="/" md5sum="e4e1d2dd51a883dda6def651b6d75930" name="config/mime_drivers.php" role="horde" />
    <file baseinstalldir="/" md5sum="43903b12210f6d5c66ea61b3a8bd18e9" name="config/prefs.php" role="horde" />
-   <file baseinstalldir="/" md5sum="94ce071638052e7ce244f8ff84626756" name="docs/CHANGES" role="doc" />
+   <file baseinstalldir="/" md5sum="bef6ce0a57b8f46ed452e2b66b6d4380" name="docs/CHANGES" role="doc" />
    <file baseinstalldir="/" md5sum="857804529e54d24b6540160de026c682" name="docs/CREDITS" role="doc" />
    <file baseinstalldir="/" md5sum="573ab0cdd22352610ee53f5bc124c2e0" name="docs/INSTALL" role="doc" />
    <file baseinstalldir="/" md5sum="bdcd78ed62e8ad76aa21af33453cd92f" name="docs/PERFORMANCE" role="doc" />
-   <file baseinstalldir="/" md5sum="f60295e36ee9e2676bca64d4b10e8845" name="docs/RELEASE_NOTES" role="doc" />
+   <file baseinstalldir="/" md5sum="bc4a34a6b8cb63c606a5ebee181c75f5" name="docs/RELEASE_NOTES" role="doc" />
    <file baseinstalldir="/" md5sum="32f3d14c1d15071400c0e6bf81d6ef7e" name="docs/RFCS" role="doc" />
    <file baseinstalldir="/" md5sum="8d9740c1de46015f45b81575d6a7aaa1" name="docs/UPGRADING" role="doc" />
    <file baseinstalldir="/" md5sum="90643b1b40a7791c0921197d1ca20b8e" name="js/ckeditor/imagepoll.js" role="horde" />
@@ -104,7 +104,7 @@
    <file baseinstalldir="/" md5sum="490046db4c7e9c01a31fccc94e3a6825" name="lib/Ajax/Application/Handler/Common.php" role="horde" />
    <file baseinstalldir="/" md5sum="0d11627e57ae5b473d22dcc7441210c6" name="lib/Ajax/Application/Handler/ComposeAttach.php" role="horde" />
    <file baseinstalldir="/" md5sum="54a1122a6be3c75637843bc7453a1dc1" name="lib/Ajax/Application/Handler/Draft.php" role="horde" />
-   <file baseinstalldir="/" md5sum="c0d887817b0c3327d75a237dfe0e592c" name="lib/Ajax/Application/Handler/Dynamic.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c4a0f694a53130cd9bc6a535398cd321" name="lib/Ajax/Application/Handler/Dynamic.php" role="horde" />
    <file baseinstalldir="/" md5sum="0257e2cf1eb6d6239ee505fb6dc0179a" name="lib/Ajax/Application/Handler/ImageUnblock.php" role="horde" />
    <file baseinstalldir="/" md5sum="431a981e3209612eeb2a51dd3df81c67" name="lib/Ajax/Application/Handler/Mboxtoggle.php" role="horde" />
    <file baseinstalldir="/" md5sum="0e5af8643b99219e450e3ed43031c9de" name="lib/Ajax/Application/Handler/Passphrase.php" role="horde" />
@@ -112,7 +112,7 @@
    <file baseinstalldir="/" md5sum="30946161f474ec0f50a78b5476d8a17b" name="lib/Ajax/Application/Handler/RemotePrefs.php" role="horde" />
    <file baseinstalldir="/" md5sum="5550c033a2648ba0917087505959c4a9" name="lib/Ajax/Application/Handler/Search.php" role="horde" />
    <file baseinstalldir="/" md5sum="3637f2cbaf2b42ef013a8fdbab9f9ea1" name="lib/Ajax/Application/Handler/Smartmobile.php" role="horde" />
-   <file baseinstalldir="/" md5sum="c3c3460e643eb7568941f04d44eda2f5" name="lib/Ajax/Application/Viewport/Error.php" role="horde" />
+   <file baseinstalldir="/" md5sum="b595876e1609af14c1b8790a236f7a0c" name="lib/Ajax/Application/Viewport/Error.php" role="horde" />
    <file baseinstalldir="/" md5sum="ba2fdfbc2569bad5d2b02788f1d9efcc" name="lib/Ajax/Application/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="cba3cec0e8cbd94d12742ef9a9f5f43b" name="lib/Ajax/Application/ListMessages.php" role="horde" />
    <file baseinstalldir="/" md5sum="79b1f6b7f442f13adbf42c135d005867" name="lib/Ajax/Application/ShowMessage.php" role="horde" />
@@ -161,7 +161,7 @@
    <file baseinstalldir="/" md5sum="2ee86d736e5626398c38fe5557bbffa9" name="lib/Contacts/Flag/Backend.php" role="horde" />
    <file baseinstalldir="/" md5sum="e5be15fbebaadb2c9c7a8d2ceb638ea0" name="lib/Contacts/Flag/Host.php" role="horde" />
    <file baseinstalldir="/" md5sum="267622e3a3a4b2a215086d1fcd8ee148" name="lib/Contacts/Image.php" role="horde" />
-   <file baseinstalldir="/" md5sum="3340ed32c8255178c16502d7a8e9cd0a" name="lib/Contents/View.php" role="horde" />
+   <file baseinstalldir="/" md5sum="f442f9403e938fccab0540b38a2e02e5" name="lib/Contents/View.php" role="horde" />
    <file baseinstalldir="/" md5sum="e11c3c522a0b2015538633c2963af584" name="lib/Crypt/Pgp.php" role="horde" />
    <file baseinstalldir="/" md5sum="de1244d2c203a92e95d4ad85bc3bdbf4" name="lib/Crypt/Smime.php" role="horde" />
    <file baseinstalldir="/" md5sum="46981c9446514dffcd6e7628a17963a4" name="lib/Dynamic/Compose/Common.php" role="horde" />
@@ -284,7 +284,7 @@
    <file baseinstalldir="/" md5sum="a6547f6e8910717156cebc80c339abde" name="lib/Mbox/Import.php" role="horde" />
    <file baseinstalldir="/" md5sum="7b8e042e0b7b2218bbe383d85d563403" name="lib/Mbox/Parse.php" role="horde" />
    <file baseinstalldir="/" md5sum="991dd085a129a74b8bdf0f4555eb0142" name="lib/Mbox/Size.php" role="horde" />
-   <file baseinstalldir="/" md5sum="5d522034f51be69fd380194cce636b50" name="lib/Message/Ui.php" role="horde" />
+   <file baseinstalldir="/" md5sum="0cda9eccdd1a5503c32ea161640cb4ed" name="lib/Message/Ui.php" role="horde" />
    <file baseinstalldir="/" md5sum="a7f345c54305743ffcc6d3d1fd13fe20" name="lib/Mime/Viewer/Alternative.php" role="horde" />
    <file baseinstalldir="/" md5sum="d0e4fc91e0de338185be2c0aeabaf0de" name="lib/Mime/Viewer/Appledouble.php" role="horde" />
    <file baseinstalldir="/" md5sum="1f1c765b8f0237edca361f8dc77de33a" name="lib/Mime/Viewer/Audio.php" role="horde" />
@@ -295,7 +295,7 @@
    <file baseinstalldir="/" md5sum="31a6d5fb7c86bce6fca93ab46100d32f" name="lib/Mime/Viewer/Itip.php" role="horde" />
    <file baseinstalldir="/" md5sum="52b59a108b6133ed75f6c6c2f615cabc" name="lib/Mime/Viewer/Mdn.php" role="horde" />
    <file baseinstalldir="/" md5sum="9b1a0812f2bc51e13483e0e77703c6c7" name="lib/Mime/Viewer/Partial.php" role="horde" />
-   <file baseinstalldir="/" md5sum="91d049f7d5ab583c6d0afa2b439589ad" name="lib/Mime/Viewer/Pdf.php" role="horde" />
+   <file baseinstalldir="/" md5sum="1b64c6228858c0c5e94d71c2182deb9a" name="lib/Mime/Viewer/Pdf.php" role="horde" />
    <file baseinstalldir="/" md5sum="bbb96e9f3bf27333ecbcf6c063724b8c" name="lib/Mime/Viewer/Pgp.php" role="horde" />
    <file baseinstalldir="/" md5sum="aa6bdb43572af44c4dfe1d446c4b9325" name="lib/Mime/Viewer/Plain.php" role="horde" />
    <file baseinstalldir="/" md5sum="ac5271a1e5ab6d980a6cd3c8f4a5b54d" name="lib/Mime/Viewer/Related.php" role="horde" />
@@ -309,12 +309,12 @@
    <file baseinstalldir="/" md5sum="32e9c7d010838ad3d0daf2d5ae6e4fa6" name="lib/Mime/Headers.php" role="horde" />
    <file baseinstalldir="/" md5sum="1fb1efffb342218f42e47eae814edb0f" name="lib/Mime/Status.php" role="horde" />
    <file baseinstalldir="/" md5sum="6ada6b4596ff7ee8cd31b8ec55c30382" name="lib/Minimal/Base.php" role="horde" />
-   <file baseinstalldir="/" md5sum="d5b93f0ffad262617e7abc228c1a6edf" name="lib/Minimal/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="68e9d4c4225f36d15913e55fcc675a6a" name="lib/Minimal/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="0b392b40b8b6dc91027405ccfd5992d6" name="lib/Minimal/Error.php" role="horde" />
    <file baseinstalldir="/" md5sum="25e8595b297bf98249b91e5c7f48ed99" name="lib/Minimal/Folders.php" role="horde" />
    <file baseinstalldir="/" md5sum="385c9713787873f8d5b23848afe69f45" name="lib/Minimal/Mailbox.php" role="horde" />
    <file baseinstalldir="/" md5sum="e7e3d0656d9a412d1b288a02045281e1" name="lib/Minimal/Message.php" role="horde" />
-   <file baseinstalldir="/" md5sum="a0a70e700d609ef200d2556460c7f89a" name="lib/Minimal/Messagepart.php" role="horde" />
+   <file baseinstalldir="/" md5sum="c3eeaa03286a3540e6955d44435acef5" name="lib/Minimal/Messagepart.php" role="horde" />
    <file baseinstalldir="/" md5sum="ac90a95241029521f0e81b8f1455f517" name="lib/Minimal/Search.php" role="horde" />
    <file baseinstalldir="/" md5sum="f1c6fb8a86ba781f92374ba211a7839b" name="lib/Notification/Event/Status.php" role="horde" />
    <file baseinstalldir="/" md5sum="5f0787dfb0a6702e9642434ce0839fc8" name="lib/Notification/Handler/Decorator/ImapAlerts.php" role="horde" />
@@ -399,11 +399,11 @@
    <file baseinstalldir="/" md5sum="4096bdb166636680fa152bfa5e5d2e60" name="lib/View/Subinfo.php" role="horde" />
    <file baseinstalldir="/" md5sum="f5a271e285ee67261f914f7982fdfa5a" name="lib/.htaccess" role="horde" />
    <file baseinstalldir="/" md5sum="744f2b452ebbd152f757aea2e0abf782" name="lib/Api.php" role="horde" />
-   <file baseinstalldir="/" md5sum="1929c16b6242457e6ccc1f2675aee4b1" name="lib/Application.php" role="horde" />
+   <file baseinstalldir="/" md5sum="bf7bdde89dced9aa3ba3ccd7bdad6987" name="lib/Application.php" role="horde" />
    <file baseinstalldir="/" md5sum="1aa357207af37962a848c3c59dac3ba1" name="lib/Auth.php" role="horde" />
    <file baseinstalldir="/" md5sum="9925d53852c4e55e7c37c6ed78743f09" name="lib/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="b2cab73a755106f69d29da0fbb8c08e8" name="lib/Contacts.php" role="horde" />
-   <file baseinstalldir="/" md5sum="4126a12961831a10ecfab1bc663c5803" name="lib/Contents.php" role="horde" />
+   <file baseinstalldir="/" md5sum="07570b4f05f5af8cbb5803ccb1bb91bf" name="lib/Contents.php" role="horde" />
    <file baseinstalldir="/" md5sum="97d2625f9bbe0d56097c280308029a98" name="lib/Exception.php" role="horde" />
    <file baseinstalldir="/" md5sum="8b6c7052cb8a7afef784c8f03918e650" name="lib/Filter.php" role="horde" />
    <file baseinstalldir="/" md5sum="736968487d0a0b592a23da796ccc014d" name="lib/Flags.php" role="horde" />
@@ -440,8 +440,8 @@
    <file baseinstalldir="/" md5sum="f2126b1892c5c8ad80a99cb4f75d8a70" name="locale/da/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="f266bf353f76382007c39aeca0c23828" name="locale/da/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="0e1fdb5698e5ee2fed9d6f6795b29534" name="locale/da/help.xml" role="horde" />
-   <file baseinstalldir="/" md5sum="1b40ba0345e2ac721f2dcedc905e7952" name="locale/de/LC_MESSAGES/imp.mo" role="horde" />
-   <file baseinstalldir="/" md5sum="2b8ac7dd52792ada8f4776329628eab2" name="locale/de/LC_MESSAGES/imp.po" role="horde" />
+   <file baseinstalldir="/" md5sum="07a34ce0933efd93338afb3c72389f99" name="locale/de/LC_MESSAGES/imp.mo" role="horde" />
+   <file baseinstalldir="/" md5sum="546f95068d457118509da8da2d499fc3" name="locale/de/LC_MESSAGES/imp.po" role="horde" />
    <file baseinstalldir="/" md5sum="8c34ce093ed9a6abb0001cf3241d1b6f" name="locale/de/help.xml" role="horde" />
    <file baseinstalldir="/" md5sum="a08303125c1a182105ecbdeb5778bd8b" name="locale/el/LC_MESSAGES/imp.mo" role="horde" />
    <file baseinstalldir="/" md5sum="16237cfa92a09bd6fbe24892faa37bb3" name="locale/el/LC_MESSAGES/imp.po" role="horde" />
@@ -889,7 +889,7 @@
    <package>
     <name>Horde_Image</name>
     <channel>pear.horde.org</channel>
-    <min>2.0.0</min>
+    <min>2.6.0</min>
     <max>3.0.0alpha1</max>
     <exclude>3.0.0alpha1</exclude>
    </package>
@@ -1952,37 +1952,26 @@
    <license uri="" />
    <notes>
 * cjh: whomp. here we go.
-* 
 * Biggest change: session support through dbm files. YOU MUST touch the dbm
 * file (by default imp/lib/sessions) and give the webserver user read/write
 * permissions to it (actually, you don&apos;t have to create it if the webserver
 * has write access to the lib/ directory).
-* 
 * I&apos;ve tested this will everything I can think of - server list, languages,
 * every page, etc. I think it works. I probably missed something. So please,
 * pound on it, fix it, make suggestions.
-* 
-* 
 * Also: I&apos;ve taken a lot of cruft that wasn&apos;t being used out. imp.lib was
 * under 1000 lines for the first time in a while after this! I may prune more
 * v2 stuff if it&apos;s not used soon; that would trim us even more. I didn&apos;t trim
 * a whole lot from horde.
-* 
-* 
 * Cosmetic: the &apos;check inbox&apos; option on the menu is gone (should probably
 * remove the lang strings - haven&apos;t done that) and it&apos;s replaced with a cute
 * little reload graphic at the top left of mailbox pages that lets you refresh
 * any mailbox that you&apos;re in. this is more consistent from a ui point of view.
-* 
-* 
 * Everything else: reformatting, minor changes/fixes/etc. Nothing noteworthy
 * enough to remember off of the top of my head.
-* 
-* 
 * To do: dump the mailbox_list functions into the new ImapSession object, or
 * *at least* rewrite them to take advantage of the new namespace objects that
 * are available. I haven&apos;t touched this one yet.
-* 
 * Comments?
    </notes>
   </release>
@@ -6330,6 +6319,40 @@
 * [jan] Fix unprocessed placeholder when show recurring event&apos;s end dates (Bug #14768).
 * [jan] Fix retrieving one of multiple public PGP keys (mh &lt;mh@immerda.ch&gt;).
 * [jan] Fix generating PDF thumbnails with imagick extension 3.3.0+ (arjen+horde@de-korte.org, Bug #14697).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>6.2.23</release>
+    <api>6.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2019-01-06</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mjr] Fix attachment handling in minimal mode (PR #3, Thorsten Kahler).
+* [mjr] Fix regular expression error with PHP 7.3.
+* [mjr] Fix fatal error when requested attachment not found in minimal mode.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>6.2.24</release>
+    <api>6.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2019-05-28</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mjr] Fix errors on initial quick search breaking subsequent searches (Bug #14838).
+* [mjr] Don&apos;t indicate success if MDN fails (Bug #14920).
+* [mjr] Fix/improve generation of PDF preview images.
    </notes>
   </release>
   <release>
