@@ -1,6 +1,7 @@
 php-horde-imp (6.2.24-1) UNRELEASED; urgency=medium
 
   * New upstream version 6.2.24
+  * Bump debhelper from old 11 to 12.
 
  -- Mathieu Parent <sathieu@debian.org>  Wed, 04 Sep 2019 21:06:29 +0200
 
