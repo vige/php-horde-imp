@@ -1,10 +1,10 @@
-php-horde-imp (6.2.24-1) UNRELEASED; urgency=medium
+php-horde-imp (6.2.24-1) unstable; urgency=medium
 
   * New upstream version 6.2.24
   * Bump debhelper from old 11 to 12.
   * d/control: Orphaning package (See #942282)
 
- -- Mathieu Parent <sathieu@debian.org>  Wed, 04 Sep 2019 21:06:29 +0200
+ -- Mathieu Parent <sathieu@debian.org>  Fri, 18 Oct 2019 20:35:06 +0200
 
 php-horde-imp (6.2.22-1) unstable; urgency=medium
 
