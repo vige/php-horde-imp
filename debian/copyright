@@ -1,14 +1,102 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Horde Imp web based mail system
 Upstream-Contact: Horde <horde@lists.horde.org>
-		  Horde development <dev@lists.horde.org>
+                  Horde development <dev@lists.horde.org>
 Source: http://pear.horde.org/
 
 Files: *
-Copyright: 1999-2012 Horde LLC (http://www.horde.org/)
-	   2000-2001 Chris Hyde <chris@jeks.net>
-	   2004-2007 Andrew Coleman <mercury@appisolutions.net>
-	   2006-2007 Tomas Simonaitis <haden@homelan.lt>
+Copyright: 1999-2017, Horde LLC (http://www.horde.org/)
+           2000-2017, Horde LLC (http://www.horde.org/)
+           2001-2017, Horde LLC (http://www.horde.org/)
+           2002-2017, Horde LLC (http://www.horde.org/)
+           2003-2017, Horde LLC (http://www.horde.org/)
+           2004-2017, Horde LLC (http://www.horde.org/)
+           2005-2015, Horde LLC (http://www.horde.org/)
+           2005-2017, Horde LLC (http://www.horde.org/)
+           2006-2017, Horde LLC (http://www.horde.org/)
+           2007-2017, Horde LLC (http://www.horde.org/)
+           2008-2015, Horde LLC (http://www.horde.org/)
+           2008-2017, Horde LLC (http://www.horde.org/)
+           2009-2017, Horde LLC (http://www.horde.org/)
+           2010-2017, Horde LLC (http://www.horde.org/)
+           2011-2017, Horde LLC (http://www.horde.org/)
+           2012-2015, Horde LLC (http://www.horde.org/)
+           2012-2017, Horde LLC (http://www.horde.org/)
+           2013-2015, Horde LLC (http://www.horde.org/)
+           2013-2017, Horde LLC (http://www.horde.org/)
+           2014-2015, Horde LLC (http://www.horde.org/)
+           2014-2017, Horde LLC (http://www.horde.org/)
+License: GPL-2
+
+Files: imp-*/locale/*
+Copyright: 2005-2013, Horde LLC (http://www.horde.org/)
+           2001, Anton Nekhoroshih <anton@valuehost.ru>, 2001
+           2001, WangHengWen <whw@my169.com>
+           2001, David Chang <david@tmv.gov.tw>
+           2001-2003, Web Advanced Business Hosting <admin@wabhosting.com>
+           2001-2012, Leena Heino <liinu@uta.fi>
+           2001-2017, Horde LLC (http://www.horde.org/)
+           2002, Fedor A. Fetisov <faf@ssc.ru>
+           2002, Per-Stian Vatne <nynorsk@orsta.org>
+           2002-2017, Horde LLC (http://www.horde.org/)
+           2003, Eureka Informatika
+           2003, Platinum Inc. <pl@tinum.info>
+           2003-2017, Horde LLC (http://www.horde.org/)
+           2004, High Concil of Informatics (www.shci.ir)
+           2004-2017, Horde LLC (http://www.horde.org/)
+           2006, Matt Selsky <selsky@columbia.edu>
+           2006-2015, Universidade de Santiago de Compostela
+           2006-2017, Horde LLC (http://www.horde.org/)
+           2007-2017, Horde LLC (http://www.horde.org/)
+           2008, Alexey Zakharov <baber@mosga.net>
+           2008-2017, Horde LLC (http://www.horde.org/)
+           2011-2014, Horde LLC (http://www.horde.org/)
+           2012-2013, Horde LLC (http://www.horde.org/)
+           2012-2017, Horde LLC (http://www.horde.org/)
+           2013, Andriy Kopystyansky <anri@polynet.lviv.ua>
+           2014, Horde LLC (http://www.horde.org/)
+License: GPL-2
+
+Files: imp-*/lib/Message.php
+Copyright: 2000-2017, Horde LLC (http://www.horde.org/)
+           2000-2001, Chris Hyde <chris@jeks.net>
+License: GPL-2
+
+Files: imp-*/attachment.php
+       imp-*/lib/LoginTasks/Task/DeleteAttachmentsMonthly.php
+Copyright: 2008-2017, Horde LLC (http://www.horde.org/)
+           2004-2007, Andrew Coleman <mercury@appisolutions.net>
+License: GPL-2
+Comment:
+ In DeleteAttachmentsMonthly.php, Andrew Coleman is listed as author,
+ but no copyright holder is provided. Assuming Horde LLC and Andrew
+ Coleman as copyright holders (like for attachment.php).
+
+Files: imp-*/js/external/base64.js
+Copyright: 2014, Dan Kogai
+License: Expat
+Comment:
+ Bundled version is 2.1.5, later versions have been
+ relicensed to BSD-3-clause.
+ .
+ https://github.com/dankogai/js-base64
+
+Files: imp-*/js/external/tinycon.js
+Copyright: 2012-2013, Tom Moor (http://tommoor.com)
+License: Expat
+
+Files: imp-*/js/jquery.mobile/plugins/textchange.js
+Copyright: 2010, ZURB
+License: Expat
+Comment:
+ jQuery TextChange Plugin
+ http://www.zurb.com/playground/jquery-text-change-custom-event
+
+Files: debian/*
+Copyright: 2011-2019, Mathieu Parent <math.parent@gmail.com>
+           2020, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+License: LGPL-2.1+ or GPL-2 or Expat
+
 License: GPL-2
  This program is free software; you can redistribute it
  and/or modify it under the terms of the GNU General Public
@@ -29,8 +117,25 @@ License: GPL-2
  License version 2 can be found in the file
  `/usr/share/common-licenses/GPL-2'.
 
-Files: debian/*
-Copyright: 2011-2012 Mathieu Parent <math.parent@gmail.com>
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+
 License: LGPL-2.1+
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Lesser General Public
