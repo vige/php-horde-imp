@@ -1,4 +1,4 @@
-php-horde-imp (6.2.24-2) UNRELEASED; urgency=medium
+php-horde-imp (6.2.24-2) unstable; urgency=medium
 
   * Re-upload to Debian. (Closes: #959318).
 
@@ -9,8 +9,10 @@ php-horde-imp (6.2.24-2) UNRELEASED; urgency=medium
   * d/upstream/metadata: Add file. Comply with DEP-12.
   * d/tests/control: Stop using deprecated needs-recommends restriction.
   * d/copyright: Update copyright attributions.
+  * d/source/l-o: Ignore long line(s) in dimpbase.js.
+  * d/rules: Don't install upstream's INSTALL howto.
 
- -- Mike Gabriel <sunweaver@debian.org>  Wed, 13 May 2020 17:10:24 +0200
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 13 May 2020 21:14:22 +0200
 
 php-horde-imp (6.2.24-1) unstable; urgency=medium
 
