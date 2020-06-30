@@ -1,3 +1,9 @@
+php-horde-imp (6.2.26-1) UNRELEASED; urgency=medium
+
+  * New upstream version 6.2.26
+
+ -- Juri Grabowski <debian@jugra.de>  Tue, 30 Jun 2020 14:21:14 +0200
+
 php-horde-imp (6.2.24-2) unstable; urgency=medium
 
   * Re-upload to Debian. (Closes: #959318).
