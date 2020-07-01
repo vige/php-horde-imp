@@ -1,8 +1,11 @@
 php-horde-imp (6.2.26-1) UNRELEASED; urgency=medium
 
+  [ Juri Grabowski ]
   * New upstream version 6.2.26
+  * d/salsa-ci.yml: enable aptly
+  * d/salsa-ci.yml: allow_failure on autopkgtest.
 
- -- Juri Grabowski <debian@jugra.de>  Tue, 30 Jun 2020 14:21:14 +0200
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 01 Jul 2020 12:33:16 +0200
 
 php-horde-imp (6.2.24-2) unstable; urgency=medium
 
