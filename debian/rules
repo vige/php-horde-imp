@@ -16,3 +16,7 @@ override_dh_link:
 	# config of "imp" app:
 	mv $(DESTDIR)/usr/share/horde/$(HORDENAME)/config $(DESTDIR)/etc/horde/$(HORDENAME)
 	dh_link etc/horde/$(HORDENAME) usr/share/horde/$(HORDENAME)/config
+	# themes
+	dh_installdirs etc/horde/themes-available.d
+	mv $(DESTDIR)/usr/share/horde/themes/* $(DESTDIR)/etc/horde/themes-available.d/
+	rmdir $(DESTDIR)/usr/share/horde/themes/
