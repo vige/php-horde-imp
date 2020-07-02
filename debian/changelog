@@ -1,9 +1,11 @@
-php-horde-imp (6.2.26-2) UNRELEASED; urgency=medium
+php-horde-imp (6.2.26-2) unstable; urgency=medium
 
-  * d/control: Enforce versioned D on php-horde (>= 5.2.23+debian0-1~).
+  * d/control: Enforce versioned D on php-horde (>= 5.2.23+debian0-2~).
   * d/rules: Move theme files to /etc/horde/.
+  * d/rules: We need per application theme dirs.
+  * debian/maintscript: Turn /usr/share/horde/imp/themes/ into symlink.
 
- -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Jul 2020 21:34:51 +0200
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 03 Jul 2020 00:31:18 +0200
 
 php-horde-imp (6.2.26-1) unstable; urgency=medium
 
