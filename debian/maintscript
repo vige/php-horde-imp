@@ -1,1 +1,1 @@
-dir_to_symlink /usr/share/horde/imp/themes /etc/horde/themes-enabled.d/default/imp 6.2.26-2~  php-horde-imp
+dir_to_symlink /usr/share/horde/imp/themes /etc/horde/themes-enabled.d/imp 6.2.26-2~ php-horde-imp
