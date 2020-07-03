@@ -1,3 +1,9 @@
+php-horde-imp (6.2.26-4) unstable; urgency=medium
+
+  * d/maintscript: Adapt symlink target path.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 03 Jul 2020 23:23:08 +0200
+
 php-horde-imp (6.2.26-3) unstable; urgency=medium
 
   * d/rules: Use different folder name order in themes-enabled.d/.
