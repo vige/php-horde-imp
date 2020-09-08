@@ -22,10 +22,10 @@
   <email>chuck@horde.org</email>
   <active>no</active>
  </lead>
- <date>2020-06-28</date>
- <time>17:21:03</time>
+ <date>2020-08-27</date>
+ <time>15:34:20</time>
  <version>
-  <release>6.2.26</release>
+  <release>6.2.27</release>
   <api>6.2.0</api>
  </version>
  <stability>
@@ -34,7 +34,9 @@
  </stability>
  <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
  <notes>
-* [mjr] Fix syntax error.
+* [mjr] Fix attachments disappearing when forwarding in PHP 7.4 (Bug #15031).
+* [mjr] Prevent creating an empty To: header (Bug #15019).
+* |+
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -57,11 +59,11 @@
    <file baseinstalldir="/" md5sum="0e2ba285bbabd045fd0b68e7a5bccc97" name="config/menu.php.dist" role="horde" />
    <file baseinstalldir="/" md5sum="e4e1d2dd51a883dda6def651b6d75930" name="config/mime_drivers.php" role="horde" />
    <file baseinstalldir="/" md5sum="43903b12210f6d5c66ea61b3a8bd18e9" name="config/prefs.php" role="horde" />
-   <file baseinstalldir="/" md5sum="41ac2ff7c5451118590b6a0ed0609c97" name="docs/CHANGES" role="doc" />
+   <file baseinstalldir="/" md5sum="bb1d14a908bf862eefe62ee085854f2b" name="docs/CHANGES" role="doc" />
    <file baseinstalldir="/" md5sum="857804529e54d24b6540160de026c682" name="docs/CREDITS" role="doc" />
    <file baseinstalldir="/" md5sum="573ab0cdd22352610ee53f5bc124c2e0" name="docs/INSTALL" role="doc" />
    <file baseinstalldir="/" md5sum="bdcd78ed62e8ad76aa21af33453cd92f" name="docs/PERFORMANCE" role="doc" />
-   <file baseinstalldir="/" md5sum="cf2ce590196f831151c4dbab7485129a" name="docs/RELEASE_NOTES" role="doc" />
+   <file baseinstalldir="/" md5sum="3a579824182222327a119d34e0e1fd49" name="docs/RELEASE_NOTES" role="doc" />
    <file baseinstalldir="/" md5sum="32f3d14c1d15071400c0e6bf81d6ef7e" name="docs/RFCS" role="doc" />
    <file baseinstalldir="/" md5sum="8d9740c1de46015f45b81575d6a7aaa1" name="docs/UPGRADING" role="doc" />
    <file baseinstalldir="/" md5sum="90643b1b40a7791c0921197d1ca20b8e" name="js/ckeditor/imagepoll.js" role="horde" />
@@ -397,9 +399,9 @@
    <file baseinstalldir="/" md5sum="4096bdb166636680fa152bfa5e5d2e60" name="lib/View/Subinfo.php" role="horde" />
    <file baseinstalldir="/" md5sum="f5a271e285ee67261f914f7982fdfa5a" name="lib/.htaccess" role="horde" />
    <file baseinstalldir="/" md5sum="744f2b452ebbd152f757aea2e0abf782" name="lib/Api.php" role="horde" />
-   <file baseinstalldir="/" md5sum="f939a51ee6b3b305eeec31b33a7a1e4b" name="lib/Application.php" role="horde" />
+   <file baseinstalldir="/" md5sum="8f1786ce3688776ec3b590d10fa8e086" name="lib/Application.php" role="horde" />
    <file baseinstalldir="/" md5sum="1aa357207af37962a848c3c59dac3ba1" name="lib/Auth.php" role="horde" />
-   <file baseinstalldir="/" md5sum="efb65b00f5e8e1760501933aa7be7468" name="lib/Compose.php" role="horde" />
+   <file baseinstalldir="/" md5sum="02829e906f6cafa14694e3668bd2c47b" name="lib/Compose.php" role="horde" />
    <file baseinstalldir="/" md5sum="b2cab73a755106f69d29da0fbb8c08e8" name="lib/Contacts.php" role="horde" />
    <file baseinstalldir="/" md5sum="07570b4f05f5af8cbb5803ccb1bb91bf" name="lib/Contents.php" role="horde" />
    <file baseinstalldir="/" md5sum="97d2625f9bbe0d56097c280308029a98" name="lib/Exception.php" role="horde" />
@@ -6381,6 +6383,23 @@
    <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
    <notes>
 * [mjr] Fix syntax error.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>6.2.27</release>
+    <api>6.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2020-06-28</date>
+   <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
+   <notes>
+* [mjr] Fix attachments disappearing when forwarding in PHP 7.4 (Bug #15031).
+* [mjr] Prevent creating an empty To: header (Bug #15019).
+* |+
    </notes>
   </release>
   <release>
