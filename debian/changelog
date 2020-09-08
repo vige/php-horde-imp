@@ -1,8 +1,8 @@
-php-horde-imp (6.2.27-1) UNRELEASED; urgency=medium
+php-horde-imp (6.2.27-1) unstable; urgency=medium
 
   * New upstream version 6.2.27
 
- -- Mike Gabriel <sunweaver@debian.org>  Tue, 08 Sep 2020 16:01:11 +0200
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 08 Sep 2020 16:04:26 +0200
 
 php-horde-imp (6.2.26-4) unstable; urgency=medium
 
