@@ -977,7 +977,8 @@ class IMP_Compose implements ArrayAccess, Countable, IteratorAggregate
              ($prefs->isLocked('save_sent_mail') &&
               $prefs->getValue('save_sent_mail')))) {
             /* Keep Bcc: headers on saved messages. */
-            if (is_array($header['bcc']) && count($header['bcc'])) {
+            if ((is_array($header['bcc']) || $header['bcc'] instanceof Countable) &&
+                count($header['bcc'])) {
                 $headers->addHeader('Bcc', $header['bcc']);
             }
 
@@ -1073,8 +1074,6 @@ class IMP_Compose implements ArrayAccess, Countable, IteratorAggregate
         if (isset($headers['to']) &&
             (is_object($headers['to']) || strlen($headers['to']))) {
             $ob->addHeader('To', $headers['to']);
-        } elseif (!isset($headers['cc'])) {
-            $ob->addHeader('To', 'undisclosed-recipients:;');
         }
 
         if (isset($headers['cc']) &&
@@ -3165,14 +3164,19 @@ class IMP_Compose implements ArrayAccess, Countable, IteratorAggregate
             'stream' => true
         ));
         rewind($stream);
-
-        if (file_put_contents($atc_file, $stream) === false) {
+        $dest_handle = fopen($atc_file, 'w+b');
+        while (!feof($stream)) {
+            fwrite($dest_handle, fread($stream, 1024));
+        }
+        fclose($dest_handle);
+        $size = ftell($stream);
+        if ($size === false) {
             throw new IMP_Compose_Exception(sprintf(_("Could not attach %s to the message."), $part->getName()));
         }
 
         return $this->_addAttachment(
             $atc_file,
-            ftell($stream),
+            $size,
             $part->getName(true),
             $part->getType()
         );
