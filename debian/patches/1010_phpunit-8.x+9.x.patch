@@ -1,8 +1,10 @@
 Description: Adapt to PHPUnit 8.x and 9.x API.
 Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 
---- a/imp-6.2.27/test/Imp/Unit/ComposeTest.php
-+++ b/imp-6.2.27/test/Imp/Unit/ComposeTest.php
+Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/ComposeTest.php
+===================================================================
+--- php-horde-imp.orig/imp-6.2.27/test/Imp/Unit/ComposeTest.php
++++ php-horde-imp/imp-6.2.27/test/Imp/Unit/ComposeTest.php
 @@ -23,7 +23,7 @@
   * @package    IMP
   * @subpackage UnitTests
@@ -12,8 +14,10 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  {
      public function testBug10431()
      {
---- a/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
-+++ b/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
+Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
+===================================================================
+--- php-horde-imp.orig/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
++++ php-horde-imp/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
 @@ -23,7 +23,7 @@
   * @package    IMP
   * @subpackage UnitTests
@@ -23,7 +27,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  {
      public function testMboxParse()
      {
-@@ -41,8 +41,7 @@
+@@ -41,8 +41,7 @@ class Imp_Unit_MboxParseTest extends PHP
                  $key
              );
  
@@ -33,7 +37,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
                  $val
              );
  
-@@ -64,8 +63,7 @@
+@@ -64,8 +63,7 @@ class Imp_Unit_MboxParseTest extends PHP
  
          $val = $parse[0];
  
@@ -43,7 +47,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
              $val
          );
  
-@@ -75,11 +73,10 @@
+@@ -75,11 +73,10 @@ class Imp_Unit_MboxParseTest extends PHP
          );
      }
  
@@ -57,8 +61,10 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
          new IMP_Mbox_Parse(__DIR__ . '/noexist');
      }
  
---- a/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
-+++ b/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
+Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
+===================================================================
+--- php-horde-imp.orig/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
++++ php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
 @@ -23,13 +23,13 @@
   * @package    IMP
   * @subpackage UnitTests
@@ -77,7 +83,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
          $prefs->expects($this->any())
              ->method('getValue')
              ->will($this->returnValue(false));
-@@ -52,7 +52,7 @@
+@@ -52,7 +52,7 @@ class Imp_Unit_Mime_Viewer_HtmlTest exte
          );
  
          $v = new IMP_Stub_Mime_Viewer_Html(new Horde_Mime_Part(), array(
@@ -86,7 +92,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
              'charset' => 'UTF-8'
          ));
  
-@@ -79,7 +79,7 @@
+@@ -79,7 +79,7 @@ class Imp_Unit_Mime_Viewer_HtmlTest exte
          );
  
          $v = new IMP_Stub_Mime_Viewer_Html(new Horde_Mime_Part(), array(
@@ -95,8 +101,10 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
              'charset' => 'UTF-8'
          ));
  
---- a/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
-+++ b/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
+Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
+===================================================================
+--- php-horde-imp.orig/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
++++ php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
 @@ -25,7 +25,7 @@
   * @subpackage UnitTests
   */
@@ -106,7 +114,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  {
      private $_contents;
      private $_contentsCharset;
-@@ -39,18 +39,18 @@
+@@ -39,18 +39,18 @@ extends PHPUnit_Framework_TestCase
      private $_notifyStack = array();
      private $_oldtz;
  
@@ -128,7 +136,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
          $registry->expects($this->any())
              ->method('getCharset')
              ->will($this->returnValue('UTF-8'));
-@@ -59,7 +59,7 @@
+@@ -59,7 +59,7 @@ extends PHPUnit_Framework_TestCase
              ->will($this->returnValue((object)array('addr' => '1.2.3.4', 'host' => 'example.com', 'proxy' => false)));
          $GLOBALS['registry'] = $registry;
  
@@ -137,7 +145,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
          $notification->expects($this->any())
              ->method('push')
              ->will($this->returnCallback(array($this, '_notificationHandler')));
-@@ -69,7 +69,7 @@
+@@ -69,7 +69,7 @@ extends PHPUnit_Framework_TestCase
          $_SERVER['REMOTE_ADDR'] = 'localhost';
      }
  
@@ -146,7 +154,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
      {
          date_default_timezone_set($this->_oldtz);
      }
-@@ -85,7 +85,7 @@
+@@ -85,7 +85,7 @@ extends PHPUnit_Framework_TestCase
  
          case 'IMP_Contents':
              if (!isset($this->_contents)) {
@@ -155,7 +163,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
                  $contents->expects($this->any())
                      ->method('getMIMEPart')
                      ->will($this->returnCallback(array($this, '_getMimePart')));
-@@ -95,7 +95,7 @@
+@@ -95,7 +95,7 @@ extends PHPUnit_Framework_TestCase
  
          case 'IMP_Factory_Contents':
              if (!isset($this->_contentsFactory)) {
@@ -164,7 +172,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
                  $cf->expects($this->any())
                      ->method('create')
                      ->will($this->returnValue($this->_injectorGetInstance('IMP_Contents')));
-@@ -105,7 +105,7 @@
+@@ -105,7 +105,7 @@ extends PHPUnit_Framework_TestCase
  
          case 'IMP_Factory_Imap':
              if (!isset($this->_imapFactory)) {
@@ -173,7 +181,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
                  $imap->expects($this->any())
                      ->method('create')
                      ->will($this->returnValue(new IMP_Stub_Imap()));
-@@ -115,7 +115,7 @@
+@@ -115,7 +115,7 @@ extends PHPUnit_Framework_TestCase
  
          case 'IMP_Factory_Mailbox':
              if (!isset($this->_mailbox)) {
@@ -182,7 +190,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
                  $mbox->expects($this->any())
                      ->method('create')
                      ->will($this->returnValue(new IMP_Mailbox('foo')));
-@@ -125,7 +125,7 @@
+@@ -125,7 +125,7 @@ extends PHPUnit_Framework_TestCase
  
          case 'IMP_Identity':
              if (!isset($this->_identity)) {
@@ -191,7 +199,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
                  $identity->expects($this->any())
                      ->method('setDefault')
                      ->will($this->returnCallback(array($this, '_identitySetDefault')));
-@@ -232,7 +232,7 @@
+@@ -232,7 +232,7 @@ extends PHPUnit_Framework_TestCase
      public function testAcceptingAnInvitationResultsInReplySent()
      {
          $this->_doImple('accept', $this->_getInvitation()->exportvCalendar());
@@ -200,7 +208,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
      }
  
      /**
-@@ -290,6 +290,8 @@
+@@ -290,6 +290,8 @@ extends PHPUnit_Framework_TestCase
       */
      public function testResultMessageThrowsExceptionIfUidIsMissing()
      {
@@ -209,7 +217,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
          try {
              $this->_doImple('accept', "BEGIN:VEVENT\nORGANIZER:somebody@example.com\nDTSTAMP:20100816T143648Z\nDTSTART:20100816T143648Z\nEND:VEVENT");
              $this->fail('Expecting Exception.');
-@@ -491,13 +493,13 @@
+@@ -491,13 +493,13 @@ extends PHPUnit_Framework_TestCase
      public function testResultMimeMessageHeadersContainsReceivedHeader()
      {
          $this->_doImple('accept', $this->_getInvitation()->exportvCalendar());
@@ -225,8 +233,10 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
      }
  
      public function testResultMimeMessageHeadersContainsDate()
---- a/imp-6.2.27/test/Imp/Unit/QuotaTest.php
-+++ b/imp-6.2.27/test/Imp/Unit/QuotaTest.php
+Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/QuotaTest.php
+===================================================================
+--- php-horde-imp.orig/imp-6.2.27/test/Imp/Unit/QuotaTest.php
++++ php-horde-imp/imp-6.2.27/test/Imp/Unit/QuotaTest.php
 @@ -23,7 +23,7 @@
   * @package    IMP
   * @subpackage UnitTests
@@ -236,7 +246,179 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  {
      public function testMaildir()
      {
+Index: php-horde-imp/imp-6.2.27/test/Imp/phpunit.xml
+===================================================================
 --- /dev/null
-+++ b/imp-6.2.27/test/Imp/phpunit.xml
++++ php-horde-imp/imp-6.2.27/test/Imp/phpunit.xml
 @@ -0,0 +1 @@
 +<phpunit bootstrap="bootstrap.php"></phpunit>
+Index: php-horde-imp/imp-6.2.27/lib/Mbox/Parse.php
+===================================================================
+--- php-horde-imp.orig/imp-6.2.27/lib/Mbox/Parse.php
++++ php-horde-imp/imp-6.2.27/lib/Mbox/Parse.php
+@@ -98,6 +98,7 @@ class IMP_Mbox_Parse implements ArrayAcc
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetExists($offset)
+     {
+         return isset($this->_parsed[$offset]);
+@@ -105,6 +106,7 @@ class IMP_Mbox_Parse implements ArrayAcc
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetGet($offset)
+     {
+         if (isset($this->_parsed[$offset])) {
+@@ -147,6 +149,7 @@ class IMP_Mbox_Parse implements ArrayAcc
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetSet($offset, $value)
+     {
+         // NOOP
+@@ -154,6 +157,7 @@ class IMP_Mbox_Parse implements ArrayAcc
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetUnset($offset)
+     {
+         // NOOP
+@@ -166,6 +170,7 @@ class IMP_Mbox_Parse implements ArrayAcc
+      *
+      * @return integer  The number of messages.
+      */
++    #[\ReturnTypeWillChange]
+     public function count()
+     {
+         return count($this->_parsed);
+@@ -178,6 +183,7 @@ class IMP_Mbox_Parse implements ArrayAcc
+      *
+      * @return string  String representation.
+      */
++    #[\ReturnTypeWillChange]
+     public function __toString()
+     {
+         rewind($this->_data);
+@@ -185,7 +191,7 @@ class IMP_Mbox_Parse implements ArrayAcc
+     }
+ 
+     /* Iterator methods. */
+-
++    #[\ReturnTypeWillChange]
+     public function current()
+     {
+         $key = $this->key();
+@@ -195,11 +201,13 @@ class IMP_Mbox_Parse implements ArrayAcc
+             : $this[$key];
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function key()
+     {
+         return key($this->_parsed);
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function next()
+     {
+         if ($this->valid()) {
+@@ -207,11 +215,13 @@ class IMP_Mbox_Parse implements ArrayAcc
+         }
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function rewind()
+     {
+         reset($this->_parsed);
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function valid()
+     {
+         return !is_null($this->key());
+Index: php-horde-imp/imp-6.2.27/lib/Indices.php
+===================================================================
+--- php-horde-imp.orig/imp-6.2.27/lib/Indices.php
++++ php-horde-imp/imp-6.2.27/lib/Indices.php
+@@ -257,6 +257,7 @@ class IMP_Indices implements ArrayAccess
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetExists($offset)
+     {
+         return isset($this->_indices[$offset]);
+@@ -264,6 +265,7 @@ class IMP_Indices implements ArrayAccess
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetGet($offset)
+     {
+         return isset($this->_indices[$offset])
+@@ -273,6 +275,7 @@ class IMP_Indices implements ArrayAccess
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetSet($offset, $value)
+     {
+         unset($this->_indices[$offset]);
+@@ -281,6 +284,7 @@ class IMP_Indices implements ArrayAccess
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetUnset($offset)
+     {
+         unset($this->_indices[$offset]);
+@@ -293,6 +297,7 @@ class IMP_Indices implements ArrayAccess
+      *
+      * @return integer  The number of indices.
+      */
++    #[\ReturnTypeWillChange]
+     public function count()
+     {
+         $count = 0;
+@@ -317,7 +322,7 @@ class IMP_Indices implements ArrayAccess
+     }
+ 
+     /* Iterator methods. */
+-
++    #[\ReturnTypeWillChange]
+     public function current()
+     {
+         if (!$this->valid()) {
+@@ -331,11 +336,13 @@ class IMP_Indices implements ArrayAccess
+         return $ret;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function key()
+     {
+         return key($this->_indices);
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function next()
+     {
+         if ($this->valid()) {
+@@ -343,11 +350,13 @@ class IMP_Indices implements ArrayAccess
+         }
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function rewind()
+     {
+         reset($this->_indices);
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function valid()
+     {
+         return !is_null(key($this->_indices));
