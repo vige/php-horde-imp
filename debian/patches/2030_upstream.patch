@@ -1,0 +1,34 @@
+From a5262497903617af126fb529ac0bd2770f610b8d Mon Sep 17 00:00:00 2001
+From: Ralf Lang <ralf.lang@ralf-lang.de>
+Date: Wed, 12 Oct 2022 17:59:40 +0200
+Subject: [PATCH] Address ZDI-20-1051 / ZDI-CAN-10436: Prevent deserializing a
+ class.
+
+Also guard against some other possibly unwanted deserialisations.
+It is debatable if this constitutes an actual attack vector before the change.
+However, the change rules out any such possibility.
+---
+ lib/Prefs/Sort.php | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+Index: php-horde-imp/imp-6.2.27/lib/Prefs/Sort.php
+===================================================================
+--- php-horde-imp.orig/imp-6.2.27/lib/Prefs/Sort.php
++++ php-horde-imp/imp-6.2.27/lib/Prefs/Sort.php
+@@ -39,9 +39,13 @@ class IMP_Prefs_Sort implements ArrayAcc
+     {
+         global $prefs;
+ 
+-        $sortpref = @unserialize($prefs->getValue(self::SORTPREF));
+-        if (is_array($sortpref)) {
+-            $this->_sortpref = $sortpref;
++        $serializedPref = $prefs->getValue(self::SORTPREF);
++        // Only unserialize non-empty strings. Disallow yielding any classes.
++        if (!empty($serializedPref && is_string($serializedPref))) {
++            $sortpref = @unserialize($serializedPref, ['allowed_classes' => false]);
++            if (is_array($sortpref)) {
++                $this->_sortpref = $sortpref;
++            }
+         }
+     }
+ 
