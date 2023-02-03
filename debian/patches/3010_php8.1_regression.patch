@@ -1,0 +1,20 @@
+Description: set the key number, if the key is empty
+Author: Anton Gladky <gladk@debian.org>
+Bug-Debian: https://bugs.debian.org/1003746
+Last-Update: 2023-02-03
+
+--- php-horde-imp-6.2.27.orig/imp-6.2.27/lib/Ajax/Imple/ItipRequest.php
++++ php-horde-imp-6.2.27/imp-6.2.27/lib/Ajax/Imple/ItipRequest.php
+@@ -89,6 +89,12 @@ class IMP_Ajax_Imple_ItipRequest extends
+             $pos = strpos($key, '[');
+             $key = substr($key, $pos + 1, strlen($key) - $pos - 2);
+ 
++            # This is the fix for the bug #1003746
++            # The regression was firstly identified during php7.4 to php8.0 upgrade.
++            if (empty($key)) {
++              $key = 0;
++            }
++
+             switch ($action) {
+             case 'delete':
+                 // vEvent cancellation.

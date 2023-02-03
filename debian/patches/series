@@ -3,3 +3,4 @@
 2020_upstream.patch
 2030_upstream.patch
 2040_upstream.patch
+3010_php8.1_regression.patch
