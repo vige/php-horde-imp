@@ -1,11 +1,18 @@
-Description: set the key number, if the key is empty
-Author: Anton Gladky <gladk@debian.org>
+From: Anton Gladky <gladk@debian.org>
+Date: Fri, 27 Oct 2023 13:04:35 +0300
+Subject: set the key number, if the key is empty
+
 Bug-Debian: https://bugs.debian.org/1003746
 Last-Update: 2023-02-03
+---
+ imp-6.2.27/lib/Ajax/Imple/ItipRequest.php | 6 ++++++
+ 1 file changed, 6 insertions(+)
 
---- php-horde-imp-6.2.27.orig/imp-6.2.27/lib/Ajax/Imple/ItipRequest.php
-+++ php-horde-imp-6.2.27/imp-6.2.27/lib/Ajax/Imple/ItipRequest.php
-@@ -89,6 +89,12 @@ class IMP_Ajax_Imple_ItipRequest extends
+diff --git a/imp-6.2.27/lib/Ajax/Imple/ItipRequest.php b/imp-6.2.27/lib/Ajax/Imple/ItipRequest.php
+index c84b1ac..da74e98 100644
+--- a/imp-6.2.27/lib/Ajax/Imple/ItipRequest.php
++++ b/imp-6.2.27/lib/Ajax/Imple/ItipRequest.php
+@@ -89,6 +89,12 @@ class IMP_Ajax_Imple_ItipRequest extends Horde_Core_Ajax_Imple
              $pos = strpos($key, '[');
              $key = substr($key, $pos + 1, strlen($key) - $pos - 2);
  

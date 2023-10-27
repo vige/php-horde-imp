@@ -4,3 +4,4 @@
 2030_upstream.patch
 2040_upstream.patch
 3010_php8.1_regression.patch
+0007-jan-Fix-deprecation-warnings-about-each-with-PHP-7.2.patch

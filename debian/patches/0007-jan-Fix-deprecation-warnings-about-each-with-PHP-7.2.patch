@@ -1,0 +1,90 @@
+From: Jan Schneider <jan.schneider@hdnet.de>
+Date: Thu, 11 Feb 2021 22:37:25 +0100
+Subject: [jan] Fix deprecation warnings about each() with PHP 7.2+.
+
+---
+ imp-6.2.27/lib/Ajax/Application/ListMessages.php | 3 +--
+ imp-6.2.27/lib/Basic/Mailbox.php                 | 2 +-
+ imp-6.2.27/lib/Contents.php                      | 6 ++----
+ imp-6.2.27/lib/Mime/Viewer/Plain.php             | 3 +--
+ imp-6.2.27/lib/Minimal/Mailbox.php               | 2 +-
+ 5 files changed, 6 insertions(+), 10 deletions(-)
+
+diff --git a/imp-6.2.27/lib/Ajax/Application/ListMessages.php b/imp-6.2.27/lib/Ajax/Application/ListMessages.php
+index 117e3f4..b4b73d6 100644
+--- a/imp-6.2.27/lib/Ajax/Application/ListMessages.php
++++ b/imp-6.2.27/lib/Ajax/Application/ListMessages.php
+@@ -434,8 +434,7 @@ class IMP_Ajax_Application_ListMessages
+         ));
+ 
+         /* Display message information. */
+-        reset($overview['overview']);
+-        while (list(,$ob) = each($overview['overview'])) {
++        foreach ($overview['overview'] as $ob) {
+             /* Get all the flag information. */
+             $msg = array(
+                 'flag' => $flags
+diff --git a/imp-6.2.27/lib/Basic/Mailbox.php b/imp-6.2.27/lib/Basic/Mailbox.php
+index 8dac129..84b6026 100644
+--- a/imp-6.2.27/lib/Basic/Mailbox.php
++++ b/imp-6.2.27/lib/Basic/Mailbox.php
+@@ -843,7 +843,7 @@ class IMP_Basic_Mailbox extends IMP_Basic_Base
+         $search_view = clone $view;
+         $summary_view = clone $view;
+ 
+-        while (list(,$ob) = each($mbox_info['overview'])) {
++        foreach ($mbox_info['overview'] as $ob) {
+             if ($search_mbox) {
+                 if (empty($lastMbox) || ($ob['mailbox'] != $lastMbox)) {
+                     if (!empty($lastMbox)) {
+diff --git a/imp-6.2.27/lib/Contents.php b/imp-6.2.27/lib/Contents.php
+index 9088930..8265c6c 100644
+--- a/imp-6.2.27/lib/Contents.php
++++ b/imp-6.2.27/lib/Contents.php
+@@ -1480,8 +1480,7 @@ class IMP_Contents
+                 continue;
+             }
+ 
+-            reset($render_part);
+-            while (list($id, $info) = each($render_part)) {
++            foreach ($render_part as $id => $info) {
+                 $display_ids[$id] = 1;
+ 
+                 if (empty($info)) {
+@@ -1534,8 +1533,7 @@ class IMP_Contents
+             uksort($msgtext, 'strnatcmp');
+         }
+ 
+-        reset($msgtext);
+-        while (list($id, $part) = each($msgtext)) {
++        foreach ($msgtext as $id => $part) {
+             while (!empty($wrap_ids) &&
+                    !Horde_Mime::isChild(end($wrap_ids), $id)) {
+                 array_pop($wrap_ids);
+diff --git a/imp-6.2.27/lib/Mime/Viewer/Plain.php b/imp-6.2.27/lib/Mime/Viewer/Plain.php
+index b4402ed..290f784 100644
+--- a/imp-6.2.27/lib/Mime/Viewer/Plain.php
++++ b/imp-6.2.27/lib/Mime/Viewer/Plain.php
+@@ -277,8 +277,7 @@ class IMP_Mime_Viewer_Plain extends Horde_Mime_Viewer_Plain
+         $text_part->setContents(preg_replace("/begin [0-7]{3} .+\r?\n.+\r?\nend/Us", "\n", $text));
+         $new_part->addPart($text_part);
+ 
+-        reset($files);
+-        while (list(,$file) = each($files)) {
++        foreach ($files as $file) {
+             $uupart = new Horde_Mime_Part();
+             $uupart->setType('application/octet-stream');
+             $uupart->setContents($file['data']);
+diff --git a/imp-6.2.27/lib/Minimal/Mailbox.php b/imp-6.2.27/lib/Minimal/Mailbox.php
+index ce9341a..71d48c4 100644
+--- a/imp-6.2.27/lib/Minimal/Mailbox.php
++++ b/imp-6.2.27/lib/Minimal/Mailbox.php
+@@ -123,7 +123,7 @@ class IMP_Minimal_Mailbox extends IMP_Minimal_Base
+         $mbox_info = $imp_mailbox->getMailboxArray(range($pageOb['begin'], $pageOb['end']), array('headers' => true));
+         $msgs = array();
+ 
+-        while (list(,$ob) = each($mbox_info['overview'])) {
++        foreach ($mbox_info['overview'] as $ob) {
+             /* Initialize the header fields. */
+             $msg = array(
+                 'buid' => $imp_mailbox->getBuid($ob['mailbox'], $ob['uid']),

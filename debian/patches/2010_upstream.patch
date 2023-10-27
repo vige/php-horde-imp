@@ -1,18 +1,16 @@
-From 8d19f07d87a6320df5de6b293ec05a49502005ff Mon Sep 17 00:00:00 2001
 From: Jan Schneider <jan.schneider@hdnet.de>
 Date: Thu, 11 Feb 2021 22:37:25 +0100
 Subject: [PATCH] [jan] Fix deprecation warnings about each() with PHP 7.2+.
 
 ---
- doc/changelog.yml            | 34 ++++++++++++++++++++++++++++++++++
- lib/Mailbox/List/Virtual.php |  3 +--
- 2 files changed, 35 insertions(+), 2 deletions(-)
+ imp-6.2.27/lib/Mailbox/List/Virtual.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
 
-Index: php-horde-imp/imp-6.2.27/lib/Mailbox/List/Virtual.php
-===================================================================
---- php-horde-imp.orig/imp-6.2.27/lib/Mailbox/List/Virtual.php
-+++ php-horde-imp/imp-6.2.27/lib/Mailbox/List/Virtual.php
-@@ -94,8 +94,7 @@ class IMP_Mailbox_List_Virtual extends I
+diff --git a/imp-6.2.27/lib/Mailbox/List/Virtual.php b/imp-6.2.27/lib/Mailbox/List/Virtual.php
+index 4bdf063..30b3d95 100644
+--- a/imp-6.2.27/lib/Mailbox/List/Virtual.php
++++ b/imp-6.2.27/lib/Mailbox/List/Virtual.php
+@@ -94,8 +94,7 @@ class IMP_Mailbox_List_Virtual extends IMP_Mailbox_List
          $this->_buildMailbox();
          $ob = new IMP_Indices();
  

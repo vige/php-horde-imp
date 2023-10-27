@@ -1,10 +1,193 @@
-Description: Adapt to PHPUnit 8.x and 9.x API.
-Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Fri, 27 Oct 2023 13:04:35 +0300
+Subject: Adapt to PHPUnit 8.x and 9.x API.
 
-Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/ComposeTest.php
-===================================================================
---- php-horde-imp.orig/imp-6.2.27/test/Imp/Unit/ComposeTest.php
-+++ php-horde-imp/imp-6.2.27/test/Imp/Unit/ComposeTest.php
+---
+ imp-6.2.27/lib/Indices.php                        | 11 ++++++++-
+ imp-6.2.27/lib/Mbox/Parse.php                     | 12 ++++++++-
+ imp-6.2.27/test/Imp/Unit/ComposeTest.php          |  2 +-
+ imp-6.2.27/test/Imp/Unit/MboxParseTest.php        | 13 ++++------
+ imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php | 12 ++++-----
+ imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php | 30 ++++++++++++-----------
+ imp-6.2.27/test/Imp/Unit/QuotaTest.php            |  2 +-
+ imp-6.2.27/test/Imp/phpunit.xml                   |  1 +
+ 8 files changed, 51 insertions(+), 32 deletions(-)
+ create mode 100644 imp-6.2.27/test/Imp/phpunit.xml
+
+diff --git a/imp-6.2.27/lib/Indices.php b/imp-6.2.27/lib/Indices.php
+index 0e4fa66..da43134 100644
+--- a/imp-6.2.27/lib/Indices.php
++++ b/imp-6.2.27/lib/Indices.php
+@@ -257,6 +257,7 @@ class IMP_Indices implements ArrayAccess, Countable, Iterator
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetExists($offset)
+     {
+         return isset($this->_indices[$offset]);
+@@ -264,6 +265,7 @@ class IMP_Indices implements ArrayAccess, Countable, Iterator
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetGet($offset)
+     {
+         return isset($this->_indices[$offset])
+@@ -273,6 +275,7 @@ class IMP_Indices implements ArrayAccess, Countable, Iterator
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetSet($offset, $value)
+     {
+         unset($this->_indices[$offset]);
+@@ -281,6 +284,7 @@ class IMP_Indices implements ArrayAccess, Countable, Iterator
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetUnset($offset)
+     {
+         unset($this->_indices[$offset]);
+@@ -293,6 +297,7 @@ class IMP_Indices implements ArrayAccess, Countable, Iterator
+      *
+      * @return integer  The number of indices.
+      */
++    #[\ReturnTypeWillChange]
+     public function count()
+     {
+         $count = 0;
+@@ -317,7 +322,7 @@ class IMP_Indices implements ArrayAccess, Countable, Iterator
+     }
+ 
+     /* Iterator methods. */
+-
++    #[\ReturnTypeWillChange]
+     public function current()
+     {
+         if (!$this->valid()) {
+@@ -331,11 +336,13 @@ class IMP_Indices implements ArrayAccess, Countable, Iterator
+         return $ret;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function key()
+     {
+         return key($this->_indices);
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function next()
+     {
+         if ($this->valid()) {
+@@ -343,11 +350,13 @@ class IMP_Indices implements ArrayAccess, Countable, Iterator
+         }
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function rewind()
+     {
+         reset($this->_indices);
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function valid()
+     {
+         return !is_null(key($this->_indices));
+diff --git a/imp-6.2.27/lib/Mbox/Parse.php b/imp-6.2.27/lib/Mbox/Parse.php
+index c62bbbb..a112bb4 100644
+--- a/imp-6.2.27/lib/Mbox/Parse.php
++++ b/imp-6.2.27/lib/Mbox/Parse.php
+@@ -98,6 +98,7 @@ class IMP_Mbox_Parse implements ArrayAccess, Countable, Iterator
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetExists($offset)
+     {
+         return isset($this->_parsed[$offset]);
+@@ -105,6 +106,7 @@ class IMP_Mbox_Parse implements ArrayAccess, Countable, Iterator
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetGet($offset)
+     {
+         if (isset($this->_parsed[$offset])) {
+@@ -147,6 +149,7 @@ class IMP_Mbox_Parse implements ArrayAccess, Countable, Iterator
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetSet($offset, $value)
+     {
+         // NOOP
+@@ -154,6 +157,7 @@ class IMP_Mbox_Parse implements ArrayAccess, Countable, Iterator
+ 
+     /**
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetUnset($offset)
+     {
+         // NOOP
+@@ -166,6 +170,7 @@ class IMP_Mbox_Parse implements ArrayAccess, Countable, Iterator
+      *
+      * @return integer  The number of messages.
+      */
++    #[\ReturnTypeWillChange]
+     public function count()
+     {
+         return count($this->_parsed);
+@@ -178,6 +183,7 @@ class IMP_Mbox_Parse implements ArrayAccess, Countable, Iterator
+      *
+      * @return string  String representation.
+      */
++    #[\ReturnTypeWillChange]
+     public function __toString()
+     {
+         rewind($this->_data);
+@@ -185,7 +191,7 @@ class IMP_Mbox_Parse implements ArrayAccess, Countable, Iterator
+     }
+ 
+     /* Iterator methods. */
+-
++    #[\ReturnTypeWillChange]
+     public function current()
+     {
+         $key = $this->key();
+@@ -195,11 +201,13 @@ class IMP_Mbox_Parse implements ArrayAccess, Countable, Iterator
+             : $this[$key];
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function key()
+     {
+         return key($this->_parsed);
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function next()
+     {
+         if ($this->valid()) {
+@@ -207,11 +215,13 @@ class IMP_Mbox_Parse implements ArrayAccess, Countable, Iterator
+         }
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function rewind()
+     {
+         reset($this->_parsed);
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function valid()
+     {
+         return !is_null($this->key());
+diff --git a/imp-6.2.27/test/Imp/Unit/ComposeTest.php b/imp-6.2.27/test/Imp/Unit/ComposeTest.php
+index 36cc807..d63f720 100644
+--- a/imp-6.2.27/test/Imp/Unit/ComposeTest.php
++++ b/imp-6.2.27/test/Imp/Unit/ComposeTest.php
 @@ -23,7 +23,7 @@
   * @package    IMP
   * @subpackage UnitTests
@@ -14,10 +197,10 @@ Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/ComposeTest.php
  {
      public function testBug10431()
      {
-Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
-===================================================================
---- php-horde-imp.orig/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
-+++ php-horde-imp/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
+diff --git a/imp-6.2.27/test/Imp/Unit/MboxParseTest.php b/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
+index 47b913c..7808490 100644
+--- a/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
++++ b/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
 @@ -23,7 +23,7 @@
   * @package    IMP
   * @subpackage UnitTests
@@ -27,7 +210,7 @@ Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
  {
      public function testMboxParse()
      {
-@@ -41,8 +41,7 @@ class Imp_Unit_MboxParseTest extends PHP
+@@ -41,8 +41,7 @@ class Imp_Unit_MboxParseTest extends PHPUnit_Framework_TestCase
                  $key
              );
  
@@ -37,7 +220,7 @@ Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
                  $val
              );
  
-@@ -64,8 +63,7 @@ class Imp_Unit_MboxParseTest extends PHP
+@@ -64,8 +63,7 @@ class Imp_Unit_MboxParseTest extends PHPUnit_Framework_TestCase
  
          $val = $parse[0];
  
@@ -47,7 +230,7 @@ Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
              $val
          );
  
-@@ -75,11 +73,10 @@ class Imp_Unit_MboxParseTest extends PHP
+@@ -75,11 +73,10 @@ class Imp_Unit_MboxParseTest extends PHPUnit_Framework_TestCase
          );
      }
  
@@ -61,10 +244,10 @@ Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/MboxParseTest.php
          new IMP_Mbox_Parse(__DIR__ . '/noexist');
      }
  
-Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
-===================================================================
---- php-horde-imp.orig/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
-+++ php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
+diff --git a/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php b/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
+index a10c87f..71ce888 100644
+--- a/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
++++ b/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
 @@ -23,13 +23,13 @@
   * @package    IMP
   * @subpackage UnitTests
@@ -83,7 +266,7 @@ Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
          $prefs->expects($this->any())
              ->method('getValue')
              ->will($this->returnValue(false));
-@@ -52,7 +52,7 @@ class Imp_Unit_Mime_Viewer_HtmlTest exte
+@@ -52,7 +52,7 @@ class Imp_Unit_Mime_Viewer_HtmlTest extends PHPUnit_Framework_TestCase
          );
  
          $v = new IMP_Stub_Mime_Viewer_Html(new Horde_Mime_Part(), array(
@@ -92,7 +275,7 @@ Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
              'charset' => 'UTF-8'
          ));
  
-@@ -79,7 +79,7 @@ class Imp_Unit_Mime_Viewer_HtmlTest exte
+@@ -79,7 +79,7 @@ class Imp_Unit_Mime_Viewer_HtmlTest extends PHPUnit_Framework_TestCase
          );
  
          $v = new IMP_Stub_Mime_Viewer_Html(new Horde_Mime_Part(), array(
@@ -101,10 +284,10 @@ Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/HtmlTest.php
              'charset' => 'UTF-8'
          ));
  
-Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
-===================================================================
---- php-horde-imp.orig/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
-+++ php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
+diff --git a/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php b/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
+index fcff834..a136e8d 100644
+--- a/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
++++ b/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
 @@ -25,7 +25,7 @@
   * @subpackage UnitTests
   */
@@ -233,10 +416,10 @@ Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/Mime/Viewer/ItipTest.php
      }
  
      public function testResultMimeMessageHeadersContainsDate()
-Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/QuotaTest.php
-===================================================================
---- php-horde-imp.orig/imp-6.2.27/test/Imp/Unit/QuotaTest.php
-+++ php-horde-imp/imp-6.2.27/test/Imp/Unit/QuotaTest.php
+diff --git a/imp-6.2.27/test/Imp/Unit/QuotaTest.php b/imp-6.2.27/test/Imp/Unit/QuotaTest.php
+index 6aa03f3..8f5f1c0 100644
+--- a/imp-6.2.27/test/Imp/Unit/QuotaTest.php
++++ b/imp-6.2.27/test/Imp/Unit/QuotaTest.php
 @@ -23,7 +23,7 @@
   * @package    IMP
   * @subpackage UnitTests
@@ -246,179 +429,10 @@ Index: php-horde-imp/imp-6.2.27/test/Imp/Unit/QuotaTest.php
  {
      public function testMaildir()
      {
-Index: php-horde-imp/imp-6.2.27/test/Imp/phpunit.xml
-===================================================================
+diff --git a/imp-6.2.27/test/Imp/phpunit.xml b/imp-6.2.27/test/Imp/phpunit.xml
+new file mode 100644
+index 0000000..5dcbab2
 --- /dev/null
-+++ php-horde-imp/imp-6.2.27/test/Imp/phpunit.xml
++++ b/imp-6.2.27/test/Imp/phpunit.xml
 @@ -0,0 +1 @@
 +<phpunit bootstrap="bootstrap.php"></phpunit>
-Index: php-horde-imp/imp-6.2.27/lib/Mbox/Parse.php
-===================================================================
---- php-horde-imp.orig/imp-6.2.27/lib/Mbox/Parse.php
-+++ php-horde-imp/imp-6.2.27/lib/Mbox/Parse.php
-@@ -98,6 +98,7 @@ class IMP_Mbox_Parse implements ArrayAcc
- 
-     /**
-      */
-+    #[\ReturnTypeWillChange]
-     public function offsetExists($offset)
-     {
-         return isset($this->_parsed[$offset]);
-@@ -105,6 +106,7 @@ class IMP_Mbox_Parse implements ArrayAcc
- 
-     /**
-      */
-+    #[\ReturnTypeWillChange]
-     public function offsetGet($offset)
-     {
-         if (isset($this->_parsed[$offset])) {
-@@ -147,6 +149,7 @@ class IMP_Mbox_Parse implements ArrayAcc
- 
-     /**
-      */
-+    #[\ReturnTypeWillChange]
-     public function offsetSet($offset, $value)
-     {
-         // NOOP
-@@ -154,6 +157,7 @@ class IMP_Mbox_Parse implements ArrayAcc
- 
-     /**
-      */
-+    #[\ReturnTypeWillChange]
-     public function offsetUnset($offset)
-     {
-         // NOOP
-@@ -166,6 +170,7 @@ class IMP_Mbox_Parse implements ArrayAcc
-      *
-      * @return integer  The number of messages.
-      */
-+    #[\ReturnTypeWillChange]
-     public function count()
-     {
-         return count($this->_parsed);
-@@ -178,6 +183,7 @@ class IMP_Mbox_Parse implements ArrayAcc
-      *
-      * @return string  String representation.
-      */
-+    #[\ReturnTypeWillChange]
-     public function __toString()
-     {
-         rewind($this->_data);
-@@ -185,7 +191,7 @@ class IMP_Mbox_Parse implements ArrayAcc
-     }
- 
-     /* Iterator methods. */
--
-+    #[\ReturnTypeWillChange]
-     public function current()
-     {
-         $key = $this->key();
-@@ -195,11 +201,13 @@ class IMP_Mbox_Parse implements ArrayAcc
-             : $this[$key];
-     }
- 
-+    #[\ReturnTypeWillChange]
-     public function key()
-     {
-         return key($this->_parsed);
-     }
- 
-+    #[\ReturnTypeWillChange]
-     public function next()
-     {
-         if ($this->valid()) {
-@@ -207,11 +215,13 @@ class IMP_Mbox_Parse implements ArrayAcc
-         }
-     }
- 
-+    #[\ReturnTypeWillChange]
-     public function rewind()
-     {
-         reset($this->_parsed);
-     }
- 
-+    #[\ReturnTypeWillChange]
-     public function valid()
-     {
-         return !is_null($this->key());
-Index: php-horde-imp/imp-6.2.27/lib/Indices.php
-===================================================================
---- php-horde-imp.orig/imp-6.2.27/lib/Indices.php
-+++ php-horde-imp/imp-6.2.27/lib/Indices.php
-@@ -257,6 +257,7 @@ class IMP_Indices implements ArrayAccess
- 
-     /**
-      */
-+    #[\ReturnTypeWillChange]
-     public function offsetExists($offset)
-     {
-         return isset($this->_indices[$offset]);
-@@ -264,6 +265,7 @@ class IMP_Indices implements ArrayAccess
- 
-     /**
-      */
-+    #[\ReturnTypeWillChange]
-     public function offsetGet($offset)
-     {
-         return isset($this->_indices[$offset])
-@@ -273,6 +275,7 @@ class IMP_Indices implements ArrayAccess
- 
-     /**
-      */
-+    #[\ReturnTypeWillChange]
-     public function offsetSet($offset, $value)
-     {
-         unset($this->_indices[$offset]);
-@@ -281,6 +284,7 @@ class IMP_Indices implements ArrayAccess
- 
-     /**
-      */
-+    #[\ReturnTypeWillChange]
-     public function offsetUnset($offset)
-     {
-         unset($this->_indices[$offset]);
-@@ -293,6 +297,7 @@ class IMP_Indices implements ArrayAccess
-      *
-      * @return integer  The number of indices.
-      */
-+    #[\ReturnTypeWillChange]
-     public function count()
-     {
-         $count = 0;
-@@ -317,7 +322,7 @@ class IMP_Indices implements ArrayAccess
-     }
- 
-     /* Iterator methods. */
--
-+    #[\ReturnTypeWillChange]
-     public function current()
-     {
-         if (!$this->valid()) {
-@@ -331,11 +336,13 @@ class IMP_Indices implements ArrayAccess
-         return $ret;
-     }
- 
-+    #[\ReturnTypeWillChange]
-     public function key()
-     {
-         return key($this->_indices);
-     }
- 
-+    #[\ReturnTypeWillChange]
-     public function next()
-     {
-         if ($this->valid()) {
-@@ -343,11 +350,13 @@ class IMP_Indices implements ArrayAccess
-         }
-     }
- 
-+    #[\ReturnTypeWillChange]
-     public function rewind()
-     {
-         reset($this->_indices);
-     }
- 
-+    #[\ReturnTypeWillChange]
-     public function valid()
-     {
-         return !is_null(key($this->_indices));

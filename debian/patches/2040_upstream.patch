@@ -1,16 +1,15 @@
-From 58f5d9f45c67c77e749caa8b7e8ad325c7b9bc43 Mon Sep 17 00:00:00 2001
 From: Michael J Rubinsky <mrubinsk@horde.org>
 Date: Mon, 31 Oct 2022 23:28:41 -0400
 Subject: [PATCH] Avoid access array offset errors
 
 ---
- lib/Contents.php | 2 +-
+ imp-6.2.27/lib/Contents.php | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-Index: php-horde-imp/imp-6.2.27/lib/Contents.php
-===================================================================
---- php-horde-imp.orig/imp-6.2.27/lib/Contents.php
-+++ php-horde-imp/imp-6.2.27/lib/Contents.php
+diff --git a/imp-6.2.27/lib/Contents.php b/imp-6.2.27/lib/Contents.php
+index a050c4e..9088930 100644
+--- a/imp-6.2.27/lib/Contents.php
++++ b/imp-6.2.27/lib/Contents.php
 @@ -665,7 +665,7 @@ class IMP_Contents
  
          /* Don't show empty parts. */
